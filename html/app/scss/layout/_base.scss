@@ -1,0 +1,87 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+a {
+    color: $primary-color;
+    text-decoration: none;
+
+    &:focus {
+        outline: none;
+    }
+}
+
+body {
+    background: #f6f6f6;
+    font-family: $font;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.wrapper {
+    background: #f6f6f6 url('../images/wrapper_bg.png') repeat-y center 115px;
+}
+
+.container {
+    width: 100%;
+    max-width: $container-width + 30px;
+}
+
+.btn {
+    transition: .3s;
+
+    &-primary {
+        color: #fff;
+        font-weight: 500;
+        background: $primary-color;
+        border-color: $primary-color;
+
+        &:active,
+        &:focus,
+        &:hover {
+            background: darken($primary-color, 5%) !important;
+            border-color: darken($primary-color, 5%) !important;
+            box-shadow: none !important;
+        }
+    }
+}
+
+.slick-slider {
+    .slick-arrow {
+        position: absolute;
+        bottom: 20px;
+        z-index: 50;
+        background: #fff;
+        color: #929ea0;
+        cursor: pointer;
+        font-size: 12px;
+        line-height: 1;
+        transition: .3s;
+
+        &.slick-next {
+            right: 15px;
+            padding: 15px 30px 15px 10px;
+            border-radius: 0 22px 22px 0;
+        }
+
+        &.slick-prev {
+            right: 60px;
+            padding: 15px 10px 15px 30px;
+            border-radius: 22px 0 0 22px;
+        }
+
+        &:hover {
+            color: $text-color;
+            background: darken(#fff, 3%);
+        }
+    }
+}
+
+@media screen and (max-width: $desktop) {}
+
+@media screen and (max-width: $tablet) {}
+
+@media screen and (max-width: $mobile) {}

@@ -1,0 +1,100 @@
+body.modal-open,
+.modal-open .navbar-fixed-top,
+.modal-open .navbar-fixed-bottom,
+.modal-open #header {
+    padding-right: 17px;
+}
+
+.modal-scrollable {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow: auto;
+}
+
+.modal {
+    &-dialog {
+        width: 100%;
+        max-width: 430px;
+        margin: 10% auto;
+    }
+    &-content {
+        border-radius: 0;
+        padding: 25px 20px;
+        .modal-header {
+            color: $primary-color;
+            font-size: 22px;
+            line-height: 1;
+            font-weight: bold;
+            text-align: center;
+            display: block;
+            padding: 0;
+            border: none;
+            margin: 0 0 20px 0;
+            p {
+                font-size: 32px;
+                line-height: 1;
+                margin: 0 0 10px 0;
+            }
+        }
+        .modal-close {
+            position: absolute;
+            right: 5px;
+            top: 5px;
+            cursor: pointer;
+            display: block;
+            text-align: center;
+            font-size: 34px;
+            line-height: 34px;
+            width: 34px;
+            color: #9b9da5 !important;
+            &:hover {
+                color: $primary-color !important;
+            }
+        }
+        .form-horizontal {
+            max-width: 360px;
+            margin: 0 auto 15px auto;
+            .form-baton {
+                .btn {
+                    display: block;
+                    width: 100%;
+                    max-width: 240px;
+                    font-size: 28px;
+                    font-weight: bold;
+                    margin: 0 auto;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: $tablet) {
+    .modal {}
+}
+
+@media screen and (max-width: $mobile) {
+    body.modal-open,
+    .modal-open .navbar-fixed-top,
+    .modal-open .navbar-fixed-bottom {
+        padding-right: 0;
+    }
+    .modal {
+        &-dialog {
+            max-width: 90% !important;
+        }
+        &-content {
+            padding: 20px;
+            .form-top {
+                font-size: 22px;
+                line-height: 29px;
+            }
+            .form-name {
+                font-size: 18px;
+                line-height: 24px;
+            }
+        }
+    }
+}
