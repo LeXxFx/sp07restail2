@@ -160,11 +160,11 @@ function images() {
   return gulp.src(path.src.img) // путь с исходниками картинок
     .pipe((imagemin([// сжатие изображений
       imagemin.gifsicle({ interlaced: true }),
-      jpegrecompress({
+     /* jpegrecompress({
         progressive: true,
         max: 90,
         min: 80
-      }),
+      }),*/
       pngquant(),
       imagemin.svgo({ plugins: [{ removeViewBox: false }] })
     ])))
