@@ -14,11 +14,108 @@
 </head>
 
 <body class="@@bodyClass">
-    <header id="header" class="header">
+    <header id="header">
         <div class="container">
-            <div class="header-row">
-                <a href="#" class="logo">Sport07</a>
-                
+            <div class="header">
+                <div class="header__top">
+                    <div class="header-region">
+                        <i class="appicon appicon-map"></i>
+                        <span>Москва</span>
+                    </div>
+                    <div class="header-contacts">
+                        <i class="appicon appicon-phone"></i>
+                        <a href="tel:84952151207"> 8 (495) <strong>215-12-07</strong></a>
+                        <a href="tel:88005552082"> 8 (800) <strong>555-20-82</strong></a>
+                        <span>(Пн-Пт 9:00-18:00, Сб, Вск - вых.)</span>
+                        <button type="button" data-dismiss="modal" data-toggle="modal" data-target="#callback">заказать
+                            звонок</button>
+                    </div>
+                    <div class="header-account">
+                        <a href="#">
+                            <i class="appicon appicon-user"></i>
+                            <span>Личный кабинет</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="header__main">
+                    <a href="#" class="logo">
+                        <img src="images/logo.png" alt="Sport07">
+                        <span>Интернет магазин спортивных товаров</span>
+                    </a>
+                    <div class="search-input">
+                        <form action="#">
+                            <div class="form-input">
+                                <input id="title-searchs-input" type="text"
+                                    placeholder="Поиск среди 6000 спортивных товаров" name="q" value="" size="40"
+                                    class="form-control" maxlength="100" autocomplete="off">
+                                <input name="s" type="submit" value="Поиск" class="btn appicon appicon-search">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="header-links">
+                        <a href="#" class="link"><i class="appicon appicon-compare"></i> Сравнение <span>3</span></a>
+                        <a href="#" class="link"><i class="appicon appicon-compare"></i> Избранное <span>300</span></a>
+                        <a href="#" class="link"><i class="appicon appicon-compare"></i> Корзина <span>30</span></a>
+                    </div>
+                </div>
+                <div class="navi">
+                    <nav>
+                        <div class="catalog-menu">
+                            <ul class="menu">
+                                <li class="has-child">
+                                    <a href="#">
+                                        <i class="appicon appicon-list"></i>
+                                        Каталог <i class="fa fa-angle-down"></i>
+                                    </a>
+                                    <ul class="dropdown">
+                                        <li>
+                                            <a href="#">Новости</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Сотрудники</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Вакансии</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="main-menu">
+                            <ul class="menu">
+                                <li>
+                                    <a href="#">Акции</a>
+                                </li>
+                                <li>
+                                    <a href="#">Доставка и оплата</a>
+                                </li>
+                                <li>
+                                    <a href="#">Бренды</a>
+                                </li>
+                                <li>
+                                    <a href="#">Магазины</a>
+                                </li>
+                                <li class="has-child">
+                                    <a href="#">О компании</a>
+                                    <ul class="dropdown">
+                                        <li>
+                                            <a href="#">Новости</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Сотрудники</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Вакансии</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">Контакты</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
             </div>
         </div>
     </header>

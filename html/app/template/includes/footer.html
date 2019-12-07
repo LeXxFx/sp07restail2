@@ -109,6 +109,79 @@
 <a id="scroll-top"><i class="fas fa-angle-up"></i>
     Наверх</a>
 
+<div class="modal fade modal-form modal-callback" id="callback" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div class="panel-sport">
+                    <div class="modal-header">
+                        Заказать обратный звонок
+                        <p>Наш консультант вскоре свяжется с Вами.</p>
+                    </div>
+                    <form action="#" class="form-callback form-horizontal">
+                        <div class="form-callback__top">
+                            Введите Ваши данные:
+                        </div>
+                        <div class="row">
+                            <div class="col-md-8">
+                                <div class="form-group">
+                                    <div class="col-sm-5">
+                                        <label class="control-label">Имя:</label>
+                                    </div>
+                                    <div class="col-sm-7">
+                                        <input type="text" class="form-control" />
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="col-sm-5">
+                                        <label class="control-label">Ваш номер телефона:</label>
+                                        <span class="req">*</span>
+                                    </div>
+                                    <div class="col-sm-7">
+                                        <input type="tel" autocomplete="tel" class="form-control" />
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="col-sm-5">
+                                        <label class="control-label">E-mail:</label>
+                                    </div>
+                                    <div class="col-sm-7">
+                                        <input type="email" class="form-control" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-bot">
+                                    <button class="btn" data-dismiss="modal" data-toggle="modal"
+                                        data-target="#alert_callback">Отправить</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-12">
+                                <div class="checkbox">
+                                    <input id="rules" type="checkbox">
+                                    <label for="rules" class="txt">Я
+                                        <a href="#">ознакомлен (а)</a> и даю своё согласие на обработку персональных
+                                        данных.*</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-info">
+                            <span class="req">*</span> - Обязательно для заполнения.</div>
+                    </form>
+                    <button class="panel-sport__close" data-dismiss="modal" aria-hidden="true" data-toggle="tooltip"
+                        title="Закрыть">
+                        <span>
+                            <i class="fa fa-angle-left"></i>
+                        </span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
 <script type="text/javascript" src="js/libs.min.js"></script>
 <script type="text/javascript" src="js/default.js"></script>
 <script type="text/javascript" src="js/index.js"></script>

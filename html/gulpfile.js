@@ -133,7 +133,7 @@ function scss() {
 // сбор html
 function html() {
   return gulp.src(path.src.html) // выбор всех html файлов по указанному пути
-    .pipe(gulp.dest(path.app)) // выкладывание готовых файлов
+    .pipe(gulp.dest(path.dist)) // выкладывание готовых файлов
 };
 
 // сбор стилей
