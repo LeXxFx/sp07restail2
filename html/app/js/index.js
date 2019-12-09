@@ -17,10 +17,41 @@ var Home = function () {
 		}
 	};
 
+	var brandsCarousel = function () {
+		var brands = $(".brands__list");
+
+		if (brands.length > 0) {
+			if (brands.find('.item').length > 3) {
+				brands.slick({
+					slidesToShow: 5,
+					slidesToScroll: 5,
+					prevArrow: '<a class="slick-prev"><i class="fa fa-angle-left"></i></a>',
+					nextArrow: '<a class="slick-next"><i class="fa fa-angle-right"></i></a>',
+					responsive: [
+						{
+							breakpoint: 992,
+							settings: {
+								slidesToShow: 2,
+								slidesToScroll: 2
+							}
+						},
+						{
+							breakpoint: 478,
+							settings: {
+								slidesToShow: 1,
+								slidesToScroll: 1
+							}
+						}
+					]
+				});
+			}
+		}
+	};
+
 	return {
 		init: function () {
 			showcaseSlider();
-			bbSlider();
+			brandsCarousel();
 		}
 	};
 }();
