@@ -26,6 +26,26 @@ body {
     max-width: $container-width + 30px;
 }
 
+.inner {
+    display: flex;
+    justify-content: space-between;
+    background: #fff;
+    padding: 0 $side-padding;
+
+    .sidebar {
+        order: 0;
+        flex: 0 0 $sidebar-width;
+        margin: 0 30px 40px 0;
+    }
+
+    .content {
+        order: 1;
+        flex: 1 1 auto;
+        margin: 0 0 40px 0;
+        overflow: hidden;
+    }
+}
+
 .btn {
     transition: .3s;
 
@@ -48,29 +68,28 @@ body {
 .slick-slider {
     .slick-arrow {
         position: absolute;
-        bottom: 20px;
+        top: 50%;
+        margin-top: -16px;
+        border-radius: 50%;
         z-index: 50;
         background: #fff;
-        color: #929ea0;
+        color: $text-color;
         cursor: pointer;
-        font-size: 12px;
+        font-size: 18px;
+        padding: 6px 12px;
         line-height: 1;
         transition: .3s;
 
         &.slick-next {
-            right: 15px;
-            padding: 15px 30px 15px 10px;
-            border-radius: 0 22px 22px 0;
+            right: 10px;
         }
 
         &.slick-prev {
-            right: 60px;
-            padding: 15px 10px 15px 30px;
-            border-radius: 22px 0 0 22px;
+            left: 10px;
         }
 
         &:hover {
-            color: $text-color;
+            color: $second-color;
             background: darken(#fff, 3%);
         }
     }

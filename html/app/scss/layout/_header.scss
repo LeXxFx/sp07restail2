@@ -1,4 +1,233 @@
 .header {
     background: #fff;
     padding: 0 $side-padding;
+
+    &__top {
+        background: $second-color;
+        padding: 10px;
+        font-size: 14px;
+        line-height: 1;
+        color: #fff;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        a {
+            color: #fff;
+        }
+
+        .header-region {
+
+            i {
+                margin: 0 8px 0 0;
+            }
+        }
+
+        .header-contacts {
+            display: flex;
+            align-items: center;
+
+            >i {
+                margin-right: 10px;
+            }
+
+            .btn {
+                background: none;
+                border: none;
+                margin: 0 0 0 30px;
+                color: #fff;
+                text-decoration: underline;
+                font-size: 14px;
+                font-weight: bold;
+                padding: 0;
+
+                &:hover {
+                    text-decoration: none;
+                }
+            }
+        }
+
+        .header-account {
+            >a {
+                display: flex;
+                align-content: center;
+
+                >i {
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+
+    &__main {
+        padding: 10px 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .logo {
+            flex: 0 0 230px;
+            font-weight: bold;
+            color: #222;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+
+            img {
+                margin: 0 5px 0 0;
+            }
+
+            span {
+                line-height: 1.3;
+            }
+
+            &:hover {
+                color: $second-color;
+            }
+        }
+
+        .search-input {
+            flex: 0 0 390px;
+            margin: 0 auto 0 30px;
+
+            .form-input {
+                border: 1px solid #eaebec;
+                border-radius: 6px;
+                position: relative;
+                padding: 0 50px 0 20px;
+
+                .form-control {
+                    border: none;
+                    box-shadow: none;
+                    padding: 0;
+                }
+
+                .btn {
+                    position: absolute;
+                    top: 12px;
+                    right: 17px;
+                    padding: 0;
+                    box-shadow: none;
+                }
+            }
+        }
+
+        .header-links {
+
+            .link {
+                display: inline-block;
+                color: #222;
+                margin: 10px 15px 0 15px;
+                position: relative;
+                text-decoration: none;
+
+                span {
+                    display: inline-block;
+                    text-align: center;
+                    min-width: 26px;
+                    background: $second-color;
+                    border-radius: 9px;
+                    padding: 0 3px;
+                    color: #fff;
+                    font-size: 12px;
+                    font-weight: bold;
+                    line-height: 1.2;
+                    position: absolute;
+                    top: -15px;
+                    right: 0;
+                }
+
+                >i {
+                    margin: 0 8px 0 0;
+                }
+
+                &:hover {
+                    color: $second-color;
+
+                    .appicon {
+                        &-compare {
+                            background-position: -1px -40px;
+                        }
+
+                        &-heart {
+                            background-position: -18px -41px;
+                        }
+
+                        &-cart {
+                            background-position: -36px -39px;
+                        }
+                    }
+                }
+
+                &-fav {
+                    >i {
+                        position: relative;
+                        top: 2px;
+                    }
+                }
+
+                &-cart {
+                    >i {
+                        position: relative;
+                        top: 4px;
+                    }
+                }
+            }
+        }
+    }
+
+    .navi {
+        background: $primary-color;
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .catalog-menu {
+            flex: 0 0 $sidebar-width;
+
+            .menu {
+                >li {
+                    flex: 0 0 100%;
+
+                    >a {
+                        padding-left: 15px;
+                        padding-right: 15px;
+                        display: flex;
+                        align-items: center;
+                        background: lighten($primary-color, 5%) !important;
+
+                        >i {
+                            margin-right: 8px;
+                            position: relative;
+                            top: -1px;
+                        }
+
+                        >span {
+                            flex: 1 0 auto;
+                            display: block;
+                            position: relative;
+                            padding-right: 10px;
+
+                            i {
+                                position: absolute;
+                                top: 5px;
+                                right: 0;
+                            }
+                        }
+                    }
+
+                    >.dropdown {
+                        display: none !important;
+                    }
+                }
+            }
+        }
+
+        .main-menu {
+            flex: 1 0 auto;
+        }
+
+    }
 }

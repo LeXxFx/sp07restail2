@@ -85,9 +85,63 @@
   text-indent: -9999em;
   background: url(../images/sprite.png) no-repeat;
 
-  &-manufacture {
-    background-position: 0 -208px;
-    width: 18px;
-    height: 18px;
+  &-map {
+    background-position: -18px 0;
+    width: 10px;
+    height: 14px;
+  }
+
+  &-phone {
+    background-position: -30px -1px;
+    width: 16px;
+    height: 16px;
+  }
+
+  &-user {
+    background-position: -47px 0;
+    width: 12px;
+    height: 12px;
+  }
+
+  &-search {
+    background-position: -61px -1px;
+    width: 14px;
+    height: 15px;
+  }
+
+  &-compare {
+    background-position: -1px -18px;
+    width: 14px;
+    height: 11px;
+  }
+
+  &-heart {
+    background-position: -18px -19px;
+    width: 16px;
+    height: 14px;
+  }
+
+  &-cart {
+    background-position: -36px -17px;
+    width: 20px;
+    height: 21px;
+  }
+
+  &-list {
+    background-position: 0 0;
+    width: 15px;
+    height: 13px;
+  }
+
+  &-instagram {
+    background-position: -80px -2px;
+    width: 29px;
+    height: 29px;
+  }
+
+  &-vk {
+    background-position: -110px -2px;
+    width: 30px;
+    height: 30px;
   }
 }
