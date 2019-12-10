@@ -362,3 +362,34 @@
         }
     }
 }
+
+.product-tabs {
+    margin-bottom: 30px;
+
+    .nav {
+        border: none;
+        margin-bottom: 20px;
+
+        li {
+            margin: 0 60px 0 0;
+
+            a {
+                font-size: 17px;
+                font-weight: bold;
+                color: $text-color;
+
+                &:hover {
+                    color: $second-color;
+                    text-decoration: underline;
+                }
+            }
+
+            &.active {
+                a {
+                    color: $second-color;
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
