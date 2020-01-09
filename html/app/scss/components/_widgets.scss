@@ -71,6 +71,10 @@
                 &__image {
                     flex: 0 0 60px;
                     margin-right: 5px;
+
+                    img {
+                        width: 100%;
+                    }
                 }
 
                 &__text {
@@ -80,6 +84,7 @@
                     .post-title {
                         display: block;
                         color: $text-color;
+                        font-size: 13px;
                         font-weight: bold;
                         text-decoration: none;
                         margin: 0 0 5px 0;
@@ -100,21 +105,30 @@
                         color: #717171;
                     }
                 }
+
+                &--article {
+                    .post-item {
+                        &__image {
+                            flex: 0 0 95px;
+                        }
+                    }
+                }
+            }
+
+            &__link-all {
+                font-size: 16px;
+                font-weight: bold;
+                line-height: 1;
+                padding: 5px 15px;
+                background: #eaebec;
+                color: $text-color;
+                text-decoration: none;
+
+                &:hover {
+                    color: $second-color;
+                }
             }
         }
 
-        .link-all {
-            font-size: 16px;
-            font-weight: bold;
-            line-height: 1;
-            padding: 5px 15px;
-            background: #eaebec;
-            color: $text-color;
-            text-decoration: none;
-
-            &:hover {
-                color: $second-color;
-            }
-        }
     }
 }

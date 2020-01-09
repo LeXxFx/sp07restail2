@@ -82,3 +82,14 @@
     z-index: 1;
     transition: .3s;
 }
+
+%hide_item {
+    opacity: 0;
+    visibility: hidden;
+    transition: .3s;
+}
+
+%show_item {
+    opacity: 1;
+    visibility: visible;
+}

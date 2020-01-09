@@ -11,6 +11,7 @@
             z-index: 10;
         }
     }
+
     @else {
         &:before {
             content: "";
@@ -29,12 +30,15 @@
     &::-webkit-input-placeholder {
         @content
     }
+
     &:-moz-placeholder {
         @content
     }
+
     &::-moz-placeholder {
         @content
     }
+
     &:-ms-input-placeholder {
         @content
     }
@@ -55,45 +59,8 @@
     /* IE10+ */
     background: linear-gradient(to bottom, $top 0%, $bottom 100%);
     /* W3C */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#000000', GradientType=0);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#000000', GradientType=0);
     /* IE6-9 */
-}
-
-@mixin flexbox() {
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-}
-
-@mixin flex($values) {
-    -webkit-box-flex: $values;
-    -moz-box-flex: $values;
-    -webkit-flex: $values;
-    -ms-flex: $values;
-    flex: $values;
-}
-
-@mixin order($values) {
-    -webkit-box-ordinal-group: $val;
-    -moz-box-ordinal-group: $val;
-    -ms-flex-order: $val;
-    -webkit-order: $val;
-    order: $val;
-}
-
-@mixin transition($values) {
-    -moz-transition: $values;
-    -o-transition: $values;
-    -webkit-transition: $values;
-    transition: $values;
-}
-
-@mixin boxshadow($values) {
-    -webkit-box-shadow: $values;
-    -moz-box-shadow: $values;
-    box-shadow: $values;
 }
 
 @mixin line {
@@ -107,6 +74,7 @@
     from {
         transform: rotate(0deg);
     }
+
     to {
         transform: rotate(360deg);
     }
@@ -116,6 +84,7 @@
     0% {
         transform: translate(-1%, -1%) scale(1.1);
     }
+
     to {
         transform: translate(0) scale(1);
     }

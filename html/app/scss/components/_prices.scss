@@ -1,0 +1,13 @@
+﻿.prices {
+    color: $text-color;
+
+    .price-value {
+        strong {
+            font-size: 17px;
+        }
+
+        &-old {
+            color: $color-grey;
+        }
+    }
+}
