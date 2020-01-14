@@ -379,17 +379,28 @@
                 font-weight: bold;
                 color: $text-color;
 
+                &.active {
+                    color: $second-color;
+                    text-decoration: underline;
+                }
+
                 &:hover {
                     color: $second-color;
                     text-decoration: underline;
                 }
             }
 
+        }
+    }
+
+    .tab-content {
+        >.tab-pane {
+            display: block;
+            height: 0px;
+            overflow: hidden;
+
             &.active {
-                a {
-                    color: $second-color;
-                    text-decoration: underline;
-                }
+                height: auto;
             }
         }
     }

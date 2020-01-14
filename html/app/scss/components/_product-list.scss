@@ -7,13 +7,16 @@
 
     .product-item {
         flex: 0 0 calc(25% - 12px);
-        border: 1px solid #eaebec;
-        background: #fff;
         margin: 0 6px 12px 6px;
-        font-size: 12px;
-        transition: .16s;
+        height: 470px;
+        position: relative;
 
         .item-inner {
+            transition: .16s;
+            font-size: 12px;
+            border: 1px solid #eaebec;
+            background: #fff;
+
             &__top {
                 position: relative;
                 height: var(--inner-top-height);
@@ -27,6 +30,10 @@
         }
 
         &__images {
+            position: relative;
+            z-index: 1;
+            padding-bottom: 10px;
+
             .item-image {
                 a {
                     display: block;
@@ -35,6 +42,7 @@
                     img {
                         max-width: 100%;
                         height: auto;
+                        margin: 0 auto;
                     }
                 }
             }
@@ -46,10 +54,40 @@
                     }
                 }
             }
+
+            .slick-dots {
+                bottom: 0;
+                display: flex;
+                justify-content: center;
+
+                li {
+                    margin: 0 2px;
+
+                    button {
+                        width: 5px;
+                        height: 5px;
+                        background: #717171;
+                        border: none;
+                        padding: 0;
+                        line-height: 1;
+
+                        &:hover {
+                            background: $primary-color;
+                        }
+                    }
+
+                    &.slick-active {
+                        button {
+                            background: $primary-color;
+                        }
+                    }
+                }
+            }
         }
 
         &__discont {
             position: absolute;
+            z-index: 10;
             bottom: 20px;
             left: 5px;
             background: #e20c0c;
@@ -61,6 +99,7 @@
 
         &__quick-show {
             position: absolute;
+            z-index: 10;
             left: 0;
             right: 0;
             top: 50%;
@@ -85,6 +124,7 @@
 
         &__tools {
             position: absolute;
+            z-index: 10;
             top: 6px;
             right: 6px;
             width: 20px;
@@ -99,6 +139,7 @@
                 margin-bottom: 5px;
                 border-radius: 2px;
                 cursor: pointer;
+                transition: .2s;
 
                 &:hover {
                     background: #9c9696;
@@ -108,6 +149,7 @@
 
         &__stickers {
             position: absolute;
+            z-index: 10;
             top: 6px;
             left: 0;
             font-weight: bold;
@@ -169,6 +211,20 @@
                         }
                     }
                 }
+
+                &-promo {
+                    span {
+                        background: $primary-color;
+
+                        &:before {
+                            border-color: $primary-color transparent transparent transparent;
+                        }
+
+                        &:after {
+                            border-color: transparent transparent transparent $primary-color;
+                        }
+                    }
+                }
             }
         }
 
@@ -176,9 +232,10 @@
             margin: 0 0 5px 0;
             font-size: 17px;
             line-height: 1.3;
-            height: 45px;
             overflow: hidden;
             text-align: center;
+            min-height: 45px;
+            max-height: 45px;
 
             a {
                 display: block;
@@ -198,8 +255,8 @@
                 $star-height: 12px;
 
                 width: calc(5 * #{$star-width});
+                height: 18px;
                 position: relative;
-                margin: 0 5px 0 0;
 
                 &:before,
                 &:after {
@@ -234,6 +291,7 @@
             span {
                 font-weight: bold;
                 color: $color-grey;
+                margin: 0 0 0 5px;
             }
         }
 
@@ -268,6 +326,20 @@
 
             .prop {
                 margin: 0 0 10px 0;
+                overflow: hidden;
+                max-height: 23px;
+                position: relative;
+
+                &:after {
+                    content: "";
+                    position: absolute;
+                    right: 0;
+                    top: 0;
+                    bottom: 0;
+                    width: 30px;
+                    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.3));
+                    transition: .2s;
+                }
 
                 .values {
                     display: flex;
@@ -373,10 +445,18 @@
         }
 
         &:hover {
-            border-color: #fff;
-            box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.15);
+            z-index: 20;
+
+            .item-inner {
+                box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.2);
+            }
 
             .product-item {
+
+                &__title {
+                    max-height: 15em;
+                }
+
                 &__quick-show {
                     @extend %show_item;
                     transform: translateX(0);
@@ -386,8 +466,39 @@
                     @extend %show_item;
                     transform: translateX(0);
                 }
+
+                &__options {
+                    .prop {
+                        max-height: 15em;
+
+                        &:after {
+                            opacity: 0;
+                            visibility: hidden;
+                        }
+                    }
+                }
             }
         }
 
+        &--in-cart {
+            .product-item {
+                &__buttons {
+
+                    .btn {
+
+                        &-primary {
+                            border-color: $second-color;
+                            background: $second-color;
+
+                            &:hover {
+                                border-color: darken($second-color, 5%) !important;
+                                background: darken($second-color, 5%) !important;
+                            }
+
+                        }
+                    }
+                }
+            }
+        }
     }
 }
