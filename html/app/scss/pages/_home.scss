@@ -404,3 +404,13 @@
         }
     }
 }
+
+@media screen and (max-width: $desktop) {
+    .promo .promo-item__text .item-title {
+        font-size: 14px;
+        padding: 5px 10px;
+    }
+}
+
+@media screen and (max-width: $tablet) {
+}

@@ -2,6 +2,8 @@
     color: $text-color;
 
     .price-value {
+        white-space: nowrap;
+
         strong {
             font-size: 17px;
         }

@@ -273,6 +273,21 @@
 
         }
     }
+}
 
+@media screen and (max-width: $desktop) {
+    .menu {
+        >li {
+            >a {
+                font-size: 13px;
+                padding: 12px 15px;
+            }
+        }
+    }
 
+    .catalog-list>ul>li.has-child>.dropdown .category-col ul li>ul {
+        right: 0;
+        left: auto;
+        top: 100%;
+    }
 }

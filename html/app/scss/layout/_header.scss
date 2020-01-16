@@ -27,6 +27,11 @@
             display: flex;
             align-items: center;
 
+            a {
+                display: inline-block;
+                margin-right: 15px;
+            }
+
             >i {
                 margin-right: 10px;
             }
@@ -66,7 +71,7 @@
         align-items: center;
 
         .logo {
-            flex: 0 0 230px;
+            flex: 0 0 240px;
             font-weight: bold;
             color: #222;
             text-decoration: none;
@@ -74,6 +79,7 @@
             align-items: center;
 
             img {
+                flex: 0 0 auto;
                 margin: 0 5px 0 0;
             }
 
@@ -86,40 +92,54 @@
             }
         }
 
-        .search-input {
-            flex: 0 0 390px;
-            margin: 0 auto 0 30px;
+        .header-search {
+            flex: 0 1 390px;
+            margin: 0 20px 0 10px;
 
-            .form-input {
-                border: 1px solid #eaebec;
-                border-radius: 6px;
-                position: relative;
-                padding: 0 50px 0 20px;
+            &__toggle {
+                display: none;
+            }
 
-                .form-control {
-                    border: none;
-                    box-shadow: none;
-                    padding: 0;
-                }
+            .search-input {
+                .form-input {
+                    border: 1px solid #eaebec;
+                    border-radius: 6px;
+                    position: relative;
+                    padding: 0 50px 0 20px;
 
-                .btn {
-                    position: absolute;
-                    top: 12px;
-                    right: 17px;
-                    padding: 0;
-                    box-shadow: none;
+                    .form-control {
+                        border: none;
+                        box-shadow: none;
+                        padding: 0;
+                    }
+
+                    .btn {
+                        position: absolute;
+                        top: 12px;
+                        right: 17px;
+                        padding: 0;
+                        box-shadow: none;
+                    }
                 }
             }
         }
 
         .header-links {
+            display: flex;
+            flex: 0 0 350px;
+            margin-left: auto;
 
             .link {
-                display: inline-block;
+                display: block;
+                white-space: nowrap;
                 color: #222;
-                margin: 10px 15px 0 15px;
+                margin: 10px 10px 0 20px;
                 position: relative;
                 text-decoration: none;
+
+                &:first-of-type {
+                    margin-left: 0;
+                }
 
                 span {
                     display: inline-block;
@@ -231,5 +251,68 @@
             flex: 1 0 auto;
         }
 
+    }
+}
+
+@media screen and (max-width: $desktop) {
+    .header {
+
+        &__main {
+
+            .search-input {
+
+                .form-input {
+
+                    .form-control {
+                        font-size: 14px;
+                    }
+                }
+            }
+
+            .header-links {
+                .link {
+                    font-size: 13px;
+                }
+            }
+
+        }
+    }
+}
+
+@media screen and (max-width: $tablet) {
+    .header {
+        &__top {
+            .header-region {
+                display: none;
+            }
+
+            .header-contacts {
+
+                >span,
+                button {
+                    display: none;
+                }
+            }
+        }
+
+        &__main {
+            .header-search {
+                flex: 0 0 auto;
+                margin-left: auto;
+
+                &__toggle {
+                    display: block;
+                }
+
+                &__input {
+                    display: none;
+                }
+            }
+
+            .header-links {
+                flex: 0 0 auto;
+                margin-left: 0;
+            }
+        }
     }
 }
