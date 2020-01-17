@@ -45,8 +45,8 @@
                         <span>Интернет магазин спортивных товаров</span>
                     </a>
                     <div class="header-search">
-                        <button class="header-search__toggle search-toggle"><i
-                                class="appicon appicon-search"></i></button>
+                        <a href="#" class="header-search__toggle search-toggle icon-link">
+                            <i class="appicon appicon-search"></i> Поиск</a>
                         <div class="header-search__input search-input">
                             <form action="#">
                                 <div class="form-input">
@@ -59,10 +59,11 @@
                         </div>
                     </div>
                     <div class="header-links">
-                        <a href="#" class="link"><i class="appicon appicon-compare"></i> Сравнение <span>3</span></a>
-                        <a href="#" class="link link-fav"><i class="appicon appicon-heart"></i> Избранное
+                        <a href="#" class="icon-link"><i class="appicon appicon-compare"></i> Сравнение
+                            <span>3</span></a>
+                        <a href="#" class="icon-link icon-link-fav"><i class="appicon appicon-heart"></i> Избранное
                             <span>300</span></a>
-                        <a href="#" class="link link-cart"><i class="appicon appicon-cart"></i> Корзина
+                        <a href="#" class="icon-link icon-link-cart"><i class="appicon appicon-cart"></i> Корзина
                             <span>30</span></a>
                     </div>
                 </div>
@@ -75,17 +76,7 @@
                                         <i class="appicon appicon-list"></i>
                                         <span>Каталог <i class="fa fa-angle-down"></i></span>
                                     </a>
-                                    <ul class="dropdown">
-                                        <li>
-                                            <a href="#">Новости</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Сотрудники</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Вакансии</a>
-                                        </li>
-                                    </ul>
+                                    @@include('../includes/catalog-navi.html', { "ulClass": "dropdown" })
                                 </li>
                             </ul>
                         </div>

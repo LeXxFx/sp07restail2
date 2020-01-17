@@ -64,9 +64,15 @@
     }
 }
 
-.catalog-list {
-    position: relative;
-    margin-bottom: 35px;
+
+.catalog-navi {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    flex: 0 0 100%;
+    padding: 0;
+    border: 1px solid #eaebec;
+    background: #f9f9f9;
 
     ul {
         list-style: none;
@@ -111,167 +117,160 @@
         }
     }
 
-    >ul {
-        flex: 0 0 100%;
-        padding: 0;
-        border: 1px solid #eaebec;
-        background: #f9f9f9;
+    >li {
+        border-bottom: 1px solid #eaebec;
 
-        >li {
-            border-bottom: 1px solid #eaebec;
-
-            &.has-child {
-
-                >a {
-                    padding-right: 30px;
-
-                    &:after {
-                        right: 15px;
-                        top: 16px;
-                    }
-                }
-            }
-
-            &:last-of-type {
-                border-bottom: none;
-            }
+        &.has-child {
 
             >a {
-                border-left: 5px solid transparent;
-                padding: 7px 15px 7px 12px;
-                min-height: 50px;
-                color: $text-color;
-                display: flex;
-                align-items: center;
-                position: relative;
-                z-index: 15;
-                line-height: 1.2;
-                text-decoration: none;
+                padding-right: 30px;
 
-                i {
-                    margin-right: 15px;
+                &:after {
+                    right: 15px;
+                    top: 16px;
                 }
+            }
+        }
 
+        &:last-of-type {
+            border-bottom: none;
+        }
+
+        >a {
+            border-left: 5px solid transparent;
+            padding: 7px 15px 7px 12px;
+            min-height: 50px;
+            color: $text-color;
+            display: flex;
+            align-items: center;
+            position: relative;
+            z-index: 15;
+            line-height: 1.2;
+            text-decoration: none;
+
+            i {
+                margin-right: 15px;
             }
 
-            &.has-child {
+        }
 
-                >.dropdown {
-                    display: none;
-                    white-space: nowrap;
+        &.has-child {
+
+            >.dropdown {
+                display: none;
+                white-space: nowrap;
+                vertical-align: top;
+                box-shadow: 3px 3px 8px 0 rgba(81, 81, 81, 0.5);
+                border-radius: 2px;
+                position: absolute;
+                z-index: 100;
+                background: #fff;
+                padding: 20px 0 0;
+                top: -50%;
+                left: 100%;
+                border: 1px solid #eaebec;
+
+                a {
+                    white-space: normal;
+                }
+
+                .category-col {
+                    display: inline-block;
+                    width: 280px;
+                    margin: 0 20px;
                     vertical-align: top;
-                    box-shadow: 3px 3px 8px 0 rgba(81, 81, 81, 0.5);
-                    border-radius: 2px;
-                    position: absolute;
-                    z-index: 100;
-                    background: #fff;
-                    padding: 20px 0 0;
-                    top: -50%;
-                    left: 100%;
-                    border: 1px solid #eaebec;
 
-                    a {
-                        white-space: normal;
-                    }
+                    &__title {
+                        margin: 0 0 15px 0;
+                        padding: 0;
+                        line-height: 1.1;
+                        font-size: 18px;
 
-                    .category-col {
-                        display: inline-block;
-                        width: 280px;
-                        margin: 0 20px;
-                        vertical-align: top;
+                        a {
+                            color: $text-color;
+                            text-decoration: none;
 
-                        &__title {
-                            margin: 0 0 15px 0;
-                            padding: 0;
-                            line-height: 1.1;
-                            font-size: 18px;
-
-                            a {
-                                color: $text-color;
-                                text-decoration: none;
-
-                                &:hover {
-                                    color: $second-color;
-                                }
+                            &:hover {
+                                color: $second-color;
                             }
                         }
+                    }
 
-                        ul {
-                            margin-bottom: 20px;
-                            padding-left: 10px;
+                    ul {
+                        margin-bottom: 20px;
+                        padding-left: 10px;
 
-                            li {
-                                position: relative;
+                        li {
+                            position: relative;
 
-                                a {
-                                    display: block;
-                                    padding: 5px 0;
-                                    text-decoration: none;
+                            a {
+                                display: block;
+                                padding: 5px 0;
+                                text-decoration: none;
 
-                                    span {
-                                        display: inline-block;
+                                span {
+                                    display: inline-block;
+                                    color: #777;
+                                    margin-left: 5px;
+                                }
+                            }
+
+                            &.has-child {
+                                >a {
+                                    &:after {
+                                        position: relative;
+                                        top: 2px;
+                                        left: 10px;
                                         color: #777;
-                                        margin-left: 5px;
                                     }
                                 }
+                            }
 
-                                &.has-child {
-                                    >a {
-                                        &:after {
-                                            position: relative;
-                                            top: 2px;
-                                            left: 10px;
-                                            color: #777;
-                                        }
+                            >ul {
+                                display: none;
+                                position: absolute;
+                                z-index: 101;
+                                left: 100%;
+                                top: -50%;
+                                background: #fff;
+                                width: 320px;
+                                padding: 20px;
+                                box-shadow: 3px 3px 8px 0 rgba(81, 81, 81, 0.5);
+                            }
+
+                            &:hover {
+                                >a {
+                                    span {
+                                        color: $second-color;
+                                    }
+
+                                    &:after {
+                                        color: $second-color;
                                     }
                                 }
 
                                 >ul {
-                                    display: none;
-                                    position: absolute;
-                                    z-index: 101;
-                                    left: 100%;
-                                    top: -50%;
-                                    background: #fff;
-                                    width: 320px;
-                                    padding: 20px;
-                                    box-shadow: 3px 3px 8px 0 rgba(81, 81, 81, 0.5);
+                                    display: block;
                                 }
-
-                                &:hover {
-                                    >a {
-                                        span {
-                                            color: $second-color;
-                                        }
-
-                                        &:after {
-                                            color: $second-color;
-                                        }
-                                    }
-
-                                    >ul {
-                                        display: block;
-                                    }
-                                }
-
                             }
+
                         }
                     }
                 }
             }
+        }
 
-            &:hover {
-                >a {
-                    background: #fff;
-                    border-left-color: $second-color;
-                }
-
-                >.dropdown {
-                    display: block;
-                }
+        &:hover {
+            >a {
+                background: #fff;
+                border-left-color: $second-color;
             }
 
+            >.dropdown {
+                display: block;
+            }
         }
+
     }
 }
 
@@ -285,9 +284,32 @@
         }
     }
 
-    .catalog-list>ul>li.has-child>.dropdown .category-col ul li>ul {
+    .catalog-navi>li.has-child>.dropdown .category-col ul li>ul {
         right: 0;
         left: auto;
         top: 100%;
+    }
+}
+
+@media screen and (max-width: $tablet) {
+    .menu {
+        justify-content: flex-end;
+
+        >li {
+            >a {
+                font-size: 12px;
+                padding: 12px 12px;
+            }
+
+            .dropdown {
+                width: 170px;
+
+                >li {
+                    >a {
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
     }
 }

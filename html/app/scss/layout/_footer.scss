@@ -162,6 +162,7 @@
         }
 
         .link-all {
+            white-space: nowrap;
             border: 1px solid #fff;
             background: #5b5b5b;
             border-radius: 4px;
@@ -209,7 +210,7 @@
     }
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: $tablet) {
     #footer {
         .head {
             font-size: 18px;
@@ -218,18 +219,24 @@
         .navi {
             margin-bottom: 20px;
 
-            li a {
-                font-size: 15px;
+            li {
+                margin: 0 0 5px 0;
+
+                a {
+                    font-size: 14px;
+                }
             }
         }
 
         .footer__contacts {
             .tel {
                 margin-bottom: 20px;
+                margin-left: 40px;
             }
 
             .schedule {
                 margin-bottom: 20px;
+                margin-left: 40px;
             }
 
             >p {
@@ -250,9 +257,28 @@
         .copyright {
             font-size: 12px;
         }
+
+        .row-dop {
+            margin-top: 20px;
+        }
+
+        .yandex-review {
+
+            .link-all {
+                margin-top: 10px;
+            }
+        }
     }
 
-    .checksum {
-        display: none !important;
+    #scroll-top {
+        left: auto;
+        right: 10px;
+        bottom: 10px;
+        padding: 3px 8px;
+        font-size: 14px;
+
+        i {
+            margin-right: 5px;
+        }
     }
 }
