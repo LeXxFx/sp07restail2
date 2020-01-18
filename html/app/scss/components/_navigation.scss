@@ -28,7 +28,7 @@
             list-style: none;
             padding: 0;
             margin: 0;
-            transition: all linear .2s;
+            transition: all linear .1s;
             visibility: hidden;
             opacity: 0;
             transform: translateY(10px);
@@ -50,12 +50,29 @@
             }
         }
 
+        .catalog-navi {
+            transition: all linear .1s;
+            visibility: hidden;
+            opacity: 0;
+            transform: translateY(10px);
+            box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.2);
+            position: absolute;
+            z-index: 555;
+            top: 100%;
+            min-width: 220px;
+
+            .dropdown {
+                width: auto !important;
+            }
+        }
+
         &:hover {
             >a {
                 background: darken($primary-color, 5%);
             }
 
-            >.dropdown {
+            >.dropdown,
+            >.catalog-navi {
                 visibility: visible;
                 opacity: 1;
                 transform: none;
@@ -64,11 +81,7 @@
     }
 }
 
-
 .catalog-navi {
-    list-style: none;
-    margin: 0;
-    padding: 0;
     flex: 0 0 100%;
     padding: 0;
     border: 1px solid #eaebec;
@@ -117,7 +130,7 @@
         }
     }
 
-    >li {
+    >ul>li {
         border-bottom: 1px solid #eaebec;
 
         &.has-child {
@@ -211,7 +224,6 @@
                                 span {
                                     display: inline-block;
                                     color: #777;
-                                    margin-left: 5px;
                                 }
                             }
 
@@ -284,10 +296,19 @@
         }
     }
 
-    .catalog-navi>li.has-child>.dropdown .category-col ul li>ul {
-        right: 0;
-        left: auto;
-        top: 100%;
+    .catalog-navi>ul>li.has-child>.dropdown .category-col {
+        width: 220px;
+        margin: 0 15px;
+
+        ul {
+            padding: 0;
+
+            li>ul {
+                right: 0;
+                left: auto;
+                top: 100%;
+            }
+        }
     }
 }
 
@@ -298,7 +319,7 @@
         >li {
             >a {
                 font-size: 12px;
-                padding: 12px 12px;
+                padding: 12px 10px;
             }
 
             .dropdown {

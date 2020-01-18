@@ -1,4 +1,4 @@
-@@include('../includes/header.html', { "title": "Welcome" })
+@@include('../includes/header.html', { "title": "Welcome", "headerClass": "front-page-header" })
 
 <div class="container">
   <div class="inner">
@@ -328,7 +328,7 @@
     </div>
     <div id="sidebar" class="sidebar">
       <aside>
-        @@include('../includes/catalog-navi.html')
+        @@include('../includes/catalog-navi.html', { "listClass" : ""})
         <div class="widget widget-subs">
           <div class="widget-title">
             Дополнительные бонусы и скидки за подписку

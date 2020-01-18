@@ -1,6 +1,8 @@
 .header {
     background: #fff;
     padding: 0 $side-padding;
+    position: relative;
+    z-index: 100;
 
     &__top {
         background: $second-color;
@@ -69,6 +71,8 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        position: relative;
+        z-index: 10;
 
         .logo {
             flex: 0 0 240px;
@@ -95,6 +99,7 @@
         .header-search {
             flex: 0 1 390px;
             margin: 0 20px 0 10px;
+            position: relative;
 
             &__toggle {
                 &.icon-link {
@@ -106,26 +111,11 @@
                 }
             }
 
-            .search-input {
-                .form-input {
-                    border: 1px solid #eaebec;
-                    border-radius: 6px;
-                    position: relative;
-                    padding: 0 50px 0 20px;
-
-                    .form-control {
-                        border: none;
-                        box-shadow: none;
-                        padding: 0;
-                    }
-
-                    .btn {
-                        position: absolute;
-                        top: 12px;
-                        right: 17px;
-                        padding: 0;
-                        box-shadow: none;
-                    }
+            &--shown {
+                .header-search__input {
+                    opacity: 1;
+                    visibility: visible;
+                    transform: translateY(0);
                 }
             }
         }
@@ -205,6 +195,8 @@
 
     .navi {
         background: $primary-color;
+        position: relative;
+        z-index: 5;
 
         nav {
             display: flex;
@@ -256,6 +248,17 @@
                                 }
                             }
                         }
+
+                        .dropdown {
+                            visibility: visible;
+                            opacity: 1;
+                            transform: none;
+                        }
+                    }
+
+                    .dropdown {
+                        width: 220px;
+                        z-index: 999;
                     }
                 }
             }
@@ -265,6 +268,34 @@
             flex: 1 0 auto;
         }
 
+    }
+
+    &.front-page-header {
+        .navi {
+
+            .catalog-menu {
+
+                .menu {
+                    >li {
+
+                        >a {
+
+                            >span {
+
+                                i {
+                                    transform: rotate(0);
+                                }
+                            }
+                        }
+
+                        >.catalog-navi {
+                            display: none;
+                        }
+                    }
+                }
+            }
+
+        }
     }
 }
 
@@ -305,11 +336,11 @@
 
         .navi {
             .catalog-menu {
-                flex: 0 0 130px;
+                flex: 0 1 220px;
             }
 
             .main-menu {
-                flex: 0 1 690px;
+                flex: 0 1 840px;
             }
         }
 
@@ -331,6 +362,7 @@
             .header-search {
                 flex: 0 0 auto;
                 margin-left: auto;
+                position: relative;
 
                 &__toggle {
                     &.icon-link {
@@ -339,7 +371,15 @@
                 }
 
                 &__input {
-                    display: none;
+                    transform: translateY(5px);
+                    transition: .1s;
+                    opacity: 0;
+                    visibility: hidden;
+                    width: 320px;
+                    position: absolute;
+                    left: -100px;
+                    top: 100%;
+                    margin: 10px 0 0;
                 }
             }
 
@@ -361,6 +401,47 @@
                     font-size: 10px;
                     line-height: 1;
                 }
+            }
+        }
+
+        &.front-page-header {
+            .navi {
+
+                .catalog-menu {
+
+                    .menu {
+                        >li {
+
+                            >a {
+
+                                >span {
+
+                                    i {
+                                        transform: rotate(-90deg);
+                                    }
+                                }
+                            }
+
+                            >.catalog-navi {
+                                display: block;
+                            }
+
+                            &:hover {
+                                >a {
+
+                                    >span {
+
+                                        i {
+                                            transform: rotate(0deg);
+                                        }
+                                    }
+                                }
+
+                            }
+                        }
+                    }
+                }
+
             }
         }
     }

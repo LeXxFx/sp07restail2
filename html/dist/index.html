@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body class="@@bodyClass">
+<body class="">
     <header id="header">
         <div class="container">
             <div class="header">
@@ -45,8 +45,8 @@
                         <span>Интернет магазин спортивных товаров</span>
                     </a>
                     <div class="header-search">
-                        <button class="header-search__toggle search-toggle"><i
-                                class="appicon appicon-search"></i></button>
+                        <a href="#" class="header-search__toggle search-toggle icon-link">
+                            <i class="appicon appicon-search"></i> Поиск</a>
                         <div class="header-search__input search-input">
                             <form action="#">
                                 <div class="form-input">
@@ -59,10 +59,11 @@
                         </div>
                     </div>
                     <div class="header-links">
-                        <a href="#" class="link"><i class="appicon appicon-compare"></i> Сравнение <span>3</span></a>
-                        <a href="#" class="link link-fav"><i class="appicon appicon-heart"></i> Избранное
+                        <a href="#" class="icon-link"><i class="appicon appicon-compare"></i> Сравнение
+                            <span>3</span></a>
+                        <a href="#" class="icon-link icon-link-fav"><i class="appicon appicon-heart"></i> Избранное
                             <span>300</span></a>
-                        <a href="#" class="link link-cart"><i class="appicon appicon-cart"></i> Корзина
+                        <a href="#" class="icon-link icon-link-cart"><i class="appicon appicon-cart"></i> Корзина
                             <span>30</span></a>
                     </div>
                 </div>
@@ -70,22 +71,115 @@
                     <nav>
                         <div class="catalog-menu">
                             <ul class="menu">
-                                <li class="has-child">
+                                <li class="has-child active">
                                     <a href="#">
                                         <i class="appicon appicon-list"></i>
                                         <span>Каталог <i class="fa fa-angle-down"></i></span>
                                     </a>
-                                    <ul class="dropdown">
-                                        <li>
-                                            <a href="#">Новости</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Сотрудники</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Вакансии</a>
-                                        </li>
-                                    </ul>
+                                    <ul class="catalog-navi ">
+  <li class="has-child">
+    <a href="#">Фитнес</a>
+    <div class="dropdown">
+      <div class="category-col">
+        <h2 class="category-col__title">
+          <a href="#">Тяжелая атлетика</a>
+        </h2>
+        <ul>
+          <li><a href="#">Тренажеры и тяжелая атлетика</a></li>
+          <li><a href="#">Художественная гимнастика и танцы</a></li>
+        </ul>
+      </div>
+    </div>
+  </li>
+  <li class="has-child">
+    <a href="#">Художественная гимнастика и танцы</a>
+    <div class="dropdown">
+      <div class="category-col">
+        <h2 class="category-col__title">
+          <a href="#">Тяжелая атлетика</a>
+        </h2>
+        <ul>
+          <li><a href="#">Тренажеры и тяжелая атлетика</a></li>
+          <li><a href="#">Художественная гимнастика и танцы</a></li>
+        </ul>
+      </div>
+    </div>
+  </li>
+  <li class="has-child">
+    <a href="#">Тренажеры и тяжелая атлетика</a>
+    <div class="dropdown">
+      <div class="category-col">
+        <h2 class="category-col__title">
+          <a href="#">Тяжелая атлетика</a>
+        </h2>
+        <ul>
+          <li>
+            <a href="#">Гантели разборные <span>(15)</span></a>
+          </li>
+          <li>
+            <a href="#">Гири <span>(5)</span></a>
+          </li>
+          <li>
+            <a href="#">Грифы для гантелей и штанг <span>(100)</span></a>
+          </li>
+          <li>
+            <a href="#">Диски для гантелей и штанг <span>(18)</span></a>
+          </li>
+          <li>
+            <a href="#">Перчатки для тяжелой атлетики и велоспорта
+              <span>(19)</span></a>
+          </li>
+          <li>
+            <a href="#">Пояса для поднятия тяжестей <span>(17)</span></a>
+          </li>
+          <li>
+            <a href="#">Стойки для гантелей и штанг <span>(100)</span></a>
+          </li>
+          <li>
+            <a href="#">Скамьи <span>(1000)</span></a>
+          </li>
+          <li>
+            <a href="#">Аксессуары <span>(10)</span></a>
+          </li>
+        </ul>
+      </div>
+      <div class="category-col">
+        <h2 class="category-col__title">
+          <a href="#">Домашние тренажеры</a>
+        </h2>
+        <ul>
+          <li>
+            <a href="#">Беговые дорожки <span>(105)</span></a>
+          </li>
+          <li>
+            <a href="#">Велотренажеры <span>(165)</span></a>
+          </li>
+          <li class="has-child">
+            <a href="#">Степперы, Эллипсоиды <span>(155)</span></a>
+            <ul>
+              <li>
+                <a href="#">Степперы с эспандерами <span>(25)</span></a>
+              </li>
+              <li>
+                <a href="#">Мини степперы <span>(15)</span></a>
+              </li>
+              <li>
+                <a href="#">Профессиональные степперы <span>(20)</span></a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </li>
+  <li><a href="#">Туризм и активный отдых</a></li>
+  <li><a href="#">Зимние виды спорта и активный отдых</a></li>
+  <li><a href="#">Единоборства и бокс</a></li>
+  <li><a href="#">Командные виды спорта</a></li>
+  <li><a href="#">Летние виды спорта</a></li>
+  <li><a href="#">Водные виды спорта</a></li>
+  <li><a href="#">Игры</a></li>
+</ul>
                                 </li>
                             </ul>
                         </div>
@@ -262,1823 +356,1823 @@
         <div class="tab-content">
           <div id="hits" class="tab-pane fade show active">
             <div class="product-list">
-              <div class="product-list__item product-item">
-                <div class="item-inner">
-                  <div class="item-inner__top">
-                    <div class="product-item__stickers">
-                      <div class="sticker sticker-hit">
-                        <span>Хит</span>
-                      </div>
-                      <div class="sticker sticker-recommend">
-                        <span>Советуем!</span>
-                      </div>
-                    </div>
-                    <div class="product-item__discont">
-                      <span>-15%</span>
-                    </div>
-                    <div class="product-item__tools">
-                      <a title="Добавить в избранное" class="btn-like"><i class="appicon appicon-heart"></i></a>
-                      <a title="Сравнить" class="btn-compare"><i class="appicon appicon-compare"></i></a>
-                    </div>
-                    <div class="product-item__images">
-                      <div class="item-image">
-                        <a href="product.html">
-                          <img src="images/demo/product_img1-190x190.jpg" alt="Шорты Ridge III"
-                            title="Шорты Ridge III" />
-                        </a>
-                      </div>
-                      <div class="item-image">
-                        <a href="product.html">
-                          <img src="images/demo/product_img2-190x190.jpg" alt="Шорты Ridge III"
-                            title="Шорты Ridge III" />
-                        </a>
-                      </div>
-                      <div class="item-image">
-                        <a href="product.html">
-                          <img src="images/demo/product_img3-190x190.jpg" alt="Шорты Ridge III"
-                            title="Шорты Ridge III" />
-                        </a>
-                      </div>
-                      <div class="item-image">
-                        <a href="product.html">
-                          <img src="images/demo/product_img1-190x190.jpg" alt="Шорты Ridge III"
-                            title="Шорты Ridge III" />
-                        </a>
-                      </div>
-                    </div>
-                    <div class="product-item__quick-show">
-                      <a class="btn-quick-show">Быстрый просмотр</a>
-                    </div>
-                  </div>
-                  <div class="item-inner__main">
-                    <div class="product-item__title">
-                      <a href="product.html">Кимоно для дзюдо “CAPRICE”</a>
-                    </div>
-                    <div class="product-item__rate">
-                      <div class="stars star-4"></div>
-                      <span>3 отзыва</span>
-                    </div>
-                    <div class="product-item__stock">
-                      <span class="in-stock">
-                        <i class="fas fa-check"></i>
-                        В наличии
-                      </span>
-                    </div>
-                    <div class="product-item__price prices">
-                      <div class="price-value price-value-current">
-                        <span>новая цена</span> <strong>1590 руб./шт</strong>
-                      </div>
-                      <div class="price-value price-value-old">
-                        <span>старая цена</span> <del>1690 руб.</del>
-                      </div>
-                    </div>
-                    <div class="product-item__options">
-                      <div class="prop prop-color">
-                        <div class="values">
-                          <div class="value value--active">
-                            <img src="images/color_black-red.png" alt="" />
-                          </div>
-                          <div class="value">
-                            <img src="images/color_blue.png" alt="" />
-                          </div>
-                          <div class="value">
-                            <img src="images/color_red-white.png" alt="" />
-                          </div>
-                        </div>
-                      </div>
-                      <div class="prop prop-size">
-                        <div class="values">
-                          <div class="value">
-                            <span>120</span>
-                          </div>
-                          <div class="value value--active">
-                            <span>125</span>
-                          </div>
-                          <div class="value">
-                            <span>130</span>
-                          </div>
-                          <div class="value">
-                            <span>135</span>
-                          </div>
-                          <div class="value">
-                            <span>140</span>
-                          </div>
-                          <div class="value">
-                            <span>145</span>
-                          </div>
-                          <div class="value">
-                            <span>150</span>
-                          </div>
-                          <div class="value">
-                            <span>155</span>
-                          </div>
-                          <div class="value">
-                            <span>160</span>
-                          </div>
-                          <div class="value">
-                            <span>165</span>
-                          </div>
-                          <div class="value">
-                            <span>170</span>
-                          </div>
-                          <div class="value">
-                            <span>175</span>
-                          </div>
-                          <div class="value">
-                            <span>180</span>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="product-item__buttons">
-                    <button class="btn btn-primary add-to-cart">Купить</button>
-                    <button class="btn btn-link quick-buy">
-                      Купить в 1 клик
-                    </button>
-                  </div>
+    <div class="product-list__item product-item">
+      <div class="item-inner">
+        <div class="item-inner__top">
+          <div class="product-item__stickers">
+            <div class="sticker sticker-hit">
+              <span>Хит</span>
+            </div>
+            <div class="sticker sticker-recommend">
+              <span>Советуем!</span>
+            </div>
+          </div>
+          <div class="product-item__discont">
+            <span>-15%</span>
+          </div>
+          <div class="product-item__tools">
+            <a title="Добавить в избранное" class="btn-like"><i class="appicon appicon-heart"></i></a>
+            <a title="Сравнить" class="btn-compare"><i class="appicon appicon-compare"></i></a>
+          </div>
+          <div class="product-item__images">
+            <div class="item-image">
+              <a href="product.html">
+                <img src="images/demo/product_img1-190x190.jpg" alt="Шорты Ridge III"
+                  title="Шорты Ridge III" />
+              </a>
+            </div>
+            <div class="item-image">
+              <a href="product.html">
+                <img src="images/demo/product_img2-190x190.jpg" alt="Шорты Ridge III"
+                  title="Шорты Ridge III" />
+              </a>
+            </div>
+            <div class="item-image">
+              <a href="product.html">
+                <img src="images/demo/product_img3-190x190.jpg" alt="Шорты Ridge III"
+                  title="Шорты Ridge III" />
+              </a>
+            </div>
+            <div class="item-image">
+              <a href="product.html">
+                <img src="images/demo/product_img1-190x190.jpg" alt="Шорты Ridge III"
+                  title="Шорты Ridge III" />
+              </a>
+            </div>
+          </div>
+          <div class="product-item__quick-show">
+            <a class="btn-quick-show">Быстрый просмотр</a>
+          </div>
+        </div>
+        <div class="item-inner__main">
+          <div class="product-item__title">
+            <a href="product.html">Кимоно для дзюдо “CAPRICE”</a>
+          </div>
+          <div class="product-item__rate">
+            <div class="stars star-4"></div>
+            <span>3 отзыва</span>
+          </div>
+          <div class="product-item__stock">
+            <span class="in-stock">
+              <i class="fas fa-check"></i>
+              В наличии
+            </span>
+          </div>
+          <div class="product-item__price prices">
+            <div class="price-value price-value-current">
+              <span>новая цена</span> <strong>1590 руб./шт</strong>
+            </div>
+            <div class="price-value price-value-old">
+              <span>старая цена</span> <del>1690 руб.</del>
+            </div>
+          </div>
+          <div class="product-item__options">
+            <div class="prop prop-color">
+              <div class="values">
+                <div class="value value--active">
+                  <img src="images/color_black-red.png" alt="" />
+                </div>
+                <div class="value">
+                  <img src="images/color_blue.png" alt="" />
+                </div>
+                <div class="value">
+                  <img src="images/color_red-white.png" alt="" />
                 </div>
               </div>
-              <div class="product-list__item product-item">
-                <div class="item-inner">
-                  <div class="item-inner__top">
-                    <div class="product-item__stickers">
-                      <div class="sticker sticker-hit">
-                        <span>Хит</span>
-                      </div>
-                    </div>
-                    <div class="product-item__discont">
-                      <span>-15%</span>
-                    </div>
-                    <div class="product-item__tools">
-                      <a title="Добавить в избранное" class="btn-like"><i class="appicon appicon-heart"></i></a>
-                      <a title="Сравнить" class="btn-compare"><i class="appicon appicon-compare"></i></a>
-                    </div>
-                    <div class="product-item__images">
-                      <div class="item-image">
-                        <a href="product.html">
-                          <img src="images/demo/product_img2-190x190.jpg" alt="Шорты Ridge III"
-                            title="Шорты Ridge III" />
-                        </a>
-                      </div>
-                    </div>
-                    <div class="product-item__quick-show">
-                      <a class="btn-quick-show">Быстрый просмотр</a>
-                    </div>
-                  </div>
-                  <div class="item-inner__main">
-                    <div class="product-item__title">
-                      <a href="product.html">Кимоно для дзюдо “CAPRICE”</a>
-                    </div>
-                    <div class="product-item__rate">
-                      <div class="stars star-5"></div>
-                    </div>
-                    <div class="product-item__stock">
-                      <span class="in-stock">
-                        <i class="fas fa-check"></i>
-                        В наличии
-                      </span>
-                    </div>
-                    <div class="product-item__price prices">
-                      <div class="price-value price-value-current">
-                        <span>новая цена</span> <strong>1590 руб./шт</strong>
-                      </div>
-                      <div class="price-value price-value-old">
-                        <span>старая цена</span> <del>1690 руб.</del>
-                      </div>
-                    </div>
-                    <div class="product-item__options">
-                      <div class="prop prop-color">
-                        <div class="values">
-                          <div class="value value--active">
-                            <img src="images/color_blue.png" alt="" />
-                          </div>
-                          <div class="value">
-                            <img src="images/color_black-red.png" alt="" />
-                          </div>
-                        </div>
-                      </div>
-                      <div class="prop prop-size">
-                        <div class="values">
-                          <div class="value">
-                            <span>120</span>
-                          </div>
-                          <div class="value">
-                            <span>125</span>
-                          </div>
-                          <div class="value">
-                            <span>130</span>
-                          </div>
-                          <div class="value value--active">
-                            <span>135</span>
-                          </div>
-                          <div class="value">
-                            <span>140</span>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="product-item__buttons">
-                    <button class="btn btn-primary add-to-cart">Купить</button>
-                    <button class="btn btn-link quick-buy">
-                      Купить в 1 клик
-                    </button>
-                  </div>
+            </div>
+            <div class="prop prop-size">
+              <div class="values">
+                <div class="value">
+                  <span>120</span>
                 </div>
-              </div>
-              <div class="product-list__item product-item">
-                <div class="item-inner">
-                  <div class="item-inner__top">
-                    <div class="product-item__stickers">
-                      <div class="sticker sticker-hit">
-                        <span>Хит</span>
-                      </div>
-                      <div class="sticker sticker-promo">
-                        <span>Акция!</span>
-                      </div>
-                    </div>
-                    <div class="product-item__discont">
-                      <span>-10%</span>
-                    </div>
-                    <div class="product-item__tools">
-                      <a title="Добавить в избранное" class="btn-like"><i class="appicon appicon-heart"></i></a>
-                      <a title="Сравнить" class="btn-compare"><i class="appicon appicon-compare"></i></a>
-                    </div>
-                    <div class="product-item__images">
-                      <div class="item-image">
-                        <a href="product.html">
-                          <img src="images/demo/product_img3-190x190.jpg" alt="Шорты Ridge III"
-                            title="Шорты Ridge III" />
-                        </a>
-                      </div>
-                    </div>
-                    <div class="product-item__quick-show">
-                      <a class="btn-quick-show">Быстрый просмотр</a>
-                    </div>
-                  </div>
-                  <div class="item-inner__main">
-                    <div class="product-item__title">
-                      <a href="product.html">Самбовки, натуральная кожа (черно-красные) Е016</a>
-                    </div>
-                    <div class="product-item__rate">
-                      <div class="stars star-3"></div>
-                    </div>
-                    <div class="product-item__stock">
-                      <span class="out-of-stock">
-                        <i class="fas fa-check"></i>
-                        Скоро закончится
-                      </span>
-                    </div>
-                    <div class="product-item__price prices">
-                      <div class="price-value price-value-current">
-                        <span>новая цена</span> <strong>1590 руб./шт</strong>
-                      </div>
-                      <div class="price-value price-value-old">
-                        <span>старая цена</span> <del>1690 руб.</del>
-                      </div>
-                    </div>
-                    <div class="product-item__options">
-                      <div class="prop prop-color">
-                        <div class="values">
-                          <div class="value value--active">
-                            <img src="images/color_white.png" alt="" />
-                          </div>
-                          <div class="value">
-                            <img src="images/color_blue.png" alt="" />
-                          </div>
-                        </div>
-                      </div>
-                      <div class="prop prop-size">
-                        <div class="values">
-                          <div class="value">
-                            <span>120</span>
-                          </div>
-                          <div class="value value--active">
-                            <span>125</span>
-                          </div>
-                          <div class="value">
-                            <span>130</span>
-                          </div>
-                          <div class="value">
-                            <span>135</span>
-                          </div>
-                          <div class="value">
-                            <span>140</span>
-                          </div>
-                          <div class="value">
-                            <span>145</span>
-                          </div>
-                          <div class="value">
-                            <span>145</span>
-                          </div>
-                          <div class="value">
-                            <span>150</span>
-                          </div>
-                          <div class="value">
-                            <span>155</span>
-                          </div>
-                          <div class="value">
-                            <span>160</span>
-                          </div>
-                          <div class="value">
-                            <span>165</span>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="product-item__buttons">
-                    <button class="btn btn-primary add-to-cart">Купить</button>
-                    <button class="btn btn-link quick-buy">
-                      Купить в 1 клик
-                    </button>
-                  </div>
+                <div class="value value--active">
+                  <span>125</span>
                 </div>
-              </div>
-              <div class="product-list__item product-item">
-                <div class="item-inner">
-                  <div class="item-inner__top">
-                    <div class="product-item__stickers">
-                      <div class="sticker sticker-hit">
-                        <span>Хит</span>
-                      </div>
-                      <div class="sticker sticker-recommend">
-                        <span>Советуем!</span>
-                      </div>
-                    </div>
-                    <div class="product-item__discont">
-                      <span>-15%</span>
-                    </div>
-                    <div class="product-item__tools">
-                      <a title="Добавить в избранное" class="btn-like"><i class="appicon appicon-heart"></i></a>
-                      <a title="Сравнить" class="btn-compare"><i class="appicon appicon-compare"></i></a>
-                    </div>
-                    <div class="product-item__images">
-                      <div class="item-image">
-                        <a href="product.html">
-                          <img src="images/demo/product_img1-190x190.jpg" alt="Шорты Ridge III"
-                            title="Шорты Ridge III" />
-                        </a>
-                      </div>
-                      <div class="item-image">
-                        <a href="product.html">
-                          <img src="images/demo/product_img3-190x190.jpg" alt="Шорты Ridge III"
-                            title="Шорты Ridge III" />
-                        </a>
-                      </div>
-                      <div class="item-image">
-                        <a href="product.html">
-                          <img src="images/demo/product_img2-190x190.jpg" alt="Шорты Ridge III"
-                            title="Шорты Ridge III" />
-                        </a>
-                      </div>
-                    </div>
-                    <div class="product-item__quick-show">
-                      <a class="btn-quick-show">Быстрый просмотр</a>
-                    </div>
-                  </div>
-                  <div class="item-inner__main">
-                    <div class="product-item__title">
-                      <a href="product.html">Кимоно для дзюдо “CAPRICE”</a>
-                    </div>
-                    <div class="product-item__rate">
-                      <div class="stars star-2"></div>
-                      <span>3 отзыва</span>
-                    </div>
-                    <div class="product-item__stock">
-                      <span class="in-stock">
-                        <i class="fas fa-check"></i>
-                        В наличии
-                      </span>
-                    </div>
-                    <div class="product-item__price prices">
-                      <div class="price-value price-value-current">
-                        <span>новая цена</span> <strong>1590 руб./шт</strong>
-                      </div>
-                      <div class="price-value price-value-old">
-                        <span>старая цена</span> <del>1690 руб.</del>
-                      </div>
-                    </div>
-                    <div class="product-item__options">
-                      <div class="prop prop-color">
-                        <div class="values">
-                          <div class="value value--active">
-                            <img src="images/color_black-red.png" alt="" />
-                          </div>
-                          <div class="value">
-                            <img src="images/color_blue.png" alt="" />
-                          </div>
-                          <div class="value">
-                            <img src="images/color_red-white.png" alt="" />
-                          </div>
-                        </div>
-                      </div>
-                      <div class="prop prop-size">
-                        <div class="values">
-                          <div class="value">
-                            <span>120</span>
-                          </div>
-                          <div class="value value--active">
-                            <span>125</span>
-                          </div>
-                          <div class="value">
-                            <span>130</span>
-                          </div>
-                          <div class="value">
-                            <span>135</span>
-                          </div>
-                          <div class="value">
-                            <span>140</span>
-                          </div>
-                          <div class="value">
-                            <span>145</span>
-                          </div>
-                          <div class="value">
-                            <span>150</span>
-                          </div>
-                          <div class="value">
-                            <span>155</span>
-                          </div>
-                          <div class="value">
-                            <span>160</span>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="product-item__buttons">
-                    <button class="btn btn-primary add-to-cart">Купить</button>
-                    <button class="btn btn-link quick-buy">
-                      Купить в 1 клик
-                    </button>
-                  </div>
+                <div class="value">
+                  <span>130</span>
                 </div>
-              </div>
-              <div class="product-list__item product-item product-item--in-cart">
-                <div class="item-inner">
-                  <div class="item-inner__top">
-                    <div class="product-item__stickers">
-                      <div class="sticker sticker-hit">
-                        <span>Хит</span>
-                      </div>
-                      <div class="sticker sticker-recommend">
-                        <span>Советуем!</span>
-                      </div>
-                    </div>
-                    <div class="product-item__discont">
-                      <span>-15%</span>
-                    </div>
-                    <div class="product-item__tools">
-                      <a title="Добавить в избранное" class="btn-like"><i class="appicon appicon-heart"></i></a>
-                      <a title="Сравнить" class="btn-compare"><i class="appicon appicon-compare"></i></a>
-                    </div>
-                    <div class="product-item__images">
-                      <div class="item-image">
-                        <a href="product.html">
-                          <img src="images/demo/product_img1-190x190.jpg" alt="Шорты Ridge III"
-                            title="Шорты Ridge III" />
-                        </a>
-                      </div>
-                      <div class="item-image">
-                        <a href="product.html">
-                          <img src="images/demo/product_img2-190x190.jpg" alt="Шорты Ridge III"
-                            title="Шорты Ridge III" />
-                        </a>
-                      </div>
-                      <div class="item-image">
-                        <a href="product.html">
-                          <img src="images/demo/product_img3-190x190.jpg" alt="Шорты Ridge III"
-                            title="Шорты Ridge III" />
-                        </a>
-                      </div>
-                      <div class="item-image">
-                        <a href="product.html">
-                          <img src="images/demo/product_img1-190x190.jpg" alt="Шорты Ridge III"
-                            title="Шорты Ridge III" />
-                        </a>
-                      </div>
-                    </div>
-                    <div class="product-item__quick-show">
-                      <a class="btn-quick-show">Быстрый просмотр</a>
-                    </div>
-                  </div>
-                  <div class="item-inner__main">
-                    <div class="product-item__title">
-                      <a href="product.html">Кимоно для дзюдо “CAPRICE”</a>
-                    </div>
-                    <div class="product-item__rate">
-                      <div class="stars star-4"></div>
-                      <span>3 отзыва</span>
-                    </div>
-                    <div class="product-item__stock">
-                      <span class="in-stock">
-                        <i class="fas fa-check"></i>
-                        В наличии
-                      </span>
-                    </div>
-                    <div class="product-item__price prices">
-                      <div class="price-value price-value-current">
-                        <span>новая цена</span> <strong>1590 руб./шт</strong>
-                      </div>
-                      <div class="price-value price-value-old">
-                        <span>старая цена</span> <del>1690 руб.</del>
-                      </div>
-                    </div>
-                    <div class="product-item__options">
-                      <div class="prop prop-color">
-                        <div class="values">
-                          <div class="value value--active">
-                            <img src="images/color_black-red.png" alt="" />
-                          </div>
-                          <div class="value">
-                            <img src="images/color_blue.png" alt="" />
-                          </div>
-                          <div class="value">
-                            <img src="images/color_red-white.png" alt="" />
-                          </div>
-                        </div>
-                      </div>
-                      <div class="prop prop-size">
-                        <div class="values">
-                          <div class="value">
-                            <span>120</span>
-                          </div>
-                          <div class="value value--active">
-                            <span>125</span>
-                          </div>
-                          <div class="value">
-                            <span>130</span>
-                          </div>
-                          <div class="value">
-                            <span>135</span>
-                          </div>
-                          <div class="value">
-                            <span>140</span>
-                          </div>
-                          <div class="value">
-                            <span>145</span>
-                          </div>
-                          <div class="value">
-                            <span>150</span>
-                          </div>
-                          <div class="value">
-                            <span>155</span>
-                          </div>
-                          <div class="value">
-                            <span>160</span>
-                          </div>
-                          <div class="value">
-                            <span>165</span>
-                          </div>
-                          <div class="value">
-                            <span>170</span>
-                          </div>
-                          <div class="value">
-                            <span>175</span>
-                          </div>
-                          <div class="value">
-                            <span>180</span>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="product-item__buttons">
-                    <button class="btn btn-primary add-to-cart">Купить</button>
-                    <button class="btn btn-link quick-buy">
-                      Купить в 1 клик
-                    </button>
-                  </div>
+                <div class="value">
+                  <span>135</span>
                 </div>
-              </div>
-              <div class="product-list__item product-item">
-                <div class="item-inner">
-                  <div class="item-inner__top">
-                    <div class="product-item__stickers">
-                      <div class="sticker sticker-hit">
-                        <span>Хит</span>
-                      </div>
-                    </div>
-                    <div class="product-item__discont">
-                      <span>-15%</span>
-                    </div>
-                    <div class="product-item__tools">
-                      <a title="Добавить в избранное" class="btn-like"><i class="appicon appicon-heart"></i></a>
-                      <a title="Сравнить" class="btn-compare"><i class="appicon appicon-compare"></i></a>
-                    </div>
-                    <div class="product-item__images">
-                      <div class="item-image">
-                        <a href="product.html">
-                          <img src="images/demo/product_img2-190x190.jpg" alt="Шорты Ridge III"
-                            title="Шорты Ridge III" />
-                        </a>
-                      </div>
-                    </div>
-                    <div class="product-item__quick-show">
-                      <a class="btn-quick-show">Быстрый просмотр</a>
-                    </div>
-                  </div>
-                  <div class="item-inner__main">
-                    <div class="product-item__title">
-                      <a href="product.html">Кимоно для дзюдо “CAPRICE”</a>
-                    </div>
-                    <div class="product-item__rate">
-                      <div class="stars star-5"></div>
-                    </div>
-                    <div class="product-item__stock">
-                      <span class="in-stock">
-                        <i class="fas fa-check"></i>
-                        В наличии
-                      </span>
-                    </div>
-                    <div class="product-item__price prices">
-                      <div class="price-value price-value-current">
-                        <span>новая цена</span> <strong>1590 руб./шт</strong>
-                      </div>
-                      <div class="price-value price-value-old">
-                        <span>старая цена</span> <del>1690 руб.</del>
-                      </div>
-                    </div>
-                    <div class="product-item__options">
-                      <div class="prop prop-color">
-                        <div class="values">
-                          <div class="value value--active">
-                            <img src="images/color_blue.png" alt="" />
-                          </div>
-                          <div class="value">
-                            <img src="images/color_black-red.png" alt="" />
-                          </div>
-                        </div>
-                      </div>
-                      <div class="prop prop-size">
-                        <div class="values">
-                          <div class="value">
-                            <span>120</span>
-                          </div>
-                          <div class="value">
-                            <span>125</span>
-                          </div>
-                          <div class="value">
-                            <span>130</span>
-                          </div>
-                          <div class="value value--active">
-                            <span>135</span>
-                          </div>
-                          <div class="value">
-                            <span>140</span>
-                          </div>
-                          <div class="value">
-                            <span>145</span>
-                          </div>
-                          <div class="value">
-                            <span>150</span>
-                          </div>
-                          <div class="value">
-                            <span>155</span>
-                          </div>
-                          <div class="value">
-                            <span>160</span>
-                          </div>
-                          <div class="value">
-                            <span>165</span>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="product-item__buttons">
-                    <button class="btn btn-primary add-to-cart">Купить</button>
-                    <button class="btn btn-link quick-buy">
-                      Купить в 1 клик
-                    </button>
-                  </div>
+                <div class="value">
+                  <span>140</span>
                 </div>
-              </div>
-              <div class="product-list__item product-item">
-                <div class="item-inner">
-                  <div class="item-inner__top">
-                    <div class="product-item__stickers">
-                      <div class="sticker sticker-hit">
-                        <span>Хит</span>
-                      </div>
-                      <div class="sticker sticker-promo">
-                        <span>Акция!</span>
-                      </div>
-                    </div>
-                    <div class="product-item__discont">
-                      <span>-10%</span>
-                    </div>
-                    <div class="product-item__tools">
-                      <a title="Добавить в избранное" class="btn-like"><i class="appicon appicon-heart"></i></a>
-                      <a title="Сравнить" class="btn-compare"><i class="appicon appicon-compare"></i></a>
-                    </div>
-                    <div class="product-item__images">
-                      <div class="item-image">
-                        <a href="product.html">
-                          <img src="images/demo/product_img3-190x190.jpg" alt="Шорты Ridge III"
-                            title="Шорты Ridge III" />
-                        </a>
-                      </div>
-                    </div>
-                    <div class="product-item__quick-show">
-                      <a class="btn-quick-show">Быстрый просмотр</a>
-                    </div>
-                  </div>
-                  <div class="item-inner__main">
-                    <div class="product-item__title">
-                      <a href="product.html">Самбовки, натуральная кожа (черно-красные) Е016</a>
-                    </div>
-                    <div class="product-item__rate">
-                      <div class="stars star-3"></div>
-                    </div>
-                    <div class="product-item__stock">
-                      <span class="out-of-stock">
-                        <i class="fas fa-check"></i>
-                        Скоро закончится
-                      </span>
-                    </div>
-                    <div class="product-item__price prices">
-                      <div class="price-value price-value-current">
-                        <span>новая цена</span> <strong>1590 руб./шт</strong>
-                      </div>
-                      <div class="price-value price-value-old">
-                        <span>старая цена</span> <del>1690 руб.</del>
-                      </div>
-                    </div>
-                    <div class="product-item__options">
-                      <div class="prop prop-color">
-                        <div class="values">
-                          <div class="value value--active">
-                            <img src="images/color_white.png" alt="" />
-                          </div>
-                          <div class="value">
-                            <img src="images/color_blue.png" alt="" />
-                          </div>
-                        </div>
-                      </div>
-                      <div class="prop prop-size">
-                        <div class="values">
-                          <div class="value">
-                            <span>120</span>
-                          </div>
-                          <div class="value value--active">
-                            <span>125</span>
-                          </div>
-                          <div class="value">
-                            <span>130</span>
-                          </div>
-                          <div class="value">
-                            <span>135</span>
-                          </div>
-                          <div class="value">
-                            <span>140</span>
-                          </div>
-                          <div class="value">
-                            <span>145</span>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="product-item__buttons">
-                    <button class="btn btn-primary add-to-cart">Купить</button>
-                    <button class="btn btn-link quick-buy">
-                      Купить в 1 клик
-                    </button>
-                  </div>
+                <div class="value">
+                  <span>145</span>
                 </div>
-              </div>
-              <div class="product-list__item product-item">
-                <div class="item-inner">
-                  <div class="item-inner__top">
-                    <div class="product-item__stickers">
-                      <div class="sticker sticker-hit">
-                        <span>Хит</span>
-                      </div>
-                      <div class="sticker sticker-recommend">
-                        <span>Советуем!</span>
-                      </div>
-                    </div>
-                    <div class="product-item__discont">
-                      <span>-15%</span>
-                    </div>
-                    <div class="product-item__tools">
-                      <a title="Добавить в избранное" class="btn-like"><i class="appicon appicon-heart"></i></a>
-                      <a title="Сравнить" class="btn-compare"><i class="appicon appicon-compare"></i></a>
-                    </div>
-                    <div class="product-item__images">
-                      <div class="item-image">
-                        <a href="product.html">
-                          <img src="images/demo/product_img1-190x190.jpg" alt="Шорты Ridge III"
-                            title="Шорты Ridge III" />
-                        </a>
-                      </div>
-                      <div class="item-image">
-                        <a href="product.html">
-                          <img src="images/demo/product_img3-190x190.jpg" alt="Шорты Ridge III"
-                            title="Шорты Ridge III" />
-                        </a>
-                      </div>
-                      <div class="item-image">
-                        <a href="product.html">
-                          <img src="images/demo/product_img2-190x190.jpg" alt="Шорты Ridge III"
-                            title="Шорты Ridge III" />
-                        </a>
-                      </div>
-                    </div>
-                    <div class="product-item__quick-show">
-                      <a class="btn-quick-show">Быстрый просмотр</a>
-                    </div>
-                  </div>
-                  <div class="item-inner__main">
-                    <div class="product-item__title">
-                      <a href="product.html">Кимоно для дзюдо “CAPRICE”</a>
-                    </div>
-                    <div class="product-item__rate">
-                      <div class="stars star-2"></div>
-                      <span>3 отзыва</span>
-                    </div>
-                    <div class="product-item__stock">
-                      <span class="in-stock">
-                        <i class="fas fa-check"></i>
-                        В наличии
-                      </span>
-                    </div>
-                    <div class="product-item__price prices">
-                      <div class="price-value price-value-current">
-                        <span>новая цена</span> <strong>1590 руб./шт</strong>
-                      </div>
-                      <div class="price-value price-value-old">
-                        <span>старая цена</span> <del>1690 руб.</del>
-                      </div>
-                    </div>
-                    <div class="product-item__options">
-                      <div class="prop prop-color">
-                        <div class="values">
-                          <div class="value value--active">
-                            <img src="images/color_black-red.png" alt="" />
-                          </div>
-                          <div class="value">
-                            <img src="images/color_blue.png" alt="" />
-                          </div>
-                          <div class="value">
-                            <img src="images/color_red-white.png" alt="" />
-                          </div>
-                        </div>
-                      </div>
-                      <div class="prop prop-size">
-                        <div class="values">
-                          <div class="value">
-                            <span>120</span>
-                          </div>
-                          <div class="value value--active">
-                            <span>125</span>
-                          </div>
-                          <div class="value">
-                            <span>130</span>
-                          </div>
-                          <div class="value">
-                            <span>135</span>
-                          </div>
-                          <div class="value">
-                            <span>140</span>
-                          </div>
-                          <div class="value">
-                            <span>145</span>
-                          </div>
-                          <div class="value">
-                            <span>150</span>
-                          </div>
-                          <div class="value">
-                            <span>155</span>
-                          </div>
-                          <div class="value">
-                            <span>160</span>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="product-item__buttons">
-                    <button class="btn btn-primary add-to-cart">Купить</button>
-                    <button class="btn btn-link quick-buy">
-                      Купить в 1 клик
-                    </button>
-                  </div>
+                <div class="value">
+                  <span>150</span>
+                </div>
+                <div class="value">
+                  <span>155</span>
+                </div>
+                <div class="value">
+                  <span>160</span>
+                </div>
+                <div class="value">
+                  <span>165</span>
+                </div>
+                <div class="value">
+                  <span>170</span>
+                </div>
+                <div class="value">
+                  <span>175</span>
+                </div>
+                <div class="value">
+                  <span>180</span>
                 </div>
               </div>
             </div>
           </div>
-          <div id="recommed" class="tab-pane fade">
-            <div class="product-list">
-              <div class="product-list__item product-item">
-                <div class="item-inner">
-                  <div class="item-inner__top">
-                    <div class="product-item__stickers">
-                      <div class="sticker sticker-hit">
-                        <span>Хит</span>
-                      </div>
-                      <div class="sticker sticker-recommend">
-                        <span>Советуем!</span>
-                      </div>
-                    </div>
-                    <div class="product-item__discont">
-                      <span>-15%</span>
-                    </div>
-                    <div class="product-item__tools">
-                      <a title="Добавить в избранное" class="btn-like"><i class="appicon appicon-heart"></i></a>
-                      <a title="Сравнить" class="btn-compare"><i class="appicon appicon-compare"></i></a>
-                    </div>
-                    <div class="product-item__images">
-                      <div class="item-image">
-                        <a href="product.html">
-                          <img src="images/demo/product_img3-190x190.jpg" alt="Шорты Ridge III"
-                            title="Шорты Ridge III" />
-                        </a>
-                      </div>
-                      <div class="item-image">
-                        <a href="product.html">
-                          <img src="images/demo/product_img1-190x190.jpg" alt="Шорты Ridge III"
-                            title="Шорты Ridge III" />
-                        </a>
-                      </div>
-                      <div class="item-image">
-                        <a href="product.html">
-                          <img src="images/demo/product_img2-190x190.jpg" alt="Шорты Ridge III"
-                            title="Шорты Ridge III" />
-                        </a>
-                      </div>
-                      <div class="item-image">
-                        <a href="product.html">
-                          <img src="images/demo/product_img3-190x190.jpg" alt="Шорты Ridge III"
-                            title="Шорты Ridge III" />
-                        </a>
-                      </div>
-                    </div>
-                    <div class="product-item__quick-show">
-                      <a class="btn-quick-show">Быстрый просмотр</a>
-                    </div>
-                  </div>
-                  <div class="item-inner__main">
-                    <div class="product-item__title">
-                      <a href="product.html">Кимоно для дзюдо “CAPRICE”</a>
-                    </div>
-                    <div class="product-item__rate">
-                      <div class="stars star-4"></div>
-                      <span>3 отзыва</span>
-                    </div>
-                    <div class="product-item__stock">
-                      <span class="in-stock">
-                        <i class="fas fa-check"></i>
-                        В наличии
-                      </span>
-                    </div>
-                    <div class="product-item__price prices">
-                      <div class="price-value price-value-current">
-                        <span>новая цена</span> <strong>1590 руб./шт</strong>
-                      </div>
-                      <div class="price-value price-value-old">
-                        <span>старая цена</span> <del>1690 руб.</del>
-                      </div>
-                    </div>
-                    <div class="product-item__options">
-                      <div class="prop prop-color">
-                        <div class="values">
-                          <div class="value value--active">
-                            <img src="images/color_black-red.png" alt="" />
-                          </div>
-                          <div class="value">
-                            <img src="images/color_blue.png" alt="" />
-                          </div>
-                          <div class="value">
-                            <img src="images/color_red-white.png" alt="" />
-                          </div>
-                        </div>
-                      </div>
-                      <div class="prop prop-size">
-                        <div class="values">
-                          <div class="value">
-                            <span>120</span>
-                          </div>
-                          <div class="value value--active">
-                            <span>125</span>
-                          </div>
-                          <div class="value">
-                            <span>130</span>
-                          </div>
-                          <div class="value">
-                            <span>135</span>
-                          </div>
-                          <div class="value">
-                            <span>140</span>
-                          </div>
-                          <div class="value">
-                            <span>145</span>
-                          </div>
-                          <div class="value">
-                            <span>150</span>
-                          </div>
-                          <div class="value">
-                            <span>155</span>
-                          </div>
-                          <div class="value">
-                            <span>160</span>
-                          </div>
-                          <div class="value">
-                            <span>165</span>
-                          </div>
-                          <div class="value">
-                            <span>170</span>
-                          </div>
-                          <div class="value">
-                            <span>175</span>
-                          </div>
-                          <div class="value">
-                            <span>180</span>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="product-item__buttons">
-                    <button class="btn btn-primary add-to-cart">Купить</button>
-                    <button class="btn btn-link quick-buy">
-                      Купить в 1 клик
-                    </button>
-                  </div>
+        </div>
+        <div class="product-item__buttons">
+          <button class="btn btn-primary add-to-cart">Купить</button>
+          <button class="btn btn-link quick-buy">
+            Купить в 1 клик
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="product-list__item product-item">
+      <div class="item-inner">
+        <div class="item-inner__top">
+          <div class="product-item__stickers">
+            <div class="sticker sticker-hit">
+              <span>Хит</span>
+            </div>
+          </div>
+          <div class="product-item__discont">
+            <span>-15%</span>
+          </div>
+          <div class="product-item__tools">
+            <a title="Добавить в избранное" class="btn-like"><i class="appicon appicon-heart"></i></a>
+            <a title="Сравнить" class="btn-compare"><i class="appicon appicon-compare"></i></a>
+          </div>
+          <div class="product-item__images">
+            <div class="item-image">
+              <a href="product.html">
+                <img src="images/demo/product_img2-190x190.jpg" alt="Шорты Ridge III"
+                  title="Шорты Ridge III" />
+              </a>
+            </div>
+          </div>
+          <div class="product-item__quick-show">
+            <a class="btn-quick-show">Быстрый просмотр</a>
+          </div>
+        </div>
+        <div class="item-inner__main">
+          <div class="product-item__title">
+            <a href="product.html">Кимоно для дзюдо “CAPRICE”</a>
+          </div>
+          <div class="product-item__rate">
+            <div class="stars star-5"></div>
+          </div>
+          <div class="product-item__stock">
+            <span class="in-stock">
+              <i class="fas fa-check"></i>
+              В наличии
+            </span>
+          </div>
+          <div class="product-item__price prices">
+            <div class="price-value price-value-current">
+              <span>новая цена</span> <strong>1590 руб./шт</strong>
+            </div>
+            <div class="price-value price-value-old">
+              <span>старая цена</span> <del>1690 руб.</del>
+            </div>
+          </div>
+          <div class="product-item__options">
+            <div class="prop prop-color">
+              <div class="values">
+                <div class="value value--active">
+                  <img src="images/color_blue.png" alt="" />
                 </div>
-              </div>
-              <div class="product-list__item product-item">
-                <div class="item-inner">
-                  <div class="item-inner__top">
-                    <div class="product-item__stickers">
-                      <div class="sticker sticker-hit">
-                        <span>Хит</span>
-                      </div>
-                    </div>
-                    <div class="product-item__discont">
-                      <span>-15%</span>
-                    </div>
-                    <div class="product-item__tools">
-                      <a title="Добавить в избранное" class="btn-like"><i class="appicon appicon-heart"></i></a>
-                      <a title="Сравнить" class="btn-compare"><i class="appicon appicon-compare"></i></a>
-                    </div>
-                    <div class="product-item__images">
-                      <div class="item-image">
-                        <a href="product.html">
-                          <img src="images/demo/product_img3-190x190.jpg" alt="Шорты Ridge III"
-                            title="Шорты Ridge III" />
-                        </a>
-                      </div>
-                    </div>
-                    <div class="product-item__quick-show">
-                      <a class="btn-quick-show">Быстрый просмотр</a>
-                    </div>
-                  </div>
-                  <div class="item-inner__main">
-                    <div class="product-item__title">
-                      <a href="product.html">Кимоно для дзюдо “CAPRICE”</a>
-                    </div>
-                    <div class="product-item__rate">
-                      <div class="stars star-5"></div>
-                    </div>
-                    <div class="product-item__stock">
-                      <span class="in-stock">
-                        <i class="fas fa-check"></i>
-                        В наличии
-                      </span>
-                    </div>
-                    <div class="product-item__price prices">
-                      <div class="price-value price-value-current">
-                        <span>новая цена</span> <strong>1590 руб./шт</strong>
-                      </div>
-                      <div class="price-value price-value-old">
-                        <span>старая цена</span> <del>1690 руб.</del>
-                      </div>
-                    </div>
-                    <div class="product-item__options">
-                      <div class="prop prop-color">
-                        <div class="values">
-                          <div class="value value--active">
-                            <img src="images/color_blue.png" alt="" />
-                          </div>
-                          <div class="value">
-                            <img src="images/color_black-red.png" alt="" />
-                          </div>
-                        </div>
-                      </div>
-                      <div class="prop prop-size">
-                        <div class="values">
-                          <div class="value">
-                            <span>120</span>
-                          </div>
-                          <div class="value">
-                            <span>125</span>
-                          </div>
-                          <div class="value">
-                            <span>130</span>
-                          </div>
-                          <div class="value value--active">
-                            <span>135</span>
-                          </div>
-                          <div class="value">
-                            <span>140</span>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="product-item__buttons">
-                    <button class="btn btn-primary add-to-cart">Купить</button>
-                    <button class="btn btn-link quick-buy">
-                      Купить в 1 клик
-                    </button>
-                  </div>
-                </div>
-              </div>
-              <div class="product-list__item product-item">
-                <div class="item-inner">
-                  <div class="item-inner__top">
-                    <div class="product-item__stickers">
-                      <div class="sticker sticker-hit">
-                        <span>Хит</span>
-                      </div>
-                      <div class="sticker sticker-promo">
-                        <span>Акция!</span>
-                      </div>
-                    </div>
-                    <div class="product-item__discont">
-                      <span>-10%</span>
-                    </div>
-                    <div class="product-item__tools">
-                      <a title="Добавить в избранное" class="btn-like"><i class="appicon appicon-heart"></i></a>
-                      <a title="Сравнить" class="btn-compare"><i class="appicon appicon-compare"></i></a>
-                    </div>
-                    <div class="product-item__images">
-                      <div class="item-image">
-                        <a href="product.html">
-                          <img src="images/demo/product_img1-190x190.jpg" alt="Шорты Ridge III"
-                            title="Шорты Ridge III" />
-                        </a>
-                      </div>
-                    </div>
-                    <div class="product-item__quick-show">
-                      <a class="btn-quick-show">Быстрый просмотр</a>
-                    </div>
-                  </div>
-                  <div class="item-inner__main">
-                    <div class="product-item__title">
-                      <a href="product.html">Самбовки, натуральная кожа (черно-красные) Е016</a>
-                    </div>
-                    <div class="product-item__rate">
-                      <div class="stars star-3"></div>
-                    </div>
-                    <div class="product-item__stock">
-                      <span class="out-of-stock">
-                        <i class="fas fa-check"></i>
-                        Скоро закончится
-                      </span>
-                    </div>
-                    <div class="product-item__price prices">
-                      <div class="price-value price-value-current">
-                        <span>новая цена</span> <strong>1590 руб./шт</strong>
-                      </div>
-                      <div class="price-value price-value-old">
-                        <span>старая цена</span> <del>1690 руб.</del>
-                      </div>
-                    </div>
-                    <div class="product-item__options">
-                      <div class="prop prop-color">
-                        <div class="values">
-                          <div class="value value--active">
-                            <img src="images/color_white.png" alt="" />
-                          </div>
-                          <div class="value">
-                            <img src="images/color_blue.png" alt="" />
-                          </div>
-                        </div>
-                      </div>
-                      <div class="prop prop-size">
-                        <div class="values">
-                          <div class="value">
-                            <span>120</span>
-                          </div>
-                          <div class="value value--active">
-                            <span>125</span>
-                          </div>
-                          <div class="value">
-                            <span>130</span>
-                          </div>
-                          <div class="value">
-                            <span>135</span>
-                          </div>
-                          <div class="value">
-                            <span>140</span>
-                          </div>
-                          <div class="value">
-                            <span>145</span>
-                          </div>
-                          <div class="value">
-                            <span>145</span>
-                          </div>
-                          <div class="value">
-                            <span>150</span>
-                          </div>
-                          <div class="value">
-                            <span>155</span>
-                          </div>
-                          <div class="value">
-                            <span>160</span>
-                          </div>
-                          <div class="value">
-                            <span>165</span>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="product-item__buttons">
-                    <button class="btn btn-primary add-to-cart">Купить</button>
-                    <button class="btn btn-link quick-buy">
-                      Купить в 1 клик
-                    </button>
-                  </div>
-                </div>
-              </div>
-              <div class="product-list__item product-item">
-                <div class="item-inner">
-                  <div class="item-inner__top">
-                    <div class="product-item__stickers">
-                      <div class="sticker sticker-hit">
-                        <span>Хит</span>
-                      </div>
-                      <div class="sticker sticker-recommend">
-                        <span>Советуем!</span>
-                      </div>
-                    </div>
-                    <div class="product-item__discont">
-                      <span>-15%</span>
-                    </div>
-                    <div class="product-item__tools">
-                      <a title="Добавить в избранное" class="btn-like"><i class="appicon appicon-heart"></i></a>
-                      <a title="Сравнить" class="btn-compare"><i class="appicon appicon-compare"></i></a>
-                    </div>
-                    <div class="product-item__images">
-                      <div class="item-image">
-                        <a href="product.html">
-                          <img src="images/demo/product_img1-190x190.jpg" alt="Шорты Ridge III"
-                            title="Шорты Ridge III" />
-                        </a>
-                      </div>
-                      <div class="item-image">
-                        <a href="product.html">
-                          <img src="images/demo/product_img3-190x190.jpg" alt="Шорты Ridge III"
-                            title="Шорты Ridge III" />
-                        </a>
-                      </div>
-                      <div class="item-image">
-                        <a href="product.html">
-                          <img src="images/demo/product_img2-190x190.jpg" alt="Шорты Ridge III"
-                            title="Шорты Ridge III" />
-                        </a>
-                      </div>
-                    </div>
-                    <div class="product-item__quick-show">
-                      <a class="btn-quick-show">Быстрый просмотр</a>
-                    </div>
-                  </div>
-                  <div class="item-inner__main">
-                    <div class="product-item__title">
-                      <a href="product.html">Кимоно для дзюдо “CAPRICE”</a>
-                    </div>
-                    <div class="product-item__rate">
-                      <div class="stars star-2"></div>
-                      <span>3 отзыва</span>
-                    </div>
-                    <div class="product-item__stock">
-                      <span class="in-stock">
-                        <i class="fas fa-check"></i>
-                        В наличии
-                      </span>
-                    </div>
-                    <div class="product-item__price prices">
-                      <div class="price-value price-value-current">
-                        <span>новая цена</span> <strong>1590 руб./шт</strong>
-                      </div>
-                      <div class="price-value price-value-old">
-                        <span>старая цена</span> <del>1690 руб.</del>
-                      </div>
-                    </div>
-                    <div class="product-item__options">
-                      <div class="prop prop-color">
-                        <div class="values">
-                          <div class="value value--active">
-                            <img src="images/color_black-red.png" alt="" />
-                          </div>
-                          <div class="value">
-                            <img src="images/color_blue.png" alt="" />
-                          </div>
-                          <div class="value">
-                            <img src="images/color_red-white.png" alt="" />
-                          </div>
-                        </div>
-                      </div>
-                      <div class="prop prop-size">
-                        <div class="values">
-                          <div class="value">
-                            <span>120</span>
-                          </div>
-                          <div class="value value--active">
-                            <span>125</span>
-                          </div>
-                          <div class="value">
-                            <span>130</span>
-                          </div>
-                          <div class="value">
-                            <span>135</span>
-                          </div>
-                          <div class="value">
-                            <span>140</span>
-                          </div>
-                          <div class="value">
-                            <span>145</span>
-                          </div>
-                          <div class="value">
-                            <span>150</span>
-                          </div>
-                          <div class="value">
-                            <span>155</span>
-                          </div>
-                          <div class="value">
-                            <span>160</span>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="product-item__buttons">
-                    <button class="btn btn-primary add-to-cart">Купить</button>
-                    <button class="btn btn-link quick-buy">
-                      Купить в 1 клик
-                    </button>
-                  </div>
-                </div>
-              </div>
-              <div class="product-list__item product-item product-item--in-cart">
-                <div class="item-inner">
-                  <div class="item-inner__top">
-                    <div class="product-item__stickers">
-                      <div class="sticker sticker-hit">
-                        <span>Хит</span>
-                      </div>
-                      <div class="sticker sticker-recommend">
-                        <span>Советуем!</span>
-                      </div>
-                    </div>
-                    <div class="product-item__discont">
-                      <span>-15%</span>
-                    </div>
-                    <div class="product-item__tools">
-                      <a title="Добавить в избранное" class="btn-like"><i class="appicon appicon-heart"></i></a>
-                      <a title="Сравнить" class="btn-compare"><i class="appicon appicon-compare"></i></a>
-                    </div>
-                    <div class="product-item__images">
-                      <div class="item-image">
-                        <a href="product.html">
-                          <img src="images/demo/product_img1-190x190.jpg" alt="Шорты Ridge III"
-                            title="Шорты Ridge III" />
-                        </a>
-                      </div>
-                      <div class="item-image">
-                        <a href="product.html">
-                          <img src="images/demo/product_img2-190x190.jpg" alt="Шорты Ridge III"
-                            title="Шорты Ridge III" />
-                        </a>
-                      </div>
-                      <div class="item-image">
-                        <a href="product.html">
-                          <img src="images/demo/product_img3-190x190.jpg" alt="Шорты Ridge III"
-                            title="Шорты Ridge III" />
-                        </a>
-                      </div>
-                      <div class="item-image">
-                        <a href="product.html">
-                          <img src="images/demo/product_img1-190x190.jpg" alt="Шорты Ridge III"
-                            title="Шорты Ridge III" />
-                        </a>
-                      </div>
-                    </div>
-                    <div class="product-item__quick-show">
-                      <a class="btn-quick-show">Быстрый просмотр</a>
-                    </div>
-                  </div>
-                  <div class="item-inner__main">
-                    <div class="product-item__title">
-                      <a href="product.html">Кимоно для дзюдо “CAPRICE”</a>
-                    </div>
-                    <div class="product-item__rate">
-                      <div class="stars star-4"></div>
-                      <span>3 отзыва</span>
-                    </div>
-                    <div class="product-item__stock">
-                      <span class="in-stock">
-                        <i class="fas fa-check"></i>
-                        В наличии
-                      </span>
-                    </div>
-                    <div class="product-item__price prices">
-                      <div class="price-value price-value-current">
-                        <span>новая цена</span> <strong>1590 руб./шт</strong>
-                      </div>
-                      <div class="price-value price-value-old">
-                        <span>старая цена</span> <del>1690 руб.</del>
-                      </div>
-                    </div>
-                    <div class="product-item__options">
-                      <div class="prop prop-color">
-                        <div class="values">
-                          <div class="value value--active">
-                            <img src="images/color_black-red.png" alt="" />
-                          </div>
-                          <div class="value">
-                            <img src="images/color_blue.png" alt="" />
-                          </div>
-                          <div class="value">
-                            <img src="images/color_red-white.png" alt="" />
-                          </div>
-                        </div>
-                      </div>
-                      <div class="prop prop-size">
-                        <div class="values">
-                          <div class="value">
-                            <span>120</span>
-                          </div>
-                          <div class="value value--active">
-                            <span>125</span>
-                          </div>
-                          <div class="value">
-                            <span>130</span>
-                          </div>
-                          <div class="value">
-                            <span>135</span>
-                          </div>
-                          <div class="value">
-                            <span>140</span>
-                          </div>
-                          <div class="value">
-                            <span>145</span>
-                          </div>
-                          <div class="value">
-                            <span>150</span>
-                          </div>
-                          <div class="value">
-                            <span>155</span>
-                          </div>
-                          <div class="value">
-                            <span>160</span>
-                          </div>
-                          <div class="value">
-                            <span>165</span>
-                          </div>
-                          <div class="value">
-                            <span>170</span>
-                          </div>
-                          <div class="value">
-                            <span>175</span>
-                          </div>
-                          <div class="value">
-                            <span>180</span>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="product-item__buttons">
-                    <button class="btn btn-primary add-to-cart">Купить</button>
-                    <button class="btn btn-link quick-buy">
-                      Купить в 1 клик
-                    </button>
-                  </div>
-                </div>
-              </div>
-              <div class="product-list__item product-item">
-                <div class="item-inner">
-                  <div class="item-inner__top">
-                    <div class="product-item__stickers">
-                      <div class="sticker sticker-hit">
-                        <span>Хит</span>
-                      </div>
-                    </div>
-                    <div class="product-item__discont">
-                      <span>-15%</span>
-                    </div>
-                    <div class="product-item__tools">
-                      <a title="Добавить в избранное" class="btn-like"><i class="appicon appicon-heart"></i></a>
-                      <a title="Сравнить" class="btn-compare"><i class="appicon appicon-compare"></i></a>
-                    </div>
-                    <div class="product-item__images">
-                      <div class="item-image">
-                        <a href="product.html">
-                          <img src="images/demo/product_img2-190x190.jpg" alt="Шорты Ridge III"
-                            title="Шорты Ridge III" />
-                        </a>
-                      </div>
-                    </div>
-                    <div class="product-item__quick-show">
-                      <a class="btn-quick-show">Быстрый просмотр</a>
-                    </div>
-                  </div>
-                  <div class="item-inner__main">
-                    <div class="product-item__title">
-                      <a href="product.html">Кимоно для дзюдо “CAPRICE”</a>
-                    </div>
-                    <div class="product-item__rate">
-                      <div class="stars star-5"></div>
-                    </div>
-                    <div class="product-item__stock">
-                      <span class="in-stock">
-                        <i class="fas fa-check"></i>
-                        В наличии
-                      </span>
-                    </div>
-                    <div class="product-item__price prices">
-                      <div class="price-value price-value-current">
-                        <span>новая цена</span> <strong>1590 руб./шт</strong>
-                      </div>
-                      <div class="price-value price-value-old">
-                        <span>старая цена</span> <del>1690 руб.</del>
-                      </div>
-                    </div>
-                    <div class="product-item__options">
-                      <div class="prop prop-color">
-                        <div class="values">
-                          <div class="value value--active">
-                            <img src="images/color_blue.png" alt="" />
-                          </div>
-                          <div class="value">
-                            <img src="images/color_black-red.png" alt="" />
-                          </div>
-                        </div>
-                      </div>
-                      <div class="prop prop-size">
-                        <div class="values">
-                          <div class="value">
-                            <span>120</span>
-                          </div>
-                          <div class="value">
-                            <span>125</span>
-                          </div>
-                          <div class="value">
-                            <span>130</span>
-                          </div>
-                          <div class="value value--active">
-                            <span>135</span>
-                          </div>
-                          <div class="value">
-                            <span>140</span>
-                          </div>
-                          <div class="value">
-                            <span>145</span>
-                          </div>
-                          <div class="value">
-                            <span>150</span>
-                          </div>
-                          <div class="value">
-                            <span>155</span>
-                          </div>
-                          <div class="value">
-                            <span>160</span>
-                          </div>
-                          <div class="value">
-                            <span>165</span>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="product-item__buttons">
-                    <button class="btn btn-primary add-to-cart">Купить</button>
-                    <button class="btn btn-link quick-buy">
-                      Купить в 1 клик
-                    </button>
-                  </div>
-                </div>
-              </div>
-              <div class="product-list__item product-item">
-                <div class="item-inner">
-                  <div class="item-inner__top">
-                    <div class="product-item__stickers">
-                      <div class="sticker sticker-hit">
-                        <span>Хит</span>
-                      </div>
-                      <div class="sticker sticker-promo">
-                        <span>Акция!</span>
-                      </div>
-                    </div>
-                    <div class="product-item__discont">
-                      <span>-10%</span>
-                    </div>
-                    <div class="product-item__tools">
-                      <a title="Добавить в избранное" class="btn-like"><i class="appicon appicon-heart"></i></a>
-                      <a title="Сравнить" class="btn-compare"><i class="appicon appicon-compare"></i></a>
-                    </div>
-                    <div class="product-item__images">
-                      <div class="item-image">
-                        <a href="product.html">
-                          <img src="images/demo/product_img3-190x190.jpg" alt="Шорты Ridge III"
-                            title="Шорты Ridge III" />
-                        </a>
-                      </div>
-                    </div>
-                    <div class="product-item__quick-show">
-                      <a class="btn-quick-show">Быстрый просмотр</a>
-                    </div>
-                  </div>
-                  <div class="item-inner__main">
-                    <div class="product-item__title">
-                      <a href="product.html">Самбовки, натуральная кожа (черно-красные) Е016</a>
-                    </div>
-                    <div class="product-item__rate">
-                      <div class="stars star-3"></div>
-                    </div>
-                    <div class="product-item__stock">
-                      <span class="out-of-stock">
-                        <i class="fas fa-check"></i>
-                        Скоро закончится
-                      </span>
-                    </div>
-                    <div class="product-item__price prices">
-                      <div class="price-value price-value-current">
-                        <span>новая цена</span> <strong>1590 руб./шт</strong>
-                      </div>
-                      <div class="price-value price-value-old">
-                        <span>старая цена</span> <del>1690 руб.</del>
-                      </div>
-                    </div>
-                    <div class="product-item__options">
-                      <div class="prop prop-color">
-                        <div class="values">
-                          <div class="value value--active">
-                            <img src="images/color_white.png" alt="" />
-                          </div>
-                          <div class="value">
-                            <img src="images/color_blue.png" alt="" />
-                          </div>
-                        </div>
-                      </div>
-                      <div class="prop prop-size">
-                        <div class="values">
-                          <div class="value">
-                            <span>120</span>
-                          </div>
-                          <div class="value value--active">
-                            <span>125</span>
-                          </div>
-                          <div class="value">
-                            <span>130</span>
-                          </div>
-                          <div class="value">
-                            <span>135</span>
-                          </div>
-                          <div class="value">
-                            <span>140</span>
-                          </div>
-                          <div class="value">
-                            <span>145</span>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="product-item__buttons">
-                    <button class="btn btn-primary add-to-cart">Купить</button>
-                    <button class="btn btn-link quick-buy">
-                      Купить в 1 клик
-                    </button>
-                  </div>
-                </div>
-              </div>
-              <div class="product-list__item product-item">
-                <div class="item-inner">
-                  <div class="item-inner__top">
-                    <div class="product-item__stickers">
-                      <div class="sticker sticker-hit">
-                        <span>Хит</span>
-                      </div>
-                      <div class="sticker sticker-recommend">
-                        <span>Советуем!</span>
-                      </div>
-                    </div>
-                    <div class="product-item__discont">
-                      <span>-15%</span>
-                    </div>
-                    <div class="product-item__tools">
-                      <a title="Добавить в избранное" class="btn-like"><i class="appicon appicon-heart"></i></a>
-                      <a title="Сравнить" class="btn-compare"><i class="appicon appicon-compare"></i></a>
-                    </div>
-                    <div class="product-item__images">
-                      <div class="item-image">
-                        <a href="product.html">
-                          <img src="images/demo/product_img1-190x190.jpg" alt="Шорты Ridge III"
-                            title="Шорты Ridge III" />
-                        </a>
-                      </div>
-                      <div class="item-image">
-                        <a href="product.html">
-                          <img src="images/demo/product_img3-190x190.jpg" alt="Шорты Ridge III"
-                            title="Шорты Ridge III" />
-                        </a>
-                      </div>
-                      <div class="item-image">
-                        <a href="product.html">
-                          <img src="images/demo/product_img2-190x190.jpg" alt="Шорты Ridge III"
-                            title="Шорты Ridge III" />
-                        </a>
-                      </div>
-                    </div>
-                    <div class="product-item__quick-show">
-                      <a class="btn-quick-show">Быстрый просмотр</a>
-                    </div>
-                  </div>
-                  <div class="item-inner__main">
-                    <div class="product-item__title">
-                      <a href="product.html">Кимоно для дзюдо “CAPRICE”</a>
-                    </div>
-                    <div class="product-item__rate">
-                      <div class="stars star-2"></div>
-                      <span>3 отзыва</span>
-                    </div>
-                    <div class="product-item__stock">
-                      <span class="in-stock">
-                        <i class="fas fa-check"></i>
-                        В наличии
-                      </span>
-                    </div>
-                    <div class="product-item__price prices">
-                      <div class="price-value price-value-current">
-                        <span>новая цена</span> <strong>1590 руб./шт</strong>
-                      </div>
-                      <div class="price-value price-value-old">
-                        <span>старая цена</span> <del>1690 руб.</del>
-                      </div>
-                    </div>
-                    <div class="product-item__options">
-                      <div class="prop prop-color">
-                        <div class="values">
-                          <div class="value value--active">
-                            <img src="images/color_black-red.png" alt="" />
-                          </div>
-                          <div class="value">
-                            <img src="images/color_blue.png" alt="" />
-                          </div>
-                          <div class="value">
-                            <img src="images/color_red-white.png" alt="" />
-                          </div>
-                        </div>
-                      </div>
-                      <div class="prop prop-size">
-                        <div class="values">
-                          <div class="value">
-                            <span>120</span>
-                          </div>
-                          <div class="value value--active">
-                            <span>125</span>
-                          </div>
-                          <div class="value">
-                            <span>130</span>
-                          </div>
-                          <div class="value">
-                            <span>135</span>
-                          </div>
-                          <div class="value">
-                            <span>140</span>
-                          </div>
-                          <div class="value">
-                            <span>145</span>
-                          </div>
-                          <div class="value">
-                            <span>150</span>
-                          </div>
-                          <div class="value">
-                            <span>155</span>
-                          </div>
-                          <div class="value">
-                            <span>160</span>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="product-item__buttons">
-                    <button class="btn btn-primary add-to-cart">Купить</button>
-                    <button class="btn btn-link quick-buy">
-                      Купить в 1 клик
-                    </button>
-                  </div>
+                <div class="value">
+                  <img src="images/color_black-red.png" alt="" />
                 </div>
               </div>
             </div>
+            <div class="prop prop-size">
+              <div class="values">
+                <div class="value">
+                  <span>120</span>
+                </div>
+                <div class="value">
+                  <span>125</span>
+                </div>
+                <div class="value">
+                  <span>130</span>
+                </div>
+                <div class="value value--active">
+                  <span>135</span>
+                </div>
+                <div class="value">
+                  <span>140</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="product-item__buttons">
+          <button class="btn btn-primary add-to-cart">Купить</button>
+          <button class="btn btn-link quick-buy">
+            Купить в 1 клик
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="product-list__item product-item">
+      <div class="item-inner">
+        <div class="item-inner__top">
+          <div class="product-item__stickers">
+            <div class="sticker sticker-hit">
+              <span>Хит</span>
+            </div>
+            <div class="sticker sticker-promo">
+              <span>Акция!</span>
+            </div>
+          </div>
+          <div class="product-item__discont">
+            <span>-10%</span>
+          </div>
+          <div class="product-item__tools">
+            <a title="Добавить в избранное" class="btn-like"><i class="appicon appicon-heart"></i></a>
+            <a title="Сравнить" class="btn-compare"><i class="appicon appicon-compare"></i></a>
+          </div>
+          <div class="product-item__images">
+            <div class="item-image">
+              <a href="product.html">
+                <img src="images/demo/product_img3-190x190.jpg" alt="Шорты Ridge III"
+                  title="Шорты Ridge III" />
+              </a>
+            </div>
+          </div>
+          <div class="product-item__quick-show">
+            <a class="btn-quick-show">Быстрый просмотр</a>
+          </div>
+        </div>
+        <div class="item-inner__main">
+          <div class="product-item__title">
+            <a href="product.html">Самбовки, натуральная кожа (черно-красные) Е016</a>
+          </div>
+          <div class="product-item__rate">
+            <div class="stars star-3"></div>
+          </div>
+          <div class="product-item__stock">
+            <span class="out-of-stock">
+              <i class="fas fa-check"></i>
+              Скоро закончится
+            </span>
+          </div>
+          <div class="product-item__price prices">
+            <div class="price-value price-value-current">
+              <span>новая цена</span> <strong>1590 руб./шт</strong>
+            </div>
+            <div class="price-value price-value-old">
+              <span>старая цена</span> <del>1690 руб.</del>
+            </div>
+          </div>
+          <div class="product-item__options">
+            <div class="prop prop-color">
+              <div class="values">
+                <div class="value value--active">
+                  <img src="images/color_white.png" alt="" />
+                </div>
+                <div class="value">
+                  <img src="images/color_blue.png" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="prop prop-size">
+              <div class="values">
+                <div class="value">
+                  <span>120</span>
+                </div>
+                <div class="value value--active">
+                  <span>125</span>
+                </div>
+                <div class="value">
+                  <span>130</span>
+                </div>
+                <div class="value">
+                  <span>135</span>
+                </div>
+                <div class="value">
+                  <span>140</span>
+                </div>
+                <div class="value">
+                  <span>145</span>
+                </div>
+                <div class="value">
+                  <span>145</span>
+                </div>
+                <div class="value">
+                  <span>150</span>
+                </div>
+                <div class="value">
+                  <span>155</span>
+                </div>
+                <div class="value">
+                  <span>160</span>
+                </div>
+                <div class="value">
+                  <span>165</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="product-item__buttons">
+          <button class="btn btn-primary add-to-cart">Купить</button>
+          <button class="btn btn-link quick-buy">
+            Купить в 1 клик
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="product-list__item product-item">
+      <div class="item-inner">
+        <div class="item-inner__top">
+          <div class="product-item__stickers">
+            <div class="sticker sticker-hit">
+              <span>Хит</span>
+            </div>
+            <div class="sticker sticker-recommend">
+              <span>Советуем!</span>
+            </div>
+          </div>
+          <div class="product-item__discont">
+            <span>-15%</span>
+          </div>
+          <div class="product-item__tools">
+            <a title="Добавить в избранное" class="btn-like"><i class="appicon appicon-heart"></i></a>
+            <a title="Сравнить" class="btn-compare"><i class="appicon appicon-compare"></i></a>
+          </div>
+          <div class="product-item__images">
+            <div class="item-image">
+              <a href="product.html">
+                <img src="images/demo/product_img1-190x190.jpg" alt="Шорты Ridge III"
+                  title="Шорты Ridge III" />
+              </a>
+            </div>
+            <div class="item-image">
+              <a href="product.html">
+                <img src="images/demo/product_img3-190x190.jpg" alt="Шорты Ridge III"
+                  title="Шорты Ridge III" />
+              </a>
+            </div>
+            <div class="item-image">
+              <a href="product.html">
+                <img src="images/demo/product_img2-190x190.jpg" alt="Шорты Ridge III"
+                  title="Шорты Ridge III" />
+              </a>
+            </div>
+          </div>
+          <div class="product-item__quick-show">
+            <a class="btn-quick-show">Быстрый просмотр</a>
+          </div>
+        </div>
+        <div class="item-inner__main">
+          <div class="product-item__title">
+            <a href="product.html">Кимоно для дзюдо “CAPRICE”</a>
+          </div>
+          <div class="product-item__rate">
+            <div class="stars star-2"></div>
+            <span>3 отзыва</span>
+          </div>
+          <div class="product-item__stock">
+            <span class="in-stock">
+              <i class="fas fa-check"></i>
+              В наличии
+            </span>
+          </div>
+          <div class="product-item__price prices">
+            <div class="price-value price-value-current">
+              <span>новая цена</span> <strong>1590 руб./шт</strong>
+            </div>
+            <div class="price-value price-value-old">
+              <span>старая цена</span> <del>1690 руб.</del>
+            </div>
+          </div>
+          <div class="product-item__options">
+            <div class="prop prop-color">
+              <div class="values">
+                <div class="value value--active">
+                  <img src="images/color_black-red.png" alt="" />
+                </div>
+                <div class="value">
+                  <img src="images/color_blue.png" alt="" />
+                </div>
+                <div class="value">
+                  <img src="images/color_red-white.png" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="prop prop-size">
+              <div class="values">
+                <div class="value">
+                  <span>120</span>
+                </div>
+                <div class="value value--active">
+                  <span>125</span>
+                </div>
+                <div class="value">
+                  <span>130</span>
+                </div>
+                <div class="value">
+                  <span>135</span>
+                </div>
+                <div class="value">
+                  <span>140</span>
+                </div>
+                <div class="value">
+                  <span>145</span>
+                </div>
+                <div class="value">
+                  <span>150</span>
+                </div>
+                <div class="value">
+                  <span>155</span>
+                </div>
+                <div class="value">
+                  <span>160</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="product-item__buttons">
+          <button class="btn btn-primary add-to-cart">Купить</button>
+          <button class="btn btn-link quick-buy">
+            Купить в 1 клик
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="product-list__item product-item product-item--in-cart">
+      <div class="item-inner">
+        <div class="item-inner__top">
+          <div class="product-item__stickers">
+            <div class="sticker sticker-hit">
+              <span>Хит</span>
+            </div>
+            <div class="sticker sticker-recommend">
+              <span>Советуем!</span>
+            </div>
+          </div>
+          <div class="product-item__discont">
+            <span>-15%</span>
+          </div>
+          <div class="product-item__tools">
+            <a title="Добавить в избранное" class="btn-like"><i class="appicon appicon-heart"></i></a>
+            <a title="Сравнить" class="btn-compare"><i class="appicon appicon-compare"></i></a>
+          </div>
+          <div class="product-item__images">
+            <div class="item-image">
+              <a href="product.html">
+                <img src="images/demo/product_img1-190x190.jpg" alt="Шорты Ridge III"
+                  title="Шорты Ridge III" />
+              </a>
+            </div>
+            <div class="item-image">
+              <a href="product.html">
+                <img src="images/demo/product_img2-190x190.jpg" alt="Шорты Ridge III"
+                  title="Шорты Ridge III" />
+              </a>
+            </div>
+            <div class="item-image">
+              <a href="product.html">
+                <img src="images/demo/product_img3-190x190.jpg" alt="Шорты Ridge III"
+                  title="Шорты Ridge III" />
+              </a>
+            </div>
+            <div class="item-image">
+              <a href="product.html">
+                <img src="images/demo/product_img1-190x190.jpg" alt="Шорты Ridge III"
+                  title="Шорты Ridge III" />
+              </a>
+            </div>
+          </div>
+          <div class="product-item__quick-show">
+            <a class="btn-quick-show">Быстрый просмотр</a>
+          </div>
+        </div>
+        <div class="item-inner__main">
+          <div class="product-item__title">
+            <a href="product.html">Кимоно для дзюдо “CAPRICE”</a>
+          </div>
+          <div class="product-item__rate">
+            <div class="stars star-4"></div>
+            <span>3 отзыва</span>
+          </div>
+          <div class="product-item__stock">
+            <span class="in-stock">
+              <i class="fas fa-check"></i>
+              В наличии
+            </span>
+          </div>
+          <div class="product-item__price prices">
+            <div class="price-value price-value-current">
+              <span>новая цена</span> <strong>1590 руб./шт</strong>
+            </div>
+            <div class="price-value price-value-old">
+              <span>старая цена</span> <del>1690 руб.</del>
+            </div>
+          </div>
+          <div class="product-item__options">
+            <div class="prop prop-color">
+              <div class="values">
+                <div class="value value--active">
+                  <img src="images/color_black-red.png" alt="" />
+                </div>
+                <div class="value">
+                  <img src="images/color_blue.png" alt="" />
+                </div>
+                <div class="value">
+                  <img src="images/color_red-white.png" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="prop prop-size">
+              <div class="values">
+                <div class="value">
+                  <span>120</span>
+                </div>
+                <div class="value value--active">
+                  <span>125</span>
+                </div>
+                <div class="value">
+                  <span>130</span>
+                </div>
+                <div class="value">
+                  <span>135</span>
+                </div>
+                <div class="value">
+                  <span>140</span>
+                </div>
+                <div class="value">
+                  <span>145</span>
+                </div>
+                <div class="value">
+                  <span>150</span>
+                </div>
+                <div class="value">
+                  <span>155</span>
+                </div>
+                <div class="value">
+                  <span>160</span>
+                </div>
+                <div class="value">
+                  <span>165</span>
+                </div>
+                <div class="value">
+                  <span>170</span>
+                </div>
+                <div class="value">
+                  <span>175</span>
+                </div>
+                <div class="value">
+                  <span>180</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="product-item__buttons">
+          <button class="btn btn-primary add-to-cart">Купить</button>
+          <button class="btn btn-link quick-buy">
+            Купить в 1 клик
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="product-list__item product-item">
+      <div class="item-inner">
+        <div class="item-inner__top">
+          <div class="product-item__stickers">
+            <div class="sticker sticker-hit">
+              <span>Хит</span>
+            </div>
+          </div>
+          <div class="product-item__discont">
+            <span>-15%</span>
+          </div>
+          <div class="product-item__tools">
+            <a title="Добавить в избранное" class="btn-like"><i class="appicon appicon-heart"></i></a>
+            <a title="Сравнить" class="btn-compare"><i class="appicon appicon-compare"></i></a>
+          </div>
+          <div class="product-item__images">
+            <div class="item-image">
+              <a href="product.html">
+                <img src="images/demo/product_img2-190x190.jpg" alt="Шорты Ridge III"
+                  title="Шорты Ridge III" />
+              </a>
+            </div>
+          </div>
+          <div class="product-item__quick-show">
+            <a class="btn-quick-show">Быстрый просмотр</a>
+          </div>
+        </div>
+        <div class="item-inner__main">
+          <div class="product-item__title">
+            <a href="product.html">Кимоно для дзюдо “CAPRICE”</a>
+          </div>
+          <div class="product-item__rate">
+            <div class="stars star-5"></div>
+          </div>
+          <div class="product-item__stock">
+            <span class="in-stock">
+              <i class="fas fa-check"></i>
+              В наличии
+            </span>
+          </div>
+          <div class="product-item__price prices">
+            <div class="price-value price-value-current">
+              <span>новая цена</span> <strong>1590 руб./шт</strong>
+            </div>
+            <div class="price-value price-value-old">
+              <span>старая цена</span> <del>1690 руб.</del>
+            </div>
+          </div>
+          <div class="product-item__options">
+            <div class="prop prop-color">
+              <div class="values">
+                <div class="value value--active">
+                  <img src="images/color_blue.png" alt="" />
+                </div>
+                <div class="value">
+                  <img src="images/color_black-red.png" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="prop prop-size">
+              <div class="values">
+                <div class="value">
+                  <span>120</span>
+                </div>
+                <div class="value">
+                  <span>125</span>
+                </div>
+                <div class="value">
+                  <span>130</span>
+                </div>
+                <div class="value value--active">
+                  <span>135</span>
+                </div>
+                <div class="value">
+                  <span>140</span>
+                </div>
+                <div class="value">
+                  <span>145</span>
+                </div>
+                <div class="value">
+                  <span>150</span>
+                </div>
+                <div class="value">
+                  <span>155</span>
+                </div>
+                <div class="value">
+                  <span>160</span>
+                </div>
+                <div class="value">
+                  <span>165</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="product-item__buttons">
+          <button class="btn btn-primary add-to-cart">Купить</button>
+          <button class="btn btn-link quick-buy">
+            Купить в 1 клик
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="product-list__item product-item">
+      <div class="item-inner">
+        <div class="item-inner__top">
+          <div class="product-item__stickers">
+            <div class="sticker sticker-hit">
+              <span>Хит</span>
+            </div>
+            <div class="sticker sticker-promo">
+              <span>Акция!</span>
+            </div>
+          </div>
+          <div class="product-item__discont">
+            <span>-10%</span>
+          </div>
+          <div class="product-item__tools">
+            <a title="Добавить в избранное" class="btn-like"><i class="appicon appicon-heart"></i></a>
+            <a title="Сравнить" class="btn-compare"><i class="appicon appicon-compare"></i></a>
+          </div>
+          <div class="product-item__images">
+            <div class="item-image">
+              <a href="product.html">
+                <img src="images/demo/product_img3-190x190.jpg" alt="Шорты Ridge III"
+                  title="Шорты Ridge III" />
+              </a>
+            </div>
+          </div>
+          <div class="product-item__quick-show">
+            <a class="btn-quick-show">Быстрый просмотр</a>
+          </div>
+        </div>
+        <div class="item-inner__main">
+          <div class="product-item__title">
+            <a href="product.html">Самбовки, натуральная кожа (черно-красные) Е016</a>
+          </div>
+          <div class="product-item__rate">
+            <div class="stars star-3"></div>
+          </div>
+          <div class="product-item__stock">
+            <span class="out-of-stock">
+              <i class="fas fa-check"></i>
+              Скоро закончится
+            </span>
+          </div>
+          <div class="product-item__price prices">
+            <div class="price-value price-value-current">
+              <span>новая цена</span> <strong>1590 руб./шт</strong>
+            </div>
+            <div class="price-value price-value-old">
+              <span>старая цена</span> <del>1690 руб.</del>
+            </div>
+          </div>
+          <div class="product-item__options">
+            <div class="prop prop-color">
+              <div class="values">
+                <div class="value value--active">
+                  <img src="images/color_white.png" alt="" />
+                </div>
+                <div class="value">
+                  <img src="images/color_blue.png" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="prop prop-size">
+              <div class="values">
+                <div class="value">
+                  <span>120</span>
+                </div>
+                <div class="value value--active">
+                  <span>125</span>
+                </div>
+                <div class="value">
+                  <span>130</span>
+                </div>
+                <div class="value">
+                  <span>135</span>
+                </div>
+                <div class="value">
+                  <span>140</span>
+                </div>
+                <div class="value">
+                  <span>145</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="product-item__buttons">
+          <button class="btn btn-primary add-to-cart">Купить</button>
+          <button class="btn btn-link quick-buy">
+            Купить в 1 клик
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="product-list__item product-item">
+      <div class="item-inner">
+        <div class="item-inner__top">
+          <div class="product-item__stickers">
+            <div class="sticker sticker-hit">
+              <span>Хит</span>
+            </div>
+            <div class="sticker sticker-recommend">
+              <span>Советуем!</span>
+            </div>
+          </div>
+          <div class="product-item__discont">
+            <span>-15%</span>
+          </div>
+          <div class="product-item__tools">
+            <a title="Добавить в избранное" class="btn-like"><i class="appicon appicon-heart"></i></a>
+            <a title="Сравнить" class="btn-compare"><i class="appicon appicon-compare"></i></a>
+          </div>
+          <div class="product-item__images">
+            <div class="item-image">
+              <a href="product.html">
+                <img src="images/demo/product_img1-190x190.jpg" alt="Шорты Ridge III"
+                  title="Шорты Ridge III" />
+              </a>
+            </div>
+            <div class="item-image">
+              <a href="product.html">
+                <img src="images/demo/product_img3-190x190.jpg" alt="Шорты Ridge III"
+                  title="Шорты Ridge III" />
+              </a>
+            </div>
+            <div class="item-image">
+              <a href="product.html">
+                <img src="images/demo/product_img2-190x190.jpg" alt="Шорты Ridge III"
+                  title="Шорты Ridge III" />
+              </a>
+            </div>
+          </div>
+          <div class="product-item__quick-show">
+            <a class="btn-quick-show">Быстрый просмотр</a>
+          </div>
+        </div>
+        <div class="item-inner__main">
+          <div class="product-item__title">
+            <a href="product.html">Кимоно для дзюдо “CAPRICE”</a>
+          </div>
+          <div class="product-item__rate">
+            <div class="stars star-2"></div>
+            <span>3 отзыва</span>
+          </div>
+          <div class="product-item__stock">
+            <span class="in-stock">
+              <i class="fas fa-check"></i>
+              В наличии
+            </span>
+          </div>
+          <div class="product-item__price prices">
+            <div class="price-value price-value-current">
+              <span>новая цена</span> <strong>1590 руб./шт</strong>
+            </div>
+            <div class="price-value price-value-old">
+              <span>старая цена</span> <del>1690 руб.</del>
+            </div>
+          </div>
+          <div class="product-item__options">
+            <div class="prop prop-color">
+              <div class="values">
+                <div class="value value--active">
+                  <img src="images/color_black-red.png" alt="" />
+                </div>
+                <div class="value">
+                  <img src="images/color_blue.png" alt="" />
+                </div>
+                <div class="value">
+                  <img src="images/color_red-white.png" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="prop prop-size">
+              <div class="values">
+                <div class="value">
+                  <span>120</span>
+                </div>
+                <div class="value value--active">
+                  <span>125</span>
+                </div>
+                <div class="value">
+                  <span>130</span>
+                </div>
+                <div class="value">
+                  <span>135</span>
+                </div>
+                <div class="value">
+                  <span>140</span>
+                </div>
+                <div class="value">
+                  <span>145</span>
+                </div>
+                <div class="value">
+                  <span>150</span>
+                </div>
+                <div class="value">
+                  <span>155</span>
+                </div>
+                <div class="value">
+                  <span>160</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="product-item__buttons">
+          <button class="btn btn-primary add-to-cart">Купить</button>
+          <button class="btn btn-link quick-buy">
+            Купить в 1 клик
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+          </div>
+          <div id="recommed" class="tab-pane fade">
+            <div class="product-list">
+    <div class="product-list__item product-item">
+      <div class="item-inner">
+        <div class="item-inner__top">
+          <div class="product-item__stickers">
+            <div class="sticker sticker-hit">
+              <span>Хит</span>
+            </div>
+            <div class="sticker sticker-recommend">
+              <span>Советуем!</span>
+            </div>
+          </div>
+          <div class="product-item__discont">
+            <span>-15%</span>
+          </div>
+          <div class="product-item__tools">
+            <a title="Добавить в избранное" class="btn-like"><i class="appicon appicon-heart"></i></a>
+            <a title="Сравнить" class="btn-compare"><i class="appicon appicon-compare"></i></a>
+          </div>
+          <div class="product-item__images">
+            <div class="item-image">
+              <a href="product.html">
+                <img src="images/demo/product_img1-190x190.jpg" alt="Шорты Ridge III"
+                  title="Шорты Ridge III" />
+              </a>
+            </div>
+            <div class="item-image">
+              <a href="product.html">
+                <img src="images/demo/product_img2-190x190.jpg" alt="Шорты Ridge III"
+                  title="Шорты Ridge III" />
+              </a>
+            </div>
+            <div class="item-image">
+              <a href="product.html">
+                <img src="images/demo/product_img3-190x190.jpg" alt="Шорты Ridge III"
+                  title="Шорты Ridge III" />
+              </a>
+            </div>
+            <div class="item-image">
+              <a href="product.html">
+                <img src="images/demo/product_img1-190x190.jpg" alt="Шорты Ridge III"
+                  title="Шорты Ridge III" />
+              </a>
+            </div>
+          </div>
+          <div class="product-item__quick-show">
+            <a class="btn-quick-show">Быстрый просмотр</a>
+          </div>
+        </div>
+        <div class="item-inner__main">
+          <div class="product-item__title">
+            <a href="product.html">Кимоно для дзюдо “CAPRICE”</a>
+          </div>
+          <div class="product-item__rate">
+            <div class="stars star-4"></div>
+            <span>3 отзыва</span>
+          </div>
+          <div class="product-item__stock">
+            <span class="in-stock">
+              <i class="fas fa-check"></i>
+              В наличии
+            </span>
+          </div>
+          <div class="product-item__price prices">
+            <div class="price-value price-value-current">
+              <span>новая цена</span> <strong>1590 руб./шт</strong>
+            </div>
+            <div class="price-value price-value-old">
+              <span>старая цена</span> <del>1690 руб.</del>
+            </div>
+          </div>
+          <div class="product-item__options">
+            <div class="prop prop-color">
+              <div class="values">
+                <div class="value value--active">
+                  <img src="images/color_black-red.png" alt="" />
+                </div>
+                <div class="value">
+                  <img src="images/color_blue.png" alt="" />
+                </div>
+                <div class="value">
+                  <img src="images/color_red-white.png" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="prop prop-size">
+              <div class="values">
+                <div class="value">
+                  <span>120</span>
+                </div>
+                <div class="value value--active">
+                  <span>125</span>
+                </div>
+                <div class="value">
+                  <span>130</span>
+                </div>
+                <div class="value">
+                  <span>135</span>
+                </div>
+                <div class="value">
+                  <span>140</span>
+                </div>
+                <div class="value">
+                  <span>145</span>
+                </div>
+                <div class="value">
+                  <span>150</span>
+                </div>
+                <div class="value">
+                  <span>155</span>
+                </div>
+                <div class="value">
+                  <span>160</span>
+                </div>
+                <div class="value">
+                  <span>165</span>
+                </div>
+                <div class="value">
+                  <span>170</span>
+                </div>
+                <div class="value">
+                  <span>175</span>
+                </div>
+                <div class="value">
+                  <span>180</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="product-item__buttons">
+          <button class="btn btn-primary add-to-cart">Купить</button>
+          <button class="btn btn-link quick-buy">
+            Купить в 1 клик
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="product-list__item product-item">
+      <div class="item-inner">
+        <div class="item-inner__top">
+          <div class="product-item__stickers">
+            <div class="sticker sticker-hit">
+              <span>Хит</span>
+            </div>
+          </div>
+          <div class="product-item__discont">
+            <span>-15%</span>
+          </div>
+          <div class="product-item__tools">
+            <a title="Добавить в избранное" class="btn-like"><i class="appicon appicon-heart"></i></a>
+            <a title="Сравнить" class="btn-compare"><i class="appicon appicon-compare"></i></a>
+          </div>
+          <div class="product-item__images">
+            <div class="item-image">
+              <a href="product.html">
+                <img src="images/demo/product_img2-190x190.jpg" alt="Шорты Ridge III"
+                  title="Шорты Ridge III" />
+              </a>
+            </div>
+          </div>
+          <div class="product-item__quick-show">
+            <a class="btn-quick-show">Быстрый просмотр</a>
+          </div>
+        </div>
+        <div class="item-inner__main">
+          <div class="product-item__title">
+            <a href="product.html">Кимоно для дзюдо “CAPRICE”</a>
+          </div>
+          <div class="product-item__rate">
+            <div class="stars star-5"></div>
+          </div>
+          <div class="product-item__stock">
+            <span class="in-stock">
+              <i class="fas fa-check"></i>
+              В наличии
+            </span>
+          </div>
+          <div class="product-item__price prices">
+            <div class="price-value price-value-current">
+              <span>новая цена</span> <strong>1590 руб./шт</strong>
+            </div>
+            <div class="price-value price-value-old">
+              <span>старая цена</span> <del>1690 руб.</del>
+            </div>
+          </div>
+          <div class="product-item__options">
+            <div class="prop prop-color">
+              <div class="values">
+                <div class="value value--active">
+                  <img src="images/color_blue.png" alt="" />
+                </div>
+                <div class="value">
+                  <img src="images/color_black-red.png" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="prop prop-size">
+              <div class="values">
+                <div class="value">
+                  <span>120</span>
+                </div>
+                <div class="value">
+                  <span>125</span>
+                </div>
+                <div class="value">
+                  <span>130</span>
+                </div>
+                <div class="value value--active">
+                  <span>135</span>
+                </div>
+                <div class="value">
+                  <span>140</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="product-item__buttons">
+          <button class="btn btn-primary add-to-cart">Купить</button>
+          <button class="btn btn-link quick-buy">
+            Купить в 1 клик
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="product-list__item product-item">
+      <div class="item-inner">
+        <div class="item-inner__top">
+          <div class="product-item__stickers">
+            <div class="sticker sticker-hit">
+              <span>Хит</span>
+            </div>
+            <div class="sticker sticker-promo">
+              <span>Акция!</span>
+            </div>
+          </div>
+          <div class="product-item__discont">
+            <span>-10%</span>
+          </div>
+          <div class="product-item__tools">
+            <a title="Добавить в избранное" class="btn-like"><i class="appicon appicon-heart"></i></a>
+            <a title="Сравнить" class="btn-compare"><i class="appicon appicon-compare"></i></a>
+          </div>
+          <div class="product-item__images">
+            <div class="item-image">
+              <a href="product.html">
+                <img src="images/demo/product_img3-190x190.jpg" alt="Шорты Ridge III"
+                  title="Шорты Ridge III" />
+              </a>
+            </div>
+          </div>
+          <div class="product-item__quick-show">
+            <a class="btn-quick-show">Быстрый просмотр</a>
+          </div>
+        </div>
+        <div class="item-inner__main">
+          <div class="product-item__title">
+            <a href="product.html">Самбовки, натуральная кожа (черно-красные) Е016</a>
+          </div>
+          <div class="product-item__rate">
+            <div class="stars star-3"></div>
+          </div>
+          <div class="product-item__stock">
+            <span class="out-of-stock">
+              <i class="fas fa-check"></i>
+              Скоро закончится
+            </span>
+          </div>
+          <div class="product-item__price prices">
+            <div class="price-value price-value-current">
+              <span>новая цена</span> <strong>1590 руб./шт</strong>
+            </div>
+            <div class="price-value price-value-old">
+              <span>старая цена</span> <del>1690 руб.</del>
+            </div>
+          </div>
+          <div class="product-item__options">
+            <div class="prop prop-color">
+              <div class="values">
+                <div class="value value--active">
+                  <img src="images/color_white.png" alt="" />
+                </div>
+                <div class="value">
+                  <img src="images/color_blue.png" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="prop prop-size">
+              <div class="values">
+                <div class="value">
+                  <span>120</span>
+                </div>
+                <div class="value value--active">
+                  <span>125</span>
+                </div>
+                <div class="value">
+                  <span>130</span>
+                </div>
+                <div class="value">
+                  <span>135</span>
+                </div>
+                <div class="value">
+                  <span>140</span>
+                </div>
+                <div class="value">
+                  <span>145</span>
+                </div>
+                <div class="value">
+                  <span>145</span>
+                </div>
+                <div class="value">
+                  <span>150</span>
+                </div>
+                <div class="value">
+                  <span>155</span>
+                </div>
+                <div class="value">
+                  <span>160</span>
+                </div>
+                <div class="value">
+                  <span>165</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="product-item__buttons">
+          <button class="btn btn-primary add-to-cart">Купить</button>
+          <button class="btn btn-link quick-buy">
+            Купить в 1 клик
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="product-list__item product-item">
+      <div class="item-inner">
+        <div class="item-inner__top">
+          <div class="product-item__stickers">
+            <div class="sticker sticker-hit">
+              <span>Хит</span>
+            </div>
+            <div class="sticker sticker-recommend">
+              <span>Советуем!</span>
+            </div>
+          </div>
+          <div class="product-item__discont">
+            <span>-15%</span>
+          </div>
+          <div class="product-item__tools">
+            <a title="Добавить в избранное" class="btn-like"><i class="appicon appicon-heart"></i></a>
+            <a title="Сравнить" class="btn-compare"><i class="appicon appicon-compare"></i></a>
+          </div>
+          <div class="product-item__images">
+            <div class="item-image">
+              <a href="product.html">
+                <img src="images/demo/product_img1-190x190.jpg" alt="Шорты Ridge III"
+                  title="Шорты Ridge III" />
+              </a>
+            </div>
+            <div class="item-image">
+              <a href="product.html">
+                <img src="images/demo/product_img3-190x190.jpg" alt="Шорты Ridge III"
+                  title="Шорты Ridge III" />
+              </a>
+            </div>
+            <div class="item-image">
+              <a href="product.html">
+                <img src="images/demo/product_img2-190x190.jpg" alt="Шорты Ridge III"
+                  title="Шорты Ridge III" />
+              </a>
+            </div>
+          </div>
+          <div class="product-item__quick-show">
+            <a class="btn-quick-show">Быстрый просмотр</a>
+          </div>
+        </div>
+        <div class="item-inner__main">
+          <div class="product-item__title">
+            <a href="product.html">Кимоно для дзюдо “CAPRICE”</a>
+          </div>
+          <div class="product-item__rate">
+            <div class="stars star-2"></div>
+            <span>3 отзыва</span>
+          </div>
+          <div class="product-item__stock">
+            <span class="in-stock">
+              <i class="fas fa-check"></i>
+              В наличии
+            </span>
+          </div>
+          <div class="product-item__price prices">
+            <div class="price-value price-value-current">
+              <span>новая цена</span> <strong>1590 руб./шт</strong>
+            </div>
+            <div class="price-value price-value-old">
+              <span>старая цена</span> <del>1690 руб.</del>
+            </div>
+          </div>
+          <div class="product-item__options">
+            <div class="prop prop-color">
+              <div class="values">
+                <div class="value value--active">
+                  <img src="images/color_black-red.png" alt="" />
+                </div>
+                <div class="value">
+                  <img src="images/color_blue.png" alt="" />
+                </div>
+                <div class="value">
+                  <img src="images/color_red-white.png" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="prop prop-size">
+              <div class="values">
+                <div class="value">
+                  <span>120</span>
+                </div>
+                <div class="value value--active">
+                  <span>125</span>
+                </div>
+                <div class="value">
+                  <span>130</span>
+                </div>
+                <div class="value">
+                  <span>135</span>
+                </div>
+                <div class="value">
+                  <span>140</span>
+                </div>
+                <div class="value">
+                  <span>145</span>
+                </div>
+                <div class="value">
+                  <span>150</span>
+                </div>
+                <div class="value">
+                  <span>155</span>
+                </div>
+                <div class="value">
+                  <span>160</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="product-item__buttons">
+          <button class="btn btn-primary add-to-cart">Купить</button>
+          <button class="btn btn-link quick-buy">
+            Купить в 1 клик
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="product-list__item product-item product-item--in-cart">
+      <div class="item-inner">
+        <div class="item-inner__top">
+          <div class="product-item__stickers">
+            <div class="sticker sticker-hit">
+              <span>Хит</span>
+            </div>
+            <div class="sticker sticker-recommend">
+              <span>Советуем!</span>
+            </div>
+          </div>
+          <div class="product-item__discont">
+            <span>-15%</span>
+          </div>
+          <div class="product-item__tools">
+            <a title="Добавить в избранное" class="btn-like"><i class="appicon appicon-heart"></i></a>
+            <a title="Сравнить" class="btn-compare"><i class="appicon appicon-compare"></i></a>
+          </div>
+          <div class="product-item__images">
+            <div class="item-image">
+              <a href="product.html">
+                <img src="images/demo/product_img1-190x190.jpg" alt="Шорты Ridge III"
+                  title="Шорты Ridge III" />
+              </a>
+            </div>
+            <div class="item-image">
+              <a href="product.html">
+                <img src="images/demo/product_img2-190x190.jpg" alt="Шорты Ridge III"
+                  title="Шорты Ridge III" />
+              </a>
+            </div>
+            <div class="item-image">
+              <a href="product.html">
+                <img src="images/demo/product_img3-190x190.jpg" alt="Шорты Ridge III"
+                  title="Шорты Ridge III" />
+              </a>
+            </div>
+            <div class="item-image">
+              <a href="product.html">
+                <img src="images/demo/product_img1-190x190.jpg" alt="Шорты Ridge III"
+                  title="Шорты Ridge III" />
+              </a>
+            </div>
+          </div>
+          <div class="product-item__quick-show">
+            <a class="btn-quick-show">Быстрый просмотр</a>
+          </div>
+        </div>
+        <div class="item-inner__main">
+          <div class="product-item__title">
+            <a href="product.html">Кимоно для дзюдо “CAPRICE”</a>
+          </div>
+          <div class="product-item__rate">
+            <div class="stars star-4"></div>
+            <span>3 отзыва</span>
+          </div>
+          <div class="product-item__stock">
+            <span class="in-stock">
+              <i class="fas fa-check"></i>
+              В наличии
+            </span>
+          </div>
+          <div class="product-item__price prices">
+            <div class="price-value price-value-current">
+              <span>новая цена</span> <strong>1590 руб./шт</strong>
+            </div>
+            <div class="price-value price-value-old">
+              <span>старая цена</span> <del>1690 руб.</del>
+            </div>
+          </div>
+          <div class="product-item__options">
+            <div class="prop prop-color">
+              <div class="values">
+                <div class="value value--active">
+                  <img src="images/color_black-red.png" alt="" />
+                </div>
+                <div class="value">
+                  <img src="images/color_blue.png" alt="" />
+                </div>
+                <div class="value">
+                  <img src="images/color_red-white.png" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="prop prop-size">
+              <div class="values">
+                <div class="value">
+                  <span>120</span>
+                </div>
+                <div class="value value--active">
+                  <span>125</span>
+                </div>
+                <div class="value">
+                  <span>130</span>
+                </div>
+                <div class="value">
+                  <span>135</span>
+                </div>
+                <div class="value">
+                  <span>140</span>
+                </div>
+                <div class="value">
+                  <span>145</span>
+                </div>
+                <div class="value">
+                  <span>150</span>
+                </div>
+                <div class="value">
+                  <span>155</span>
+                </div>
+                <div class="value">
+                  <span>160</span>
+                </div>
+                <div class="value">
+                  <span>165</span>
+                </div>
+                <div class="value">
+                  <span>170</span>
+                </div>
+                <div class="value">
+                  <span>175</span>
+                </div>
+                <div class="value">
+                  <span>180</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="product-item__buttons">
+          <button class="btn btn-primary add-to-cart">Купить</button>
+          <button class="btn btn-link quick-buy">
+            Купить в 1 клик
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="product-list__item product-item">
+      <div class="item-inner">
+        <div class="item-inner__top">
+          <div class="product-item__stickers">
+            <div class="sticker sticker-hit">
+              <span>Хит</span>
+            </div>
+          </div>
+          <div class="product-item__discont">
+            <span>-15%</span>
+          </div>
+          <div class="product-item__tools">
+            <a title="Добавить в избранное" class="btn-like"><i class="appicon appicon-heart"></i></a>
+            <a title="Сравнить" class="btn-compare"><i class="appicon appicon-compare"></i></a>
+          </div>
+          <div class="product-item__images">
+            <div class="item-image">
+              <a href="product.html">
+                <img src="images/demo/product_img2-190x190.jpg" alt="Шорты Ridge III"
+                  title="Шорты Ridge III" />
+              </a>
+            </div>
+          </div>
+          <div class="product-item__quick-show">
+            <a class="btn-quick-show">Быстрый просмотр</a>
+          </div>
+        </div>
+        <div class="item-inner__main">
+          <div class="product-item__title">
+            <a href="product.html">Кимоно для дзюдо “CAPRICE”</a>
+          </div>
+          <div class="product-item__rate">
+            <div class="stars star-5"></div>
+          </div>
+          <div class="product-item__stock">
+            <span class="in-stock">
+              <i class="fas fa-check"></i>
+              В наличии
+            </span>
+          </div>
+          <div class="product-item__price prices">
+            <div class="price-value price-value-current">
+              <span>новая цена</span> <strong>1590 руб./шт</strong>
+            </div>
+            <div class="price-value price-value-old">
+              <span>старая цена</span> <del>1690 руб.</del>
+            </div>
+          </div>
+          <div class="product-item__options">
+            <div class="prop prop-color">
+              <div class="values">
+                <div class="value value--active">
+                  <img src="images/color_blue.png" alt="" />
+                </div>
+                <div class="value">
+                  <img src="images/color_black-red.png" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="prop prop-size">
+              <div class="values">
+                <div class="value">
+                  <span>120</span>
+                </div>
+                <div class="value">
+                  <span>125</span>
+                </div>
+                <div class="value">
+                  <span>130</span>
+                </div>
+                <div class="value value--active">
+                  <span>135</span>
+                </div>
+                <div class="value">
+                  <span>140</span>
+                </div>
+                <div class="value">
+                  <span>145</span>
+                </div>
+                <div class="value">
+                  <span>150</span>
+                </div>
+                <div class="value">
+                  <span>155</span>
+                </div>
+                <div class="value">
+                  <span>160</span>
+                </div>
+                <div class="value">
+                  <span>165</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="product-item__buttons">
+          <button class="btn btn-primary add-to-cart">Купить</button>
+          <button class="btn btn-link quick-buy">
+            Купить в 1 клик
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="product-list__item product-item">
+      <div class="item-inner">
+        <div class="item-inner__top">
+          <div class="product-item__stickers">
+            <div class="sticker sticker-hit">
+              <span>Хит</span>
+            </div>
+            <div class="sticker sticker-promo">
+              <span>Акция!</span>
+            </div>
+          </div>
+          <div class="product-item__discont">
+            <span>-10%</span>
+          </div>
+          <div class="product-item__tools">
+            <a title="Добавить в избранное" class="btn-like"><i class="appicon appicon-heart"></i></a>
+            <a title="Сравнить" class="btn-compare"><i class="appicon appicon-compare"></i></a>
+          </div>
+          <div class="product-item__images">
+            <div class="item-image">
+              <a href="product.html">
+                <img src="images/demo/product_img3-190x190.jpg" alt="Шорты Ridge III"
+                  title="Шорты Ridge III" />
+              </a>
+            </div>
+          </div>
+          <div class="product-item__quick-show">
+            <a class="btn-quick-show">Быстрый просмотр</a>
+          </div>
+        </div>
+        <div class="item-inner__main">
+          <div class="product-item__title">
+            <a href="product.html">Самбовки, натуральная кожа (черно-красные) Е016</a>
+          </div>
+          <div class="product-item__rate">
+            <div class="stars star-3"></div>
+          </div>
+          <div class="product-item__stock">
+            <span class="out-of-stock">
+              <i class="fas fa-check"></i>
+              Скоро закончится
+            </span>
+          </div>
+          <div class="product-item__price prices">
+            <div class="price-value price-value-current">
+              <span>новая цена</span> <strong>1590 руб./шт</strong>
+            </div>
+            <div class="price-value price-value-old">
+              <span>старая цена</span> <del>1690 руб.</del>
+            </div>
+          </div>
+          <div class="product-item__options">
+            <div class="prop prop-color">
+              <div class="values">
+                <div class="value value--active">
+                  <img src="images/color_white.png" alt="" />
+                </div>
+                <div class="value">
+                  <img src="images/color_blue.png" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="prop prop-size">
+              <div class="values">
+                <div class="value">
+                  <span>120</span>
+                </div>
+                <div class="value value--active">
+                  <span>125</span>
+                </div>
+                <div class="value">
+                  <span>130</span>
+                </div>
+                <div class="value">
+                  <span>135</span>
+                </div>
+                <div class="value">
+                  <span>140</span>
+                </div>
+                <div class="value">
+                  <span>145</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="product-item__buttons">
+          <button class="btn btn-primary add-to-cart">Купить</button>
+          <button class="btn btn-link quick-buy">
+            Купить в 1 клик
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="product-list__item product-item">
+      <div class="item-inner">
+        <div class="item-inner__top">
+          <div class="product-item__stickers">
+            <div class="sticker sticker-hit">
+              <span>Хит</span>
+            </div>
+            <div class="sticker sticker-recommend">
+              <span>Советуем!</span>
+            </div>
+          </div>
+          <div class="product-item__discont">
+            <span>-15%</span>
+          </div>
+          <div class="product-item__tools">
+            <a title="Добавить в избранное" class="btn-like"><i class="appicon appicon-heart"></i></a>
+            <a title="Сравнить" class="btn-compare"><i class="appicon appicon-compare"></i></a>
+          </div>
+          <div class="product-item__images">
+            <div class="item-image">
+              <a href="product.html">
+                <img src="images/demo/product_img1-190x190.jpg" alt="Шорты Ridge III"
+                  title="Шорты Ridge III" />
+              </a>
+            </div>
+            <div class="item-image">
+              <a href="product.html">
+                <img src="images/demo/product_img3-190x190.jpg" alt="Шорты Ridge III"
+                  title="Шорты Ridge III" />
+              </a>
+            </div>
+            <div class="item-image">
+              <a href="product.html">
+                <img src="images/demo/product_img2-190x190.jpg" alt="Шорты Ridge III"
+                  title="Шорты Ridge III" />
+              </a>
+            </div>
+          </div>
+          <div class="product-item__quick-show">
+            <a class="btn-quick-show">Быстрый просмотр</a>
+          </div>
+        </div>
+        <div class="item-inner__main">
+          <div class="product-item__title">
+            <a href="product.html">Кимоно для дзюдо “CAPRICE”</a>
+          </div>
+          <div class="product-item__rate">
+            <div class="stars star-2"></div>
+            <span>3 отзыва</span>
+          </div>
+          <div class="product-item__stock">
+            <span class="in-stock">
+              <i class="fas fa-check"></i>
+              В наличии
+            </span>
+          </div>
+          <div class="product-item__price prices">
+            <div class="price-value price-value-current">
+              <span>новая цена</span> <strong>1590 руб./шт</strong>
+            </div>
+            <div class="price-value price-value-old">
+              <span>старая цена</span> <del>1690 руб.</del>
+            </div>
+          </div>
+          <div class="product-item__options">
+            <div class="prop prop-color">
+              <div class="values">
+                <div class="value value--active">
+                  <img src="images/color_black-red.png" alt="" />
+                </div>
+                <div class="value">
+                  <img src="images/color_blue.png" alt="" />
+                </div>
+                <div class="value">
+                  <img src="images/color_red-white.png" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="prop prop-size">
+              <div class="values">
+                <div class="value">
+                  <span>120</span>
+                </div>
+                <div class="value value--active">
+                  <span>125</span>
+                </div>
+                <div class="value">
+                  <span>130</span>
+                </div>
+                <div class="value">
+                  <span>135</span>
+                </div>
+                <div class="value">
+                  <span>140</span>
+                </div>
+                <div class="value">
+                  <span>145</span>
+                </div>
+                <div class="value">
+                  <span>150</span>
+                </div>
+                <div class="value">
+                  <span>155</span>
+                </div>
+                <div class="value">
+                  <span>160</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="product-item__buttons">
+          <button class="btn btn-primary add-to-cart">Купить</button>
+          <button class="btn btn-link quick-buy">
+            Купить в 1 клик
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
           </div>
           <div id="novinki" class="tab-pane fade">
             Новинка...
@@ -2270,112 +2364,110 @@
     </div>
     <div id="sidebar" class="sidebar">
       <aside>
-        <div class="catalog-list">
-          <ul>
-            <li class="has-child">
-              <a href="#">Фитнес</a>
-              <div class="dropdown">
-                <div class="category-col">
-                  <h2 class="category-col__title">
-                    <a href="#">Тяжелая атлетика</a>
-                  </h2>
-                  <ul>
-                    <li><a href="#">Тренажеры и тяжелая атлетика</a></li>
-                    <li><a href="#">Художественная гимнастика и танцы</a></li>
-                  </ul>
-                </div>
-              </div>
-            </li>
-            <li class="has-child">
-              <a href="#">Художественная гимнастика и танцы</a>
-              <div class="dropdown">
-                <div class="category-col">
-                  <h2 class="category-col__title">
-                    <a href="#">Тяжелая атлетика</a>
-                  </h2>
-                  <ul>
-                    <li><a href="#">Тренажеры и тяжелая атлетика</a></li>
-                    <li><a href="#">Художественная гимнастика и танцы</a></li>
-                  </ul>
-                </div>
-              </div>
-            </li>
-            <li class="has-child">
-              <a href="#">Тренажеры и тяжелая атлетика</a>
-              <div class="dropdown">
-                <div class="category-col">
-                  <h2 class="category-col__title">
-                    <a href="#">Тяжелая атлетика</a>
-                  </h2>
-                  <ul>
-                    <li>
-                      <a href="#">Гантели разборные <span>(15)</span></a>
-                    </li>
-                    <li>
-                      <a href="#">Гири <span>(5)</span></a>
-                    </li>
-                    <li>
-                      <a href="#">Грифы для гантелей и штанг <span>(100)</span></a>
-                    </li>
-                    <li>
-                      <a href="#">Диски для гантелей и штанг <span>(18)</span></a>
-                    </li>
-                    <li>
-                      <a href="#">Перчатки для тяжелой атлетики и велоспорта
-                        <span>(19)</span></a>
-                    </li>
-                    <li>
-                      <a href="#">Пояса для поднятия тяжестей <span>(17)</span></a>
-                    </li>
-                    <li>
-                      <a href="#">Стойки для гантелей и штанг <span>(100)</span></a>
-                    </li>
-                    <li>
-                      <a href="#">Скамьи <span>(1000)</span></a>
-                    </li>
-                    <li>
-                      <a href="#">Аксессуары <span>(10)</span></a>
-                    </li>
-                  </ul>
-                </div>
-                <div class="category-col">
-                  <h2 class="category-col__title">
-                    <a href="#">Домашние тренажеры</a>
-                  </h2>
-                  <ul>
-                    <li>
-                      <a href="#">Беговые дорожки <span>(105)</span></a>
-                    </li>
-                    <li>
-                      <a href="#">Велотренажеры <span>(165)</span></a>
-                    </li>
-                    <li class="has-child">
-                      <a href="#">Степперы, Эллипсоиды <span>(155)</span></a>
-                      <ul>
-                        <li>
-                          <a href="#">Степперы с эспандерами <span>(25)</span></a>
-                        </li>
-                        <li>
-                          <a href="#">Мини степперы <span>(15)</span></a>
-                        </li>
-                        <li>
-                          <a href="#">Профессиональные степперы <span>(20)</span></a>
-                        </li>
-                      </ul>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </li>
-            <li><a href="#">Туризм и активный отдых</a></li>
-            <li><a href="#">Зимние виды спорта и активный отдых</a></li>
-            <li><a href="#">Единоборства и бокс</a></li>
-            <li><a href="#">Командные виды спорта</a></li>
-            <li><a href="#">Летние виды спорта</a></li>
-            <li><a href="#">Водные виды спорта</a></li>
-            <li><a href="#">Игры</a></li>
-          </ul>
-        </div>
+        <ul class="catalog-navi ">
+  <li class="has-child">
+    <a href="#">Фитнес</a>
+    <div class="dropdown">
+      <div class="category-col">
+        <h2 class="category-col__title">
+          <a href="#">Тяжелая атлетика</a>
+        </h2>
+        <ul>
+          <li><a href="#">Тренажеры и тяжелая атлетика</a></li>
+          <li><a href="#">Художественная гимнастика и танцы</a></li>
+        </ul>
+      </div>
+    </div>
+  </li>
+  <li class="has-child">
+    <a href="#">Художественная гимнастика и танцы</a>
+    <div class="dropdown">
+      <div class="category-col">
+        <h2 class="category-col__title">
+          <a href="#">Тяжелая атлетика</a>
+        </h2>
+        <ul>
+          <li><a href="#">Тренажеры и тяжелая атлетика</a></li>
+          <li><a href="#">Художественная гимнастика и танцы</a></li>
+        </ul>
+      </div>
+    </div>
+  </li>
+  <li class="has-child">
+    <a href="#">Тренажеры и тяжелая атлетика</a>
+    <div class="dropdown">
+      <div class="category-col">
+        <h2 class="category-col__title">
+          <a href="#">Тяжелая атлетика</a>
+        </h2>
+        <ul>
+          <li>
+            <a href="#">Гантели разборные <span>(15)</span></a>
+          </li>
+          <li>
+            <a href="#">Гири <span>(5)</span></a>
+          </li>
+          <li>
+            <a href="#">Грифы для гантелей и штанг <span>(100)</span></a>
+          </li>
+          <li>
+            <a href="#">Диски для гантелей и штанг <span>(18)</span></a>
+          </li>
+          <li>
+            <a href="#">Перчатки для тяжелой атлетики и велоспорта
+              <span>(19)</span></a>
+          </li>
+          <li>
+            <a href="#">Пояса для поднятия тяжестей <span>(17)</span></a>
+          </li>
+          <li>
+            <a href="#">Стойки для гантелей и штанг <span>(100)</span></a>
+          </li>
+          <li>
+            <a href="#">Скамьи <span>(1000)</span></a>
+          </li>
+          <li>
+            <a href="#">Аксессуары <span>(10)</span></a>
+          </li>
+        </ul>
+      </div>
+      <div class="category-col">
+        <h2 class="category-col__title">
+          <a href="#">Домашние тренажеры</a>
+        </h2>
+        <ul>
+          <li>
+            <a href="#">Беговые дорожки <span>(105)</span></a>
+          </li>
+          <li>
+            <a href="#">Велотренажеры <span>(165)</span></a>
+          </li>
+          <li class="has-child">
+            <a href="#">Степперы, Эллипсоиды <span>(155)</span></a>
+            <ul>
+              <li>
+                <a href="#">Степперы с эспандерами <span>(25)</span></a>
+              </li>
+              <li>
+                <a href="#">Мини степперы <span>(15)</span></a>
+              </li>
+              <li>
+                <a href="#">Профессиональные степперы <span>(20)</span></a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </li>
+  <li><a href="#">Туризм и активный отдых</a></li>
+  <li><a href="#">Зимние виды спорта и активный отдых</a></li>
+  <li><a href="#">Единоборства и бокс</a></li>
+  <li><a href="#">Командные виды спорта</a></li>
+  <li><a href="#">Летние виды спорта</a></li>
+  <li><a href="#">Водные виды спорта</a></li>
+  <li><a href="#">Игры</a></li>
+</ul>
         <div class="widget widget-subs">
           <div class="widget-title">
             Дополнительные бонусы и скидки за подписку
@@ -2449,9 +2541,9 @@
 <footer id="footer">
     <div class="container">
         <div class="row">
-            <div class="col-md-7">
+            <div class="col-lg-7">
                 <div class="row">
-                    <div class="col-md-6">
+                    <div class="col-md-4 col-lg-6">
                         <div class="head">Покупателю</div>
                         <ul class="navi">
                             <li>
@@ -2468,7 +2560,7 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-4 col-lg-6">
                         <div class="head">Интернет магазин</div>
                         <ul class="navi">
                             <li>
@@ -2490,7 +2582,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-5">
+            <div class="col-lg-5">
                 <div class="head">Контакты</div>
                 <div class="footer__contacts">
                     <div class="tel">
@@ -2524,9 +2616,9 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-md-7">
+            <div class="col-lg-7">
                 <div class="row row-dop">
-                    <div class="col-md-6">
+                    <div class="col-md-4 col-lg-6">
                         <div class="head">Способы оплаты</div>
                         <div class="payemts-list">
                             <a href="#">
@@ -2546,7 +2638,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-4 col-lg-6">
                         <div class="yandex-review">
                             <img src="images/yandex_market.png" alt="" />
                             <p>
@@ -2556,7 +2648,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-5">
+            <div class="col-lg-5">
                 <div class="copyright">
                     <p>© Интернет-магазин спортивных товаров и инвентаря, 2016 г.</p>
                     Сегодня наш сайт посмотрели
