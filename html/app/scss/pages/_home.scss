@@ -206,7 +206,6 @@
             flex: 0 0 calc(50% - 6px);
         }
 
-
         a {
             display: block;
             position: relative;
@@ -415,5 +414,30 @@
 @media screen and (max-width: $tablet) {
     .sl {
         margin: 15px 0;
+    }
+
+    .advants {
+        &__list {
+            justify-content: center;
+
+            .item {
+                flex: 0 0 33.33%;
+            }
+        }
+    }
+
+    .promo {
+        .promo-item {
+            display: flex;
+            flex: 0 0 calc(33.33% - 6px);
+
+            &--wide50 {
+                flex: 0 0 calc(33.33% - 6px);
+            }
+
+            img {
+                height: 100%;
+            }
+        }
     }
 }
