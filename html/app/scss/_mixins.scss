@@ -26,27 +26,9 @@
     }
 }
 
-@mixin placeholder {
-    &::-webkit-input-placeholder {
-        @content
-    }
-
-    &:-moz-placeholder {
-        @content
-    }
-
-    &::-moz-placeholder {
-        @content
-    }
-
-    &:-ms-input-placeholder {
-        @content
-    }
-}
-
 @mixin line {
     width: 22px;
     height: 3px;
-    background: #000;
-    @include transition(.3s);
+    background: #fff;
+    transition: .3s;
 }
