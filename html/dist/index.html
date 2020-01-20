@@ -40,13 +40,15 @@
                     </div>
                 </div>
                 <div class="header__main">
-                    <a href="#" class="logo">
-                        <img src="images/logo.png" alt="Sport07">
-                        <span>Интернет магазин спортивных товаров</span>
-                    </a>
+                    <div class="header-logo">
+                        <a href="#" class="logo">
+                            <img src="images/logo.png" alt="Sport07">
+                            <span>Интернет магазин спортивных товаров</span>
+                        </a>
+                    </div>
                     <div class="header-search">
                         <a href="#" class="header-search__toggle search-toggle icon-link">
-                            <i class="appicon appicon-search"></i> Поиск</a>
+                            <i class="appicon appicon-search"></i> <span class="icon-link__name">Поиск</span></a>
                         <div class="header-search__input">
                             <div class="search-input">
                                 <form action="#">
@@ -118,25 +120,29 @@
                         </div>
                     </div>
                     <div class="header-menu">
-                        <a href="#" class="icon-link"><i class="appicon appicon-compare"></i> Сравнение
-                            <span>3</span></a>
-                        <a href="#" class="icon-link icon-link-fav"><i class="appicon appicon-heart"></i> Избранное
-                            <span>300</span></a>
-                        <a href="#" class="icon-link icon-link-cart"><i class="appicon appicon-cart"></i> Корзина
-                            <span>30</span></a>
-                        <a href="#" class="icon-link link-account">
-                            <i class="fa fa-user-o"></i> Личный кабинет</a>
+                        <a href="#" class="icon-link"><i class="appicon appicon-compare"></i> <span
+                                class="icon-link__name">Сравнение</span>
+                            <span class="icon-link__counter">3</span></a>
+                        <a href="#" class="icon-link icon-link-fav"><i class="appicon appicon-heart"></i> <span
+                                class="icon-link__name">Избранное</span>
+                            <span class="icon-link__counter">300</span></a>
+                        <a href="#" class="icon-link icon-link-cart"><i class="appicon appicon-cart"></i> <span
+                                class="icon-link__name">Корзина</span>
+                            <span class="icon-link__counter">30</span></a>
                     </div>
                 </div>
                 <div class="navi">
-                    <button class="navi-toggle"><span class="lines"></span></button>
+                    <div class="navi-toggle">
+                        <span>Меню</span>
+                        <button><span class="lines"></span></button>
+                    </div>
                     <nav class="navi-list">
                         <div class="catalog-menu">
                             <ul class="menu">
                                 <li class="has-child">
                                     <a href="#">
                                         <i class="appicon appicon-list"></i>
-                                        <span>Каталог <i class="fa fa-angle-down"></i></span>
+                                        <span>Каталог</span>
                                     </a>
                                     <div class="catalog-navi ">
   <ul>
@@ -281,6 +287,7 @@
                             </ul>
                         </div>
                     </nav>
+                    <div class="body-overlay"></div>
                 </div>
             </div>
         </div>

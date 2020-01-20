@@ -36,10 +36,10 @@ var Home = function () {
 							}
 						},
 						{
-							breakpoint: 478,
+							breakpoint: 768,
 							settings: {
-								slidesToShow: 1,
-								slidesToScroll: 1
+								slidesToShow: 2,
+								slidesToScroll: 2
 							}
 						}
 					]

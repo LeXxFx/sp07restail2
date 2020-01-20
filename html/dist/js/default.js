@@ -56,6 +56,30 @@ var Main = function () {
 	}
 
 	var initNavi = function () {
+		$('.navi').on('click', '.navi-toggle', function (e) {
+			e.preventDefault();
+
+			$("body").addClass('menu-opened');
+		});
+
+		$(document).on('click', '.menu-opened .has-child > a', function (e) {
+			e.preventDefault();
+
+			$(this).closest('li').toggleClass('opened');
+			$(this).closest('li').find('>.dropdown').slideToggle('fast');
+		});
+
+		$('.body-overlay').on('click', function (e) {
+			e.preventDefault();
+
+			$("body").removeClass('menu-opened');
+		});
+
+		$(document).keyup(function (e) {
+			if (e.keyCode == 27) {
+				$("body").removeClass('menu-opened');
+			}
+		});
 
 	};
 
