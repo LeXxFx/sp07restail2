@@ -24,6 +24,19 @@ body {
     background-size: 100% auto;
     font-family: $font;
     font-size: 14px;
+
+
+    &.menu-opened {
+        .header {
+            .body-overlay {
+                cursor: pointer;
+                opacity: 1;
+                visibility: visible;
+                pointer-events: auto;
+                z-index: 999;
+            }
+        }
+    }
 }
 
 .container {

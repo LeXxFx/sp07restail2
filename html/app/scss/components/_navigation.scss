@@ -6,7 +6,24 @@
     margin: 0;
 
     >li {
-        position: relative;
+
+        &.has-child {
+            position: relative;
+
+            >a {
+                &:after {
+                    @extend %fontawesome;
+                    content: "\f105";
+                    color: #fff;
+                    position: absolute;
+                    font-size: 16px;
+                    right: 5px;
+                    top: 10px;
+                    transition: .1s;
+                    display: none;
+                }
+            }
+        }
 
         >a {
             display: block;
@@ -93,12 +110,6 @@
         padding: 0;
 
         >li {
-            >a {
-
-                color: $text-color;
-                line-height: 1.1;
-            }
-
             &.has-child {
                 position: relative;
 
@@ -109,8 +120,16 @@
                         color: $text-color;
                         position: absolute;
                         font-size: 16px;
+                        right: 5px;
+                        top: 10px;
+                        transition: .1s;
                     }
                 }
+            }
+
+            >a {
+                color: $text-color;
+                line-height: 1.1;
             }
 
             &:hover {
@@ -328,6 +347,75 @@
                 >li {
                     >a {
                         font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: $mobile) {
+    .menu {
+        display: block;
+
+        >li {
+            &:hover {
+                >a {
+                    background: none;
+                }
+            }
+
+            &.has-child {
+                position: relative;
+
+                >a {
+                    &:after {
+                        display: block;
+                    }
+                }
+
+                &.opened {
+                    >a {
+                        &:after {
+                            transform: rotate(90deg);
+                        }
+                    }
+                }
+            }
+        }
+
+        li {
+
+            .dropdown,
+            .catalog-navi {
+                display: none;
+                position: relative;
+                top: auto;
+                width: 100%;
+                left: auto;
+                top: auto;
+                opacity: 1;
+                transition: none;
+                transform: none;
+                box-shadow: none;
+                visibility: visible;
+            }
+        }
+    }
+
+    .catalog-navi {
+        >ul {
+            >li {
+                &.has-child {
+                    >.dropdown {
+                        display: none;
+                        white-space: initial;
+                        box-shadow: none;
+                        border-radius: 0;
+                        position: relative;
+                        top: auto;
+                        left: auto;
+                        border: none;
                     }
                 }
             }

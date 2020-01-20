@@ -4,6 +4,23 @@
     position: relative;
     z-index: 100;
 
+
+    .body-overlay {
+        content: "";
+        background-color: rgba(0, 0, 0, 0.6);
+        height: 100%;
+        left: 0;
+        overflow: hidden;
+        pointer-events: none;
+        position: fixed;
+        top: 0;
+        transition: opacity 0.3s ease 0s;
+        width: 100%;
+        z-index: -1;
+        visibility: hidden;
+        opacity: 0;
+    }
+
     &__top {
         background: $second-color;
         padding: 10px;
@@ -74,25 +91,28 @@
         position: relative;
         z-index: 10;
 
-        .logo {
+        .header-logo {
             flex: 0 0 240px;
-            font-weight: bold;
-            color: #222;
-            text-decoration: none;
-            display: flex;
-            align-items: center;
 
-            img {
-                flex: 0 0 auto;
-                margin: 0 5px 0 0;
-            }
+            .logo {
+                display: flex;
+                align-items: center;
+                font-weight: bold;
+                color: #222;
+                text-decoration: none;
 
-            span {
-                line-height: 1.3;
-            }
+                img {
+                    flex: 0 0 auto;
+                    margin: 0 5px 0 0;
+                }
 
-            &:hover {
-                color: $second-color;
+                span {
+                    line-height: 1.3;
+                }
+
+                &:hover {
+                    color: $second-color;
+                }
             }
         }
 
@@ -123,7 +143,7 @@
         .header-menu {
             display: flex;
             flex: 1 1 auto;
-            margin-left: auto;
+            justify-content: flex-end;
 
             .link-account {
                 display: none;
@@ -138,7 +158,7 @@
             position: relative;
             text-decoration: none;
 
-            span {
+            &__counter {
                 display: inline-block;
                 text-align: center;
                 min-width: 26px;
@@ -200,56 +220,73 @@
 
         .navi-toggle {
             display: none;
+            justify-content: space-between;
+            align-items: center;
+            background: $primary-color;
             color: #fff;
             font-weight: 500;
-            background: none;
-            border: none;
-            padding: 12px 12px;
             cursor: pointer;
-            text-align: center;
-            background: transparent;
-            border-radius: 50%;
+            padding: 0 10px;
 
-            &:focus {
-                outline: none;
+            span {
+                font-weight: bold;
+                font-size: 16px;
             }
 
-            .lines {
-                @include line;
-                display: inline-block;
-                margin: 0;
-                top: -3px;
-                position: relative;
+            button {
+                background: none;
+                border: none;
+                padding: 10px 0;
+                cursor: pointer;
+                text-align: center;
+                background: transparent;
+                border-radius: 50%;
 
-                &:before,
-                &:after {
+                &:focus {
+                    outline: none;
+                }
+
+                .lines {
                     @include line;
-                    position: absolute;
-                    left: 0;
-                    content: '';
-                    transform-origin: 4px center;
+                    display: inline-block;
+                    margin: 0;
+                    top: -2px;
+                    position: relative;
+
+                    &:before,
+                    &:after {
+                        @include line;
+                        position: absolute;
+                        left: 0;
+                        content: '';
+                        transform-origin: 4px center;
+                    }
+
+                    &:before {
+                        top: 8px;
+                    }
+
+                    &:after {
+                        top: -7px;
+                    }
                 }
 
-                &:before {
-                    top: 8px;
-                }
+                &:hover {
+                    color: lighten(#fff, 15%);
 
-                &:after {
-                    top: -8px;
+                    .lines {
+                        background: lighten(#fff, 15%);
+
+                        &:before,
+                        &:after {
+                            background: lighten(#fff, 15%);
+                        }
+                    }
                 }
             }
 
             &:hover {
-                color: lighten(#fff, 15%);
-
-                .lines {
-                    background: lighten(#fff, 15%);
-
-                    &:before,
-                    &:after {
-                        background: lighten(#fff, 15%);
-                    }
-                }
+                background: darken($primary-color, 5%);
             }
         }
 
@@ -283,26 +320,20 @@
                             display: block;
                             position: relative;
                             padding-right: 10px;
+                        }
+                    }
 
-                            i {
-                                position: absolute;
-                                top: 1px;
-                                right: 0;
-                                font-size: 16px;
-                                transform: rotate(-90deg);
-                                transition: .16s;
+                    &.has-child {
+                        >a {
+                            &:after {
+                                display: block;
+                                top: 10px;
+                                right: 15px;
                             }
                         }
                     }
 
                     &:hover {
-                        >a {
-                            >span {
-                                i {
-                                    transform: rotate(0);
-                                }
-                            }
-                        }
 
                         .dropdown {
                             visibility: visible;
@@ -332,13 +363,10 @@
 
                 .menu {
                     >li {
-
-                        >a {
-
-                            >span {
-
-                                i {
-                                    transform: rotate(0);
+                        &.has-child {
+                            >a {
+                                &:after {
+                                    transform: rotate(90deg);
                                 }
                             }
                         }
@@ -417,10 +445,12 @@
             .header-search {
                 flex: 0 0 auto;
                 position: relative;
+                margin-left: auto;
+                margin-right: 0;
 
                 &__toggle {
                     &.icon-link {
-                        display: flex;
+                        display: block;
                     }
                 }
 
@@ -446,7 +476,7 @@
                 }
             }
 
-            .header-links {
+            .header-menu {
                 flex: 0 0 auto;
                 margin-left: 0;
             }
@@ -458,7 +488,7 @@
                     margin-right: 3px;
                 }
 
-                span {
+                &__counter {
                     padding: 2px 3px;
                     min-width: 18px;
                     font-size: 10px;
@@ -474,13 +504,10 @@
 
                     .menu {
                         >li {
-
-                            >a {
-
-                                >span {
-
-                                    i {
-                                        transform: rotate(-90deg);
+                            &.has-child {
+                                >a {
+                                    &:after {
+                                        transform: rotate(0);
                                     }
                                 }
                             }
@@ -490,12 +517,10 @@
                             }
 
                             &:hover {
-                                >a {
-
-                                    >span {
-
-                                        i {
-                                            transform: rotate(0deg);
+                                &.has-child {
+                                    >a {
+                                        &:after {
+                                            transform: rotate(90deg);
                                         }
                                     }
                                 }
@@ -513,23 +538,63 @@
 @media screen and (max-width: $mobile) {
     .header {
         &__top {
-            text-align: center;
+            .header-contacts {
+                flex-wrap: wrap;
+                height: 16px;
+                overflow: hidden;
+            }
 
             .header-account {
-                display: none;
+                flex: 0 0 125px;
+                font-size: 13px;
             }
         }
 
         &__main {
             flex-wrap: wrap;
+            justify-content: center;
+            position: relative;
+
+            .header-logo {
+                flex: 0 0 100%;
+
+                .logo {
+                    margin: 0 auto;
+                    justify-content: space-between;
+                    max-width: 230px;
+                }
+            }
 
             .header-search {
+                margin-left: 0;
+                position: initial;
 
                 &__input {
+                    width: 100%;
                     z-index: 100;
-                    left: auto;
-                    right: 0;
+                    left: 0;
+                    margin-top: 0;
                 }
+            }
+        }
+
+        .icon-link {
+            text-align: center;
+            justify-content: center;
+            margin: 20px 0 0 10px;
+
+            i {
+                margin-right: 0;
+            }
+
+            &__name {
+                display: block;
+                font-size: 9px;
+                text-transform: uppercase;
+            }
+
+            &__counter {
+                top: -10px;
             }
         }
 
@@ -540,13 +605,95 @@
         }
 
         .navi {
+            background: none;
+            z-index: 99;
+
             .navi-toggle {
-                display: block;
+                display: flex;
+                position: relative;
+                z-index: 10;
             }
 
             .navi-list {
-                display: none;
+                display: block;
+                transition: .3s;
+                border-right: 3px solid $second-color;
+                top: 0;
+                bottom: 0;
+                left: -100%;
+                margin: 0;
+                overflow-x: hidden;
+                overflow-y: auto;
+                position: fixed;
+                transition: all 0.4s ease 0s;
+                width: 280px;
+                height: 100%;
+                background-color: rgb(90, 90, 90);
+                padding: 0;
+                opacity: 0;
+                visibility: hidden;
+                transition: .2s;
             }
+
+            .catalog-menu {
+                flex: 0 0 100%;
+
+                .menu {
+                    >li {
+
+                        >a {
+                            background: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .menu-opened {
+        .header {
+            z-index: 9999;
+
+            .navi {
+                .navi-list {
+                    opacity: 1;
+                    visibility: visible;
+                    left: 0;
+                    z-index: 1000;
+                }
+            }
+
+            .navi-toggle {
+                button {
+                    transition: none;
+
+                    .lines {
+                        background: transparent;
+
+                        &:before,
+                        &:after {
+                            transform-origin: 50% 50%;
+                            top: 0;
+                            width: 28px;
+                        }
+
+                        &:before {
+                            transform: rotate3d(0, 0, 1, 45deg);
+                        }
+
+                        &:after {
+                            transform: rotate3d(0, 0, 1, -45deg);
+                        }
+                    }
+
+                    &:hover {
+                        .lines {
+                            background: none;
+                        }
+                    }
+                }
+            }
+
         }
     }
 }
