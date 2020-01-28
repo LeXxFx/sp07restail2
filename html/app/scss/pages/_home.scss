@@ -396,6 +396,7 @@
         >.tab-pane {
             display: block;
             height: 0px;
+            overflow: hidden;
 
             &.active {
                 height: auto;
@@ -437,6 +438,77 @@
 
             img {
                 height: 100%;
+            }
+        }
+    }
+
+    .akc {
+        &__top {
+            text-align: left;
+
+            a {
+                margin: 10px 0;
+            }
+        }
+
+        .akc-list {
+
+            .akc-item {
+                flex: 0 0 calc(50% - 14px);
+            }
+        }
+    }
+}
+
+@media screen and (max-width: $mobile) {
+    .sl {
+        .sl-item {
+            &__inner {
+                height: 240px;
+                display: flex;
+
+                .sl-text {
+                    font-size: 14px;
+
+                    h2 {
+                        font-size: 28px;
+                    }
+                }
+
+                img {
+                    object-fit: cover;
+                }
+            }
+        }
+    }
+
+    .advants {
+        &__list {
+
+            .item {
+                flex: 0 0 50%;
+            }
+        }
+    }
+
+    .promo {
+        .promo-item {
+            flex: 0 0 calc(50% - 6px);
+        }
+    }
+
+
+    .product-tabs {
+
+        .nav {
+
+            li {
+                margin: 0 20px 0 0;
+
+                a {
+                    font-size: 16px;
+
+                }
             }
         }
     }
