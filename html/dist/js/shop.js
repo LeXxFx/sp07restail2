@@ -22,6 +22,12 @@ var Shop = function () {
 				}
 			});
 		}
+		$('.modal-preview').modal('show');
+		$('.product-list').on('click', '.btn-quick-show', function (e) {
+			e.preventDefault();
+
+			$('.modal-preview').modal('show');
+		});
 	};
 
 	return {
