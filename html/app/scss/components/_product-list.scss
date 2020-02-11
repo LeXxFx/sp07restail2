@@ -333,94 +333,24 @@ $item-height: 470px;
     }
 
     &__options {
-        max-height: 66px;
-        overflow: hidden;
-
-        .prop {
-            margin: 0 0 10px 0;
+        &.item-options {
+            max-height: 66px;
             overflow: hidden;
-            max-height: 23px;
-            position: relative;
 
-            &:after {
-                content: "";
-                position: absolute;
-                right: 0;
-                top: 0;
-                bottom: 0;
-                width: 30px;
-                background-image: linear-gradient(to right, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.3));
-                transition: .2s;
-            }
+            .prop {
+                margin: 0 0 10px 0;
+                overflow: hidden;
+                max-height: 23px;
 
-            .values {
-                display: flex;
-                flex-wrap: wrap;
-
-                .value {
-                    cursor: pointer;
-
-                    &--active {
-                        cursor: default;
-                    }
-                }
-            }
-
-            &-color {
-                .values {
-                    align-items: flex-end;
-
-                    .value {
-                        width: 13px;
-                        height: 13px;
-                        margin: 0 3px 3px 0;
-                        vertical-align: top;
-                        border-radius: 50%;
-                        border: 1px solid transparent;
-
-                        img {
-                            vertical-align: top;
-                            width: 100%;
-                        }
-
-                        &:hover {
-                            opacity: 0.8;
-
-                            img {
-                                border-color: darken($text-color, 5%);
-                            }
-                        }
-
-                        &--active {
-                            width: 20px;
-                            height: 20px;
-                            opacity: 1 !important;
-
-                            img {
-                                border-color: #ebeced;
-                            }
-                        }
-                    }
-                }
-            }
-
-            &-size {
-                .values {
-                    .value {
-                        margin: 0 3px 3px 0;
-                        font-weight: bold;
-                        padding: 1px 2px;
-                        border-radius: 3px;
-                        display: inline-block;
-
-                        &:hover {
-                            background: #eaebec;
-                        }
-
-                        &--active {
-                            background: #eaebec;
-                        }
-                    }
+                &:after {
+                    content: "";
+                    position: absolute;
+                    right: 0;
+                    top: 0;
+                    bottom: 0;
+                    width: 30px;
+                    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.3));
+                    transition: .2s;
                 }
             }
         }
