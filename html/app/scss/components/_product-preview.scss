@@ -6,16 +6,45 @@
 
 .product-preview {
     min-width: 830px;
+    display: flex;
+    justify-content: space-between;
+
+    .col-image {
+        flex: 0 0 250px;
+        padding-top: 30px;
+    }
+
+    .col-content {
+        flex: 0 1 auto;
+        display: flex;
+        justify-content: space-between;
+
+        .col-left {
+            flex: 0 0 270px;
+            padding: 30px 30px 0 0;
+            border-right: 1px solid $border-color;
+        }
+
+        .col-right {
+            flex: 0 1 auto;
+            padding: 30px 0 30px 30px;
+        }
+    }
+
+    &__image {
+        position: relative;
+    }
 
     &__content {
+        display: flex;
+
         .product-item__rate {
             justify-content: flex-start;
             margin-bottom: 30px;
         }
 
         .product-item__stock {
-            display: flex;
-            align-items: center;
+            justify-content: flex-start;
             margin-bottom: 25px;
 
             a {
@@ -47,7 +76,7 @@
                         position: relative;
                         top: 2px;
                         transition: .3s;
-                        transform: rotate(180deg);
+                        transform: rotate(-180deg);
                     }
 
                     &:hover {
@@ -72,6 +101,130 @@
 
             i {
                 margin-right: 10px;
+            }
+        }
+
+        .prices {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 15px;
+            white-space: nowrap;
+
+            .price-value {
+                &-old {
+                    font-size: 16px;
+                    position: relative;
+                    padding-left: 25px;
+
+                    &:before {
+                        content: "";
+                        display: block;
+                        width: 2px;
+                        height: 21px;
+                        background: $grey-color;
+                        position: absolute;
+                        left: 10px;
+                        top: -2px;
+                    }
+                }
+            }
+        }
+
+        .preview-advants {
+            display: flex;
+            margin-bottom: 15px;
+            font-size: 13px;
+            line-height: 1.2;
+
+            span {
+                display: inline-block;
+                background: #e20c0c;
+                border-radius: 2px;
+                padding: 7px 15px;
+                font-weight: bold;
+                color: #fff;
+                margin: 0 10px 0 0;
+            }
+        }
+
+        .item-options {
+            margin-bottom: 15px;
+
+            .prop {
+                margin-bottom: 5px;
+
+                &-color {
+                    .values {
+                        .value {
+                            width: 26px;
+                            height: 26px;
+                            border: none;
+                            margin: 0 8px 5px 0;
+
+                            &--active {
+                                box-shadow: 0 0 3px 2px rgba(0, 0, 0, .3);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .preview-counter {
+            display: flex;
+            margin-bottom: 10px;
+
+            .input-counter {
+                margin-right: 10px;
+            }
+
+            .btn {
+                flex: 1 1 auto;
+                border-radius: 2px;
+            }
+        }
+
+        .preview-quick-buy {
+            margin-bottom: 20px;
+
+            .btn {
+                width: 100%;
+                border: 1px solid $primary-color;
+                border-radius: 2px;
+                text-align: center;
+                padding: 6px 15px;
+                color: $primary-color;
+                font-weight: bold;
+
+                &:hover {
+                    background: darken(#fff, 5%);
+                }
+            }
+        }
+
+        .preview-dop {
+            margin-bottom: 30px;
+        }
+
+        .preview-buttons {
+            display: flex;
+
+            button {
+                border: none;
+                background: none;
+                margin: 0 20px 5px 0;
+                padding: 0;
+                display: flex;
+                align-items: center;
+                text-decoration: underline;
+
+                &:hover {
+                    text-decoration: none;
+                }
+
+                i {
+                    margin-right: 7px;
+                }
             }
         }
     }

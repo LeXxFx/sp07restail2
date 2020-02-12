@@ -306,6 +306,9 @@ $item-height: 470px;
     }
 
     &__stock {
+        display: flex;
+        align-items: center;
+        justify-content: center;
         margin: 0 0 5px 0;
         text-decoration: none;
 

@@ -19,6 +19,12 @@
         margin: 10% auto;
     }
 
+    &-preview {
+        .modal-body {
+            padding-top: 0;
+        }
+    }
+
     &-content {
         border-radius: 0;
         padding: 0;
@@ -33,7 +39,7 @@
             margin: 0;
             padding: 15px 60px 15px 30px;
             position: relative;
-            border-bottom: 1px solid #e2e1e1;
+            border-bottom: 1px solid $border-color;
 
             p {
                 font-size: 12px;

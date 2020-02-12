@@ -7477,15 +7477,14 @@ readers do not read off random characters that represent icons */
         color: #e20c0c; }
   .product-item__price {
     margin-bottom: 10px; }
-  .product-item__options {
+  .product-item__options.item-options {
     max-height: 66px;
     overflow: hidden; }
-    .product-item__options .prop {
+    .product-item__options.item-options .prop {
       margin: 0 0 10px 0;
       overflow: hidden;
-      max-height: 23px;
-      position: relative; }
-      .product-item__options .prop:after {
+      max-height: 23px; }
+      .product-item__options.item-options .prop:after {
         content: "";
         position: absolute;
         right: 0;
@@ -7494,48 +7493,6 @@ readers do not read off random characters that represent icons */
         width: 30px;
         background-image: linear-gradient(to right, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.3));
         transition: .2s; }
-      .product-item__options .prop .values {
-        display: -ms-flexbox;
-        display: flex;
-        -ms-flex-wrap: wrap;
-            flex-wrap: wrap; }
-        .product-item__options .prop .values .value {
-          cursor: pointer; }
-          .product-item__options .prop .values .value--active {
-            cursor: default; }
-      .product-item__options .prop-color .values {
-        -ms-flex-align: end;
-            align-items: flex-end; }
-        .product-item__options .prop-color .values .value {
-          width: 13px;
-          height: 13px;
-          margin: 0 3px 3px 0;
-          vertical-align: top;
-          border-radius: 50%;
-          border: 1px solid transparent; }
-          .product-item__options .prop-color .values .value img {
-            vertical-align: top;
-            width: 100%; }
-          .product-item__options .prop-color .values .value:hover {
-            opacity: 0.8; }
-            .product-item__options .prop-color .values .value:hover img {
-              border-color: #151515; }
-          .product-item__options .prop-color .values .value--active {
-            width: 20px;
-            height: 20px;
-            opacity: 1 !important; }
-            .product-item__options .prop-color .values .value--active img {
-              border-color: #ebeced; }
-      .product-item__options .prop-size .values .value {
-        margin: 0 3px 3px 0;
-        font-weight: bold;
-        padding: 1px 2px;
-        border-radius: 3px;
-        display: inline-block; }
-        .product-item__options .prop-size .values .value:hover {
-          background: #eaebec; }
-        .product-item__options .prop-size .values .value--active {
-          background: #eaebec; }
   .product-item__buttons {
     position: absolute;
     left: 0;
@@ -7759,19 +7716,6 @@ readers do not read off random characters that represent icons */
     width: auto !important;
     height: auto !important;
     margin: 0 auto 20px auto !important; } }
-
-.prices {
-  color: #222222; }
-  .prices .price-value {
-    white-space: nowrap; }
-    .prices .price-value strong {
-      font-size: 17px; }
-    .prices .price-value-old {
-      color: #717171; }
-
-@media screen and (max-width: 767px) {
-  .prices .price-value span {
-    display: none; } }
 
 .search-input .form-input {
   border: 1px solid #eaebec;
@@ -8319,6 +8263,110 @@ readers do not read off random characters that represent icons */
             transform-origin: center top;
     -webkit-transform: scalex(1.3) scaley(0.7);
             transform: scalex(1.3) scaley(0.7); } }
+
+.input-counter {
+  color: #010101;
+  font-size: 16px;
+  margin: 0 0 30px 0;
+  text-align: center; }
+  .input-counter .btn {
+    padding: 0;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 36px;
+    border-radius: 0;
+    width: 40px;
+    height: 36px;
+    text-align: center;
+    border: none;
+    background: #e9e9eb; }
+    .input-counter .btn:hover {
+      background: #dcdcdf; }
+  .input-counter .input-group-text {
+    display: inline-block; }
+    .input-counter .input-group-text .form-control {
+      background: #fff;
+      font-size: 16px;
+      font-weight: bold;
+      padding: 0;
+      display: inline-block;
+      width: 52px;
+      height: 36px;
+      margin: 0 -3px;
+      border-radius: 0;
+      border: none;
+      text-align: center; }
+      .input-counter .input-group-text .form-control:disabled {
+        cursor: default; }
+
+.prices {
+  color: #222222; }
+  .prices .price-value {
+    white-space: nowrap; }
+    .prices .price-value strong {
+      font-size: 17px; }
+    .prices .price-value-old {
+      color: #717171; }
+
+.item-options .prop {
+  position: relative;
+  display: -ms-flexbox;
+  display: flex; }
+  .item-options .prop .prop-name {
+    font-weight: bold;
+    -ms-flex: 0 0 65px;
+        flex: 0 0 65px;
+    margin-right: 5px; }
+  .item-options .prop .values {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+    .item-options .prop .values .value {
+      cursor: pointer; }
+      .item-options .prop .values .value--active {
+        cursor: default; }
+  .item-options .prop-color .values {
+    -ms-flex-align: end;
+        align-items: flex-end; }
+    .item-options .prop-color .values .value {
+      width: 13px;
+      height: 13px;
+      margin: 0 3px 3px 0;
+      vertical-align: top;
+      border-radius: 50%;
+      border: 1px solid transparent; }
+      .item-options .prop-color .values .value img {
+        vertical-align: top;
+        width: 100%; }
+      .item-options .prop-color .values .value:hover {
+        opacity: 0.8; }
+        .item-options .prop-color .values .value:hover img {
+          border-color: #151515; }
+      .item-options .prop-color .values .value--active {
+        width: 20px;
+        height: 20px;
+        opacity: 1 !important; }
+        .item-options .prop-color .values .value--active img {
+          border-color: #ebeced; }
+  .item-options .prop-size .values .value {
+    margin: 0 3px 3px 0;
+    font-weight: bold;
+    padding: 1px 2px;
+    border-radius: 3px;
+    display: inline-block; }
+    .item-options .prop-size .values .value:hover {
+      background: #f1f1f1; }
+    .item-options .prop-size .values .value--active {
+      background: #cdccce !important;
+      cursor: default; }
+    .item-options .prop-size .values .value--disable {
+      color: #b2b2b2;
+      background: none !important; }
+
+@media screen and (max-width: 767px) {
+  .prices .price-value span {
+    display: none; } }
 
 * {
   min-height: 0;
@@ -9123,7 +9171,7 @@ body {
     padding: 0;
     border: none;
     margin: 0;
-    padding: 15px 60px 15px 35px;
+    padding: 15px 60px 15px 30px;
     position: relative;
     border-bottom: 1px solid #e2e1e1; }
     .modal-content .modal-header p {
