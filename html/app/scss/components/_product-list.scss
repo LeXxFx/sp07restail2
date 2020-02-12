@@ -300,30 +300,53 @@ $item-height: 470px;
 
         span {
             font-weight: bold;
-            color: $color-grey;
+            color: $grey-color;
             margin: 0 0 0 5px;
         }
     }
 
     &__stock {
         margin: 0 0 5px 0;
-        color: $color-grey;
+        text-decoration: none;
 
         i {
             margin: 0 5px 0 0;
         }
 
-        .in-stock {
-            i {
-                color: #70c34f;
+        a {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            color: $text-color;
+
+            span {
+                text-decoration: underline;
             }
-        }
 
-        .out-of-stock {
-            color: #e20c0c;
+            &:hover {
+                span {
+                    text-decoration: none;
+                }
+            }
 
-            i {
+            &.in-stock {
+                color: #70c34f;
+
+                i {
+                    color: #70c34f;
+                }
+            }
+
+            &.out-of-stock {
                 color: #e20c0c;
+
+                i {
+                    color: #e20c0c;
+                }
+            }
+
+            &.find-chipper {
+                color: $text-color;
             }
         }
     }
@@ -378,7 +401,7 @@ $item-height: 470px;
             }
 
             &-link {
-                color: $color-grey;
+                color: $grey-color;
                 text-decoration: underline;
                 font-size: 12px;
 
