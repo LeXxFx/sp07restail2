@@ -358,26 +358,24 @@ $item-height: 470px;
         margin-bottom: 10px;
     }
 
-    &__options {
-        &.item-options {
-            max-height: 66px;
+    .product-options {
+        max-height: 66px;
+        overflow: hidden;
+
+        .prop {
+            margin: 0 0 10px 0;
             overflow: hidden;
+            max-height: 23px;
 
-            .prop {
-                margin: 0 0 10px 0;
-                overflow: hidden;
-                max-height: 23px;
-
-                &:after {
-                    content: "";
-                    position: absolute;
-                    right: 0;
-                    top: 0;
-                    bottom: 0;
-                    width: 30px;
-                    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.3));
-                    transition: .2s;
-                }
+            &:after {
+                content: "";
+                position: absolute;
+                right: 0;
+                top: 0;
+                bottom: 0;
+                width: 30px;
+                background-image: linear-gradient(to right, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.3));
+                transition: .2s;
             }
         }
     }
