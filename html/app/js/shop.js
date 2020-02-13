@@ -119,11 +119,10 @@ var Shop = function () {
 					}
 				]
 			});
-			gallery.on('afterChange', function (event, slick, currentSlide, nextSlide) {
+			gallery.on('afterChange', function (event, slick, currentSlide) {
 				var slide = slick.$slides.get(currentSlide),
-					item = $(slide.children[0]),
-					zoom_size = $(slide).data('zoom-size');
-
+					item = $(slide).find('.item'),
+					zoom_size = $(item).data('zoom-size');
 				switchImage(item, zoom_size);
 			});
 		};
@@ -164,17 +163,15 @@ var Shop = function () {
 		that.parent().addClass("current");
 
 		target.removeClass('image__preview--init').html('').addClass('image__preview--loading');
-
 		if (that.data('source') == 'image') {
+
 			target.html('<a class="MagicZoomPlus" rel="preload-selectors-small:false;preload-selectors-big:false;initialize-on:mouseover;smoothing-speed:70;fps:40;selectors-effect:false;show-title:false;loading-msg:Загрузка...;background-opacity:10;zoom-width:' + $zoom + ';zoom-height:' + $zoom + ';zoom-distance:5;hint-text:;selectors-class:current;buttons:hide;caption-source:span;" ' +
-				'href="' + newSrc + '"><img /></a>')
+				'href="' + newSrc + '"><img src="' + newSrc + '"/></a>').promise().done(function () {
+					target.removeClass('image__preview--loading');
+					target.find('img').fadeIn('fast');
+				});
 
-			target.find('img').attr('src', newSrc).load(function () {
-				target.removeClass('image__preview--loading');
-				target.find('img').fadeIn('fast');
-			});
-
-			MagicZoomPlus.start('gallery');
+			//MagicZoomPlus.start('gallery');
 
 		};
 	}
