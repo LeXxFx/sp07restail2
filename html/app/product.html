@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
+
+    <title>Shop | Sport07</title>
+    <link rel="shortcut icon" href="images/favicon.png">
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header id="header">
+        <div class="container">
+            <div class="header @@headerClass">
+                <div class="header__top">
+                    <div class="header-region">
+                        <i class="appicon appicon-map"></i>
+                        <span>Москва</span>
+                    </div>
+                    <div class="header-contacts">
+                        <i class="appicon appicon-phone"></i>
+                        <a href="tel:84952151207"> 8 (495) <strong>215-12-07</strong></a>
+                        <a href="tel:88005552082"> 8 (800) <strong>555-20-82</strong></a>
+                        <span>(Пн-Пт 9:00-18:00, Сб, Вск - вых.)</span>
+                        <button class="btn" type="button" data-dismiss="modal" data-toggle="modal"
+                            data-target="#callback">заказать
+                            звонок</button>
+                    </div>
+                    <div class="header-account">
+                        <a href="#">
+                            <i class="appicon appicon-user"></i>
+                            <span>Личный кабинет</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="header__main">
+                    <div class="header-logo">
+                        <a href="#" class="logo">
+                            <img src="images/logo.png" alt="Sport07">
+                            <span>Интернет магазин спортивных товаров</span>
+                        </a>
+                    </div>
+                    <div class="header-search">
+                        <a href="#" class="header-search__toggle search-toggle icon-link">
+                            <i class="appicon appicon-search"></i> <span class="icon-link__name">Поиск</span></a>
+                        <div class="header-search__input">
+                            <div class="search-input">
+                                <form action="#">
+                                    <div class="form-input">
+                                        <input id="title-searchs-input" type="text"
+                                            placeholder="Поиск среди 6000 спортивных товаров" name="q" value=""
+                                            size="40" class="form-control" maxlength="100" autocomplete="off">
+                                        <input name="s" type="submit" value="Поиск" class="btn appicon appicon-search">
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="search-menu">
+                                <div class="search-menu__body">
+                                    <div class="head">Найдено в разделах каталога:</div>
+                                    <ul>
+                                        <li>
+                                            <a href="#">Кимоно для карате</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Кимоно для дзюдо</a>
+                                        </li>
+                                    </ul>
+                                    <div class="head">Найдены товары (всего 35):</div>
+                                    <div class="products-list clearfix">
+                                        <div class="item">
+                                            <a class="img" href="product.html">
+                                                <img src="images/demo/product_img1-190x190.jpg" alt="" />
+                                            </a>
+                                            <div class="name">
+                                                Кимоно для карате Golden Scorpion "PKM-885"
+                                            </div>
+                                            <div class="price">
+                                                <span class="new">1502</span>
+                                                <span class="currency">руб.</span>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <a class="img" href="product.html">
+                                                <img src="images/demo/product_img2-190x190.jpg" alt="" />
+                                            </a>
+                                            <div class="name">
+                                                Кимоно для карате Alpha Caprice GS-KK01
+                                            </div>
+                                            <div class="price">
+                                                <span class="old">1805</span>
+                                                <span class="new">1480</span>
+                                                <span class="currency">руб.</span>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <a class="img" href="product.html">
+                                                <img src="images/demo/product_img3-190x190.jpg" alt="" />
+                                            </a>
+                                            <div class="name">
+                                                Кимоно для карате Golden Scorpion "PKM-1200" те Golden Scorpion
+                                                "PKM-1200"
+                                            </div>
+                                            <div class="price">
+                                                <span class="new">1479</span>
+                                                <span class="currency">руб.</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="search-menu__button">
+                                    <a href="#" class="btn">Посмотреть результаты поиска (35)</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="header-menu">
+                        <a href="#" class="icon-link"><i class="appicon appicon-compare"></i> <span
+                                class="icon-link__name">Сравнение</span>
+                            <span class="icon-link__counter">3</span></a>
+                        <a href="#" class="icon-link icon-link-fav"><i class="appicon appicon-heart"></i> <span
+                                class="icon-link__name">Избранное</span>
+                            <span class="icon-link__counter">300</span></a>
+                        <a href="#" class="icon-link icon-link-cart"><i class="appicon appicon-cart"></i> <span
+                                class="icon-link__name">Корзина</span>
+                            <span class="icon-link__counter">30</span></a>
+                    </div>
+                </div>
+                <div class="navi">
+                    <div class="navi-toggle">
+                        <span>Меню</span>
+                        <button><span class="lines"></span></button>
+                    </div>
+                    <nav class="navi-list">
+                        <div class="catalog-menu">
+                            <ul class="menu">
+                                <li class="has-child">
+                                    <a href="#">
+                                        <i class="appicon appicon-list"></i>
+                                        <span>Каталог</span>
+                                    </a>
+                                    <div class="catalog-navi ">
+  <ul>
+    <li class="has-child">
+      <a href="#">Фитнес</a>
+      <div class="dropdown">
+        <div class="category-col">
+          <h2 class="category-col__title">
+            <a href="#">Тяжелая атлетика</a>
+          </h2>
+          <ul>
+            <li><a href="#">Тренажеры и тяжелая атлетика</a></li>
+            <li><a href="#">Художественная гимнастика и танцы</a></li>
+          </ul>
+        </div>
+      </div>
+    </li>
+    <li class="has-child">
+      <a href="#">Художественная гимнастика и танцы</a>
+      <div class="dropdown">
+        <div class="category-col">
+          <h2 class="category-col__title">
+            <a href="#">Тяжелая атлетика</a>
+          </h2>
+          <ul>
+            <li><a href="#">Тренажеры и тяжелая атлетика</a></li>
+            <li><a href="#">Художественная гимнастика и танцы</a></li>
+          </ul>
+        </div>
+      </div>
+    </li>
+    <li class="has-child">
+      <a href="#">Тренажеры и тяжелая атлетика</a>
+      <div class="dropdown">
+        <div class="category-col">
+          <h2 class="category-col__title">
+            <a href="#">Тяжелая атлетика</a>
+          </h2>
+          <ul>
+            <li>
+              <a href="#">Гантели разборные <span>(15)</span></a>
+            </li>
+            <li>
+              <a href="#">Гири <span>(5)</span></a>
+            </li>
+            <li>
+              <a href="#">Грифы для гантелей и штанг <span>(100)</span></a>
+            </li>
+            <li>
+              <a href="#">Диски для гантелей и штанг <span>(18)</span></a>
+            </li>
+            <li>
+              <a href="#">Перчатки для тяжелой атлетики и велоспорта
+                <span>(19)</span></a>
+            </li>
+            <li>
+              <a href="#">Пояса для поднятия тяжестей <span>(17)</span></a>
+            </li>
+            <li>
+              <a href="#">Стойки для гантелей и штанг <span>(100)</span></a>
+            </li>
+            <li>
+              <a href="#">Скамьи <span>(1000)</span></a>
+            </li>
+            <li>
+              <a href="#">Аксессуары <span>(10)</span></a>
+            </li>
+          </ul>
+        </div>
+        <div class="category-col">
+          <h2 class="category-col__title">
+            <a href="#">Домашние тренажеры</a>
+          </h2>
+          <ul>
+            <li>
+              <a href="#">Беговые дорожки <span>(105)</span></a>
+            </li>
+            <li>
+              <a href="#">Велотренажеры <span>(165)</span></a>
+            </li>
+            <li class="has-child">
+              <a href="#">Степперы, Эллипсоиды <span>(155)</span></a>
+              <ul>
+                <li>
+                  <a href="#">Степперы с эспандерами <span>(25)</span></a>
+                </li>
+                <li>
+                  <a href="#">Мини степперы <span>(15)</span></a>
+                </li>
+                <li>
+                  <a href="#">Профессиональные степперы <span>(20)</span></a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </li>
+    <li><a href="#">Туризм и активный отдых</a></li>
+    <li><a href="#">Зимние виды спорта и активный отдых</a></li>
+    <li><a href="#">Единоборства и бокс</a></li>
+    <li><a href="#">Командные виды спорта</a></li>
+    <li><a href="#">Летние виды спорта</a></li>
+    <li><a href="#">Водные виды спорта</a></li>
+    <li><a href="#">Игры</a></li>
+  </ul>
+</div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="main-menu">
+                            <ul class="menu">
+                                <li>
+                                    <a href="#">Акции</a>
+                                </li>
+                                <li>
+                                    <a href="#">Доставка и оплата</a>
+                                </li>
+                                <li>
+                                    <a href="#">Бренды</a>
+                                </li>
+                                <li>
+                                    <a href="#">Магазины</a>
+                                </li>
+                                <li class="has-child">
+                                    <a href="#">О компании</a>
+                                    <ul class="dropdown">
+                                        <li>
+                                            <a href="#">Новости</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Сотрудники</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Вакансии</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">Контакты</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                    <div class="body-overlay"></div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+<div class="container">
+  <div class="inner">
+    <div id="content" class="content" role="main">
+    </div>
+  </div>
+</div>
+<footer id="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-7">
+                <div class="row">
+                    <div class="col-md-4 col-lg-6">
+                        <div class="head">Покупателю</div>
+                        <ul class="navi">
+                            <li>
+                                <a href="#">Доставка и оплата</a>
+                            </li>
+                            <li>
+                                <a href="#">Гарантия и возврат</a>
+                            </li>
+                            <li>
+                                <a href="#">Часто задаваемые вопросы</a>
+                            </li>
+                            <li>
+                                <a href="#">Обратная связь</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4 col-lg-6">
+                        <div class="head">Интернет магазин</div>
+                        <ul class="navi">
+                            <li>
+                                <a href="#">О нас</a>
+                            </li>
+                            <li>
+                                <a href="#">Отзывы покупателей</a>
+                            </li>
+                            <li>
+                                <a href="#">Новости</a>
+                            </li>
+                            <li>
+                                <a href="#">Статьи</a>
+                            </li>
+                            <li>
+                                <a href="#">Контакты</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-5">
+                <div class="head">Контакты</div>
+                <div class="footer__contacts">
+                    <div class="tel">
+                        <div class="tel__item">
+                            <a href="tel:84952151207" data-toggle="tooltip" title="Позвонить в магазин">
+                                <span>8 (495)</span> 215-12-07</a>
+                            <span>для абонентов из Москвы</span>
+                        </div>
+                        <div class="tel__item">
+                            <a href="tel:88005552082" data-toggle="tooltip" title="Позвонить в магазин">
+                                <span>8 (800)</span> 555-20-82</a>
+                            <span>для абонентов из регионов</span>
+                        </div>
+                    </div>
+                    <p>E-mail для вопросов и предложений:
+                        <a href="mailto:info@sport07.ru">info@sport07.ru</a>
+                    </p>
+                    <div class="schedule">
+                        <div class="schedule__item">
+                            <i class="appicon appicon-grafik"></i>
+                            Пн-Пт 8:00-20:00
+                            <br /> Сб 10:00-14:00, Вс - выходной
+                        </div>
+                    </div>
+                    <div class="socials">
+                        <span>Мы в социальных сетях</span>
+                        <a href="#"><i class="appicon appicon-instagram"></i></a>
+                        <a href="#"><i class="appicon appicon-vk"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-7">
+                <div class="row row-dop">
+                    <div class="col-md-4 col-lg-6">
+                        <div class="head">Способы оплаты</div>
+                        <div class="payemts-list">
+                            <a href="#">
+                                <img src="images/payment1.png" alt="" />
+                            </a>
+                            <a href="#">
+                                <img src="images/payment2.png" alt="" />
+                            </a>
+                            <a href="#">
+                                <img src="images/payment3.png" alt="" />
+                            </a>
+                            <a href="#">
+                                <img src="images/payment4.png" alt="" />
+                            </a>
+                            <p>
+                                <a href="#" class="link-all">Посмотреть все способы</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-lg-6">
+                        <div class="yandex-review">
+                            <img src="images/yandex_market.png" alt="" />
+                            <p>
+                                <a href="#" class="link-all">Оценить нас на Я.Маркете</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-5">
+                <div class="copyright">
+                    <p>© Интернет-магазин спортивных товаров и инвентаря, 2016 г.</p>
+                    Сегодня наш сайт посмотрели
+                    <img src="images/demo/stat.png" alt="" /> посетителей.
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<div class="loader">
+    <div class="loader-cube"></div>
+    <div class="loader-cube"></div>
+    <div class="loader-cube"></div>
+    <div class="loader-cube"></div>
+    <div class="loader-cube"></div>
+</div>
+<a id="scroll-top"><i class="fas fa-long-arrow-alt-up"></i>
+    Наверх</a>
+
+<div class="modal fade modal-form modal-callback" id="callback" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div class="panel-sport">
+                    <div class="modal-header">
+                        Заказать обратный звонок
+                        <p>Наш консультант вскоре свяжется с Вами.</p>
+                    </div>
+                    <form action="#" class="form-callback form-horizontal">
+                        <div class="form-callback__top">
+                            Введите Ваши данные:
+                        </div>
+                        <div class="row">
+                            <div class="col-md-8">
+                                <div class="form-group">
+                                    <div class="col-sm-5">
+                                        <label class="control-label">Имя:</label>
+                                    </div>
+                                    <div class="col-sm-7">
+                                        <input type="text" class="form-control" />
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="col-sm-5">
+                                        <label class="control-label">Ваш номер телефона:</label>
+                                        <span class="req">*</span>
+                                    </div>
+                                    <div class="col-sm-7">
+                                        <input type="tel" autocomplete="tel" class="form-control" />
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="col-sm-5">
+                                        <label class="control-label">E-mail:</label>
+                                    </div>
+                                    <div class="col-sm-7">
+                                        <input type="email" class="form-control" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-bot">
+                                    <button class="btn" data-dismiss="modal" data-toggle="modal"
+                                        data-target="#alert_callback">Отправить</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-12">
+                                <div class="checkbox">
+                                    <input id="rules" type="checkbox">
+                                    <label for="rules" class="txt">Я
+                                        <a href="#">ознакомлен (а)</a> и даю своё согласие на обработку персональных
+                                        данных.*</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-info">
+                            <span class="req">*</span> - Обязательно для заполнения.</div>
+                    </form>
+                    <button class="panel-sport__close" data-dismiss="modal" aria-hidden="true" data-toggle="tooltip"
+                        title="Закрыть">
+                        <span>
+                            <i class="fa fa-angle-left"></i>
+                        </span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade modal-preview" id="preview" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="nav-arrows">
+        <button class="nav-arrows__left" title="Назад">
+          <i class="fas fa-chevron-left"></i>
+        </button>
+        <button class="nav-arrows__right" title="Вперед">
+          <i class="fas fa-chevron-right"></i>
+        </button>
+      </div>
+      <div class="modal-header">
+        Раздвижные коньки PW-135 Orange
+        <p>Артикул: 00-00002508</p>
+        <button class="modal-close" data-dismiss="modal" aria-hidden="true" data-toggle="tooltip" title="Закрыть">
+          &times;
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="product-preview">
+          <div class="col-image">
+            <div class="product-item__stickers">
+              <div class="sticker sticker-promo">
+                <span>Акция!</span>
+              </div>
+            </div>
+            <div class="product-images">
+              <div class="product-images__preview image-preview">
+                <a href="images/demo/product_img1-220x240.jpg">
+                  <img src="images/demo/product_img1-220x240.jpg" alt="" />
+                </a>
+              </div>
+              <div class="product-images__list image-list" data-direction="row">
+                <div class="item current" data-zoom-size="345">
+                  <a href="images/demo/product_img1-220x240.jpg" data-preview="images/demo/product_img1-220x240.jpg"
+                    data-source="image">
+                    <img src="images/demo/product_img1-220x240.jpg" alt="" />
+                  </a>
+                </div>
+                <div class="item" data-zoom-size="345">
+                  <a href="images/demo/product_img2-190x190.jpg" data-preview="images/demo/product_img2-190x190.jpg"
+                    data-source="image">
+                    <img src="images/demo/product_img2-190x190.jpg" alt="" />
+                  </a>
+                </div>
+                <div class="item" data-zoom-size="345">
+                  <a href="images/demo/product_img1-190x190.jpg" data-preview="images/demo/product_img1-190x190.jpg"
+                    data-source="image">
+                    <img src="images/demo/product_img1-190x190.jpg" alt="" />
+                  </a>
+                </div>
+                <div class="item" data-zoom-size="345">
+                  <a href="images/demo/product_img2-190x190.jpg" data-preview="images/demo/product_img2-190x190.jpg"
+                    data-source="image">
+                    <img src="images/demo/product_img2-190x190.jpg" alt="" />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-content">
+            <div class="product-preview__content">
+              <div class="col-left">
+                <div class="product-item__rate">
+                  <div class="stars star-4"></div>
+                </div>
+                <div class="product-item__stock">
+                  <a class="in-stock"><i class="fas fa-check"></i> <span>В наличии</span></a>
+                  <a class="find-chipper" href="#"><i class="appicon appicon-tag"></i> <span>Нашли
+                      дешевле?</span></a>
+                </div>
+                <div class="preview-text">
+                  <div class="post">
+                    <p>Полумягкие раздвижные коньки PW-135 Orange торговой марки "Alpha Caprice" имеют отличный
+                      дизайн. Эта модель коньков сочетает надежность и качество.</p>
+                    <p>Полумягкие раздвижные коньки PW-135 Orange торговой марки "Alpha Caprice" имеют отличный
+                      дизайн.</p>
+                    <div class="post-more">
+                      <div class="collapse" id="fullText">
+                        <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson
+                          ad
+                          squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt
+                          sapiente ea proident.</p>
+                      </div>
+                      <a data-toggle="collapse" href="#fullText" role="button" aria-expanded="false"
+                        aria-controls="fullText" class="collapsed">
+                        Подробнее <i class="fa fa-angle-down"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="preview-delivary"><i class="appicon appicon-truck"></i> Доставка по всей России!</div>
+              </div>
+              <div class="col-right">
+                <div class="prices">
+                  <span class="price-value">1590 руб./шт</span>
+                  <del class="price-value price-value-old">1690 руб.</del>
+                </div>
+                <div class="preview-discont">
+                  <span>-5%</span>
+                  До скидки 5% осталось купить<br> на 3000 р.
+                </div>
+                <div class="product-options">
+                  <div class="prop prop-size">
+                    <div class="prop-name">Размер:</div>
+                    <div class="values">
+                      <div class="value value--active">
+                        <span>L (39-42)</span>
+                      </div>
+                      <div class="value value--disable" title="Ждем поступления">
+                        <span>M (35-38)</span>
+                      </div>
+                      <div class="value">
+                        <span>S (31-34)</span>
+                      </div>
+                      <div class="value">
+                        <span> XS (27-30)</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="prop prop-color">
+                    <div class="prop-name">Цвет:</div>
+                    <div class="values">
+                      <div class="value value--active">
+                        <img src="images/color_1.png" alt="" />
+                      </div>
+                      <div class="value">
+                        <img src="images/color_2.png" alt="" />
+                      </div>
+                      <div class="value">
+                        <img src="images/color_3.png" alt="" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="preview-counter">
+                  <div class="product-item__counter input-counter">
+                    <button type="button" class="btn btn-minus btn-number" data-type="minus" data-field="quant[2]">
+                      -
+                    </button>
+                    <div class="input-group-text">
+                      <input type="text" name="quant[2]" class="form-control input-number input-area" value="1"
+                        data-min="1" data-max="100000" data-step="1" data-unit="">
+                    </div>
+                    <button type="button" class="btn btn-plus btn-number" data-type="plus" data-field="quant[2]">
+                      +
+                    </button>
+                  </div>
+                  <button class="btn btn-primary btn-add-to-cart" title="Положить в корзину">
+                    В корзину
+                  </button>
+                </div>
+                <div class="preview-quick-buy">
+                  <button class="btn btn-quick-buy" title="Купить в один клик">
+                    Купить в 1 клик
+                  </button>
+                </div>
+                <div class="preview-dop">
+                  <b>Гарантия АСЦ:</b> 24 месяца
+                </div>
+                <div class="preview-buttons">
+                  <button><i class="appicon appicon-heart"></i> В избранное</button>
+                  <button><i class="appicon appicon-compare"></i> Сравнить</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script type="text/javascript" src="js/libs.min.js"></script>
+<script type="text/javascript" src="js/magiczoomplus.js"></script>
+<script type="text/javascript" src="js/default.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+<script type="text/javascript" src="js/shop.js"></script>
+
+</body>
+
+</html>
