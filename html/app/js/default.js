@@ -66,7 +66,7 @@ var Main = function () {
 			e.preventDefault();
 
 			$(this).closest('li').toggleClass('opened');
-			$(this).closest('li').find('>.dropdown').slideToggle('fast');
+			$(this).closest('li').find('>.dropdown, >.catalog-navi').slideToggle('fast');
 		});
 
 		$('.body-overlay').on('click', function (e) {
