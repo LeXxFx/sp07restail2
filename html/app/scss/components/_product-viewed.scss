@@ -1,0 +1,129 @@
+.viewed {
+    padding: 20px 10px;
+    margin: 30px 0 0;
+    background: #fff;
+
+    .section-title {
+        padding: 0 4px;
+        margin-bottom: 12px;
+    }
+
+    &__list {
+        position: relative;
+
+        &:not(.slick-slider) {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 0 -4px;
+
+            .product-mini {
+                flex: 0 0 calc(100% / 7 - 8px);
+                margin: 10px 4px;
+            }
+        }
+
+        &.slick-slider {
+            .slick-arrow {
+                top: -25px;
+
+                &.slick-next {
+                    right: 0;
+                }
+
+                &.slick-prev {
+                    left: auto;
+                    right: 40px;
+                }
+            }
+        }
+
+        .slick-slide {
+            padding: 10px 4px;
+        }
+
+        .product-mini {
+            border: 1px solid #eaebec;
+            position: relative;
+            padding: 5px 5px 40px 5px;
+            transition: .2s;
+            font-size: 12px;
+            text-align: center;
+
+            &:hover {
+                box-shadow: 0 0 16px 0 rgba(0, 0, 0, .1);
+
+                .product-item__quick-show {
+                    visibility: visible;
+                    opacity: 1;
+                    transform: none;
+                }
+            }
+
+            .product-item {
+                &__quick-show {
+                    z-index: 20;
+
+                    a {
+                        padding: 5px 2px;
+                    }
+                }
+
+                &__discont {
+                    bottom: 5px;
+                }
+
+                &__stickers {
+                    text-align: left;
+                }
+
+                &__buttons {
+                    justify-content: center;
+
+                    .btn {
+                        min-width: 90px;
+                        padding: 2px 10px;
+                        border-radius: 2px;
+                    }
+                }
+            }
+
+            &__image {
+                position: relative;
+                margin-bottom: 10px;
+
+                >a {
+                    display: flex;
+                    height: 130px;
+                    text-decoration: none;
+
+                    img {
+                        object-fit: contain;
+                        width: 100%;
+                    }
+                }
+            }
+
+            &__title {
+                height: 36px;
+                overflow: hidden;
+                font-size: 14px;
+                line-height: 1.2;
+                margin-bottom: 10px;
+
+                a {
+                    text-decoration: none;
+                    color: $text-color;
+
+                    &:hover {
+                        color: $second-color;
+                    }
+                }
+            }
+
+            &__price {
+                margin-bottom: 10px;
+                height: 42px;
+            }
+        }
+    }
+}

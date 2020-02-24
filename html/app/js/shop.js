@@ -58,10 +58,57 @@ var Shop = function () {
 				}
 			});
 		}
+
+		$('.link-load').on('click', function (e) {
+			e.preventDefault();
+
+			$(this).toggleClass('link-load--loading');
+		});
+
+		$('.viewed__list').slick({
+			slidesToShow: 7,
+			slidesToScroll: 7,
+			autoplay: false,
+			arrows: true,
+			dots: false,
+			prevArrow: '<a class="slick-prev"><i class="fa fa-angle-left"></i></a>',
+			nextArrow: '<a class="slick-next"><i class="fa fa-angle-right"></i></a>',
+			responsive: [
+				{
+					breakpoint: 1200,
+					settings: {
+						slidesToShow: 6,
+						slidesToScroll: 6,
+					}
+				},
+				{
+					breakpoint: 992,
+					settings: {
+						slidesToShow: 4,
+						slidesToScroll: 4,
+					}
+				},
+				{
+					breakpoint: 478,
+					settings: {
+						slidesToShow: 2,
+						slidesToScroll: 2
+					}
+				}
+			]
+		});
 	};
 
+	var productQuickBuy = function () {
+		$('#modal_quickbuy').modal('show');
+		$('.quick-buy').on('click', function (e) {
+			e.preventDefault();
+			$('#modal_quickbuy').modal('show');
+		});
+	}
+
 	var productPreview = function () {
-		$('.product-list').on('click', '.btn-quick-show', function (e) {
+		$('body').on('click', '.product-item .btn-quick-show', function (e) {
 			e.preventDefault();
 			$('.modal-preview').modal('show');
 		});
@@ -179,6 +226,7 @@ var Shop = function () {
 		init: function () {
 			inputCounter();
 			shopCatalog();
+			productQuickBuy();
 			productPreview();
 			productGallery();
 		}
