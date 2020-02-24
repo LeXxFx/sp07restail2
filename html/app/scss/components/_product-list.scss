@@ -8,6 +8,9 @@ $item-height: 470px;
     .product-item {
         flex: 0 0 calc(25% - 12px);
         margin: 0 6px 12px 6px;
+        --inner-top-height: 200px;
+
+        height: $item-height;
     }
 
     &__loadmore {
@@ -47,9 +50,6 @@ $item-height: 470px;
 }
 
 .product-item {
-    --inner-top-height: 200px;
-
-    height: $item-height;
 
     .item-inner {
         position: relative;
@@ -156,13 +156,17 @@ $item-height: 470px;
             margin: 0 auto;
             cursor: pointer;
             text-align: center;
-            background: rgba(#9c9696, .8);
+            background: rgba(#dbdbdb, .85);
             border-radius: 2px;
             padding: 5px 15px;
             display: block;
 
+            i {
+                margin: 0 5px 0 0;
+            }
+
             &:hover {
-                background: #9c9696;
+                background: #dbdbdb;
             }
         }
     }
