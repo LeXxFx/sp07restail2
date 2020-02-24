@@ -86,6 +86,10 @@
         &:hover {
             >a {
                 background: darken($primary-color, 5%);
+
+                &:after {
+                    transform: rotate(90deg);
+                }
             }
 
             >.dropdown,
@@ -369,8 +373,20 @@
                 position: relative;
 
                 >a {
+                    padding-right: 25px;
+
                     &:after {
                         display: block;
+                        right: 15px;
+                    }
+                }
+
+                &:hover {
+                    >a {
+
+                        &:after {
+                            transform: rotate(0);
+                        }
                     }
                 }
 
@@ -407,6 +423,14 @@
         >ul {
             >li {
                 &.has-child {
+                    &.opened {
+                        a {
+                            &:after {
+                                transform: rotate(90deg);
+                            }
+                        }
+                    }
+
                     >.dropdown {
                         display: none;
                         white-space: initial;
