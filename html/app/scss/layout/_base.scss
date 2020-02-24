@@ -20,11 +20,15 @@ a {
 }
 
 body {
-    background: #f9fbfb url('../images/bg.jpg') no-repeat center 0;
-    background-size: 100% auto;
     font-family: $font;
     font-size: 14px;
 
+    >.container,
+    >header,
+    >footer {
+        position: relative;
+        z-index: 5;
+    }
 
     &.menu-opened {
         .header {
@@ -88,6 +92,18 @@ body {
 .container {
     width: 100%;
     max-width: $container-width + 30px;
+}
+
+.main-bg {
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    min-height: 100vh;
+    background: #f9fbfb url('../images/bg.jpg') no-repeat center 0;
+    background-size: 100% auto;
 }
 
 .inner {

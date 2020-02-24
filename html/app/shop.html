@@ -313,11 +313,11 @@
         <a href="#">Сбросить все <span>&times;</span></a>
       </div>
       <div class="product-filter">
-        <div class="product-filter__display clearfix">
-          <a href="#" class="display__list">Хит</a>
-          <a href="#" class="display__grid">Советуем</a>
-          <a href="#" class="display__grid">Новинка</a>
-          <a href="#" class="display__grid">Акция</a>
+        <div class="product-filter__display">
+          <a href="#" class="active">Хит</a>
+          <a href="#">Советуем</a>
+          <a href="#">Новинка</a>
+          <a href="#">Акция</a>
         </div>
         <div class="product-filter__sorting dropdown">
           <button class="dropdown-toggle" type="button" id="routeto" data-toggle="dropdown" aria-haspopup="true"
@@ -1106,21 +1106,21 @@
           </div>
         </div>
         <div class="product-list__loadmore">
-          <a><i class="fa fa-refresh"></i> Показать ещё (7)</a>
+          <a class="link-load"><i class="fa fa-refresh"></i> Показать ещё (7)</a>
         </div>
       </div>
       <div class="pagination">
         <a class="pagination__prev" href="#">
           <span><i class="fa fa-arrow-left"></i></span> Назад</a>
-        <span class="link-page">1</span>
+        <span class="link-page active">1</span>
         <a class="link-page" href="#">2</a>
         <a class="link-page" href="#">3</a>
         <a class="link-page" href="#">4</a>
         <a class="link-page" href="#">5</a>
         <a class="link-page" href="#">6</a>
         <a class="link-page" href="#">7</a>
-        <a class="pagination__next">
-          <span>Вперед <i class="fa fa-arrow-right"></i></span></a>
+        <a class="pagination__next" href="#">
+          Вперед <span><i class="fa fa-arrow-right"></i></span></a>
       </div>
     </div>
     <div id="sidebar" class="sidebar">
@@ -1451,6 +1451,8 @@
         </div>
     </div>
 </footer>
+<div class="main-bg"></div>
+
 <div class="loader">
     <div class="loader-cube"></div>
     <div class="loader-cube"></div>

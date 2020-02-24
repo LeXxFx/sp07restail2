@@ -58,6 +58,12 @@ var Shop = function () {
 				}
 			});
 		}
+
+		$('.link-load').on('click', function (e) {
+			e.preventDefault();
+
+			$(this).toggleClass('link-load--loading');
+		})
 	};
 
 	var productPreview = function () {

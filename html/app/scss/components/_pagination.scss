@@ -3,39 +3,83 @@
     display: flex;
     justify-content: center;
     padding: 10px 0;
-    margin-bottom: 30px;
-    a,
-    span {
-        font-size: 16px;
-        color: $text-color;
-        font-weight: bold;
+    margin-bottom: 20px;
+
+    >a {
         line-height: 1;
-        border: 1px solid $text-color;
+        font-size: 16px;
+    }
+
+    .link-page {
+        align-self: center;
+        color: $text-color;
+        border: 1px solid transparent;
         border-radius: 2px;
         display: block;
-        padding: 10px 15px;
-        margin-left: -1px;
-        transition: .3s;
+        padding: 3px 6px;
+        min-width: 28px;
+        cursor: pointer;
+
         &.active {
-            background: $text-color;
-            color: #fff;
+            border-color: #cecccc;
+            color: $primary-color;
             cursor: default;
-            &:hover {
-                background: $text-color;
-            }
         }
+
+        &:hover {
+            color: $second-color;
+            text-decoration: none;
+        }
+    }
+
+    &__prev,
+    &__next {
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        color: $primary-color;
+        padding: 0;
+        border: none;
+
+        span {
+            display: inline-block;
+            border: 2px solid $primary-color;
+            border-radius: 50%;
+            font-size: 13px;
+            width: 21px;
+            height: 21px;
+            padding: 2px 0 0;
+        }
+
         &:hover {
             text-decoration: none;
-            background: darken(#fff, 5%);
+            background: none;
+            color: $second-color;
+
+            span {
+                border-color: $second-color;
+            }
         }
     }
-    .pagination__prev {
-        margin-right: 45px;
+
+    &__prev {
+        margin-right: 15px;
+
+        span {
+            margin-right: 10px;
+        }
     }
-    .pagination__next {
-        margin-left: 45px;
+
+    &__next {
+        margin-left: 15px;
+
+        span {
+            margin-left: 10px;
+        }
     }
-    .pagination__count {
+
+    >.pagination__count {
         border: none;
         margin-right: 45px;
     }
@@ -44,17 +88,21 @@
 @media screen and (max-width: $tablet) {
     .pagination {
         flex-wrap: wrap;
+
         .pagination__count {
             flex: 0 0 100%;
             margin: 0 0 10px 0;
             padding: 0;
         }
+
         .pagination__prev {
             margin-right: 15px;
         }
+
         .pagination__next {
             margin-left: 15px;
         }
+
         a,
         span {
             font-size: 13px;
