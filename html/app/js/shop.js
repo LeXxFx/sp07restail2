@@ -100,7 +100,6 @@ var Shop = function () {
 	};
 
 	var productQuickBuy = function () {
-		$('#modal_quickbuy').modal('show');
 		$('.quick-buy').on('click', function (e) {
 			e.preventDefault();
 			$('#modal_quickbuy').modal('show');
@@ -164,6 +163,7 @@ var Shop = function () {
 					}
 				]
 			});
+
 			gallery.on('afterChange', function (event, slick, currentSlide) {
 				var slide = slick.$slides.get(currentSlide),
 					item = $(slide).find('.item'),
