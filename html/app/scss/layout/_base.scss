@@ -138,30 +138,6 @@ body {
     }
 }
 
-.btn {
-    transition: .3s;
-
-    &-primary {
-        color: #fff;
-        font-weight: 500;
-        background: $primary-color;
-        border-color: $primary-color;
-        border-radius: 3px;
-
-        &:active,
-        &:focus,
-        &:hover {
-            background: darken($primary-color, 5%) !important;
-            border-color: darken($primary-color, 5%) !important;
-            box-shadow: none !important;
-        }
-    }
-}
-
-.required {
-    color: #e41c1c;
-}
-
 .slick-slider {
     .slick-slide {
         outline: none;

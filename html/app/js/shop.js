@@ -222,6 +222,61 @@ var Shop = function () {
 		};
 	}
 
+	var productFilters = function () {
+
+		$('.filter-list__list').on('click', 'a', function (e) {
+			e.preventDefault();
+			$(this).closest('li').toggleClass('active');
+		});
+
+		var filterRange = document.querySelectorAll('.filter-slider');
+		if (filterRange != undefined) {
+			Array.prototype.forEach.call(filterRange, function (elements, index) {
+				var slider = elements.querySelectorAll('.slider-range')[0];
+				var inputNumberMin = elements.querySelectorAll('.input-number-min')[0];
+				var inputNumberMax = elements.querySelectorAll('.input-number-max')[0];
+
+				var minValue = parseInt(slider.getAttribute('data-min-value'));
+				var maxValue = parseInt(slider.getAttribute('data-max-value'));
+
+				noUiSlider.create(slider, {
+					start: [inputNumberMin.value, inputNumberMax.value],
+					connect: true,
+					range: {
+						'min': minValue,
+						'max': maxValue
+					}
+				});
+
+				slider.noUiSlider.on('update', function (values, handle) {
+					var value = values[handle];
+					if (handle) {
+						inputNumberMax.value = Math.round(value);
+					} else {
+						inputNumberMin.value = Math.round(value);
+					}
+				});
+
+				inputNumberMin.addEventListener('change', function () {
+					slider.noUiSlider.set([this.value, null]);
+				});
+
+				inputNumberMax.addEventListener('change', function () {
+					slider.noUiSlider.set([null, this.value]);
+				});
+
+				$('.filter-slider__clear').on('click', function (e) {
+					e.preventDefault();
+					var that = $(this);
+
+					slider.noUiSlider.set([minValue, maxValue]);
+
+
+				});
+			});
+		}
+	};
+
 	return {
 		init: function () {
 			inputCounter();
@@ -229,6 +284,7 @@ var Shop = function () {
 			productQuickBuy();
 			productPreview();
 			productGallery();
+			productFilters();
 		}
 	};
 }();

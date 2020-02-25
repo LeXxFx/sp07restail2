@@ -903,7 +903,7 @@
               </div>
             </div>
             <div class="product-item__buttons">
-              <button class="btn btn-primary add-to-cart">Купить</button>
+              <button class="btn btn-primary add-to-cart">В корзине</button>
               <button class="btn btn-link quick-buy">
                 Купить в 1 клик
               </button>
@@ -1152,11 +1152,11 @@
               </div>
               <div class="filter__body filter1 collapse show">
                 <div class="filter-slider__slider">
-                  <div class="slider-range" data-min-value="0" data-max-value="100"></div>
                   <div class="slider-inputs">
                     <input type="text" class="form-control input-number-min" value="480" />
                     <input type="text" class="form-control input-number-max" value="15000" />
                   </div>
+                  <div class="slider-range" data-min-value="0" data-max-value="15000"></div>
                 </div>
               </div>
             </div>
@@ -1164,14 +1164,31 @@
               <div class="filter__top" data-toggle="collapse" data-target=".filter2" aria-expanded="true">Бренд</div>
               <div class="filter__body filter2 collapse show">
                 <div class="filter-alphabet">
-                  <p><a href="#" data-toggle="collapse" data-target="#filterAlphabet" aria-expanded="true">Алфавитный
-                      указатель <i class="fa fa-angle-down"></i></a></p>
+                  <div class="filter__show-more"><a href="#" data-toggle="collapse" data-target="#filterAlphabet"
+                      aria-expanded="true">Алфавитный
+                      указатель <i class="fa fa-angle-down"></i></a></div>
                   <div id="filterAlphabet" class="filter-alphabet__list collapse show" data-parent="#filterBrand">
-                    <a href="#">A</a> <a href="#">B</a> <a href="#">C</a> <a href="#">D</a> <a href="#">E</a> <a
-                      href="#">F</a> <a href="#">G</a> <a href="#">H</a> <a href="#">I</a> <a href="#">J</a> <a
-                      href="#">K</a> <a href="#">L</a> <a href="#">M</a> <a href="#">N</a>
-                    <a href="#">O</a> <a href="#">P</a> <a href="#">Q</a> <a href="#">R</a> <a href="#">T</a> <a
-                      href="#">U</a> <a href="#">V</a>
+                    <a href="#">A</a>
+                    <a href="#">B</a>
+                    <a href="#">C</a>
+                    <a href="#">D</a>
+                    <a href="#">E</a>
+                    <a href="#">F</a>
+                    <a href="#">G</a>
+                    <a href="#">H</a>
+                    <a href="#">I</a>
+                    <a href="#">J</a>
+                    <a href="#">K</a>
+                    <a href="#">L</a>
+                    <a href="#">M</a>
+                    <a href="#">N</a>
+                    <a href="#">O</a>
+                    <a href="#">P</a>
+                    <a href="#">Q</a>
+                    <a href="#">R</a>
+                    <a href="#">T</a>
+                    <a href="#">U</a>
+                    <a href="#">V</a>
                   </div>
                 </div>
                 <ul class="filter-list__list">
@@ -1215,7 +1232,7 @@
                     <a href="#">160 см (5)</a>
                   </li>
                 </ul>
-                <div class="filte__show-more">
+                <div class="filter__show-more">
                   <a href="#" class="collapsed" data-toggle="collapse" data-target=".filter__list2"
                     aria-expanded="false">
                     Ещё (7)
@@ -1235,6 +1252,18 @@
                   <a href="#">28</a>
                   <a href="#">29</a>
                   <a href="#" class="active">30</a>
+                  <a href="#">28</a>
+                  <a href="#">29</a>
+                  <a href="#">30</a>
+                  <a href="#">28</a>
+                  <a href="#">29</a>
+                  <a href="#">30</a>
+                  <a href="#">28</a>
+                  <a href="#">29</a>
+                  <a href="#">30</a>
+                  <a href="#">28</a>
+                  <a href="#">29</a>
+                  <a href="#">30</a>
                   <a href="#">28</a>
                   <a href="#">29</a>
                   <a href="#">30</a>
@@ -1290,7 +1319,8 @@
               </div>
             </div>
             <div class="filter filter-list filter-collapsable">
-              <div class="filter__top collapsed" data-toggle="collapse" data-target=".filter6" aria-expanded="true">Страна производитель</div>
+              <div class="filter__top collapsed" data-toggle="collapse" data-target=".filter6" aria-expanded="true">
+                Страна производитель</div>
               <div class="filter__body filter6 collapse">
                 <ul class="filter-list__list">
                   <li>

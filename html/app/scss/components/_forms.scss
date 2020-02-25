@@ -30,6 +30,39 @@
     }
 }
 
+.btn {
+    transition: .3s;
+
+    &-primary {
+        color: #fff;
+        font-weight: 500;
+        background: $primary-color;
+        border-color: $primary-color;
+        border-radius: 3px;
+
+        &:active,
+        &:focus,
+        &:hover {
+            background: darken($primary-color, 5%) !important;
+            border-color: darken($primary-color, 5%) !important;
+            box-shadow: none !important;
+        }
+    }
+}
+
+.form-control {
+    outline: none;
+    box-shadow: none !important;
+
+    &:focus {
+        border-color: $second-color;
+    }
+}
+
+.required {
+    color: #e41c1c;
+}
+
 .form-checkbox {
     position: relative;
     display: inline-block;

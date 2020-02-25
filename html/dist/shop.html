@@ -903,7 +903,7 @@
               </div>
             </div>
             <div class="product-item__buttons">
-              <button class="btn btn-primary add-to-cart">Купить</button>
+              <button class="btn btn-primary add-to-cart">В корзине</button>
               <button class="btn btn-link quick-buy">
                 Купить в 1 клик
               </button>
@@ -1132,160 +1132,212 @@
           <div class="filters__body">
             <div class="filter filter-list">
               <div class="filter__top">Разделы товаров</div>
-              <ul class="filter__list">
-                <li class="active">
-                  <a href="#">Коньки <span>(5)</span></a>
-                </li>
-                <li>
-                  <a href="#"> Роликовые коньки <span>(5)</span></a>
-                </li>
-                <li>
-                  <a href="#">Раздвижные коньки <span>(5)</span></a>
-                </li>
-              </ul>
+              <div class="filter__body">
+                <ul class="filter-list__list">
+                  <li class="active">
+                    <a href="#">Коньки <span>(5)</span></a>
+                  </li>
+                  <li>
+                    <a href="#"> Роликовые коньки <span>(5)</span></a>
+                  </li>
+                  <li>
+                    <a href="#">Раздвижные коньки <span>(5)</span></a>
+                  </li>
+                </ul>
+              </div>
             </div>
             <div class="filter filter-slider filter-collapsable">
-              <div class="filter__top">
-                <span>Цена</span>
+              <div class="filter__top" data-toggle="collapse" data-target=".filter1" aria-expanded="true">
+                Цена
               </div>
-              <div class="filter-slider__slider">
-                <div class="slider-range" data-min-value="0" data-max-value="100"></div>
-                <div class="slider-inputs">
-                  <input type="text" class="form-control input-number-min" value="480" />
-                  <input type="text" class="form-control input-number-max" value="15000" />
+              <div class="filter__body filter1 collapse show">
+                <div class="filter-slider__slider">
+                  <div class="slider-inputs">
+                    <input type="text" class="form-control input-number-min" value="480" />
+                    <input type="text" class="form-control input-number-max" value="15000" />
+                  </div>
+                  <div class="slider-range" data-min-value="0" data-max-value="15000"></div>
+                </div>
+              </div>
+            </div>
+            <div id="filterBrand" class="filter filter-list filter-collapsable">
+              <div class="filter__top" data-toggle="collapse" data-target=".filter2" aria-expanded="true">Бренд</div>
+              <div class="filter__body filter2 collapse show">
+                <div class="filter-alphabet">
+                  <div class="filter__show-more"><a href="#" data-toggle="collapse" data-target="#filterAlphabet"
+                      aria-expanded="true">Алфавитный
+                      указатель <i class="fa fa-angle-down"></i></a></div>
+                  <div id="filterAlphabet" class="filter-alphabet__list collapse show" data-parent="#filterBrand">
+                    <a href="#">A</a>
+                    <a href="#">B</a>
+                    <a href="#">C</a>
+                    <a href="#">D</a>
+                    <a href="#">E</a>
+                    <a href="#">F</a>
+                    <a href="#">G</a>
+                    <a href="#">H</a>
+                    <a href="#">I</a>
+                    <a href="#">J</a>
+                    <a href="#">K</a>
+                    <a href="#">L</a>
+                    <a href="#">M</a>
+                    <a href="#">N</a>
+                    <a href="#">O</a>
+                    <a href="#">P</a>
+                    <a href="#">Q</a>
+                    <a href="#">R</a>
+                    <a href="#">T</a>
+                    <a href="#">U</a>
+                    <a href="#">V</a>
+                  </div>
+                </div>
+                <ul class="filter-list__list">
+                  <li class="active">
+                    <a href="#">POINTER <span>(5)</span></a>
+                  </li>
+                  <li>
+                    <a href="#"> Freedo <span>(5)</span></a>
+                  </li>
+                  <li>
+                    <a href="#">TRIAL <span>(5)</span></a>
+                    <div class="filter-hint">
+                      <span>Выбрано 8</span>
+                      <a href="#">Показать</a>
+                    </div>
+                  </li>
+                  <li>
+                    <a href="#">POINTER <span>(5)</span></a>
+                  </li>
+                  <li>
+                    <a href="#"> Freedo <span>(5)</span></a>
+                  </li>
+                  <li>
+                    <a href="#">TRIAL <span>(5)</span></a>
+                  </li>
+                </ul>
+                <ul class="filter-list__list filter__list2 collapse" data-parent="#filterBrand">
+                  <li>
+                    <a href="#">120 см (2)</a>
+                  </li>
+                  <li>
+                    <a href="#">130 см (3)</a>
+                  </li>
+                  <li>
+                    <a href="#">140 см (2)</a>
+                  </li>
+                  <li>
+                    <a href="#">150 см (5)</a>
+                  </li>
+                  <li>
+                    <a href="#">160 см (5)</a>
+                  </li>
+                </ul>
+                <div class="filter__show-more">
+                  <a href="#" class="collapsed" data-toggle="collapse" data-target=".filter__list2"
+                    aria-expanded="false">
+                    Ещё (7)
+                    <i class="fa fa-angle-down"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="filter filter-grid filter-collapsable">
+              <div class="filter__top" data-toggle="collapse" data-target=".filter3" aria-expanded="true">Размер
+                <span>(22)</span></div>
+              <div class="filter__body filter3 collapse show">
+                <div class="filter-grid__search-form">
+                  <input type="text" placeholder="Поиск" class="form-control">
+                </div>
+                <div class="filter-grid__list">
+                  <a href="#">28</a>
+                  <a href="#">29</a>
+                  <a href="#" class="active">30</a>
+                  <a href="#">28</a>
+                  <a href="#">29</a>
+                  <a href="#">30</a>
+                  <a href="#">28</a>
+                  <a href="#">29</a>
+                  <a href="#">30</a>
+                  <a href="#">28</a>
+                  <a href="#">29</a>
+                  <a href="#">30</a>
+                  <a href="#">28</a>
+                  <a href="#">29</a>
+                  <a href="#">30</a>
+                  <a href="#">28</a>
+                  <a href="#">29</a>
+                  <a href="#">30</a>
+                  <a href="#">28</a>
+                  <a href="#">29</a>
+                  <a href="#">30</a>
+                  <a href="#">28</a>
+                  <a href="#">29</a>
+                  <a href="#">30</a>
                 </div>
               </div>
             </div>
             <div class="filter filter-list filter-collapsable">
-              <div class="filter__top">Бренд</div>
-              <div class="filter-alphabet">
-                <p><a href="">Алфавитный указатель</a></p>
-                <a href="#">A</a> <a href="#">B</a> <a href="#">C</a> <a href="#">D</a> <a href="#">E</a> <a
-                  href="#">F</a> <a href="#">G</a> <a href="#">H</a> <a href="#">I</a> <a href="#">J</a> <a
-                  href="#">K</a> <a href="#">L</a> <a href="#">M</a> <a href="#">N</a>
-                <a href="#">O</a> <a href="#">P</a> <a href="#">Q</a> <a href="#">R</a> <a href="#">T</a> <a
-                  href="#">U</a> <a href="#">V</a>
-              </div>
-              <ul class="filter__list">
-                <li class="active">
-                  <a href="#">POINTER <span>(5)</span></a>
-                </li>
-                <li>
-                  <a href="#"> Freedo <span>(5)</span></a>
-                </li>
-                <li>
-                  <a href="#">TRIAL <span>(5)</span></a>
-                  <div class="filter-hint">
-                    <span>Выбрано 8</span>
-                    <a href="#">Показать</a>
-                  </div>
-                </li>
-                <li>
-                  <a href="#">POINTER <span>(5)</span></a>
-                </li>
-                <li>
-                  <a href="#"> Freedo <span>(5)</span></a>
-                </li>
-                <li>
-                  <a href="#">TRIAL <span>(5)</span></a>
-                </li>
-              </ul>
-              <ul class="filter__list filter__list2 list-hidden">
-                <li>
-                  <a href="#">120 см (2)</a>
-                </li>
-                <li>
-                  <a href="#">130 см (3)</a>
-                </li>
-                <li>
-                  <a href="#">140 см (2)</a>
-                </li>
-                <li>
-                  <a href="#">150 см (5)</a>
-                </li>
-                <li>
-                  <a href="#">160 см (5)</a>
-                </li>
-              </ul>
-              <div class="filte__show-more collapsed">
-                <a href="#" data-target=".filter__list2">
-                  Ещё (7)
-                  <i class="fa fa-angle-down"></i>
-                </a>
+              <div class="filter__top" data-toggle="collapse" data-target=".filter4" aria-expanded="true">Пол</div>
+              <div class="filter__body filter4 collapse show">
+                <ul class="filter-list__list">
+                  <li class="active">
+                    <a href="#">Мужчинам</a>
+                  </li>
+                  <li>
+                    <a href="#">Женщинам</a>
+                  </li>
+                  <li>
+                    <a href="#">Детям</a>
+                  </li>
+                </ul>
               </div>
             </div>
-            <div class="filter filter-grid filter-collapsable">
-              <div class="filter__top">Размер <span>22</span></div>
-              <div class="filter__search-form">
-                <input type="text" placeholder="Поиск" class="form-control">
-              </div>
-              <div class="filter__grid">
-                <a href="#">28</a>
-                <a href="#">29</a>
-                <a href="#" class="active">30</a>
-                <a href="#">28</a>
-                <a href="#">29</a>
-                <a href="#">30</a>
-                <a href="#">28</a>
-                <a href="#">29</a>
-                <a href="#">30</a>
-                <a href="#">28</a>
-                <a href="#">29</a>
-                <a href="#">30</a>
+            <div class="filter filter-list">
+              <div class="filter__body">
+                <ul class="filter-list__list">
+                  <li class="active">
+                    <a href="#">В наличии</a>
+                  </li>
+                </ul>
               </div>
             </div>
             <div class="filter filter-list filter-collapsable">
-              <div class="filter__top">Пол</div>
-              <ul class="filter__list">
-                <li class="active">
-                  <a href="#">Мужчинам</a>
-                </li>
-                <li>
-                  <a href="#">Женщинам</a>
-                </li>
-                <li>
-                  <a href="#">Детям</a>
-                </li>
-              </ul>
+              <div class="filter__top collapsed" data-toggle="collapse" data-target=".filter5" aria-expanded="true">
+                Предназначение</div>
+              <div class="filter__body filter5 collapse">
+                <ul class="filter-list__list">
+                  <li>
+                    <a href="#">Демо 1</a>
+                  </li>
+                  <li>
+                    <a href="#">Демо 2</a>
+                  </li>
+                  <li>
+                    <a href="#">Демо 3</a>
+                  </li>
+                </ul>
+              </div>
             </div>
-            <div class="filter filter-list">
-              <ul class="filter__list">
-                <li class="active">
-                  <a href="#">В наличии</a>
-                </li>
-              </ul>
-            </div>
-            <div class="filter filter-list filter-collapsable filter--closed">
-              <div class="filter__top">Предназначение</div>
-              <ul class="filter__list">
-                <li>
-                  <a href="#">Демо 1</a>
-                </li>
-                <li>
-                  <a href="#">Демо 2</a>
-                </li>
-                <li>
-                  <a href="#">Демо 3</a>
-                </li>
-              </ul>
-            </div>
-            <div class="filter filter-list filter-collapsable filter--closed">
-              <div class="filter__top">Страна производитель</div>
-              <ul class="filter__list">
-                <li>
-                  <a href="#">Демо 1</a>
-                </li>
-                <li>
-                  <a href="#">Демо 2</a>
-                </li>
-                <li>
-                  <a href="#">Демо 3</a>
-                </li>
-              </ul>
+            <div class="filter filter-list filter-collapsable">
+              <div class="filter__top collapsed" data-toggle="collapse" data-target=".filter6" aria-expanded="true">
+                Страна производитель</div>
+              <div class="filter__body filter6 collapse">
+                <ul class="filter-list__list">
+                  <li>
+                    <a href="#">Демо 1</a>
+                  </li>
+                  <li>
+                    <a href="#">Демо 2</a>
+                  </li>
+                  <li>
+                    <a href="#">Демо 3</a>
+                  </li>
+                </ul>
+              </div>
             </div>
             <div class="filters__buttons">
-              <button>Показать</button>
-              <a><i>&times;</i> Сбросить</a>
+              <button class="btn btn-primary">Показать</button>
+              <a href="#"><i>&times;</i> Сбросить</a>
             </div>
           </div>
         </div>
@@ -1748,12 +1800,12 @@
                       +
                     </button>
                   </div>
-                  <button class="btn btn-primary btn-add-to-cart" title="Положить в корзину">
+                  <button class="btn btn-primary add-to-cart" title="Положить в корзину">
                     В корзину
                   </button>
                 </div>
                 <div class="preview-quick-buy">
-                  <button class="btn btn-quick-buy" title="Купить в один клик">
+                  <button class="btn quick-buy" title="Купить в один клик">
                     Купить в 1 клик
                   </button>
                 </div>
@@ -1773,7 +1825,7 @@
   </div>
 </div>
 
-<div class="modal fade modal-form" id="modal_quickbuy" tabindex="-1" role="dialog" aria-hidden="true">
+<div class="modal fade modal-quickbuy" id="modal_quickbuy" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
@@ -1784,113 +1836,74 @@
                 </button>
             </div>
             <div class="modal-body">
-                <div class="product__item product-info">
-                    <div class="row">
-                        <div class="col-sm-4 col-name">
-                            <div class="product-info__heading">Вы выбрали:</div>
-                            <a href="product.html">Кимоно для карате Golden Scorpion "PKM-1200"</a>
-                        </div>
-                        <div class="col-sm-4 col-options">
-                            <div class="item__product-options">
-                                <div class="prop prop-size clearfix">
-                                    <div class="name">Размер: </div>
-                                    <div class="values">
-                                        <div class="value">
-                                            <span>s 37</span>
-                                        </div>
-                                        <div class="value active">
-                                            <span>xl 40</span>
-                                        </div>
-                                        <div class="value">
-                                            <span>xxl 45</span>
-                                        </div>
-                                        <div class="value">
-                                            <span>xxxl 47</span>
-                                        </div>
+                <div class="quickbuy-form">
+                    <div class="quickbuy-form__top">
+                        <div class="row align-items-center justify-content-md-between">
+                            <div class="col-md-8">
+                                <a href="product.html">Велосумка на раму с тремя отделениями ВС13-11</a>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="prices">
+                                    <div class="price-value price-value-current">
+                                        <strong>1590 <span class="price-value__currency">руб./шт</span></strong>
                                     </div>
                                 </div>
-                                <div class="prop prop-color clearfix">
-                                    <div class="name">Цвет: </div>
-                                    <div class="values">
-                                        <div class="value">
-                                            <img src="assets/images/color_white.png" alt="" />
-                                        </div>
-                                        <div class="value active">
-                                            <img src="assets/images/color_grey.png" alt="" />
-                                        </div>
-                                        <div class="value">
-                                            <img src="assets/images/color_darkgrey.png" alt="" />
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-4 col-price">
-                            <div class="product-info__heading">Укажите количество:</div>
-                            <div class="item__input-counter">
-                                <button type="button" class="btn btn-minus btn-number" data-type="minus"
-                                    data-field="quant[2]">
-                                    -
-                                </button>
-                                <div class="input-group-text">
-                                    <input type="text" name="quant[2]" class="form-control input-number input-area"
-                                        value="1" min="1" max="100000" data-step="1" data-unit="">
-                                </div>
-                                <button type="button" class="btn btn-plus btn-number" data-type="plus"
-                                    data-field="quant[2]">
-                                    +
-                                </button>
-                            </div>
-                            <div class="item__price">
-                                <span class="new">1480</span>
-                                <span class="currency">руб.</span>
                             </div>
                         </div>
                     </div>
-                </div>
-                <form action="" class="form-info">
-                    <div class="row form-group">
-                        <div class="col-sm-5">
-                            <label class="control-label">Имя:</label>
+                    <div class="quickbuy-form__options props">
+                        <div class="props__selected">
+                            <div class="prop-item prop-item-size">
+                                <strong>Размер:</strong>
+                                <span>S (31-34)</span>
+                            </div>
+                            <div class="prop-item prop-item-color">
+                                <strong>Цвет:</strong>
+                                <span><img src="images/color_black-red.png" alt="Черно-красный"></span>
+                            </div>
                         </div>
-                        <div class="col-sm-7">
+                        <div class="props__baton">
+                            <button>Изменить</button>
+                        </div>
+                    </div>
+                    <form action="" class="quickbuy-form__form form-horizontal">
+                        <div class="form-group">
+                            <span class="required">*</span> <label class="control-label">Ф.И.О.</label>
                             <input type="text" class="form-control" />
                         </div>
-                    </div>
-                    <div class="row form-group">
-                        <div class="col-sm-5">
-                            <label class="control-label">Ваш номер телефона:
-                                <span class="req">*</span>
-                            </label>
-                        </div>
-                        <div class="col-sm-7">
+                        <div class="form-group">
+                            <span class="required">*</span> <label class="control-label">Телефон</label>
                             <input type="tel" class="form-control masked-phone" />
                         </div>
-                    </div>
-                    <div class="row form-group">
-                        <div class="col-sm-5">
+                        <div class="form-group">
                             <label class="control-label">E-mail:</label>
-                        </div>
-                        <div class="col-sm-7">
                             <input type="email" class="form-control" />
                         </div>
+                        <div class="form-group">
+                            <label class="control-label">Комментарий к заказу</label>
+                            <textarea class="form-control"></textarea>
+                        </div>
+                        <div class="form-group text-center">
+                            <label for="rules123" class="form-checkbox">
+                                <input type="checkbox" id="rules123">
+                                <span>Нажимая на кнопку, я принимаю <a href="#">условия соглашения.</a></span>
+                            </label>
+                        </div>
+                        <div class="form-baton text-center">
+                            <button class="btn btn-primary">Отправить</button>
+                        </div>
+                    </form>
+                    <div class="quickbuy-form__bottom">
+                        <span class="required">*</span> - Обязательно для заполнения. Купить в 1 клик - это не заполнять
+                        никакие
+                        формы, а просто оставить свой номер телефона, чтобы наш консультант решил все вопросы по
+                        оформлению
+                        заказа.
                     </div>
-                    
-                    <label for="rules123" class="form-checkbox">
-                        <input type="checkbox" id="rules123">
-                        <span>Нажимая на кнопку, я принимаю условия соглашения.</span>
-                    </label>
-                    <button class="btn btn-primary">Отправить</button>
-            </div>
-            </form>
-            <div class="bot">
-                <span class="req">*</span> - Обязательно для заполнения. Купить в 1 клик - это не заполнять никакие
-                формы, а просто оставить свой номер телефона, чтобы наш консультант решил все вопросы по оформлению
-                заказа.
+                </div>
             </div>
         </div>
     </div>
-</div>
 </div>
 
 

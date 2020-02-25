@@ -579,12 +579,12 @@
                       +
                     </button>
                   </div>
-                  <button class="btn btn-primary btn-add-to-cart" title="Положить в корзину">
+                  <button class="btn btn-primary add-to-cart" title="Положить в корзину">
                     В корзину
                   </button>
                 </div>
                 <div class="preview-quick-buy">
-                  <button class="btn btn-quick-buy" title="Купить в один клик">
+                  <button class="btn quick-buy" title="Купить в один клик">
                     Купить в 1 клик
                   </button>
                 </div>
@@ -604,7 +604,7 @@
   </div>
 </div>
 
-<div class="modal fade modal-form" id="modal_quickbuy" tabindex="-1" role="dialog" aria-hidden="true">
+<div class="modal fade modal-quickbuy" id="modal_quickbuy" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
@@ -615,113 +615,74 @@
                 </button>
             </div>
             <div class="modal-body">
-                <div class="product__item product-info">
-                    <div class="row">
-                        <div class="col-sm-4 col-name">
-                            <div class="product-info__heading">Вы выбрали:</div>
-                            <a href="product.html">Кимоно для карате Golden Scorpion "PKM-1200"</a>
-                        </div>
-                        <div class="col-sm-4 col-options">
-                            <div class="item__product-options">
-                                <div class="prop prop-size clearfix">
-                                    <div class="name">Размер: </div>
-                                    <div class="values">
-                                        <div class="value">
-                                            <span>s 37</span>
-                                        </div>
-                                        <div class="value active">
-                                            <span>xl 40</span>
-                                        </div>
-                                        <div class="value">
-                                            <span>xxl 45</span>
-                                        </div>
-                                        <div class="value">
-                                            <span>xxxl 47</span>
-                                        </div>
+                <div class="quickbuy-form">
+                    <div class="quickbuy-form__top">
+                        <div class="row align-items-center justify-content-md-between">
+                            <div class="col-md-8">
+                                <a href="product.html">Велосумка на раму с тремя отделениями ВС13-11</a>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="prices">
+                                    <div class="price-value price-value-current">
+                                        <strong>1590 <span class="price-value__currency">руб./шт</span></strong>
                                     </div>
                                 </div>
-                                <div class="prop prop-color clearfix">
-                                    <div class="name">Цвет: </div>
-                                    <div class="values">
-                                        <div class="value">
-                                            <img src="assets/images/color_white.png" alt="" />
-                                        </div>
-                                        <div class="value active">
-                                            <img src="assets/images/color_grey.png" alt="" />
-                                        </div>
-                                        <div class="value">
-                                            <img src="assets/images/color_darkgrey.png" alt="" />
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-4 col-price">
-                            <div class="product-info__heading">Укажите количество:</div>
-                            <div class="item__input-counter">
-                                <button type="button" class="btn btn-minus btn-number" data-type="minus"
-                                    data-field="quant[2]">
-                                    -
-                                </button>
-                                <div class="input-group-text">
-                                    <input type="text" name="quant[2]" class="form-control input-number input-area"
-                                        value="1" min="1" max="100000" data-step="1" data-unit="">
-                                </div>
-                                <button type="button" class="btn btn-plus btn-number" data-type="plus"
-                                    data-field="quant[2]">
-                                    +
-                                </button>
-                            </div>
-                            <div class="item__price">
-                                <span class="new">1480</span>
-                                <span class="currency">руб.</span>
                             </div>
                         </div>
                     </div>
-                </div>
-                <form action="" class="form-info">
-                    <div class="row form-group">
-                        <div class="col-sm-5">
-                            <label class="control-label">Имя:</label>
+                    <div class="quickbuy-form__options props">
+                        <div class="props__selected">
+                            <div class="prop-item prop-item-size">
+                                <strong>Размер:</strong>
+                                <span>S (31-34)</span>
+                            </div>
+                            <div class="prop-item prop-item-color">
+                                <strong>Цвет:</strong>
+                                <span><img src="images/color_black-red.png" alt="Черно-красный"></span>
+                            </div>
                         </div>
-                        <div class="col-sm-7">
+                        <div class="props__baton">
+                            <button>Изменить</button>
+                        </div>
+                    </div>
+                    <form action="" class="quickbuy-form__form form-horizontal">
+                        <div class="form-group">
+                            <span class="required">*</span> <label class="control-label">Ф.И.О.</label>
                             <input type="text" class="form-control" />
                         </div>
-                    </div>
-                    <div class="row form-group">
-                        <div class="col-sm-5">
-                            <label class="control-label">Ваш номер телефона:
-                                <span class="req">*</span>
-                            </label>
-                        </div>
-                        <div class="col-sm-7">
+                        <div class="form-group">
+                            <span class="required">*</span> <label class="control-label">Телефон</label>
                             <input type="tel" class="form-control masked-phone" />
                         </div>
-                    </div>
-                    <div class="row form-group">
-                        <div class="col-sm-5">
+                        <div class="form-group">
                             <label class="control-label">E-mail:</label>
-                        </div>
-                        <div class="col-sm-7">
                             <input type="email" class="form-control" />
                         </div>
+                        <div class="form-group">
+                            <label class="control-label">Комментарий к заказу</label>
+                            <textarea class="form-control"></textarea>
+                        </div>
+                        <div class="form-group text-center">
+                            <label for="rules123" class="form-checkbox">
+                                <input type="checkbox" id="rules123">
+                                <span>Нажимая на кнопку, я принимаю <a href="#">условия соглашения.</a></span>
+                            </label>
+                        </div>
+                        <div class="form-baton text-center">
+                            <button class="btn btn-primary">Отправить</button>
+                        </div>
+                    </form>
+                    <div class="quickbuy-form__bottom">
+                        <span class="required">*</span> - Обязательно для заполнения. Купить в 1 клик - это не заполнять
+                        никакие
+                        формы, а просто оставить свой номер телефона, чтобы наш консультант решил все вопросы по
+                        оформлению
+                        заказа.
                     </div>
-                    
-                    <label for="rules123" class="form-checkbox">
-                        <input type="checkbox" id="rules123">
-                        <span>Нажимая на кнопку, я принимаю условия соглашения.</span>
-                    </label>
-                    <button class="btn btn-primary">Отправить</button>
-            </div>
-            </form>
-            <div class="bot">
-                <span class="req">*</span> - Обязательно для заполнения. Купить в 1 клик - это не заполнять никакие
-                формы, а просто оставить свой номер телефона, чтобы наш консультант решил все вопросы по оформлению
-                заказа.
+                </div>
             </div>
         </div>
     </div>
-</div>
 </div>
 
 
