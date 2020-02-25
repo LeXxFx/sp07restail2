@@ -27,6 +27,7 @@ body {
     font-family: $font;
     font-size: 14px;
     background: #eeeeee;
+    position: relative;
 
     &.menu-opened {
         .header {

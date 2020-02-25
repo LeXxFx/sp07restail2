@@ -294,6 +294,17 @@
     }
 }
 
+.product-viewed {
+    padding: 20px 10px;
+    margin: 30px 0 0;
+    background: #fff;
+}
+
+.product-related {
+    padding: 20px 10px;
+    background: #fff;
+}
+
 @media screen and (max-width: $mobile) {
     .prices {
 
