@@ -65,38 +65,47 @@ var Shop = function () {
 			$(this).toggleClass('link-load--loading');
 		});
 
-		$('.viewed__list').slick({
-			slidesToShow: 7,
-			slidesToScroll: 7,
-			autoplay: false,
-			arrows: true,
-			dots: false,
-			prevArrow: '<a class="slick-prev"><i class="fa fa-angle-left"></i></a>',
-			nextArrow: '<a class="slick-next"><i class="fa fa-angle-right"></i></a>',
-			responsive: [
-				{
-					breakpoint: 1200,
-					settings: {
-						slidesToShow: 6,
-						slidesToScroll: 6,
-					}
-				},
-				{
-					breakpoint: 992,
-					settings: {
-						slidesToShow: 4,
-						slidesToScroll: 4,
-					}
-				},
-				{
-					breakpoint: 478,
-					settings: {
-						slidesToShow: 2,
-						slidesToScroll: 2
-					}
-				}
-			]
-		});
+		let $productCarousel = $('.product-carousel__list');
+		if ($productCarousel.length) {
+			$.each($productCarousel, function () {
+				const that = $(this),
+					showItems = parseInt(that.data('show-items'));
+
+				that.slick({
+					slidesToShow: showItems,
+					slidesToScroll: showItems,
+					autoplay: false,
+					arrows: true,
+					dots: false,
+					prevArrow: '<a class="slick-prev"><i class="fa fa-angle-left"></i></a>',
+					nextArrow: '<a class="slick-next"><i class="fa fa-angle-right"></i></a>',
+					responsive: [
+						{
+							breakpoint: 1200,
+							settings: {
+								slidesToShow: showItems - 1,
+								slidesToScroll: showItems - 1,
+							}
+						},
+						{
+							breakpoint: 992,
+							settings: {
+								slidesToShow: 4,
+								slidesToScroll: 4,
+							}
+						},
+						{
+							breakpoint: 478,
+							settings: {
+								slidesToShow: 2,
+								slidesToScroll: 2
+							}
+						}
+					]
+				});
+			});
+		}
+
 	};
 
 	var productQuickBuy = function () {
