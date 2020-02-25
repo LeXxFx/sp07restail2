@@ -8,143 +8,145 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="theme-color" content="#ffffff">
 
-    <title>Shop | Sport07</title>
+    <title>Single Product | Sport07</title>
     <link rel="shortcut icon" href="images/favicon.png">
     <link rel="stylesheet" href="css/libs.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <header id="header">
-        <div class="container">
-            <div class="header @@headerClass">
-                <div class="header__top">
-                    <div class="header-region">
-                        <i class="appicon appicon-map"></i>
-                        <span>Москва</span>
+    <div class="main-wrapper">
+        <header id="header">
+            <div class="container">
+                <div class="header front-page-header">
+                    <div class="header__top">
+                        <div class="header-region">
+                            <i class="appicon appicon-map"></i>
+                            <span>Москва</span>
+                        </div>
+                        <div class="header-contacts">
+                            <i class="appicon appicon-phone"></i>
+                            <a href="tel:84952151207"> 8 (495) <strong>215-12-07</strong></a>
+                            <a href="tel:88005552082"> 8 (800) <strong>555-20-82</strong></a>
+                            <span>(Пн-Пт 9:00-18:00, Сб, Вск - вых.)</span>
+                            <button class="btn" type="button" data-dismiss="modal" data-toggle="modal"
+                                data-target="#callback">заказать
+                                звонок</button>
+                        </div>
+                        <div class="header-account">
+                            <a href="#">
+                                <i class="appicon appicon-user"></i>
+                                <span>Личный кабинет</span>
+                            </a>
+                        </div>
                     </div>
-                    <div class="header-contacts">
-                        <i class="appicon appicon-phone"></i>
-                        <a href="tel:84952151207"> 8 (495) <strong>215-12-07</strong></a>
-                        <a href="tel:88005552082"> 8 (800) <strong>555-20-82</strong></a>
-                        <span>(Пн-Пт 9:00-18:00, Сб, Вск - вых.)</span>
-                        <button class="btn" type="button" data-dismiss="modal" data-toggle="modal"
-                            data-target="#callback">заказать
-                            звонок</button>
-                    </div>
-                    <div class="header-account">
-                        <a href="#">
-                            <i class="appicon appicon-user"></i>
-                            <span>Личный кабинет</span>
-                        </a>
-                    </div>
-                </div>
-                <div class="header__main">
-                    <div class="header-logo">
-                        <a href="#" class="logo">
-                            <img src="images/logo.png" alt="Sport07">
-                            <span>Интернет магазин спортивных товаров</span>
-                        </a>
-                    </div>
-                    <div class="header-search">
-                        <a href="#" class="header-search__toggle search-toggle icon-link">
-                            <i class="appicon appicon-search"></i> <span class="icon-link__name">Поиск</span></a>
-                        <div class="header-search__input">
-                            <div class="search-input">
-                                <form action="#">
-                                    <div class="form-input">
-                                        <input id="title-searchs-input" type="text"
-                                            placeholder="Поиск среди 6000 спортивных товаров" name="q" value=""
-                                            size="40" class="form-control" maxlength="100" autocomplete="off">
-                                        <input name="s" type="submit" value="Поиск" class="btn appicon appicon-search">
-                                    </div>
-                                </form>
-                            </div>
-                            <div class="search-menu">
-                                <div class="search-menu__body">
-                                    <div class="head">Найдено в разделах каталога:</div>
-                                    <ul>
-                                        <li>
-                                            <a href="#">Кимоно для карате</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Кимоно для дзюдо</a>
-                                        </li>
-                                    </ul>
-                                    <div class="head">Найдены товары (всего 35):</div>
-                                    <div class="products-list clearfix">
-                                        <div class="item">
-                                            <a class="img" href="product.html">
-                                                <img src="images/demo/product_img1-190x190.jpg" alt="" />
-                                            </a>
-                                            <div class="name">
-                                                Кимоно для карате Golden Scorpion "PKM-885"
-                                            </div>
-                                            <div class="price">
-                                                <span class="new">1502</span>
-                                                <span class="currency">руб.</span>
-                                            </div>
+                    <div class="header__main">
+                        <div class="header-logo">
+                            <a href="#" class="logo">
+                                <img src="images/logo.png" alt="Sport07">
+                                <span>Интернет магазин спортивных товаров</span>
+                            </a>
+                        </div>
+                        <div class="header-search">
+                            <a href="#" class="header-search__toggle search-toggle icon-link">
+                                <i class="appicon appicon-search"></i> <span class="icon-link__name">Поиск</span></a>
+                            <div class="header-search__input">
+                                <div class="search-input">
+                                    <form action="#">
+                                        <div class="form-input">
+                                            <input id="title-searchs-input" type="text"
+                                                placeholder="Поиск среди 6000 спортивных товаров" name="q" value=""
+                                                size="40" class="form-control" maxlength="100" autocomplete="off">
+                                            <input name="s" type="submit" value="Поиск"
+                                                class="btn appicon appicon-search">
                                         </div>
-                                        <div class="item">
-                                            <a class="img" href="product.html">
-                                                <img src="images/demo/product_img2-190x190.jpg" alt="" />
-                                            </a>
-                                            <div class="name">
-                                                Кимоно для карате Alpha Caprice GS-KK01
-                                            </div>
-                                            <div class="price">
-                                                <span class="old">1805</span>
-                                                <span class="new">1480</span>
-                                                <span class="currency">руб.</span>
-                                            </div>
-                                        </div>
-                                        <div class="item">
-                                            <a class="img" href="product.html">
-                                                <img src="images/demo/product_img3-190x190.jpg" alt="" />
-                                            </a>
-                                            <div class="name">
-                                                Кимоно для карате Golden Scorpion "PKM-1200" те Golden Scorpion
-                                                "PKM-1200"
-                                            </div>
-                                            <div class="price">
-                                                <span class="new">1479</span>
-                                                <span class="currency">руб.</span>
-                                            </div>
-                                        </div>
-                                    </div>
+                                    </form>
                                 </div>
-                                <div class="search-menu__button">
-                                    <a href="#" class="btn">Посмотреть результаты поиска (35)</a>
+                                <div class="search-menu">
+                                    <div class="search-menu__body">
+                                        <div class="head">Найдено в разделах каталога:</div>
+                                        <ul>
+                                            <li>
+                                                <a href="#">Кимоно для карате</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Кимоно для дзюдо</a>
+                                            </li>
+                                        </ul>
+                                        <div class="head">Найдены товары (всего 35):</div>
+                                        <div class="products-list clearfix">
+                                            <div class="item">
+                                                <a class="img" href="product.html">
+                                                    <img src="images/demo/product_img1-190x190.jpg" alt="" />
+                                                </a>
+                                                <div class="name">
+                                                    Кимоно для карате Golden Scorpion "PKM-885"
+                                                </div>
+                                                <div class="price">
+                                                    <span class="new">1502</span>
+                                                    <span class="currency">руб.</span>
+                                                </div>
+                                            </div>
+                                            <div class="item">
+                                                <a class="img" href="product.html">
+                                                    <img src="images/demo/product_img2-190x190.jpg" alt="" />
+                                                </a>
+                                                <div class="name">
+                                                    Кимоно для карате Alpha Caprice GS-KK01
+                                                </div>
+                                                <div class="price">
+                                                    <span class="old">1805</span>
+                                                    <span class="new">1480</span>
+                                                    <span class="currency">руб.</span>
+                                                </div>
+                                            </div>
+                                            <div class="item">
+                                                <a class="img" href="product.html">
+                                                    <img src="images/demo/product_img3-190x190.jpg" alt="" />
+                                                </a>
+                                                <div class="name">
+                                                    Кимоно для карате Golden Scorpion "PKM-1200" те Golden Scorpion
+                                                    "PKM-1200"
+                                                </div>
+                                                <div class="price">
+                                                    <span class="new">1479</span>
+                                                    <span class="currency">руб.</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="search-menu__button">
+                                        <a href="#" class="btn">Посмотреть результаты поиска (35)</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
+                        <div class="header-menu">
+                            <a href="#" class="icon-link"><i class="appicon appicon-compare"></i> <span
+                                    class="icon-link__name">Сравнение</span>
+                                <span class="icon-link__counter">3</span></a>
+                            <a href="#" class="icon-link icon-link-fav"><i class="appicon appicon-heart"></i> <span
+                                    class="icon-link__name">Избранное</span>
+                                <span class="icon-link__counter">300</span></a>
+                            <a href="#" class="icon-link icon-link-cart"><i class="appicon appicon-cart"></i> <span
+                                    class="icon-link__name">Корзина</span>
+                                <span class="icon-link__counter">30</span></a>
+                        </div>
                     </div>
-                    <div class="header-menu">
-                        <a href="#" class="icon-link"><i class="appicon appicon-compare"></i> <span
-                                class="icon-link__name">Сравнение</span>
-                            <span class="icon-link__counter">3</span></a>
-                        <a href="#" class="icon-link icon-link-fav"><i class="appicon appicon-heart"></i> <span
-                                class="icon-link__name">Избранное</span>
-                            <span class="icon-link__counter">300</span></a>
-                        <a href="#" class="icon-link icon-link-cart"><i class="appicon appicon-cart"></i> <span
-                                class="icon-link__name">Корзина</span>
-                            <span class="icon-link__counter">30</span></a>
-                    </div>
-                </div>
-                <div class="navi">
-                    <div class="navi-toggle">
-                        <span>Меню</span>
-                        <button><span class="lines"></span></button>
-                    </div>
-                    <nav class="navi-list">
-                        <div class="catalog-menu">
-                            <ul class="menu">
-                                <li class="has-child">
-                                    <a href="#">
-                                        <i class="appicon appicon-list"></i>
-                                        <span>Каталог</span>
-                                    </a>
-                                    <div class="catalog-navi ">
+                    <div class="navi">
+                        <div class="navi-toggle">
+                            <span>Меню</span>
+                            <button><span class="lines"></span></button>
+                        </div>
+                        <nav class="navi-list">
+                            <div class="catalog-menu">
+                                <ul class="menu">
+                                    <li class="has-child">
+                                        <a href="#">
+                                            <i class="appicon appicon-list"></i>
+                                            <span>Каталог</span>
+                                        </a>
+                                        <div class="catalog-navi ">
   <ul>
     <li class="has-child">
       <a href="#">Фитнес</a>
@@ -250,52 +252,178 @@
     <li><a href="#">Игры</a></li>
   </ul>
 </div>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="main-menu">
-                            <ul class="menu">
-                                <li>
-                                    <a href="#">Акции</a>
-                                </li>
-                                <li>
-                                    <a href="#">Доставка и оплата</a>
-                                </li>
-                                <li>
-                                    <a href="#">Бренды</a>
-                                </li>
-                                <li>
-                                    <a href="#">Магазины</a>
-                                </li>
-                                <li class="has-child">
-                                    <a href="#">О компании</a>
-                                    <ul class="dropdown">
-                                        <li>
-                                            <a href="#">Новости</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Сотрудники</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Вакансии</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <a href="#">Контакты</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </nav>
-                    <div class="body-overlay"></div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="main-menu">
+                                <ul class="menu">
+                                    <li>
+                                        <a href="#">Акции</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Доставка и оплата</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Бренды</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Магазины</a>
+                                    </li>
+                                    <li class="has-child">
+                                        <a href="#">О компании</a>
+                                        <ul class="dropdown">
+                                            <li>
+                                                <a href="#">Новости</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Сотрудники</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Вакансии</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#">Контакты</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav>
+                        <div class="body-overlay"></div>
+                    </div>
                 </div>
             </div>
-        </div>
-    </header>
+        </header>
 
 <div class="container">
   <div class="inner">
     <div id="content" class="content" role="main">
+    </div>
+    <div id="sidebar" class="sidebar">
+      <aside>
+        <div class="catalog-navi ">
+  <ul>
+    <li class="has-child">
+      <a href="#">Фитнес</a>
+      <div class="dropdown">
+        <div class="category-col">
+          <h2 class="category-col__title">
+            <a href="#">Тяжелая атлетика</a>
+          </h2>
+          <ul>
+            <li><a href="#">Тренажеры и тяжелая атлетика</a></li>
+            <li><a href="#">Художественная гимнастика и танцы</a></li>
+          </ul>
+        </div>
+      </div>
+    </li>
+    <li class="has-child">
+      <a href="#">Художественная гимнастика и танцы</a>
+      <div class="dropdown">
+        <div class="category-col">
+          <h2 class="category-col__title">
+            <a href="#">Тяжелая атлетика</a>
+          </h2>
+          <ul>
+            <li><a href="#">Тренажеры и тяжелая атлетика</a></li>
+            <li><a href="#">Художественная гимнастика и танцы</a></li>
+          </ul>
+        </div>
+      </div>
+    </li>
+    <li class="has-child">
+      <a href="#">Тренажеры и тяжелая атлетика</a>
+      <div class="dropdown">
+        <div class="category-col">
+          <h2 class="category-col__title">
+            <a href="#">Тяжелая атлетика</a>
+          </h2>
+          <ul>
+            <li>
+              <a href="#">Гантели разборные <span>(15)</span></a>
+            </li>
+            <li>
+              <a href="#">Гири <span>(5)</span></a>
+            </li>
+            <li>
+              <a href="#">Грифы для гантелей и штанг <span>(100)</span></a>
+            </li>
+            <li>
+              <a href="#">Диски для гантелей и штанг <span>(18)</span></a>
+            </li>
+            <li>
+              <a href="#">Перчатки для тяжелой атлетики и велоспорта
+                <span>(19)</span></a>
+            </li>
+            <li>
+              <a href="#">Пояса для поднятия тяжестей <span>(17)</span></a>
+            </li>
+            <li>
+              <a href="#">Стойки для гантелей и штанг <span>(100)</span></a>
+            </li>
+            <li>
+              <a href="#">Скамьи <span>(1000)</span></a>
+            </li>
+            <li>
+              <a href="#">Аксессуары <span>(10)</span></a>
+            </li>
+          </ul>
+        </div>
+        <div class="category-col">
+          <h2 class="category-col__title">
+            <a href="#">Домашние тренажеры</a>
+          </h2>
+          <ul>
+            <li>
+              <a href="#">Беговые дорожки <span>(105)</span></a>
+            </li>
+            <li>
+              <a href="#">Велотренажеры <span>(165)</span></a>
+            </li>
+            <li class="has-child">
+              <a href="#">Степперы, Эллипсоиды <span>(155)</span></a>
+              <ul>
+                <li>
+                  <a href="#">Степперы с эспандерами <span>(25)</span></a>
+                </li>
+                <li>
+                  <a href="#">Мини степперы <span>(15)</span></a>
+                </li>
+                <li>
+                  <a href="#">Профессиональные степперы <span>(20)</span></a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </li>
+    <li><a href="#">Туризм и активный отдых</a></li>
+    <li><a href="#">Зимние виды спорта и активный отдых</a></li>
+    <li><a href="#">Единоборства и бокс</a></li>
+    <li><a href="#">Командные виды спорта</a></li>
+    <li><a href="#">Летние виды спорта</a></li>
+    <li><a href="#">Водные виды спорта</a></li>
+    <li><a href="#">Игры</a></li>
+  </ul>
+</div>
+
+        <div class="widget widget-subs">
+    <div class="widget-title">
+      Дополнительные бонусы и скидки за подписку
+    </div>
+    <form action="">
+      <p>
+        Получайте секретные промокоды, учавствуйте в закрытых распродажах
+        Sport07.ru
+      </p>
+      <div class="form-input">
+        <input type="text" class="form-control" placeholder="Ваш е-майл" />
+        <button type="submit"><i class="fas fa-arrow-right"></i></button>
+      </div>
+    </form>
+  </div>
+      </aside>
     </div>
   </div>
 </div>
@@ -419,6 +547,7 @@
         </div>
     </div>
 </footer>
+</div>
 <div class="main-bg"></div>
 
 <div class="loader">

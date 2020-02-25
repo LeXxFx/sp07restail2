@@ -1,8 +1,15 @@
-@@include('../includes/header.html', { "title": "Shop" })
+@@include('../includes/header.html', { "title": "Single Product", "headerClass": "front-page-header" })
 
 <div class="container">
   <div class="inner">
     <div id="content" class="content" role="main">
+    </div>
+    <div id="sidebar" class="sidebar">
+      <aside>
+        @@include('../includes/catalog-navi.html', { "listClass" : ""})
+
+        @@include('../includes/widgets/subscription.html')
+      </aside>
     </div>
   </div>
 </div>

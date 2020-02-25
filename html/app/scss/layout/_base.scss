@@ -28,17 +28,6 @@ body {
     font-size: 14px;
     background: #eeeeee;
 
-    >.container,
-    >header,
-    >footer {
-        position: relative;
-        z-index: 5;
-    }
-
-    >header {
-        z-index: 6;
-    }
-
     &.menu-opened {
         .header {
             .body-overlay {
@@ -103,6 +92,11 @@ body {
     max-width: $container-width + 30px;
 }
 
+.main-wrapper {
+    position: relative;
+    z-index: 1;
+}
+
 .main-bg {
     position: absolute;
     z-index: 0;
@@ -120,6 +114,7 @@ body {
     justify-content: space-between;
     background: #fff;
     padding: 0 $side-padding;
+    min-height: calc(100vh - 160px - 390px);
 
     .sidebar {
         order: 0;

@@ -1,9 +1,11 @@
 .header {
     background: #fff;
     padding: 0 $side-padding;
-    position: relative;
-    z-index: 100;
 
+    &:not(.front-page-header) {
+        position: relative;
+        z-index: 100;
+    }
 
     .body-overlay {
         content: "";
@@ -309,10 +311,19 @@
                         align-items: center;
                         background: lighten($primary-color, 5%) !important;
 
+                        @include media-breakpoint('lt-md') {
+                            padding-left: 10px;
+                            padding-right: 10px;
+                        }
+
                         >i {
                             margin-right: 8px;
                             position: relative;
                             top: -1px;
+
+                            @include media-breakpoint('lt-md') {
+                                display: none;
+                            }
                         }
 
                         >span {
@@ -513,7 +524,7 @@
                             }
 
                             >.catalog-navi {
-                                display: block;
+                                display: none;
                             }
 
                             &:hover {
@@ -521,6 +532,10 @@
                                     >a {
                                         &:after {
                                             transform: rotate(90deg);
+
+                                            @include media-breakpoint('lt-md') {
+                                                transform: rotate(0);
+                                            }
                                         }
                                     }
                                 }

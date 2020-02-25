@@ -329,21 +329,9 @@
     <div id="sidebar" class="sidebar">
       <aside>
         @@include('../includes/catalog-navi.html', { "listClass" : ""})
-        <div class="widget widget-subs">
-          <div class="widget-title">
-            Дополнительные бонусы и скидки за подписку
-          </div>
-          <form action="">
-            <p>
-              Получайте секретные промокоды, учавствуйте в закрытых распродажах
-              Sport07.ru
-            </p>
-            <div class="form-input">
-              <input type="text" class="form-control" placeholder="Ваш е-майл" />
-              <button type="submit"><i class="fas fa-arrow-right"></i></button>
-            </div>
-          </form>
-        </div>
+
+        @@include('../includes/widgets/subscription.html')
+        
         <div class="widget widget-posts">
           <div class="widget-title">Новости</div>
           <div class="posts">

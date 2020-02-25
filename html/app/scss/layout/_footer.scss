@@ -203,7 +203,8 @@
     font-size: 18px;
     font-weight: bold;
     cursor: pointer;
-    transition: .3s;
+    @extend %hide_item;
+    transform: translateX(-100%);
 
     i {
         margin-right: 10px;
@@ -211,6 +212,11 @@
 
     &:hover {
         color: $second-color;
+    }
+
+    &.shown {
+        @extend %show_item;
+        transform: none;
     }
 }
 

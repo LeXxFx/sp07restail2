@@ -32,6 +32,11 @@
             padding: 12px 30px;
             text-decoration: none;
             transition: background-color linear .1s;
+
+            @include media-breakpoint('lt-lg') {
+                font-size: 13px;
+                padding: 12px 15px;
+            }
         }
 
         .dropdown {
@@ -59,6 +64,10 @@
                     color: $primary-color;
                     border-bottom: 1px solid #eaebec;
                     transition: background-color linear .1s;
+
+                    @include media-breakpoint('lt-md') {
+                        color: $text-color;
+                    }
 
                     &:hover {
                         background: darken(#fff, 10%);
@@ -216,6 +225,11 @@
                     margin: 0 20px;
                     vertical-align: top;
 
+                    @include media-breakpoint('lt-lg') {
+                        width: 220px;
+                        margin: 0 15px;
+                    }
+
                     &__title {
                         margin: 0 0 15px 0;
                         padding: 0;
@@ -235,6 +249,10 @@
                     ul {
                         margin-bottom: 20px;
                         padding-left: 10px;
+
+                        @include media-breakpoint('lt-lg') {
+                            padding: 0;
+                        }
 
                         li {
                             position: relative;
@@ -271,6 +289,12 @@
                                 width: 320px;
                                 padding: 20px;
                                 box-shadow: 3px 3px 8px 0 rgba(81, 81, 81, 0.5);
+
+                                @include media-breakpoint('lt-lg') {
+                                    right: 0;
+                                    left: auto;
+                                    top: 100%;
+                                }
                             }
 
                             &:hover {
@@ -309,35 +333,8 @@
     }
 }
 
-@media screen and (max-width: $desktop) {
-    .menu {
-        >li {
-            >a {
-                font-size: 13px;
-                padding: 12px 15px;
-            }
-        }
-    }
-
-    .catalog-navi>ul>li.has-child>.dropdown .category-col {
-        width: 220px;
-        margin: 0 15px;
-
-        ul {
-            padding: 0;
-
-            li>ul {
-                right: 0;
-                left: auto;
-                top: 100%;
-            }
-        }
-    }
-}
-
 @media screen and (max-width: $tablet) {
     .menu {
-        justify-content: flex-end;
 
         >li {
             >a {
@@ -393,7 +390,7 @@
                 &.opened {
                     >a {
                         &:after {
-                            transform: rotate(90deg);
+                            transform: rotate(90deg) !important;
                         }
                     }
                 }

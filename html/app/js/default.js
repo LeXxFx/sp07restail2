@@ -143,9 +143,9 @@ var Main = function () {
 			}
 
 			if (scroll > 500) {
-				$('#scroll-top').fadeIn()
+				$('#scroll-top').addClass('shown')
 			} else {
-				$('#scroll-top').fadeOut()
+				$('#scroll-top').removeClass('shown')
 			}
 		});
 		$('#scroll-top').on('click', function (e) {
