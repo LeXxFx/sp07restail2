@@ -3,6 +3,21 @@ var Main = function () {
 
 	var commonModule = function () {
 		$('[data-toggle="tooltip"]').tooltip();
+
+		let modal_lv = 0;
+		$('body').on('show.bs.modal', function (e) {
+			if (modal_lv > 0)
+				$(e.target).css('zIndex', 1051 + modal_lv);
+			modal_lv++;
+		}).on('hidden.bs.modal', function () {
+			if (modal_lv > 0)
+				modal_lv--;
+
+			if ($('body').find('.modal.show').length) {
+				console.log('ttt');
+				$('body').addClass('modal-open');
+			}
+		});
 	};
 
 	var formSettings = function () {

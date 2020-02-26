@@ -111,7 +111,7 @@ var Shop = function () {
 	var productQuickBuy = function () {
 		$('.quick-buy').on('click', function (e) {
 			e.preventDefault();
-			$('#modal_quickbuy').modal('show');
+			$('#modal_quickbuy').modal({ show: true });
 		});
 	}
 
@@ -131,6 +131,7 @@ var Shop = function () {
 
 	var productGallery = function (gallery) {
 		var isVertical = true,
+			showSlide = 3,
 			imageItem = $('body').find('.image-list .item a');
 
 		imageItem.on("click", function (e) {
@@ -145,6 +146,7 @@ var Shop = function () {
 
 		if (gallery === undefined) {
 			gallery = $('#product-gallery').find('.image-list');
+			showSlide = 6;
 		}
 
 		if (gallery.data('direction') === "row")
@@ -152,7 +154,7 @@ var Shop = function () {
 
 		if (gallery.length > 0) {
 			gallery.slick({
-				slidesToShow: 3,
+				slidesToShow: showSlide,
 				slidesToScroll: 1,
 				autoplay: false,
 				prevArrow: '<a class="slick-prev"><i class="fa fa-angle-left"></i></a>',

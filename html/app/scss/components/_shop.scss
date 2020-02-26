@@ -107,12 +107,12 @@
                 align-items: flex-end;
 
                 .value {
-                    width: 13px;
-                    height: 13px;
+                    width: 18px;
+                    height: 18px;
                     margin: 0 3px 3px 0;
                     vertical-align: top;
                     border-radius: 50%;
-                    border: 1px solid transparent;
+                    border: 2px solid transparent;
 
                     img {
                         vertical-align: top;
@@ -131,10 +131,7 @@
                         width: 20px;
                         height: 20px;
                         opacity: 1 !important;
-
-                        img {
-                            border-color: #ebeced;
-                        }
+                        border-color: $primary-color;
                     }
                 }
             }
@@ -212,7 +209,6 @@
 
     &__list {
         .item {
-
             a {
                 display: flex;
                 overflow: hidden;
@@ -244,15 +240,10 @@
         &:not(.slick-slider) {
             display: flex;
             overflow: hidden;
-            justify-content: center;
-
-            .item {
-                flex: 0 0 33.333%;
-            }
         }
 
         &.slick-slider {
-            padding: 0 18px;
+            padding: 0 16px;
 
             .item {
                 text-align: center;

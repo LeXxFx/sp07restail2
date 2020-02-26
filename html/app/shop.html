@@ -1674,9 +1674,9 @@
         </button>
       </div>
       <div class="modal-body">
-        <div class="product-preview">
-          <div class="col-image">
-            <div class="product-item__stickers">
+        <div class="preview product-card product-item">
+          <div class="preview__col-image">
+            <div class="product-item__stickers preview__stickers">
               <div class="sticker sticker-promo">
                 <span>Акция!</span>
               </div>
@@ -1715,9 +1715,9 @@
               </div>
             </div>
           </div>
-          <div class="col-content">
-            <div class="product-preview__content">
-              <div class="col-left">
+          <div class="preview__col-content">
+            <div class="preview-content">
+              <div class="preview-content__col-left">
                 <div class="product-item__rate">
                   <div class="stars star-4"></div>
                 </div>
@@ -1726,7 +1726,7 @@
                   <a class="find-chipper" href="#"><i class="appicon appicon-tag"></i> <span>Нашли
                       дешевле?</span></a>
                 </div>
-                <div class="preview-text">
+                <div class="preview-content__text">
                   <div class="post">
                     <p>Полумягкие раздвижные коньки PW-135 Orange торговой марки "Alpha Caprice" имеют отличный
                       дизайн. Эта модель коньков сочетает надежность и качество.</p>
@@ -1746,18 +1746,20 @@
                     </div>
                   </div>
                 </div>
-                <div class="preview-delivary"><i class="appicon appicon-truck"></i> Доставка по всей России!</div>
+                <div class="preview-content__delivary">
+                  <i class="appicon appicon-truck"></i> Доставка по всей России!
+                </div>
               </div>
-              <div class="col-right">
+              <div class="preview-content__col-right">
                 <div class="prices">
-                  <span class="price-value">1590 руб./шт</span>
-                  <del class="price-value price-value-old">1690 руб.</del>
+                  <span class="price-value">1590 <span class="price-value__currency">руб./шт</span></span>
+                  <del class="price-value price-value-old">1690 <span class="price-value__currency">руб.</span></del>
                 </div>
-                <div class="preview-discont">
+                <div class="product-card__discont">
                   <span>-5%</span>
-                  До скидки 5% осталось купить<br> на 3000 р.
+                  До скидки 5% осталось купить на 3000 р.
                 </div>
-                <div class="product-options">
+                <div class="product-card__options product-options">
                   <div class="prop prop-size">
                     <div class="prop-name">Размер:</div>
                     <div class="values">
@@ -1790,7 +1792,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="preview-counter">
+                <div class="product-card__cart">
                   <div class="product-item__counter input-counter">
                     <button type="button" class="btn btn-minus btn-number" data-type="minus" data-field="quant[2]">
                       -
@@ -1806,16 +1808,14 @@
                   <button class="btn btn-primary add-to-cart" title="Положить в корзину">
                     В корзину
                   </button>
-                </div>
-                <div class="preview-quick-buy">
                   <button class="btn quick-buy" title="Купить в один клик">
                     Купить в 1 клик
                   </button>
                 </div>
-                <div class="preview-dop">
-                  <b>Гарантия АСЦ:</b> 24 месяца
+                <div class="product-card__advants">
+                  <p><b>Гарантия АСЦ:</b> 24 месяца</p>
                 </div>
-                <div class="preview-buttons">
+                <div class="preview-content__buttons">
                   <button><i class="appicon appicon-heart"></i> В избранное</button>
                   <button><i class="appicon appicon-compare"></i> Сравнить</button>
                 </div>

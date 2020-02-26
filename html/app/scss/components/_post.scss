@@ -44,6 +44,32 @@
     b {
         color: $second-color;
     }
+
+    &-more {
+        >a {
+            color: $primary-color;
+            text-decoration: underline;
+
+            i {
+                margin-left: 5px;
+                font-size: 15px;
+                position: relative;
+                top: 2px;
+                transition: .3s;
+                transform: rotate(-180deg);
+            }
+
+            &:hover {
+                text-decoration: none;
+            }
+
+            &.collapsed {
+                i {
+                    transform: rotate(0);
+                }
+            }
+        }
+    }
 }
 
 @media screen and (max-width: $tablet) {
