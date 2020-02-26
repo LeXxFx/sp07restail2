@@ -288,6 +288,25 @@ var Shop = function () {
 		}
 	};
 
+	var productSingle = function () {
+
+		if (!isMobile) {
+			$('.btn-share').popover({
+				placement: 'bottom',
+				trigger: 'hover',
+				html: true,
+				container: '.btn-share',
+				content: function () {
+					return $('.shares-popup').html();
+				}
+			});
+		} else {
+			$('.btn-share').on('click', function () {
+				$('.shares-popup').toggleClass('active');
+			});
+		}
+	}
+
 	return {
 		init: function () {
 			inputCounter();
@@ -296,6 +315,7 @@ var Shop = function () {
 			productPreview();
 			productGallery();
 			productFilters();
+			productSingle();
 		}
 	};
 }();

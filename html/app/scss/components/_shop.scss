@@ -285,6 +285,77 @@
     }
 }
 
+.shares {
+    margin: 0 0 10px 0;
+
+    .btn-share {
+        font-size: 14px;
+        border: 1px solid #d7d7d7;
+        border-radius: 2px;
+        display: inline-block;
+        padding: 3px 10px;
+
+        i {
+            margin: 0 5px 0 0;
+        }
+
+        &:hover {
+            color: $second-color;
+        }
+    }
+
+    &-popup {
+        display: none;
+
+        @include media-breakpoint('lt-md') {
+            display: block;
+            position: fixed;
+            background: #fff;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            z-index: 10001;
+            padding: 10px;
+            transform: translateY(100%);
+            opacity: 0;
+            visibility: hidden;
+            transition: .2s;
+
+            &.active {
+                transform: translateY(0);
+                opacity: 1;
+                visibility: visible;
+            }
+        }
+    }
+
+
+    &-list {
+        margin: -10px;
+
+        a {
+            font-size: 16px;
+            display: block;
+            transition: .3s;
+            margin: 2px 0;
+            padding: 5px 10px;
+            color: $text-color;
+
+            i {
+                margin-right: 5px;
+                width: 14px;
+                text-align: center;
+            }
+
+            &:hover {
+                color: $second-color;
+                background: darken(#fff, 3%);
+                text-decoration: none;
+            }
+        }
+    }
+}
+
 .product-viewed {
     padding: 20px 10px;
     margin: 30px 0 0;
