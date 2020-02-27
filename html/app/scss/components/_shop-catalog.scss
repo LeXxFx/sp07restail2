@@ -8,7 +8,7 @@
 
         .catalog-item {
             position: relative;
-            border: 1px solid #e5e5e5;
+            border: 1px solid #e2e1e1;
             flex: 0 0 calc(25% - 12px);
             margin: 0 6px 12px 6px;
 
@@ -70,14 +70,6 @@
                         background: darken(#fff, 5%);
                     }
                 }
-
-                &:hover {
-                    span {
-                        visibility: visible;
-                        opacity: 1;
-                        transform: scale(1);
-                    }
-                }
             }
 
             &__name {
@@ -107,9 +99,10 @@
                         font-size: 18px;
                         line-height: 1.2;
                         font-weight: bold;
-                        padding: 15px 10px;
+                        margin: 15px 10px;
                         background: rgba(255, 255, 255, 0.6);
                         color: $text-color;
+                        min-height: 44px;
 
                         @include media-breakpoint('lt-md') {
                             font-size: 16px;
@@ -126,6 +119,87 @@
                         visibility: hidden;
                         transition: transform 0.3s ease;
                         transform: translateY(5px);
+                    }
+                }
+            }
+
+            &__content {
+                border-top: 1px solid #e2e1e1;
+                padding: 10px 0 0;
+                margin: 0 15px;
+
+                .cat-list {
+                    list-style: none;
+                    padding: 0;
+                    margin: 0;
+
+                    li {
+                        position: relative;
+                        padding: 0 0 0 10px;
+                        margin: 0 0 12px 0;
+                        line-height: 1.2;
+
+                        a {
+                            display: inline-block;
+                            color: $text-color;
+                            text-decoration: none;
+
+                            &:hover {
+                                text-decoration: underline;
+                                color: $second-color;
+                            }
+                        }
+
+                        &:before {
+                            content: "";
+                            display: block;
+                            width: 4px;
+                            height: 4px;
+                            background: $primary-color;
+                            border-radius: 1px;
+                            position: absolute;
+                            top: 6px;
+                            left: 0;
+                        }
+                    }
+                }
+
+                .post {
+                    text-align: center;
+                    margin: 0;
+
+                    p {
+                        margin: 0;
+                    }
+                }
+            }
+
+            &__show-more {
+                padding: 10px 0 0;
+                height: 30px;
+
+                a {
+                    text-decoration: underline;
+                    position: relative;
+                    padding: 0 15px 0 0;
+                    color: $primary-color;
+
+                    i {
+                        position: absolute;
+                        right: 0;
+                        top: 5px;
+                        transition: .3s;
+                    }
+
+                    &:hover {
+                        color: $second-color;
+                        text-decoration: none;
+                    }
+
+                    &:not(.collapsed) {
+                        i {
+                            transform: rotate(180deg);
+                        }
                     }
                 }
             }
@@ -162,6 +236,101 @@
 
                     .catalog-item__stick-num {
                         background: $primary-color;
+                    }
+                }
+            }
+
+            &-inner {
+                min-height: 369px;
+                height: 369px;
+                border: none;
+
+                &__wrap {
+                    transition: .3s;
+                    background: #fff;
+                    border: 1px solid #e2e1e1;
+                    padding-bottom: 15px;
+                    position: relative;
+
+                    >a {
+                        display: block;
+                        text-decoration: none;
+                    }
+
+                    .catalog-item {
+                        &__photo {
+                            height: 160px;
+                        }
+
+                        &__name {
+                            .item-name {
+                                &__title {
+                                    min-height: 45px;
+                                    height: 45px;
+                                    overflow: hidden;
+                                }
+                            }
+                        }
+
+                        &__content {
+                            min-height: 117px;
+                            height: 117px;
+                            text-overflow: ellipsis;
+                            overflow: hidden;
+                        }
+                    }
+                }
+            }
+
+            &-sale {
+                border: none;
+                background: #fff;
+                display: flex;
+
+                &__wrap {
+                    border: 1px solid #e2e1e1;
+                    display: flex;
+
+                    a {
+                        display: flex;
+                        align-items: center;
+
+                        img {
+                            width: 100%;
+                            height: auto;
+                            object-fit: contain;
+                        }
+                    }
+                }
+            }
+
+            &:hover {
+                z-index: 10;
+
+                span {
+                    visibility: visible;
+                    opacity: 1;
+                    transform: scale(1);
+                }
+
+                .catalog-item {
+                    &-inner {
+                        &__wrap {
+                            height: auto;
+                            box-shadow: 0 0 12px 0 rgba(0, 0, 0, .2);
+                        }
+                    }
+
+                    &__name {
+                        .item-name {
+                            &__title {
+                                height: auto;
+                            }
+                        }
+                    }
+
+                    &__content {
+                        height: auto;
                     }
                 }
             }
