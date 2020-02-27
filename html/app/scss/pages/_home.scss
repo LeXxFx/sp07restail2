@@ -328,6 +328,12 @@
     &__list {
         padding: 0 35px;
 
+        &:not(.slick-slider) {
+            padding: 0;
+            display: flex;
+            justify-content: space-between;
+        }
+
         .slick-arrow {
             &.slick-next {
                 right: 0;
