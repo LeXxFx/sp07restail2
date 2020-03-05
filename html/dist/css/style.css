@@ -11096,191 +11096,433 @@ button {
     .product-tabs .nav li a {
       font-size: 16px; } }
 
-.account-wrapper {
-  background: #fff url(../images/bg_account.jpg) no-repeat center bottom/cover; }
-  .account-wrapper .content {
-    min-height: calc(100vh - 165px);
-    padding: 100px 0 50px 0; }
-  .account-wrapper #footer.footer-account {
-    padding: 30px 0;
-    text-align: center;
-    background: none; }
-    .account-wrapper #footer.footer-account p {
-      color: #b3b2b2;
-      margin: 0; }
-
-.panel-account {
-  width: 100%;
-  max-width: 730px;
-  margin: 0 auto; }
-  .panel-account__top {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: justify;
-        justify-content: space-between;
-    -ms-flex-align: center;
-        align-items: center;
-    background: #232126;
-    border-radius: 32px 32px 0 0;
-    padding: 40px 95px 70px 95px;
-    color: #fff; }
-    .panel-account__top > h1 {
-      font-size: 36px;
-      line-height: 1.3;
-      margin: 0; }
-    .panel-account__top > div span {
-      font-size: 12px;
-      opacity: 0.5;
-      margin-right: 5px; }
-    .panel-account__top > div a {
-      text-decoration: underline;
-      color: #fff; }
-      .panel-account__top > div a:hover {
-        text-decoration: none; }
-  .panel-account__body {
-    border-radius: 32px;
-    background: #fff;
-    box-shadow: 0 12px 30px 5px #e9edf2;
-    margin: -40px 0 0 0;
-    padding: 60px 95px; }
-
-.form-account {
-  margin-bottom: 20px; }
-  .form-account .account-type {
-    margin: 0 0 40px 0; }
-    .form-account .account-type p {
-      text-align: center;
-      font-weight: 600;
-      margin: 0 0 20px 0; }
-    .form-account .account-type__list {
-      display: -ms-flexbox;
-      display: flex;
-      -ms-flex-pack: justify;
-          justify-content: space-between; }
-      .form-account .account-type__list button {
-        -ms-flex: 0 0 45%;
-            flex: 0 0 45%;
-        height: 50px;
-        padding: 10px 20px;
-        background: #fff;
-        border: 1px solid #c8c7c9;
-        border-radius: 12px;
-        display: -ms-flexbox;
-        display: flex;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-        -ms-flex-align: center;
-            align-items: center; }
-        .form-account .account-type__list button i {
-          display: none; }
-        .form-account .account-type__list button.selected {
-          background: #232126;
-          color: #fff;
-          font-weight: 700; }
-          .form-account .account-type__list button.selected i {
-            display: block; }
-  .form-account .form-group {
-    margin-bottom: 25px; }
-    .form-account .form-group .label-wrap {
+.account {
+  padding: 20px 0 40px 0; }
+  .account .form-horizontal {
+    font-size: 20px;
+    max-width: 1000px;
+    margin: 0 auto; }
+    .account .form-horizontal .form-group {
       display: -ms-flexbox;
       display: flex;
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-      -ms-flex-align: center;
-          align-items: center; }
-      .form-account .form-group .label-wrap .control-label {
-        font-size: 16px;
-        color: #232126;
-        font-weight: 600; }
-      .form-account .form-group .label-wrap a {
-        font-size: 14px;
-        color: #b3b2b2;
+      margin-left: -15px;
+      margin-right: -15px; }
+      .account .form-horizontal .form-group .form-control {
+        height: 50px;
+        border: 1px solid #cfcfcf;
+        background: #fcfcfc;
+        padding: 10px;
+        vertical-align: middle;
+        border-radius: 0;
+        transition: .3s; }
+        .account .form-horizontal .form-group .form-control:focus {
+          border-color: #abc5e3;
+          background: #fff; }
+        .account .form-horizontal .form-group .form-control.has-error {
+          border-color: #a00808 !important; }
+      .account .form-horizontal .form-group .control-label {
+        padding-top: 12px; }
+    .account .form-horizontal .form-baton {
+      padding: 30px 0; }
+      .account .form-horizontal .form-baton .col-btn {
+        text-align: right; }
+        .account .form-horizontal .form-baton .col-btn .btn {
+          background: #458a2b;
+          font-weight: bold;
+          color: #fff;
+          width: 180px;
+          height: 50px;
+          padding: 6px 20px;
+          font-size: 26px; }
+          .account .form-horizontal .form-baton .col-btn .btn:hover {
+            background: #3b7725; }
+    .account .form-horizontal .form-bottom {
+      font-size: 24px; }
+    .account .form-horizontal a {
+      font-size: 1em;
+      text-decoration: underline;
+      color: #ef8808; }
+      .account .form-horizontal a:hover {
         text-decoration: none; }
-        .form-account .form-group .label-wrap a:hover {
-          color: #458a2b; }
-    .form-account .form-group .tut-input {
-      border-bottom: 1px solid #f5f7f7;
-      position: relative; }
-      .form-account .form-group .tut-input .tut-input__border {
-        position: absolute;
-        z-index: 1;
-        bottom: -1px;
-        height: 2px;
-        left: 50%;
-        right: 50%;
-        transition: .3s;
-        background: #458a2b; }
-      .form-account .form-group .tut-input .form-control {
-        border: none;
-        padding: 10px 0;
-        box-shadow: none !important;
-        font-size: 14px; }
-        .form-account .form-group .tut-input .form-control:focus ~ .tut-input__border {
-          left: 0;
-          right: 0; }
-  .form-account .form-baton {
+    .account .form-horizontal .form-captcha .control-label {
+      padding-top: 5px; }
+    .account .form-horizontal .form-captcha__image {
+      border: 1px solid #cfcfcf;
+      background: #fcfcfc;
+      margin-bottom: 5px; }
+      .account .form-horizontal .form-captcha__image img {
+        width: auto;
+        max-height: 50px; }
+  .account .form-checkbox input {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute; }
+    .account .form-checkbox input:checked ~ span:before {
+      background-position: -169px -147px; }
+  .account .form-checkbox span {
+    display: block;
+    font-size: 20px;
+    font-weight: 300;
+    color: #5b5b5c;
+    position: relative;
+    padding: 3px 0 0 50px;
+    cursor: pointer; }
+    .account .form-checkbox span:hover {
+      color: #ef8808; }
+    .account .form-checkbox span:before {
+      content: "";
+      display: block;
+      background: url(../images/sprite.png) no-repeat -169px -182px;
+      width: 36px;
+      height: 35px;
+      position: absolute;
+      left: 0;
+      top: 0; }
+  .account-login {
+    border-bottom: 1px solid #d7d7d7;
+    margin: 0 0 40px 0; }
+  .account-registration .form-horizontal .control-label {
+    text-align: left;
+    font-size: 20px; }
+  .account-registration .form-horizontal .form-baton .col-btn .btn {
+    width: auto;
+    min-width: 280px; }
+
+.cabinet {
+  padding: 20px 0;
+  margin: 0 0 30px 0; }
+  .cabinet .page-nav {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 25px 0;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    -ms-flex-line-pack: center;
+        align-content: center; }
+    .cabinet .page-nav > li {
+      margin: 0 140px 0 0; }
+      .cabinet .page-nav > li:last-child {
+        margin: 0; }
+      .cabinet .page-nav > li > a {
+        color: #222222;
+        font-size: 22px;
+        font-weight: bold;
+        padding: 10px 30px;
+        height: 50px;
+        background: transparent;
+        border: 1px solid transparent; }
+        .cabinet .page-nav > li > a:hover {
+          color: #ef8808; }
+          .cabinet .page-nav > li > a:hover span {
+            border-color: #ef8808; }
+        .cabinet .page-nav > li > a span {
+          border-bottom: 3px dotted #222;
+          display: inline-block; }
+      .cabinet .page-nav > li.active a {
+        cursor: default;
+        color: #363a47;
+        background: #f6f6f6;
+        border: 1px solid #e6e6e6; }
+        .cabinet .page-nav > li.active a span {
+          border-bottom-color: transparent; }
+  .cabinet .change-password {
+    padding: 100px 0 60px 0;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-line-pack: center;
+        align-content: center;
     -ms-flex-pack: justify;
         justify-content: space-between;
-    -ms-flex-align: center;
-        align-items: center;
-    padding: 20px 0;
-    font-size: 16px; }
-    .form-account .form-baton a {
-      color: #929ea0;
-      text-decoration: none; }
-      .form-account .form-baton a:hover {
-        color: #458a2b; }
-    .form-account .form-baton button {
-      width: 245px;
-      padding: 15px 20px;
-      border-radius: 12px;
-      display: -ms-flexbox;
-      display: flex;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-      -ms-flex-align: center;
-          align-items: center; }
-      .form-account .form-baton button.btn-default {
-        background: #fff;
-        border: 1px solid #ebebeb;
-        color: #ebebeb; }
-
-.account-form-social {
-  font-weight: 600; }
-  .account-form-social > p {
-    text-align: center;
-    color: #232126; }
-  .account-form-social .social-batons {
+    white-space: nowrap; }
+    .cabinet .change-password .form-control {
+      -ms-flex: 0 0 170px;
+          flex: 0 0 170px;
+      height: 50px; }
+    .cabinet .change-password .form-checkbox {
+      position: relative;
+      -ms-flex: 0 0 240px;
+          flex: 0 0 240px; }
+      .cabinet .change-password .form-checkbox input {
+        opacity: 0;
+        visibility: hidden;
+        position: absolute; }
+        .cabinet .change-password .form-checkbox input:checked ~ span:before {
+          background-position: -169px -147px; }
+      .cabinet .change-password .form-checkbox span {
+        display: inline-block;
+        font-size: 20px;
+        font-weight: bold;
+        color: #222;
+        white-space: nowrap;
+        position: relative;
+        padding: 6px 75px 0 0;
+        cursor: pointer; }
+        .cabinet .change-password .form-checkbox span:hover {
+          color: #ef8808; }
+        .cabinet .change-password .form-checkbox span:before {
+          content: "";
+          display: block;
+          background: url(../images/sprite.png) no-repeat -169px -182px;
+          width: 36px;
+          height: 35px;
+          position: absolute;
+          left: auto;
+          right: 0;
+          top: 5px; }
+  .cabinet .history-nav {
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-pack: justify;
-        justify-content: space-between; }
-    .account-form-social .social-batons .btn-connect {
-      -ms-flex: 0 0 45%;
-          flex: 0 0 45%;
-      height: 60px;
-      border-radius: 12px;
-      background: #fff;
-      border: 1px solid;
-      transition: .3s;
-      font-weight: 600; }
-      .account-form-social .social-batons .btn-connect i {
-        margin: 0 10px; }
-      .account-form-social .social-batons .btn-connect.btn-facebook {
-        color: #f2362a;
-        border-color: #f2362a; }
-        .account-form-social .social-batons .btn-connect.btn-facebook:hover {
-          color: #fff;
-          background: #f2362a; }
-      .account-form-social .social-batons .btn-connect.btn-google {
-        color: #625ef7;
-        border-color: #625ef7; }
-        .account-form-social .social-batons .btn-connect.btn-google:hover {
-          color: #fff;
-          background: #625ef7; }
+    margin: 0 0 30px 0; }
+    .cabinet .history-nav__item {
+      width: 200px;
+      height: 200px;
+      background: #fcfcfc;
+      transition: background-color .3s;
+      text-align: center;
+      padding: 10px; }
+      .cabinet .history-nav__item:hover {
+        background: #f6f6f6;
+        text-decoration: none; }
+      .cabinet .history-nav__item.active {
+        background: #d7d7d7; }
+      .cabinet .history-nav__item .nav-label {
+        font-size: 26px;
+        line-height: 1;
+        font-weight: bold;
+        color: #222;
+        display: block; }
+      .cabinet .history-nav__item .nav-icon {
+        height: 115px;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-pack: center;
+            justify-content: center;
+        -ms-flex-align: center;
+            align-items: center;
+        position: relative;
+        text-align: center; }
+        .cabinet .history-nav__item .nav-icon:after {
+          content: "";
+          display: inline-block;
+          background: url(../images/icon_cabient.png) no-repeat; }
+        .cabinet .history-nav__item .nav-icon-1 {
+          padding-right: 25px; }
+          .cabinet .history-nav__item .nav-icon-1:after {
+            background-position: 0 0;
+            width: 77px;
+            height: 77px; }
+        .cabinet .history-nav__item .nav-icon-2:after {
+          background-position: -85px -19px;
+          width: 80px;
+          height: 59px; }
+        .cabinet .history-nav__item .nav-icon-3:after {
+          background-position: -172px -11px;
+          width: 67px;
+          height: 67px; }
+        .cabinet .history-nav__item .nav-icon-4:after {
+          background-position: -246px -12px;
+          width: 65px;
+          height: 66px; }
+        .cabinet .history-nav__item .nav-icon-5:after {
+          background-position: -315px -12px;
+          width: 65px;
+          height: 66px; }
+
+.order-list {
+  max-width: 1000px; }
+  .order-list .order-item {
+    border-bottom: 1px solid #d7d7d7; }
+    .order-list .order-item__top a {
+      font-size: 26px;
+      text-shadow: 1px 0 0 #222;
+      color: #222;
+      display: block;
+      padding: 15px 0; }
+      .order-list .order-item__top a:hover {
+        text-shadow: 1px 0 0 #ef8808;
+        color: #ef8808;
+        text-decoration: none; }
+      .order-list .order-item__top a.collapsed {
+        text-shadow: none; }
+    .order-list .order-item__details {
+      font-size: 18px; }
+      .order-list .order-item__details .order-top {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+        padding: 15px 0 0 0; }
+        .order-list .order-item__details .order-top__info {
+          margin: 0 0 15px 0; }
+          .order-list .order-item__details .order-top__info p {
+            margin: 0; }
+        .order-list .order-item__details .order-top__btn {
+          margin: 0 10px 15px 0; }
+          .order-list .order-item__details .order-top__btn .btn {
+            width: 190px;
+            padding: 6px 20px;
+            font-size: 26px;
+            font-weight: bold; }
+      .order-list .order-item__details .order-products {
+        margin: 0 0 20px 0; }
+        .order-list .order-item__details .order-products p {
+          font-weight: bold;
+          margin: 0; }
+        .order-list .order-item__details .order-products a {
+          display: block;
+          font-weight: 300;
+          color: #222;
+          line-height: 1.2;
+          margin: 0 0 5px 0; }
+          .order-list .order-item__details .order-products a:hover {
+            color: #ef8808; }
+      .order-list .order-item__details .order-bot {
+        text-align: right;
+        padding: 0 0 25px 0; }
+        .order-list .order-item__details .order-bot .btn {
+          border: none;
+          color: #222;
+          font-size: 18px; }
+          .order-list .order-item__details .order-bot .btn:hover {
+            text-decoration: underline;
+            color: #ef8808; }
+          .order-list .order-item__details .order-bot .btn-green {
+            color: #fff;
+            font-weight: bold;
+            margin: 0 20px 0 0; }
+            .order-list .order-item__details .order-bot .btn-green:hover {
+              text-decoration: none;
+              color: #fff; }
+
+.order-promo {
+  margin: 30px 0; }
+  .order-promo h2 {
+    margin: 20px 0 5px 0;
+    font-size: 26px;
+    font-weight: bold;
+    color: #ef8808; }
+  .order-promo p {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0 0 25px 0; }
+  .order-promo .btn {
+    font-size: 26px;
+    font-weight: bold; }
+
+@media screen and (max-width: 992px) {
+  .cabinet .change-password {
+    padding: 50px 0 30px 0; }
+    .cabinet .change-password .control-label {
+      font-size: 16px; }
+    .cabinet .change-password .form-control {
+      -ms-flex: 0 0 120px;
+          flex: 0 0 120px;
+      height: 40px; }
+  .cabinet .history-nav__item {
+    height: 140px; }
+    .cabinet .history-nav__item .nav-icon {
+      height: 90px; }
+    .cabinet .history-nav__item .nav-label {
+      font-size: 15px; }
+  .order-list .order-item__top a {
+    font-size: 14px; }
+  .order-list .order-item__details {
+    font-size: 14px; }
+    .order-list .order-item__details .order-top__btn .btn {
+      font-size: 16px; } }
+
+@media screen and (max-width: 767px) {
+  .account .form-horizontal {
+    font-size: 16px; }
+    .account .form-horizontal .form-group .form-control {
+      height: 40px;
+      font-size: 16px; }
+    .account .form-horizontal .form-group .control-label {
+      padding-top: 8px;
+      font-size: 16px; }
+    .account .form-horizontal .form-baton .col-btn .btn {
+      font-size: 16px;
+      min-width: 180px;
+      height: 40px; }
+  .account-login {
+    padding: 0; }
+  .account .form-checkbox span {
+    font-size: 16px; }
+    .account .form-checkbox span:before {
+      top: 5px; }
+  .account .form-horizontal .form-baton {
+    padding: 0; }
+    .account .form-horizontal .form-baton a {
+      display: block;
+      font-size: 16px;
+      margin: 0 0 15px 0;
+      text-align: right; }
+  .account .form-horizontal .form-bottom {
+    font-size: 16px; }
+  .account .form-horizontal .text-right {
+    text-align: left;
+    padding-top: 10px; }
+  .bot-help {
+    font-size: 16px; }
+    .bot-help h2 {
+      font-size: 20px; }
+    .bot-help ol {
+      margin: 0 0 20px 0;
+      padding: 0 0 0 20px; }
+  .cabinet {
+    padding: 0; }
+    .cabinet .page-nav {
+      text-align: center; }
+      .cabinet .page-nav > li {
+        margin: 0; }
+        .cabinet .page-nav > li > a {
+          font-size: 16px;
+          padding: 7px 10px;
+          height: 40px; }
+    .cabinet .change-password {
+      display: block;
+      padding: 20px 0; }
+      .cabinet .change-password .form-checkbox {
+        display: block;
+        margin: 0 0 20px 0; }
+      .cabinet .change-password .control-label {
+        font-size: 16px;
+        margin: 0 0 5px 0; }
+      .cabinet .change-password .form-control {
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+        margin: 0 0 20px 0; }
+    .cabinet .history-nav {
+      display: block; }
+      .cabinet .history-nav__item {
+        height: auto;
+        width: auto;
+        display: block; }
+        .cabinet .history-nav__item .nav-icon {
+          display: none; }
+        .cabinet .history-nav__item .nav-label {
+          font-size: 16px; }
+  .order-promo h2 {
+    font-size: 18px; }
+  .order-promo p {
+    font-size: 14px; }
+  .order-promo .btn {
+    font-size: 18px; } }
+
+@media screen and (max-width: 480px) {
+  .cabinet .page-nav {
+    display: block;
+    margin: 0 0 10px 0; }
+    .cabinet .page-nav > li {
+      margin: 0 0 20px 0 !important; }
+  .order-list .order-item__top a {
+    font-size: 14px; }
+  .order-list .order-item__details {
+    font-size: 14px; }
+    .order-list .order-item__details .order-top {
+      display: block; }
+      .order-list .order-item__details .order-top__btn {
+        margin: 0 0 20px 0;
+        text-align: right; } }
