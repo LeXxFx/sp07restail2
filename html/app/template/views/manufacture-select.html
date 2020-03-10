@@ -1,4 +1,4 @@
-@@include('../includes/header.html', { "title": "Shop" })
+@@include('../includes/header.html', { "title": "Manufacturers" })
 
 <div class="container">
   <div class="inner">
@@ -7,16 +7,46 @@
         @@include('../includes/filters.html')
       </aside>
     </div>
-    <div id="content" class="content content-inner" role="main">
+    <main id="content" class="content content-inner" role="main">
       <div class="breadcrumbs">
         <ul>
           <li><a href="#">Главная</a></li>
-          <li><a href="#">Каталог</a></li>
-          <li><a href="#">Зимние виды спорта и активный отдыхг</a></li>
-          <li><a href="#">Раздвижные коньки</a></li>
+          <li><a href="#">Бренды</a></li>
+          <li><span>Ritmex</span></li>
         </ul>
       </div>
-      <div class="page-heading">Кимоно для карате</div>
+      <div class="page-heading">Производители</div>
+      <div class="brands-search">
+        <form autocomplete="off" action="#" class="brands-search__form">
+          <div class="form-input autocomplete">
+            <input id="brandSearch" type="text" placeholder="Поиск по названию бренда" class="form-control">
+          </div>
+          <button class="btn btn-default">Искать</button>
+        </form>
+        <div class="brands-search__alphabet">
+          <a href="#">A</a>
+          <a href="#">B</a>
+          <a href="#">C</a>
+          <a href="#">D</a>
+          <a href="#">E</a>
+          <a href="#">F</a>
+          <a href="#">G</a>
+          <a href="#">H</a>
+          <a href="#">I</a>
+          <a href="#">J</a>
+          <a href="#">K</a>
+          <a href="#">L</a>
+          <a href="#">M</a>
+          <a href="#">N</a>
+          <a href="#">O</a>
+          <a href="#">P</a>
+          <a href="#">Q</a>
+          <a href="#">R</a>
+          <a href="#">T</a>
+          <a href="#">U</a>
+          <a href="#">V</a>
+        </div>
+      </div>
       <div class="filter-selected">
         <a href="#">Коньки <span>&times;</span></a>
         <a href="#">Fredo <span>&times;</span></a>
@@ -834,7 +864,7 @@
         <a class="pagination__next" href="#">
           Вперед <span><i class="fa fa-arrow-right"></i></span></a>
       </div>
-    </div>
+    </main>
   </div>
   @@include('../includes/product-viewed.html')
 </div>

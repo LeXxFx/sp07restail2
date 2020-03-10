@@ -30,22 +30,89 @@
     }
 }
 
+.autocomplete {
+    position: relative;
+
+    &-items {
+        position: absolute;
+        background: #fff;
+        border: 1px solid #acacac;
+        margin: 2px 0 0;
+        max-height: 260px;
+        overflow: auto;
+        z-index: 99;
+        top: 100%;
+        left: 0;
+        right: 0;
+        padding: 5px 0;
+        box-shadow: 0 0 12px 0 rgba(0, 0, 0, .2);
+
+        >div {
+            padding: 10px 15px;
+            cursor: pointer;
+            color: #737373;
+            transition: .1s;
+
+            strong {
+                color: $text-color;
+            }
+
+            i {
+                display: inline-block;
+                margin-right: 10px;
+                position: relative;
+                top: 2px;
+            }
+
+            &:hover {
+                background-color: darken(#fff, 6%);
+            }
+        }
+    }
+
+    &-active {
+        background-color: darken(#fff, 6%);
+        color: $second-color;
+
+        strong {
+            color: $second-color;
+        }
+    }
+}
+
 .btn {
     transition: .3s;
+    border-radius: 3px;
+    font-weight: 500;
+
+    &:active,
+    &:focus,
+    &:hover {
+        box-shadow: none !important;
+    }
 
     &-primary {
         color: #fff;
-        font-weight: 500;
         background: $primary-color;
         border-color: $primary-color;
-        border-radius: 3px;
 
         &:active,
         &:focus,
         &:hover {
             background: darken($primary-color, 5%) !important;
             border-color: darken($primary-color, 5%) !important;
-            box-shadow: none !important;
+        }
+    }
+
+    &-default {
+        background: #eaebec;
+        border-color: #dedede;
+
+        &:active,
+        &:focus,
+        &:hover {
+            background: darken(#eaebec, 5%) !important;
+            border-color: darken(#dedede, 5%) !important;
         }
     }
 }

@@ -3,7 +3,7 @@ $item-height: 470px;
 .product-list {
     display: flex;
     flex-wrap: wrap;
-    margin: 0 -6px;
+    margin: 0 -6px 20px -6px;
 
     .product-item {
         flex: 0 0 calc(25% - 12px);

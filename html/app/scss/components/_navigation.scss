@@ -211,7 +211,7 @@
                 z-index: 100;
                 background: #fff;
                 padding: 20px 0 0;
-                top: -50%;
+                top: 0;
                 left: 100%;
                 border: 1px solid #eaebec;
 
@@ -327,6 +327,14 @@
 
             >.dropdown {
                 display: block;
+            }
+        }
+
+        &.active {
+            >a {
+                background: #fff;
+                color: $second-color;
+                border-left-color: $second-color;
             }
         }
 

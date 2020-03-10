@@ -1,0 +1,75 @@
+.brands-search {
+    &__form {
+        max-width: 560px;
+        display: flex;
+        margin: 0 0 10px 0;
+
+        .btn {
+            flex: 0 0 70px;
+            margin: 0 0 0 10px;
+            font-size: 13px;
+        }
+
+        .form-input {
+            flex: 1 1 auto;
+            position: relative;
+
+            .form-control {
+                width: 100%;
+                border-radius: 3px;
+            }
+        }
+    }
+
+    &__alphabet {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 0 20px 0;
+
+        a {
+            display: inline-block;
+            font-size: 18px;
+            flex: 0 0 20px;
+            text-align: center;
+            margin: 0 3px 5px 0;
+
+            &:hover {
+                text-decoration: underline;
+                color: $second-color;
+            }
+        }
+    }
+}
+
+.brands-grid {
+    display: flex;
+    flex-wrap: wrap;
+
+    .brand-item {
+        flex: 0 1 25%;
+
+        @include media-breakpoint('lt-md') {
+            flex: 0 1 33.333%;
+        }
+
+        @include media-breakpoint('lt-sm') {
+            flex: 0 1 50%;
+        }
+
+        a {
+            height: 120px;
+            border: 1px solid transparent;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            img {
+                max-width: 210px;
+            }
+
+            &:hover {
+                border-color: $second-color;
+            }
+        }
+    }
+}
