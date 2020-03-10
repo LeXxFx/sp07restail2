@@ -1,0 +1,40 @@
+.cart-header {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 0 20px 0;
+
+    .page-heading {
+        margin: 0;
+    }
+
+    >a {
+        display: inline-block;
+        padding: 10px 15px;
+        border: 1px solid #d7d7d7;
+        border-radius: 3px;
+        color: $text-color;
+
+        i {
+            opacity: 0.6;
+            margin-right: 14px;
+        }
+
+        &:hover {
+            text-decoration: none;
+            color: $second-color;
+        }
+    }
+}
+
+.cart-filter {
+    padding: 10px;
+    background: #f9f9f9;
+    border: 1px solid #eaebec;
+
+    &__sorting {
+        &.dropdown {
+            max-width: 230px;
+            background: #fff;
+        }
+    }
+}
