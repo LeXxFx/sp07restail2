@@ -26,15 +26,104 @@
     }
 }
 
-.cart-filter {
-    padding: 10px;
-    background: #f9f9f9;
-    border: 1px solid #eaebec;
+.cart {
+    display: grid;
+    grid-template-columns: 1fr;
 
-    &__sorting {
-        &.dropdown {
-            max-width: 230px;
-            background: #fff;
+    &-row {
+        display: grid;
+        grid-template-columns: 4.5fr repeat(3, 1fr);
+        grid-gap: 5px;
+    }
+
+    &-filter {
+        align-items: center;
+        padding: 10px;
+        background: #f9f9f9;
+        border: 1px solid #eaebec;
+
+        &__sorting {
+            &.dropdown {
+                max-width: 230px;
+                background: #fff;
+            }
         }
+    }
+
+    &-item {
+        border: 1px solid #eaebec;
+        border-top: none;
+        padding: 10px;
+
+        >div {
+            &:not(:first-of-type) {
+                padding-top: 50px;
+            }
+        }
+
+        &__main {
+            display: grid;
+            grid-template-columns: 150px 1fr;
+            column-gap: 25px;
+        }
+
+        &__image {
+            align-items: center;
+            justify-content: center;
+
+            img {
+                max-width: 100%;
+            }
+        }
+
+        &__info {
+            align-self: center;
+        }
+    }
+
+    &-result {
+        padding: 10px;
+        background: #f9f9f9;
+        border: 1px solid #eaebec;
+        border-top: none;
+
+        &__sum {
+            grid-column: 2/4;
+
+            strong {
+                font-size: 18px;
+            }
+
+            p {
+                margin: 0;
+                color: #717171;
+            }
+        }
+
+        &__price {
+            .prices {
+                display: grid;
+
+                .price {
+                    &-value {
+                        font-size: 30px;
+                        line-height: 1.1;
+                        font-weight: bold;
+
+                        &-old {
+                            font-size: 14px;
+                            font-weight: normal;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &-buttons {
+        padding: 10px 0;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
     }
 }

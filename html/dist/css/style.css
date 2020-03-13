@@ -8069,6 +8069,9 @@ readers do not read off random characters that represent icons */
         top: 2px; }
       .autocomplete-items > div:hover {
         background-color: #f0f0f0; }
+    .autocomplete-items__nothing-found {
+      cursor: default !important;
+      background: #fff !important; }
   .autocomplete-active {
     background-color: #f0f0f0;
     color: #ef8808; }

@@ -13,22 +13,94 @@
         <div class="page-heading">Корзина</div>
         <a href="#"><i class="fa fa-print"></i> Распечатать</a>
       </div>
-      <div class="cart-filter">
-        <div class="cart-filter__sorting dropdown">
-          <button class="dropdown-toggle" type="button" id="routeto" data-toggle="dropdown" aria-haspopup="true"
-            aria-expanded="false">
-            По дате поступления
-            <i class="fa fa-angle-down"></i>
-          </button>
-          <div class="dropdown-menu" aria-labelledby="routeto">
-            <a class="dropdown-item" href="#">От дорогих к дешевым</a>
-            <a class="dropdown-item dropdown-active" href="#">По популярности</a>
-            <a class="dropdown-item" href="#">По имени</a>
+      <div class="cart">
+        <div class="cart-filter cart-row">
+          <div class="cart-filter__sorting dropdown">
+            <button class="dropdown-toggle" type="button" id="routeto" data-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false">
+              По дате поступления
+              <i class="fa fa-angle-down"></i>
+            </button>
+            <div class="dropdown-menu" aria-labelledby="routeto">
+              <a class="dropdown-item" href="#">От дорогих к дешевым</a>
+              <a class="dropdown-item dropdown-active" href="#">По популярности</a>
+              <a class="dropdown-item" href="#">По имени</a>
+            </div>
+          </div>
+          <span>Отложено 2 товара</span>
+          <span>В корзине 4 товара</span>
+          <a href="#"><span>&times;</span> Очистить корзину</a>
+        </div>
+        <div class="cart-list">
+          <div class="cart-item cart-row">
+            <div class="cart-item__main">
+              <div class="cart-item__image">
+                <a href="product.html"><img src="images/demo/product_img1-190x190.jpg" alt=""></a>
+              </div>
+              <div class="cart-item__info">
+                <a href="product.html">Раздвижные ледовые коньки</a>
+                <div class="product-card__options product-options">
+                  <div class="prop prop-size">
+                    <div class="prop-name">Размер:</div>
+                    <div class="values">
+                      <div class="value value--active">
+                        <span>L (39-42)</span>
+                      </div>
+                    </div>
+                    <button>Изменить</button>
+                  </div>
+                  <div class="prop prop-color">
+                    <div class="prop-name">Цвет:</div>
+                    <div class="values">
+                      <div class="value value--active">
+                        <img src="images/color_1.png" alt="" />
+                      </div>
+                    </div>
+                    <button>Изменить</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="cart-item__price">
+              1 590 руб./шт.
+              Осталась 1 шт
+            </div>
+            <div class="cart-item__counter">
+              <div class="input-counter">
+                <button type="button" class="btn btn-minus btn-number" data-type="minus" data-field="quant[cart1]">
+                  -
+                </button>
+                <div class="input-group-text">
+                  <input type="text" name="quant[cart1]" class="form-control input-number input-area" value="1"
+                    data-min="1" data-max="100000" data-step="1" data-unit="">
+                </div>
+                <button type="button" class="btn btn-plus btn-number" data-type="plus" data-field="quant[cart1]">
+                  +
+                </button>
+              </div>
+            </div>
+            <div class="cart-item__sum">
+              1 590 руб.
+            </div>
           </div>
         </div>
-        <span>Отложено 2 товара</span>
-        <span>В корзине 4 товара</span>
-        <a href="#"><span>&times;</span> Очистить корзину</a>
+        <div class="cart-result cart-row">
+          <div class="cart-result__sum">
+            <strong>Итого:.</strong>
+            <p>Сума с НДС: 5560 руб.</p>
+          </div>
+          <div class="cart-result__price">
+            <div class="prices">
+              <span class="price-value">3080 <span class="price-value__currency">руб.</span></span>
+              <del class="price-value price-value-old">1690 <span class="price-value__currency">руб.</span></del>
+            </div>
+          </div>
+        </div>
+        <div class="cart-buttons">
+          <a href="shop.html" class="link-catalog"><i class="fa fa-arrow-left"></i> Вернуться в каталог</a>
+          <a href="checkout.html" class="btn btn-checkout">Оформить заказ</a>
+          <button class="btn btn-primary btn-quick-order">Быстрый заказ</button>
+        </div>
       </div>
     </main>
   </div>
