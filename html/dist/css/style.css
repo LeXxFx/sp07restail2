@@ -11664,10 +11664,69 @@ button {
       text-decoration: none;
       color: #ef8808; }
 
-.cart-filter {
-  padding: 10px;
-  background: #f9f9f9;
-  border: 1px solid #eaebec; }
-  .cart-filter__sorting.dropdown {
-    max-width: 230px;
-    background: #fff; }
+.cart {
+  display: grid;
+  grid-template-columns: 1fr; }
+  .cart-row {
+    display: grid;
+    grid-template-columns: 4.5fr repeat(3, 1fr);
+    grid-gap: 5px; }
+  .cart-filter {
+    -ms-flex-align: center;
+        align-items: center;
+    padding: 10px;
+    background: #f9f9f9;
+    border: 1px solid #eaebec; }
+    .cart-filter__sorting.dropdown {
+      max-width: 230px;
+      background: #fff; }
+  .cart-item {
+    border: 1px solid #eaebec;
+    border-top: none;
+    padding: 10px; }
+    .cart-item > div:not(:first-of-type) {
+      padding-top: 50px; }
+    .cart-item__main {
+      display: grid;
+      grid-template-columns: 150px 1fr;
+      -webkit-column-gap: 25px;
+              column-gap: 25px; }
+    .cart-item__image {
+      -ms-flex-align: center;
+          align-items: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+      .cart-item__image img {
+        max-width: 100%; }
+    .cart-item__info {
+      -ms-flex-item-align: center;
+          align-self: center; }
+  .cart-result {
+    padding: 10px;
+    background: #f9f9f9;
+    border: 1px solid #eaebec;
+    border-top: none; }
+    .cart-result__sum {
+      grid-column: 2/4; }
+      .cart-result__sum strong {
+        font-size: 18px; }
+      .cart-result__sum p {
+        margin: 0;
+        color: #717171; }
+    .cart-result__price .prices {
+      display: grid; }
+      .cart-result__price .prices .price-value {
+        font-size: 30px;
+        line-height: 1.1;
+        font-weight: bold; }
+        .cart-result__price .prices .price-value-old {
+          font-size: 14px;
+          font-weight: normal; }
+  .cart-buttons {
+    padding: 10px 0;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: end;
+        justify-content: flex-end;
+    -ms-flex-align: center;
+        align-items: center; }

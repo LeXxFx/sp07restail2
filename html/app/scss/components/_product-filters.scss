@@ -322,21 +322,26 @@
             &__list {
                 display: flex;
                 flex-wrap: wrap;
+                flex-basis: 6px;
                 max-height: 210px;
                 overflow: auto;
 
                 a {
                     @extend %rect-wihte;
-                    width: 48px;
-                    height: 30px;
-                    line-height: 30px;
                     text-align: center;
                     text-decoration: none;
+                    padding: 3px 10px;
                     margin: 0 6px 6px 0;
 
                     &.active {
                         border-color: #707070;
                         color: $second-color;
+                    }
+
+                    &.disable {
+                        cursor: default;
+                        color: #b2b2b2;
+                        opacity: 0.8;
                     }
                 }
             }
