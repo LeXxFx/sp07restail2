@@ -305,6 +305,367 @@
         </ul>
       </div>
       <div class="page-heading">Оформление заказа</div>
+      <div class="checkout">
+        <div class="checkout__left">
+          <div class="checkout-panel">
+            <div class="checkout-heading">
+              <i class="appicon appicon-map"></i>
+              Тип покупателя и регион доставки
+            </div>
+            <div class="checkout__user-type">
+              <div class="radio">
+                <input type="radio" name="customer_type" id="type1" value="1" checked="checked">
+                <label for="type1">Физическое лицо</label>
+              </div>
+              <div class="radio">
+                <input type="radio" name="customer_type" id="type2" value="2">
+                <label for="type2">Юридическое лицо</label>
+              </div>
+            </div>
+            <div class="checkout__address">
+              <div class="form-group">
+                <div class="control-label">
+                  <span class="required">*</span> Местоположение
+                </div>
+                <div class="suggest-list">
+                  <a href="#">Москва</a>
+                  <a href="#">Санкт-Петербург</a>
+                  <a href="#">Екатеринбург</a>
+                  <a href="#">Челябинск</a>
+                </div>
+                <div class="form-input autocomplete">
+                  <span class="form-input__prepend"><i class="appicon appicon-search"></i> Ваш город,</span>
+                  <input id="city" type="text" class="form-control" placeholder="выберите из списка или впишите свой город">
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="control-label">
+                  <span class="required">*</span> Индекс
+                </div>
+                <div class="form-input">
+                  <span class="form-input__prepend">00000,</span>
+                  <input type="text" class="form-control" placeholder="впишите свой индекс">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="checkout__methods">
+            <div class="checkout-panel">
+              <div class="checkout-heading">
+                <i class="appicon appicon-delivary"></i>
+                Способ доставки
+              </div>
+              <div class="delivary-list">
+                <div class="delivary-item">
+                  <div class="radio">
+                    <input type="radio" name="delivary" id="delivary1" value="1">
+                    <label for="delivary1">
+                      Доставка курьером <span>г. Москва</span>
+                      <strong>290 руб.</strong>
+                    </label>
+                  </div>
+                  <div class="delivary-item__info"></div>
+                </div>
+                <div class="delivary-item">
+                  <div class="radio">
+                    <input type="radio" name="delivary" id="delivary1" value="1">
+                    <label for="delivary1">
+                      Самовывоз из Shop-Logistics
+                      <strong>220 руб.</strong>
+                    </label>
+                  </div>
+                  <div class="delivary-item__info">
+                    <p>г. Краснодар <a href="#">Изменить город</a></p>
+                    <div class="dropdown">
+                      <button class="dropdown-toggle" type="button" id="routeto" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        <span>отделение №10, ул. Занковецкой 30/5, к. 150</span>
+                        <i class="fa fa-angle-down"></i>
+                      </button>
+                      <div class="dropdown-menu" aria-labelledby="routeto">
+                        <a class="dropdown-item" href="#">отделение №11</a>
+                        <a class="dropdown-item dropdown-active" href="#">отделение №12</a>
+                        <a class="dropdown-item" href="#">отделение №13</a>
+                      </div>
+                    </div>
+                    <a href="#"><i class="appicon appicon-map"></i> Карта</a>
+                  </div>
+                </div>
+                <div class="delivary-item">
+                  <div class="radio">
+                    <input type="radio" name="delivary" id="delivary1" value="1">
+                    <label for="delivary1">
+                      Самовывоз <span>c Дубнинской (г.Москва)</span>
+                      <strong>0 руб.</strong>
+                    </label>
+                  </div>
+                  <div class="delivary-item__info"></div>
+                </div>
+                <div class="delivary-item">
+                  <div class="radio">
+                    <input type="radio" name="delivary" id="delivary1" value="1">
+                    <label for="delivary1">
+                      Самовывоз <span>г.Москва</span>
+                      <strong>180 руб.</strong>
+                    </label>
+                  </div>
+                  <div class="delivary-item__info"></div>
+                </div>
+                <div class="delivary-item">
+                  <div class="radio">
+                    <input type="radio" name="delivary" id="delivary1" value="1">
+                    <label for="delivary1">
+                      Регионы
+                      <strong>индивидуально</strong>
+                    </label>
+                  </div>
+                  <div class="delivary-item__info">
+                    <p>Индивидуальный расчет менеджером</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="checkout-panel">
+              <div class="checkout-heading">
+                <i class="appicon appicon-wallet"></i>
+                Способ оплаты
+              </div>
+              <div class="payment-list">
+                <div class="radio">
+                  <input type="radio" name="payments" id="payment1" value="1">
+                  <label for="payment1">Яндекс.Деньги</label>
+                </div>
+                <div class="radio">
+                  <input type="radio" name="payments" id="payment2" value="2">
+                  <label for="payment2">Банковские карты</label>
+                </div>
+                <div class="radio">
+                  <input type="radio" name="payments" id="payment3" value="3">
+                  <label for="payment3">Терминалы</label>
+                </div>
+                <div class="radio">
+                  <input type="radio" name="payments" id="payment4" value="4">
+                  <label for="payment4">Наличные курьеру</label>
+                </div>
+                <div class="radio">
+                  <input type="radio" name="payments" id="payment5" value="5">
+                  <label for="payment5">Сбербанк</label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="checkout__panel">
+            <div class="checkout-kupon">
+              <span>Применить купон</span>
+              <div class="form-input">
+                <span class="form-input__prepend">00000,</span>
+                <input type="text" class="form-control" placeholder="номер купона">
+                <button><i class="far fa-arrow-alt-circle-right"></i></button>
+              </div>
+            </div>
+          </div>
+          <div class="checkout__panel">
+            <div class="checkout-heading">
+              <i class="appicon appicon-user"></i>
+              Покупатель
+            </div>
+            <div class="form-group">
+              <label for="" class="conteol-label"><span class="required">*</span> Ф.И.О.</label>
+              <input type="text" class="form-control">
+            </div>
+            <div class="form-group">
+              <label for="" class="conteol-label"><span class="required">*</span> E-Mail</label>
+              <input type="email" class="form-control">
+            </div>
+            <div class="form-group">
+              <label for="" class="conteol-label"><span class="required">*</span> Телефон</label>
+              <input type="tel" class="form-control">
+            </div>
+            <div class="form-group">
+              <label for="" class="conteol-label"><span class="required">*</span>Адрес доставки</label>
+              <input type="text" class="form-control">
+            </div>
+            <div class="form-group">
+              <label for="" class="conteol-label">Комментарии к заказу:</label>
+              <textarea class="form-control"></textarea>
+            </div>
+            <p class="form-help">
+              <span class="required">*</span> Поля обязательные для заполнения
+            </p>
+          </div>
+          <div class="checkout__panel">
+            <div class="checkout-heading">
+              <i class="appicon appicon-basket"></i>
+              Товары в заказе
+            </div>
+            <div class="cart-table">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Фото</th>
+                    <th>Наименование</th>
+                    <th>Скидка</th>
+                    <th>Цена</th>
+                    <th>Вес</th>
+                    <th>Кол-во</th>
+                    <th>Сумма</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="cart-item">
+                    <td class="cart-item__image">
+                      <a href="product.html"><img src="images/demo/product_img3-190x190.jpg" alt=""></a>
+                    </td>
+                    <td>
+                      <a href="product.html">Раздвижные ледовые коньки</a>
+                      <div class="cart-item__options product-options">
+                        <div class="prop prop-size">
+                          <div class="prop-name">Размер:</div>
+                          <div class="values">
+                            <div class="value">
+                              <span>L (39-42)</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="prop prop-color">
+                          <div class="prop-name">Цвет:</div>
+                          <div class="values">
+                            <div class="value">
+                              <img src="images/color_black-red.png" alt="" />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </td>
+                    <td>0%</td>
+                    <td><strong>1 590 руб.</strong></td>
+                    <td><strong>1 кг</strong></td>
+                    <td><strong>1</strong></td>
+                    <td><strong>1 590 руб.</strong></td>
+                  </tr>
+                  <tr class="cart-item">
+                    <td>
+                      <a href="product.html"><img src="images/demo/product_img3-190x190.jpg" alt=""></a>
+                    </td>
+                    <td>
+                      <a href="product.html">Раздвижные ледовые коньки</a>
+                      <div class="cart-item__options product-options">
+                        <div class="prop prop-size">
+                          <div class="prop-name">Размер:</div>
+                          <div class="values">
+                            <div class="value">
+                              <span>L (39-42)</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="prop prop-color">
+                          <div class="prop-name">Цвет:</div>
+                          <div class="values">
+                            <div class="value">
+                              <img src="images/color_black-red.png" alt="" />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </td>
+                    <td>0%</td>
+                    <td>
+                      <strong>1 590 руб.</strong>
+                      <del>1690 руб.</del>
+                    </td>
+                    <td><strong>1 кг</strong></td>
+                    <td><strong>1</strong></td>
+                    <td>
+                      <strong>1 590 руб.</strong>
+                      <del>1690 руб.</del>
+                    </td>
+                  </tr>
+                  <tr class="cart-item">
+                    <td>
+                      <a href="product.html"><img src="images/demo/product_img3-190x190.jpg" alt=""></a>
+                    </td>
+                    <td>
+                      <a href="product.html">Раздвижные ледовые коньки</a>
+                      <div class="cart-item__options product-options">
+                        <div class="prop prop-size">
+                          <div class="prop-name">Размер:</div>
+                          <div class="values">
+                            <div class="value">
+                              <span>L (39-42)</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="prop prop-color">
+                          <div class="prop-name">Цвет:</div>
+                          <div class="values">
+                            <div class="value">
+                              <img src="images/color_black-red.png" alt="" />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </td>
+                    <td>0%</td>
+                    <td><strong>1 590 руб.</strong></td>
+                    <td><strong>1 кг</strong></td>
+                    <td><strong>1</strong></td>
+                    <td><strong>1 590 руб.</strong></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="checkbox">
+              <input type="checkbox" name="rules" id="rules">
+              <label for="rules" class="txt">Нажимая на кнопку, я принимаю <a href="#">условия соглашения</a>.</label>
+            </div>
+            <button>Оформить заказ</button>
+          </div>
+        </div>
+        <div class="checkout__right">
+          <div class="summary checkout-panel">
+            <div class="summary__top">
+              <span>Ваш заказа</span>
+              <a href="#">Изменить</a>
+            </div>
+            <div class="summary__body">
+              <div class="summary-row">
+                <div class="summary-row__name">
+                  4 товара на:
+                </div>
+                <div class="summary-row__value">
+                  <strong>3 080.55 руб.</strong>
+                  <del>3 480 руб.</del>
+                </div>
+              </div>
+              <div class="summary-row">
+                <div class="summary-row__name">
+                  Доставка
+                </div>
+                <div class="summary-row__value">
+                  <span>500 руб.</span>
+                </div>
+              </div>
+              <div class="summary-row summary-row_economy">
+                <div class="summary-row__name">
+                  Экономия:
+                </div>
+                <div class="summary-row__value">
+                  399.45 руб.
+                </div>
+              </div>
+            </div>
+            <div class="summary__result">
+              <strong>
+                Итого:
+              </strong>
+              <strong>
+                3 580.55 руб.
+              </strong>
+            </div>
+            <button class="btn btn-checkout">Оформить заказ</button>
+          </div>
+        </div>
+      </div>
     </main>
   </div>
 </div>

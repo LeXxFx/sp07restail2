@@ -189,6 +189,9 @@
                         padding: 15px 0;
                         border: 1px solid #acacac;
                         background: #f9f9f9;
+                        box-shadow: 0 0 12px 0 rgba(0, 0, 0, .2);
+                        @extend %hide_item;
+                        transform: scale(.9);
 
                         .filters {
                             margin: 0;
@@ -197,6 +200,7 @@
                                 border: none;
                             }
                         }
+
                         &:before {
                             content: "";
                             position: absolute;
@@ -207,6 +211,7 @@
                             border: 10px solid transparent;
                             border-left-color: #acacac;
                         }
+
                         &:after {
                             content: "";
                             position: absolute;
@@ -216,6 +221,13 @@
                             height: 0;
                             border: 10px solid transparent;
                             border-left-color: #f9f9f9;
+                        }
+                    }
+
+                    &--opened {
+                        .prop-popup {
+                            @extend %show_item;
+                            transform: none;
                         }
                     }
                 }
@@ -378,11 +390,6 @@
 
             i {
                 margin-right: 10px;
-                border: 2px solid $primary-color;
-                color: $primary-color;
-                border-radius: 50%;
-                font-size: 12px;
-                padding: 3px 4px;
             }
 
             &:hover {
