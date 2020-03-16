@@ -32,6 +32,7 @@
 
 .autocomplete {
     position: relative;
+    padding-right: 25px !important;
 
     &-items {
         position: absolute;
@@ -286,6 +287,7 @@
 
     label {
         font-size: 16px;
+        line-height: 1.2;
         padding-left: 33px;
         display: flex;
         align-items: center;
@@ -358,6 +360,7 @@
     transition: .2s;
 
     label {
+        margin: 0;
         padding-left: 35px;
         white-space: normal;
         cursor: pointer;
@@ -432,5 +435,11 @@
 
     &:hover {
         color: $second-color;
+
+        .txt {
+            &:before {
+                border-color: $primary-color;
+            }
+        }
     }
 }
