@@ -150,6 +150,21 @@
         }
     }
 
+    .form-help {
+        font-size: 12px;
+    }
+
+    .form-group {
+        .control-label {
+            margin: 0 0 5px 0;
+        }
+
+        .form-control {
+            background: #f7f7f7;
+            border: 1px solid #d7d7d7;
+        }
+    }
+
     .form-input {
         background: #f7f7f7;
         border: 1px solid #d7d7d7;
@@ -158,6 +173,7 @@
         padding: 0 10px;
         display: flex;
         align-items: center;
+        font-size: 14px;
 
         &__prepend {
             white-space: nowrap;
@@ -176,6 +192,18 @@
             border: none;
             padding: 5px;
             color: #848484;
+            font-size: 14px;
+        }
+
+        button {
+            border: 1px solid #d7d7d7;
+            border-radius: 2px;
+            background: #fff;
+            color: $primary-color;
+
+            &:hover {
+                background: darken(#fff, 5%);
+            }
         }
     }
 
@@ -185,12 +213,212 @@
         justify-content: space-between;
 
         .checkout-panel {
-            flex: 0 1 49%;
+            &.delivary {
+                flex: 0 0 55%;
+            }
+
+            &.payment {
+                flex: 0 0 43%;
+            }
         }
 
         .delivary-item {
+            margin-bottom: 15px;
+
+            .radio {
+                margin-bottom: 0;
+
+                label {
+
+                    span {
+                        font-size: 12px;
+                        color: #666;
+                        margin-left: 5px;
+                    }
+
+                    strong {
+                        font-weight: 400;
+                        margin-left: auto;
+                        background: #e8eaea;
+                        color: #666;
+                        border-radius: 16px;
+                        display: inline-block;
+                        padding: 0px 10px;
+                    }
+                }
+            }
+
             &__info {
-                
+                padding-left: 35px;
+
+                p {
+                    color: #666;
+                    margin-bottom: 15px;
+
+                    a.link-change {
+                        color: $primary-color;
+                        margin-left: 20px;
+                        display: inline-block;
+                        text-decoration: underline;
+
+                        &:hover {
+                            text-decoration: none;
+                        }
+                    }
+                }
+
+                .post-office {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+
+                    .dropdown {
+                        flex: 0 0 245px;
+
+                        .dropdown-toggle {
+                            background: #f7f7f7;
+                            border: 1px solid #d7d7d7;
+
+                            i {
+                                color: #969797;
+                            }
+
+                            span {
+                                display: block;
+                                overflow: hidden;
+                                text-overflow: ellipsis;
+                            }
+
+                            &:hover {
+                                border-color: #eaebec;
+                                background: #e4ede1;
+
+                                i {
+                                    color: $text-color;
+                                }
+                            }
+
+                        }
+                    }
+
+                    &__map {
+                        margin-left: 15px;
+
+                        a {
+                            display: flex;
+                            align-items: center;
+                            color: $primary-color;
+                            text-decoration: underline;
+
+                            i {
+                                margin-right: 5px;
+                            }
+
+                            &:hover {
+                                text-decoration: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .kupon {
+        padding: 15px;
+        display: flex;
+        align-items: center;
+
+        >span {
+            flex: 0 0 90px;
+        }
+
+        .form-input {
+            flex: 1 1 auto;
+        }
+    }
+
+    .cart-products {
+        padding-bottom: 0;
+        margin-bottom: 25px;
+
+        &__container {
+            margin: 0 -30px 0 -65px;
+
+            .cart-table {
+                width: 100%;
+
+                th {
+                    color: #7d7d7d;
+                    font-weight: 400;
+                    padding: 10px;
+                    font-size: 14px;
+                    border-top: 1px solid #e1e1e1;
+                    border-bottom: 1px solid #e1e1e1;
+                }
+
+                td {
+                    padding: 10px;
+                }
+
+                .product-row {
+                    border-bottom: 1px solid #e1e1e1;
+
+                    &:last-of-type {
+                        border: none;
+                    }
+
+                    &__image {
+                        padding: 10px 20px;
+
+                        img {
+                            width: 50px;
+                            height: auto;
+                        }
+                    }
+
+                    &__name {
+                        a {
+                            color: $text-color;
+                            display: inline-block;
+                            margin-bottom: 10px;
+                            font-weight: bold;
+                        }
+                    }
+
+                    td {
+                        strong {
+                            display: block;
+                        }
+
+                        del {
+                            display: block;
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+
+    &__bottom {
+        text-align: center;
+
+        .checkbox {
+            margin-bottom: 20px;
+        }
+
+        .btn-checkout {
+            color: #fff;
+            background: $second-color;
+            border: 1px solid $second-color;
+            border-radius: 3px;
+            display: block;
+            width: 180px;
+            margin: 0 auto;
+
+            &:hover {
+                background: darken($second-color, 5%);
             }
         }
     }

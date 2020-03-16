@@ -157,7 +157,7 @@
     height: 21px;
   }
 
-  &-map {
+  &-map-alt {
     background-position: -117px -33px;
     width: 24px;
     height: 32px;
@@ -175,7 +175,7 @@
     height: 27px;
   }
 
-  &-user {
+  &-user-alt {
     background-position: -215px -32px;
     width: 32px;
     height: 32px;
@@ -185,5 +185,11 @@
     background-position: -251px -32px;
     width: 32px;
     height: 32px;
+  }
+
+  &-map-min {
+    background-position: -204px -10px;
+    width: 12px;
+    height: 16px;
   }
 }

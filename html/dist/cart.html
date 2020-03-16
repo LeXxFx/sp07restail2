@@ -322,9 +322,11 @@
               <a class="dropdown-item" href="#">По имени</a>
             </div>
           </div>
-          <span>Отложено 2 товара</span>
-          <span>В корзине 4 товара</span>
-          <a href="#"><span>&times;</span> Очистить корзину</a>
+          <span class="cart-filter__stock">Отложено 2 товара</span>
+          <span class="cart-filter__counter">В корзине 4 товара</span>
+          <div class="cart-filter__clear">
+            <a href="#"><span>&times;</span> Очистить корзину</a>
+          </div>
         </div>
         <div class="cart-list">
           <div class="cart-item cart-row">
@@ -334,31 +336,87 @@
               </div>
               <div class="cart-item__info">
                 <a href="product.html">Раздвижные ледовые коньки</a>
-                <div class="product-card__options product-options">
+                <div class="cart-item__options product-options">
                   <div class="prop prop-size">
                     <div class="prop-name">Размер:</div>
                     <div class="values">
-                      <div class="value value--active">
+                      <div class="value prop-change">
                         <span>L (39-42)</span>
                       </div>
                     </div>
-                    <button>Изменить</button>
+                    <div class="prop-popup">
+
+                      <div class="filters">
+                        <div class="filter filter-grid">
+                          <div class="filter__top">Размер <span>(22)</span></div>
+                          <div class="filter-grid__search-form">
+                            <input type="text" placeholder="Поиск" class="form-control">
+                          </div>
+                          <div class="filter-grid__list">
+                            <a href="#">S (31-34)</a>
+                            <a href="#">S (31-34)</a>
+                            <a href="#" class="active">S (31-34)</a>
+                            <a href="#">S (31-34)</a>
+                            <a href="#" class="disable">S (31-34)</a>
+                            <a href="#">S (31-34)</a>
+                            <a href="#">S (31-34)</a>
+                            <a href="#">S (31-34)</a>
+                            <a href="#">S (31-34)</a>
+                            <a href="#">S (31-34)</a>
+                            <a href="#">S (31-34)</a>
+                            <a href="#">S (31-34)</a>
+                            <a href="#">S (31-34)</a>
+                            <a href="#">S (31-34)</a>
+                            <a href="#">S (31-34)</a>
+                            <a href="#">S (31-34)</a>
+                            <a href="#">S (31-34)</a>
+                            <a href="#">S (31-34)</a>
+                            <a href="#">S (31-34)</a>
+                            <a href="#">S (31-34)</a>
+                            <a href="#">S (31-34)</a>
+                            <a href="#">S (31-34)</a>
+                            <a href="#">S (31-34)</a>
+                            <a href="#">S (31-34)</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                   <div class="prop prop-color">
                     <div class="prop-name">Цвет:</div>
                     <div class="values">
-                      <div class="value value--active">
-                        <img src="images/color_1.png" alt="" />
+                      <div class="value">
+                        <img src="images/color_black-red.png" alt="" />
+                      </div>
+                      <button class="prop-change">Изменить</button>
+                    </div>
+                    <div class="prop-popup">
+                      <div class="filters">
+                        <div class="filter filter-list">
+                          <div class="filter__top">Пол</div>
+                          <div class="filter__body">
+                            <ul class="filter-list__list">
+                              <li class="active">
+                                <a href="#">Мужчинам</a>
+                              </li>
+                              <li>
+                                <a href="#">Женщинам</a>
+                              </li>
+                              <li>
+                                <a href="#">Детям</a>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
                       </div>
                     </div>
-                    <button>Изменить</button>
                   </div>
                 </div>
               </div>
             </div>
             <div class="cart-item__price">
-              1 590 руб./шт.
-              Осталась 1 шт
+              <p>1 590 руб./шт.</p>
+              <span class="stock-danger">Осталась 1 шт</span>
             </div>
             <div class="cart-item__counter">
               <div class="input-counter">
@@ -375,24 +433,254 @@
               </div>
             </div>
             <div class="cart-item__sum">
-              1 590 руб.
+              <div class="prices">
+                <span class="price-value">1 590 <span class="price-value__currency">руб.</span></span>
+                <del class="price-value price-value-old">1 690 <span class="price-value__currency">руб.</span></del>
+              </div>
+              <button class="cart-item__remove" title="убрать из корзины">&times;</button>
+            </div>
+          </div>
+          <div class="cart-item cart-row">
+            <div class="cart-item__main">
+              <div class="cart-item__image">
+                <a href="product.html"><img src="images/demo/product_img2-190x190.jpg" alt=""></a>
+                <div class="cart-item__discont">
+                  <span>-15%</span>
+                </div>
+              </div>
+              <div class="cart-item__info">
+                <a href="product.html">Раздвижные ледовые коньки</a>
+                <div class="cart-item__options product-options">
+                  <div class="prop prop-size">
+                    <div class="prop-name">Размер:</div>
+                    <div class="values">
+                      <div class="value prop-change">
+                        <span>L (39-42)</span>
+                      </div>
+                    </div>
+                    <div class="prop-popup">
+                      <div class="filters">
+                        <div class="filter filter-grid">
+                          <div class="filter__top">Размер <span>(22)</span></div>
+                          <div class="filter-grid__search-form">
+                            <input type="text" placeholder="Поиск" class="form-control">
+                          </div>
+                          <div class="filter-grid__list">
+                            <a href="#">S (31-34)</a>
+                            <a href="#">S (31-34)</a>
+                            <a href="#" class="active">S (31-34)</a>
+                            <a href="#">S (31-34)</a>
+                            <a href="#" class="disable">S (31-34)</a>
+                            <a href="#">S (31-34)</a>
+                            <a href="#">S (31-34)</a>
+                            <a href="#">S (31-34)</a>
+                            <a href="#">S (31-34)</a>
+                            <a href="#">S (31-34)</a>
+                            <a href="#">S (31-34)</a>
+                            <a href="#">S (31-34)</a>
+                            <a href="#">S (31-34)</a>
+                            <a href="#">S (31-34)</a>
+                            <a href="#">S (31-34)</a>
+                            <a href="#">S (31-34)</a>
+                            <a href="#">S (31-34)</a>
+                            <a href="#">S (31-34)</a>
+                            <a href="#">S (31-34)</a>
+                            <a href="#">S (31-34)</a>
+                            <a href="#">S (31-34)</a>
+                            <a href="#">S (31-34)</a>
+                            <a href="#">S (31-34)</a>
+                            <a href="#">S (31-34)</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="prop prop-color">
+                    <div class="prop-name">Цвет:</div>
+                    <div class="values">
+                      <div class="value">
+                        <img src="images/color_black-red.png" alt="" />
+                      </div>
+                      <button class="prop-change">Изменить</button>
+                    </div>
+                    <div class="prop-popup">
+                      <div class="filters">
+                        <div class="filter filter-list">
+                          <div class="filter__top">Пол</div>
+                          <div class="filter__body">
+                            <ul class="filter-list__list">
+                              <li class="active">
+                                <a href="#">Мужчинам</a>
+                              </li>
+                              <li>
+                                <a href="#">Женщинам</a>
+                              </li>
+                              <li>
+                                <a href="#">Детям</a>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="cart-item__price">
+              <p>1 590 руб./шт.</p>
+              <span class="stock-warning"><i class="fa fa-clock"></i> Скоро закончится</span>
+            </div>
+            <div class="cart-item__counter">
+              <div class="input-counter">
+                <button type="button" class="btn btn-minus btn-number" data-type="minus" data-field="quant[cart2]">
+                  -
+                </button>
+                <div class="input-group-text">
+                  <input type="text" name="quant[cart2]" class="form-control input-number input-area" value="2"
+                    data-min="1" data-max="100000" data-step="1" data-unit="">
+                </div>
+                <button type="button" class="btn btn-plus btn-number" data-type="plus" data-field="quant[cart2]">
+                  +
+                </button>
+              </div>
+            </div>
+            <div class="cart-item__sum">
+              <div class="prices">
+                <span class="price-value">1 590 <span class="price-value__currency">руб.</span></span>
+                <del class="price-value price-value-old">1 690 <span class="price-value__currency">руб.</span></del>
+              </div>
+              <div class="sum-economy">
+                <p>Экономия</p>
+                <span>1690 руб.</span>
+              </div>
+              <button class="cart-item__remove" title="убрать из корзины">&times;</button>
+            </div>
+          </div>
+          <div class="cart-item cart-row">
+            <div class="cart-item__main">
+              <div class="cart-item__image">
+                <a href="product.html"><img src="images/demo/product_img3-190x190.jpg" alt=""></a>
+              </div>
+              <div class="cart-item__info">
+                <a href="product.html">Раздвижные ледовые коньки</a>
+                <div class="cart-item__options product-options">
+                  <div class="prop prop-size">
+                    <div class="prop-name">Размер:</div>
+                    <div class="values">
+                      <div class="value prop-change">
+                        <span>L (39-42)</span>
+                      </div>
+                    </div>
+                    <div class="prop-popup">
+                      <div class="filters">
+                        <div class="filter filter-grid">
+                          <div class="filter__top">Размер <span>(22)</span></div>
+                          <div class="filter-grid__search-form">
+                            <input type="text" placeholder="Поиск" class="form-control">
+                          </div>
+                          <div class="filter-grid__list">
+                            <a href="#">S (31-34)</a>
+                            <a href="#">S (31-34)</a>
+                            <a href="#" class="active">S (31-34)</a>
+                            <a href="#">S (31-34)</a>
+                            <a href="#" class="disable">S (31-34)</a>
+                            <a href="#">S (31-34)</a>
+                            <a href="#">S (31-34)</a>
+                            <a href="#">S (31-34)</a>
+                            <a href="#">S (31-34)</a>
+                            <a href="#">S (31-34)</a>
+                            <a href="#">S (31-34)</a>
+                            <a href="#">S (31-34)</a>
+                            <a href="#">S (31-34)</a>
+                            <a href="#">S (31-34)</a>
+                            <a href="#">S (31-34)</a>
+                            <a href="#">S (31-34)</a>
+                            <a href="#">S (31-34)</a>
+                            <a href="#">S (31-34)</a>
+                            <a href="#">S (31-34)</a>
+                            <a href="#">S (31-34)</a>
+                            <a href="#">S (31-34)</a>
+                            <a href="#">S (31-34)</a>
+                            <a href="#">S (31-34)</a>
+                            <a href="#">S (31-34)</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="prop prop-color">
+                    <div class="prop-name">Цвет:</div>
+                    <div class="values">
+                      <div class="value">
+                        <img src="images/color_black-red.png" alt="" />
+                      </div>
+                      <button class="prop-change">Изменить</button>
+                    </div>
+                    <div class="prop-popup">
+                      <div class="filters">
+                        <div class="filter filter-list">
+                          <div class="filter__top">Пол</div>
+                          <div class="filter__body">
+                            <ul class="filter-list__list">
+                              <li class="active">
+                                <a href="#">Мужчинам</a>
+                              </li>
+                              <li>
+                                <a href="#">Женщинам</a>
+                              </li>
+                              <li>
+                                <a href="#">Детям</a>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="cart-item__price">
+              <p>1 590 руб./шт.</p>
+              <span class="stock-success"><i class="fa fa-check"></i> В наличии</span>
+            </div>
+            <div class="cart-item__counter">
+              <div class="input-counter">
+                <button type="button" class="btn btn-minus btn-number" data-type="minus" data-field="quant[cart3]">
+                  -
+                </button>
+                <div class="input-group-text">
+                  <input type="text" name="quant[cart3]" class="form-control input-number input-area" value="1"
+                    data-min="1" data-max="100000" data-step="1" data-unit="">
+                </div>
+                <button type="button" class="btn btn-plus btn-number" data-type="plus" data-field="quant[cart3]">
+                  +
+                </button>
+              </div>
+            </div>
+            <div class="cart-item__sum">
+              <div class="prices">
+                <span class="price-value">1 590 <span class="price-value__currency">руб.</span></span>
+              </div>
+              <button class="cart-item__remove" title="убрать из корзины">&times;</button>
             </div>
           </div>
         </div>
         <div class="cart-result cart-row">
           <div class="cart-result__sum">
             <strong>Итого:.</strong>
-            <p>Сума с НДС: 5560 руб.</p>
+            <p>Сума с НДС: 5 560 руб.</p>
           </div>
           <div class="cart-result__price">
             <div class="prices">
-              <span class="price-value">3080 <span class="price-value__currency">руб.</span></span>
-              <del class="price-value price-value-old">1690 <span class="price-value__currency">руб.</span></del>
+              <span class="price-value">3 080 <span class="price-value__currency">руб.</span></span>
+              <del class="price-value price-value-old">1 690 <span class="price-value__currency">руб.</span></del>
             </div>
           </div>
         </div>
         <div class="cart-buttons">
-          <a href="shop.html" class="link-catalog"><i class="fa fa-arrow-left"></i> Вернуться в каталог</a>
+          <a href="shop.html" class="link-catalog"><i class="far fa-arrow-alt-circle-left"></i> Вернуться в каталог</a>
           <a href="checkout.html" class="btn btn-checkout">Оформить заказ</a>
           <button class="btn btn-primary btn-quick-order">Быстрый заказ</button>
         </div>

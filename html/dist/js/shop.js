@@ -313,6 +313,21 @@ var Shop = function () {
 		});
 	}
 
+	var cart = function () {
+		$('.cart-item__options').on('click', '.prop-change', function (e) {
+			e.preventDefault();
+			var that = $(this);
+			that.closest('.prop').toggleClass('prop--opened');
+		});
+		$(document).mouseup(function (e) {
+			var container = $(".prop-popup");
+
+			if (!container.is(e.target) && container.has(e.target).length === 0) {
+				$(".prop").removeClass('prop--opened');
+			}
+		});
+	}
+
 	return {
 		init: function () {
 			inputCounter();
@@ -323,6 +338,7 @@ var Shop = function () {
 			productFilters();
 			productSingle();
 			brands();
+			cart();
 		}
 	};
 }();
