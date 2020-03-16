@@ -8,7 +8,7 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="theme-color" content="#ffffff">
 
-    <title>Checkout | Sport07</title>
+    <title>Faq | Sport07</title>
     <link rel="shortcut icon" href="images/favicon.png">
     <link rel="stylesheet" href="css/libs.min.css">
     <link rel="stylesheet" href="css/style.css">
@@ -301,378 +301,485 @@
       <div class="breadcrumbs">
         <ul>
           <li><a href="#">Главная</a></li>
-          <li><span>Оформление заказа</span></li>
+          <li><a href="#">Бренды</a></li>
         </ul>
       </div>
-      <div class="page-heading">Оформление заказа</div>
-      <div class="checkout">
-        <div class="checkout__left">
-          <div class="checkout-panel">
-            <div class="checkout-heading">
-              <i class="appicon appicon-map-alt"></i>
-              Тип покупателя и регион доставки
-            </div>
-            <div class="checkout__user-type">
-              <div class="radio">
-                <input type="radio" name="customer_type" id="type1" value="1" checked="checked">
-                <label for="type1">Физическое лицо</label>
+      <div class="page-heading">Вопрос-ответ</div>
+      <nav>
+        <div class="faq-tabs nav nav-tabs" id="faq-tab" role="tablist">
+          <a class="nav-item nav-link active" id="nav-tab1" data-toggle="tab" href="#tab1" role="tab"
+            aria-controls="nav-tab1" aria-selected="true">Доставка</a>
+          <a class="nav-item nav-link" id="nav-tab2" data-toggle="tab" href="#tab2" role="tab" aria-controls="nav-tab2"
+            aria-selected="false">Оплата</a>
+          <a class="nav-item nav-link" id="nav-tab3" data-toggle="tab" href="#tab3" role="tab" aria-controls="nav-tab3"
+            aria-selected="false">Таблица размеров</a>
+        </div>
+      </nav>
+      <div class="tab-content">
+        <div class="tab-pane fade show active" id="tab1" role="tabpanel" aria-labelledby="tab1">
+          <div id="question_list1" class="faq-accordion">
+            <div class="card">
+              <div class="card-header" id="quest1">
+                <h5 class="mb-0">
+                  <button class="btn btn-link" data-toggle="collapse" data-target="#collapseQuest1" aria-expanded="true"
+                    aria-controls="collapseQuest1">
+                    Какими службами осуществляется доставка?
+                  </button>
+                </h5>
               </div>
-              <div class="radio">
-                <input type="radio" name="customer_type" id="type2" value="2">
-                <label for="type2">Юридическое лицо</label>
-              </div>
-            </div>
-            <div class="checkout__address">
-              <div class="form-group">
-                <div class="control-label">
-                  <span class="required">*</span> Местоположение
-                </div>
-                <div class="suggest-list">
-                  <a href="#">Москва</a>
-                  <a href="#">Санкт-Петербург</a>
-                  <a href="#">Екатеринбург</a>
-                  <a href="#">Челябинск</a>
-                </div>
-                <div class="form-input autocomplete">
-                  <span class="form-input__prepend"><i class="appicon appicon-search"></i> Ваш город,</span>
-                  <input id="city" type="text" class="form-control"
-                    placeholder="выберите из списка или впишите свой город">
-                </div>
-              </div>
-              <div class="form-group">
-                <div class="control-label">
-                  <span class="required">*</span> Индекс
-                </div>
-                <div class="form-input">
-                  <span class="form-input__prepend">00000,</span>
-                  <input type="text" class="form-control" placeholder="впишите свой индекс">
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="checkout__methods">
-            <div class="checkout-panel delivary">
-              <div class="checkout-heading">
-                <i class="appicon appicon-delivary"></i>
-                Способ доставки
-              </div>
-              <div class="delivary-list">
-                <div class="delivary-item">
-                  <div class="radio">
-                    <input type="radio" name="delivary" id="delivary1" value="1">
-                    <label for="delivary1">
-                      Доставка курьером <span>г. Москва</span>
-                      <strong>290 руб.</strong>
-                    </label>
-                  </div>
-                  <div class="delivary-item__info"></div>
-                </div>
-                <div class="delivary-item">
-                  <div class="radio">
-                    <input type="radio" name="delivary" id="delivary2" value="2">
-                    <label for="delivary2">
-                      Самовывоз из Shop-Logistics
-                      <strong>220 руб.</strong>
-                    </label>
-                  </div>
-                  <div class="delivary-item__info">
-                    <p>г. Краснодар <a class="link-change" href="#">Изменить город</a></p>
-                    <div class="post-office">
-                      <div class="dropdown">
-                        <button class="dropdown-toggle" type="button" id="routeto" data-toggle="dropdown"
-                          aria-haspopup="true" aria-expanded="false">
-                          <span>отделение №10, ул. Занковецкой 30/5, к. 150</span>
-                          <i class="fa fa-angle-down"></i>
-                        </button>
-                        <div class="dropdown-menu" aria-labelledby="routeto">
-                          <a class="dropdown-item" href="#">отделение №11</a>
-                          <a class="dropdown-item dropdown-active" href="#">отделение №12</a>
-                          <a class="dropdown-item" href="#">отделение №13</a>
-                        </div>
-                      </div>
-                      <div class="post-office__map">
-                        <a href="#"><i class="appicon appicon-map-min"></i> Карта</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="delivary-item">
-                  <div class="radio">
-                    <input type="radio" name="delivary" id="delivary3" value="3">
-                    <label for="delivary3">
-                      Самовывоз <span>c Дубнинской (г.Москва)</span>
-                      <strong>0 руб.</strong>
-                    </label>
-                  </div>
-                  <div class="delivary-item__info"></div>
-                </div>
-                <div class="delivary-item">
-                  <div class="radio">
-                    <input type="radio" name="delivary" id="delivary4" value="4">
-                    <label for="delivary4">
-                      Самовывоз <span>г.Москва</span>
-                      <strong>180 руб.</strong>
-                    </label>
-                  </div>
-                  <div class="delivary-item__info"></div>
-                </div>
-                <div class="delivary-item">
-                  <div class="radio">
-                    <input type="radio" name="delivary" id="delivary5" value="5">
-                    <label for="delivary5">
-                      Регионы
-                      <strong>индивидуально</strong>
-                    </label>
-                  </div>
-                  <div class="delivary-item__info">
-                    <p>Индивидуальный расчет менеджером</p>
+
+              <div id="collapseQuest1" class="collapse show" aria-labelledby="quest1" data-parent="#question_list1">
+                <div class="card-body">
+                  <div class="post">
+                    <p><strong>Москва:</strong> Курьерская доставка (в пределах МКАД) – 290 руб., от 1 до 2 рабочих
+                      дней. В будние дни доставка осуществляется с 10:00 до 21:00, минимальный временной промежуток
+                      доставки 3 часа.</p>
+                    <p>В субботу доставка доступна только в интервале с 10:00 до 18:00. В воскресенье доставки нет.</p>
+                    <p><strong>Московская область:</strong> Курьерская доставка (за МКАД) – 329 руб ., от 1 до 2 рабочих
+                      дней. В будние дни доставка осуществляется с 10:00 до 18:00, без минимальных временных
+                      промежутков.</p>
+                    <p>В субботу и воскресенье доставки нет.</p>
+                    <p><strong>Экспресс-доставка курьером</strong> – 1000 руб., день-в-день, либо на следующий рабочий
+                      день. Подробности
+                      уточняйте у менеджеров.</p>
+                    <p><strong>Самовывоз:</strong> Самовывоз в Центральном офисе, близ станции метро
+                      Петровско-Разумовская – бесплатно.
+                      Дополнительные пункты самовывоза по Москве: от 180 руб., срок хранения заказа в ПВЗ – до 5 рабочих
+                      дней Регионы России:</p>
+                    <p><strong>Центральные регионы России:</strong> Курьерская доставка - от 290 руб., пн-сб в интервале
+                      с 10:00 до 18:00
+                      Пункты самовывоза по всему региону – от 150 руб., срок хранения заказа в ПВЗ – до 5 рабочих дней
+                    </p>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="checkout-panel payment">
-              <div class="checkout-heading">
-                <i class="appicon appicon-wallet"></i>
-                Способ оплаты
+            <div class="card">
+              <div class="card-header" id="quest2">
+                <h5 class="mb-0">
+                  <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseQuest2"
+                    aria-expanded="false" aria-controls="collapseQuest2">
+                    Как осуществляется доставка крупных грузов?
+                  </button>
+                </h5>
               </div>
-              <div class="payment-list">
-                <div class="radio">
-                  <input type="radio" name="payments" id="payment1" value="1">
-                  <label for="payment1">Яндекс.Деньги</label>
-                </div>
-                <div class="radio">
-                  <input type="radio" name="payments" id="payment2" value="2">
-                  <label for="payment2">Банковские карты</label>
-                </div>
-                <div class="radio">
-                  <input type="radio" name="payments" id="payment3" value="3">
-                  <label for="payment3">Терминалы</label>
-                </div>
-                <div class="radio">
-                  <input type="radio" name="payments" id="payment4" value="4">
-                  <label for="payment4">Наличные курьеру</label>
-                </div>
-                <div class="radio">
-                  <input type="radio" name="payments" id="payment5" value="5">
-                  <label for="payment5">Сбербанк</label>
+              <div id="collapseQuest2" class="collapse" aria-labelledby="quest2" data-parent="#question_list1">
+                <div class="card-body">
+                  <div class="post">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
+                    richardson ad squid. 3 wolf
+                    moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum
+                    eiusmod.
+                    Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
+                    shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente
+                    ea
+                    proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw
+                    denim
+                    aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</div>
                 </div>
               </div>
             </div>
-          </div>
-          <div class="checkout-panel kupon">
-            <span>Применить купон</span>
-            <div class="form-input">
-              <span class="form-input__prepend">00000,</span>
-              <input type="text" class="form-control" placeholder="номер купона">
-              <button><i class="far fa-arrow-alt-circle-right"></i></button>
+            <div class="card">
+              <div class="card-header" id="quest3">
+                <h5 class="mb-0">
+                  <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseQuest3"
+                    aria-expanded="false" aria-controls="collapseQuest3">
+                    От чего зависит стомость доставки?
+                  </button>
+                </h5>
+              </div>
+              <div id="collapseQuest3" class="collapse" aria-labelledby="quest3" data-parent="#question_list1">
+                <div class="card-body">
+                  <div class="post">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
+                    richardson ad squid. 3 wolf
+                    moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum
+                    eiusmod.
+                    Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
+                    shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente
+                    ea
+                    proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw
+                    denim
+                    aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                  </div>
+                </div>
+              </div>
             </div>
-          </div>
-          <div class="checkout-panel">
-            <div class="checkout-heading">
-              <i class="appicon appicon-user-alt"></i>
-              Покупатель
+            <div class="card">
+              <div class="card-header" id="quest4">
+                <h5 class="mb-0">
+                  <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseQuest4"
+                    aria-expanded="false" aria-controls="collapseQuest4">
+                    Что делать если упаковка при доставке была повреждена?
+                  </button>
+                </h5>
+              </div>
+              <div id="collapseQuest4" class="collapse" aria-labelledby="quest4" data-parent="#question_list1">
+                <div class="card-body">
+                  <div class="post">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
+                    richardson ad squid. 3 wolf
+                    moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum
+                    eiusmod.
+                    Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
+                    shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente
+                    ea
+                    proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw
+                    denim
+                    aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</div>
+                </div>
+              </div>
             </div>
-            <div class="form-group">
-              <label for="" class="control-label"><span class="required">*</span> Ф.И.О.</label>
-              <input type="text" class="form-control">
-            </div>
-            <div class="form-group">
-              <label for="" class="control-label"><span class="required">*</span> E-Mail</label>
-              <input type="email" class="form-control">
-            </div>
-            <div class="form-group">
-              <label for="" class="control-label"><span class="required">*</span> Телефон</label>
-              <input type="tel" class="form-control">
-            </div>
-            <div class="form-group">
-              <label for="" class="control-label"><span class="required">*</span>Адрес доставки</label>
-              <input type="text" class="form-control">
-            </div>
-            <div class="form-group">
-              <label for="" class="control-label">Комментарии к заказу:</label>
-              <textarea class="form-control"></textarea>
-            </div>
-            <p class="form-help">
-              <span class="required">*</span> Поля обязательные для заполнения
-            </p>
-          </div>
-          <div class="checkout-panel cart-products">
-            <div class="checkout-heading">
-              <i class="appicon appicon-basket"></i>
-              Товары в заказе
-            </div>
-            <div class="cart-products__container">
-              <table class="cart-table">
-                <thead>
-                  <tr>
-                    <th>Фото</th>
-                    <th>Наименование</th>
-                    <th class="text-center hidden-md-down">Скидка</th>
-                    <th class="hidden-md-down">Цена</th>
-                    <th class="text-center hidden-md-down">Вес</th>
-                    <th class="text-center hidden-md-down">Кол-во</th>
-                    <th>Сумма</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr class="product-row">
-                    <td class="product-row__image">
-                      <a href="product.html"><img src="images/demo/product_img3-190x190.jpg" alt=""></a>
-                    </td>
-                    <td class="product-row__name">
-                      <a href="product.html">Раздвижные ледовые коньки</a>
-                      <div class="product-row__options product-options">
-                        <div class="prop prop-size">
-                          <div class="prop-name">Размер:</div>
-                          <div class="values">
-                            <div class="value">
-                              <span>L (39-42)</span>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="prop prop-color">
-                          <div class="prop-name">Цвет:</div>
-                          <div class="values">
-                            <div class="value">
-                              <img src="images/color_black-red.png" alt="" />
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </td>
-                    <td class="text-center hidden-md-down">0%</td>
-                    <td class="hidden-md-down"><strong>1 590 руб.</strong></td>
-                    <td class="text-center hidden-md-down"><strong>3 кг</strong></td>
-                    <td class="text-center hidden-md-down"><strong>2</strong></td>
-                    <td><strong>1 590 руб.</strong></td>
-                  </tr>
-                  <tr class="product-row">
-                    <td class="product-row__image">
-                      <a href="product.html"><img src="images/demo/product_img3-190x190.jpg" alt=""></a>
-                    </td>
-                    <td class="product-row__name">
-                      <a href="product.html">Раздвижные ледовые коньки</a>
-                      <div class="product-row__options product-options">
-                        <div class="prop prop-size">
-                          <div class="prop-name">Размер:</div>
-                          <div class="values">
-                            <div class="value">
-                              <span>L (39-42)</span>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="prop prop-color">
-                          <div class="prop-name">Цвет:</div>
-                          <div class="values">
-                            <div class="value">
-                              <img src="images/color_black-red.png" alt="" />
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </td>
-                    <td class="text-center hidden-md-down">0%</td>
-                    <td class="hidden-md-down">
-                      <strong>1 590 руб.</strong>
-                      <del>1690 руб.</del>
-                    </td>
-                    <td class="text-center hidden-md-down"><strong>1 кг</strong></td>
-                    <td class="text-center hidden-md-down"><strong>1</strong></td>
-                    <td>
-                      <strong>1 590 руб.</strong>
-                      <del>1690 руб.</del>
-                    </td>
-                  </tr>
-                  <tr class="product-row">
-                    <td class="product-row__image">
-                      <a href="product.html"><img src="images/demo/product_img3-190x190.jpg" alt=""></a>
-                    </td>
-                    <td class="product-row__name">
-                      <a href="product.html">Раздвижные ледовые коньки</a>
-                      <div class="product-row__options product-options">
-                        <div class="prop prop-size">
-                          <div class="prop-name">Размер:</div>
-                          <div class="values">
-                            <div class="value">
-                              <span>L (39-42)</span>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="prop prop-color">
-                          <div class="prop-name">Цвет:</div>
-                          <div class="values">
-                            <div class="value">
-                              <img src="images/color_black-red.png" alt="" />
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </td>
-                    <td class="text-center hidden-md-down">0%</td>
-                    <td class="hidden-md-down"><strong>1 590 руб.</strong></td>
-                    <td class="text-center hidden-md-down"><strong>1 кг</strong></td>
-                    <td class="text-center hidden-md-down"><strong>1</strong></td>
-                    <td><strong>1 590 руб.</strong></td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </div>
-          <div class="checkout__bottom">
-            <div class="checkbox">
-              <input type="checkbox" name="rules" id="rules">
-              <label for="rules" class="txt">Нажимая на кнопку, я принимаю <a href="#">условия соглашения</a>.</label>
-            </div>
-            <button class="btn btn-checkout">Оформить заказ</button>
           </div>
         </div>
-        <div class="checkout__right">
-          <div class="summary checkout-panel">
-            <div class="summary__top">
-              <span>Ваш заказ</span>
-              <a href="#">Изменить</a>
-            </div>
-            <div class="summary__body">
-              <div class="summary-row">
-                <div class="summary-row__name">
-                  4 товара на:
-                </div>
-                <div class="summary-row__value">
-                  <strong>3 080.55 руб.</strong>
-                  <del>3 480 руб.</del>
-                </div>
-              </div>
-              <div class="summary-row">
-                <div class="summary-row__name">
-                  Доставка
-                </div>
-                <div class="summary-row__value">
-                  <span>500 руб.</span>
-                </div>
-              </div>
-              <div class="summary-row summary-row_economy">
-                <div class="summary-row__name">
-                  Экономия:
-                </div>
-                <div class="summary-row__value">
-                  399.45 руб.
-                </div>
-              </div>
-            </div>
-            <div class="summary__result">
-              <strong>
-                Итого:
-              </strong>
-              <strong>
-                3 580.55 руб.
-              </strong>
-            </div>
-            <button class="btn btn-checkout">Оформить заказ</button>
-          </div>
-        </div>
+        <div class="tab-pane fade" id="tab2" role="tabpanel" aria-labelledby="tab2">...</div>
+        <div class="tab-pane fade" id="tab3" role="tabpanel" aria-labelledby="tab3">...</div>
       </div>
     </main>
+
+    <div id="sidebar" class="sidebar sidebar-shop">
+      <aside>
+        <div class="catalog-navi">
+          <ul>
+            <li class="has-child">
+              <a href="#">Статьи</a>
+              <div class="dropdown">
+                <div class="category-col">
+                  <h2 class="category-col__title">
+                    <a href="#">Тяжелая атлетика</a>
+                  </h2>
+                  <ul>
+                    <li><a href="#">Тренажеры и тяжелая атлетика</a></li>
+                    <li><a href="#">Художественная гимнастика и танцы</a></li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li class="has-child">
+              <a href="#">Вопрос-ответ</a>
+              <div class="dropdown">
+                <div class="category-col">
+                  <h2 class="category-col__title">
+                    <a href="#">Тяжелая атлетика</a>
+                  </h2>
+                  <ul>
+                    <li><a href="#">Тренажеры и тяжелая атлетика</a></li>
+                    <li><a href="#">Художественная гимнастика и танцы</a></li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li class="has-child">
+              <a href="#">О компании</a>
+              <div class="dropdown">
+                <div class="category-col">
+                  <h2 class="category-col__title">
+                    <a href="#">Тяжелая атлетика</a>
+                  </h2>
+                  <ul>
+                    <li>
+                      <a href="#">Гантели разборные <span>(15)</span></a>
+                    </li>
+                    <li>
+                      <a href="#">Гири <span>(5)</span></a>
+                    </li>
+                    <li>
+                      <a href="#">Грифы для гантелей и штанг <span>(100)</span></a>
+                    </li>
+                    <li>
+                      <a href="#">Диски для гантелей и штанг <span>(18)</span></a>
+                    </li>
+                    <li>
+                      <a href="#">Перчатки для тяжелой атлетики и велоспорта
+                        <span>(19)</span></a>
+                    </li>
+                    <li>
+                      <a href="#">Пояса для поднятия тяжестей <span>(17)</span></a>
+                    </li>
+                    <li>
+                      <a href="#">Стойки для гантелей и штанг <span>(100)</span></a>
+                    </li>
+                    <li>
+                      <a href="#">Скамьи <span>(1000)</span></a>
+                    </li>
+                    <li>
+                      <a href="#">Аксессуары <span>(10)</span></a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="category-col">
+                  <h2 class="category-col__title">
+                    <a href="#">Контакты</a>
+                  </h2>
+                  <ul>
+                    <li>
+                      <a href="#">Беговые дорожки <span>(105)</span></a>
+                    </li>
+                    <li>
+                      <a href="#">Велотренажеры <span>(165)</span></a>
+                    </li>
+                    <li class="has-child">
+                      <a href="#">Степперы, Эллипсоиды <span>(155)</span></a>
+                      <ul>
+                        <li>
+                          <a href="#">Степперы с эспандерами <span>(25)</span></a>
+                        </li>
+                        <li>
+                          <a href="#">Мини степперы <span>(15)</span></a>
+                        </li>
+                        <li>
+                          <a href="#">Профессиональные степперы <span>(20)</span></a>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li class="active"><a href="#">Бренды</a></li>
+          </ul>
+        </div>
+        <div class="widget widget-subs">
+    <div class="widget-title">
+      Дополнительные бонусы и скидки за подписку
+    </div>
+    <form action="">
+      <p>
+        Получайте секретные промокоды, учавствуйте в закрытых распродажах
+        Sport07.ru
+      </p>
+      <div class="form-input">
+        <input type="text" class="form-control" placeholder="Ваш е-майл" />
+        <button type="submit"><i class="fas fa-arrow-right"></i></button>
+      </div>
+    </form>
   </div>
+        <div class="widget widget-posts">
+  <div class="widget-title">Новости</div>
+  <div class="posts">
+    <div class="post-item">
+      <div class="post-item__image">
+        <a href="#"><img src="images/demo/post_img1-60x60.jpg" alt="" /></a>
+      </div>
+      <div class="post-item__text">
+        <a class="post-title" href="#">Претенденты на победу в АПП</a>
+        <p>Эксперт Sky Sports и бывший тренер "Манчестер Юнайтед"</p>
+        <span>15.08.2019</span>
+      </div>
+    </div>
+    <div class="post-item">
+      <div class="post-item__image">
+        <a href="#"><img src="images/demo/post_img2-60x60.jpg" alt="" /></a>
+      </div>
+      <div class="post-item__text">
+        <a class="post-title" href="#">Сила внутри человека: Максим Веракса</a>
+        <p>
+          Украинский пловец Максим Веракса свои первые шаги в плавании
+        </p>
+        <span>15.08.2019</span>
+      </div>
+    </div>
+  </div>
+  <a href="#" class="posts__link-all">Все новости</a>
+</div>
+<div class="widget widget-posts">
+  <div class="widget-title">Интересные статьи</div>
+  <div class="posts">
+    <div class="post-item post-item--article">
+      <div class="post-item__image">
+        <a href="#"><img src="images/demo/post_img3-95x70.jpg" alt="" /></a>
+      </div>
+      <div class="post-item__text">
+        <a class="post-title" href="#">В чем польза гимнастического обруча для похудения</a>
+      </div>
+    </div>
+    <div class="post-item post-item--article">
+      <div class="post-item__image">
+        <a href="#"><img src="images/demo/post_img4-95x70.jpg" alt="" /></a>
+      </div>
+      <div class="post-item__text">
+        <a class="post-title" href="#">Подбираем фитбол (гимнастический мяч) по росту и
+          комплекции</a>
+      </div>
+    </div>
+  </div>
+  <a href="#" class="posts__link-all">Все статьи</a>
+</div>
+      </aside>
+    </div>
+  </div>
+  <section class="product-viewed product-carousel">
+    <div class="section-title">Ранее Вы смотрели</div>
+    <div class="product-viewed__list product-carousel__list" data-show-items="7">
+        <div class="product-item product-mini">
+            <div class="product-mini__image">
+                <a href="#"><img src="images/demo/product_img1-190x190.jpg" alt=""></a>
+                <div class="product-item__quick-show">
+                    <a class="btn-quick-show"><i class="fa fa-search"></i> Быстрый просмотр</a>
+                </div>
+            </div>
+            <div class="product-mini__title">
+                <a href="#">Кимоно для дзюдо “CAPRICE”</a>
+            </div>
+            <div class="product-mini__price prices">
+                <div class="price-value price-value-current">
+                    <strong>1590 руб./шт</strong>
+                </div>
+                <div class="price-value price-value-old">
+                    <del>1690 руб.</del>
+                </div>
+            </div>
+            <div class="product-item__buttons">
+                <button class="btn btn-primary add-to-cart">Купить</button>
+            </div>
+        </div>
+        <div class="product-item product-item--in-cart product-mini">
+            <div class="product-mini__image">
+                <a href="#"><img src="images/demo/product_img3-190x190.jpg" alt=""></a>
+                <div class="product-item__quick-show">
+                    <a class="btn-quick-show"><i class="fa fa-search"></i> Быстрый просмотр</a>
+                </div>
+                <div class="product-item__discont">
+                    <span>-10%</span>
+                </div>
+            </div>
+            <div class="product-item__stickers">
+                <div class="sticker sticker-hit">
+                    <span>Хит</span>
+                </div>
+                <div class="sticker sticker-promo">
+                    <span>Акция!</span>
+                </div>
+            </div>
+            <div class="product-mini__title">
+                <a href="#">Самбовки</a>
+            </div>
+            <div class="product-mini__price prices">
+                <div class="price-value price-value-current">
+                    <strong>1590 руб./шт</strong>
+                </div>
+                <div class="price-value price-value-old">
+                    <del>1690 руб.</del>
+                </div>
+            </div>
+            <div class="product-item__buttons">
+                <button class="btn btn-primary add-to-cart">В корзине</button>
+            </div>
+        </div>
+        <div class="product-item product-mini">
+            <div class="product-mini__image">
+                <a href="#"><img src="images/demo/product_img2-190x190.jpg" alt=""></a>
+                <div class="product-item__quick-show">
+                    <a class="btn-quick-show"><i class="fa fa-search"></i> Быстрый просмотр</a>
+                </div>
+                <div class="product-item__discont">
+                    <span>-10%</span>
+                </div>
+            </div>
+            <div class="product-item__stickers">
+                <div class="sticker sticker-promo">
+                    <span>Акция!</span>
+                </div>
+            </div>
+            <div class="product-mini__title">
+                <a href="#">Кимоно для дзюдо “CAPRICE” Кимоно для дзюдо</a>
+            </div>
+            <div class="product-mini__price prices">
+                <div class="price-value price-value-current">
+                    <strong>1590 руб./шт</strong>
+                </div>
+            </div>
+            <div class="product-item__buttons">
+                <button class="btn btn-primary add-to-cart">Купить</button>
+            </div>
+        </div>
+        <div class="product-item product-mini">
+            <div class="product-mini__image">
+                <a href="#"><img src="images/demo/category_img6-225x215.jpg" alt=""></a>
+                <div class="product-item__quick-show">
+                    <a class="btn-quick-show"><i class="fa fa-search"></i> Быстрый просмотр</a>
+                </div>
+            </div>
+            <div class="product-mini__title">
+                <a href="#">Кимоно для дзюдо “CAPRICE”</a>
+            </div>
+            <div class="product-mini__price prices">
+                <div class="price-value price-value-current">
+                    <strong>1590 руб./шт</strong>
+                </div>
+                <div class="price-value price-value-old">
+                    <del>1690 руб.</del>
+                </div>
+            </div>
+            <div class="product-item__buttons">
+                <button class="btn btn-primary add-to-cart">Купить</button>
+            </div>
+        </div>
+        <div class="product-item product-mini">
+            <div class="product-mini__image">
+                <a href="#"><img src="images/demo/product_img1-220x240.jpg" alt=""></a>
+                <div class="product-item__quick-show">
+                    <a class="btn-quick-show"><i class="fa fa-search"></i> Быстрый просмотр</a>
+                </div>
+            </div>
+            <div class="product-mini__title">
+                <a href="#">Кимоно для дзюдо “CAPRICE”</a>
+            </div>
+            <div class="product-mini__price prices">
+                <div class="price-value price-value-current">
+                    <strong>1590 руб./шт</strong>
+                </div>
+                <div class="price-value price-value-old">
+                    <del>1690 руб.</del>
+                </div>
+            </div>
+            <div class="product-item__buttons">
+                <button class="btn btn-primary add-to-cart">Купить</button>
+            </div>
+        </div>
+        <div class="product-item product-mini">
+            <div class="product-mini__image">
+                <a href="#"><img src="images/demo/product_img1-190x190.jpg" alt=""></a>
+                <div class="product-item__quick-show">
+                    <a class="btn-quick-show"><i class="fa fa-search"></i> Быстрый просмотр</a>
+                </div>
+            </div>
+            <div class="product-mini__title">
+                <a href="#">Кимоно для дзюдо “CAPRICE”</a>
+            </div>
+            <div class="product-mini__price prices">
+                <div class="price-value price-value-current">
+                    <strong>1590 руб./шт</strong>
+                </div>
+                <div class="price-value price-value-old">
+                    <del>1690 руб.</del>
+                </div>
+            </div>
+            <div class="product-item__buttons">
+                <button class="btn btn-primary add-to-cart">Купить</button>
+            </div>
+        </div>
+        <div class="product-item product-mini">
+            <div class="product-mini__image">
+                <a href="#"><img src="images/demo/product_img1-190x190.jpg" alt=""></a>
+                <div class="product-item__quick-show">
+                    <a class="btn-quick-show"><i class="fa fa-search"></i> Быстрый просмотр</a>
+                </div>
+            </div>
+            <div class="product-mini__title">
+                <a href="#">Кимоно для дзюдо “CAPRICE”</a>
+            </div>
+            <div class="product-mini__price prices">
+                <div class="price-value price-value-current">
+                    <strong>1590 руб./шт</strong>
+                </div>
+                <div class="price-value price-value-old">
+                    <del>1690 руб.</del>
+                </div>
+            </div>
+            <div class="product-item__buttons">
+                <button class="btn btn-primary add-to-cart">Купить</button>
+            </div>
+        </div>
+    </div>
+</section>
 </div>
 <footer id="footer">
     <div class="container">
