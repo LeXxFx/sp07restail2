@@ -73,7 +73,7 @@
         }
 
         &__currency {
-            font-size: .6em;
+            font-size: .8em;
         }
     }
 }
@@ -353,6 +353,62 @@
                 text-decoration: none;
             }
         }
+    }
+}
+
+.stock {
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+
+    i {
+        margin-right: 10px;
+    }
+
+    &.stock-danger {
+        color: #fe0303;
+    }
+
+    &.stock-warning {
+        color: #ef8808;
+    }
+
+    &.stock-success {
+        color: #717171;
+
+        i {
+            color: #72c452;
+        }
+    }
+}
+
+.prop-popup {
+    position: absolute;
+    padding: 15px 0;
+    border: 1px solid #acacac;
+    background: #f9f9f9;
+    box-shadow: 0 0 12px 0 rgba(0, 0, 0, .2);
+
+    &:before {
+        content: "";
+        position: absolute;
+        right: -20px;
+        top: 62px;
+        width: 0;
+        height: 0;
+        border: 10px solid transparent;
+        border-left-color: #acacac;
+    }
+
+    &:after {
+        content: "";
+        position: absolute;
+        right: -18px;
+        top: 62px;
+        width: 0;
+        height: 0;
+        border: 10px solid transparent;
+        border-left-color: #f9f9f9;
     }
 }
 

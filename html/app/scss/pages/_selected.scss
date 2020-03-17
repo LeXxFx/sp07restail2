@@ -1,6 +1,7 @@
 .wish {
     border: 1px solid #e1e1e1;
     border-radius: 3px;
+    margin-bottom: 30px;
 
     &-filter {
         display: flex;
@@ -95,6 +96,172 @@
                     }
                 }
             }
+        }
+    }
+
+    &-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+
+        &__head,
+        &__row {
+            display: grid;
+            grid-template-columns: 4fr 1.4fr 1fr 1fr .5fr;
+            grid-gap: 5px;
+            padding: 0;
+
+            >div {
+                padding: 10px;
+            }
+        }
+
+        &__head {
+            background: #f8f8f8;
+            border-top: 1px solid #e1e1e1;
+            border-bottom: 1px solid #e1e1e1;
+            color: #9f9f9f;
+            font-size: 13px;
+            text-align: center;
+
+            .grid-price {
+                text-align: left;
+            }
+        }
+
+        &__row {
+            border-bottom: 1px solid #e1e1e1;
+
+            .grid {
+                &-price {
+                    .prices {
+                        margin-bottom: 10px;
+                    }
+                }
+
+                &-amount {
+                    text-align: center;
+                    font-size: 18px;
+                }
+
+                &-sum {
+                    text-align: center;
+                }
+
+                &-batons {
+                    position: relative;
+
+                    &__props {
+                        position: relative;
+
+                        .btn-wish {
+                            display: inline-block;
+                            text-indent: -999em;
+                            width: 33px;
+                            height: 29px;
+                            background: url(../images/sprite.png) no-repeat -252px -71px;
+                            border: none;
+                            padding: 0;
+                            transition: .2s;
+
+                            &:hover {
+                                transform: translateY(-3px);
+                                opacity: .8;
+                            }
+
+                            &--incart {
+                                background-position: -252px -111px;
+                            }
+                        }
+
+                        &--opened {
+                            .wish-props {
+                                @extend %show_item;
+                                transform: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        &__total {
+            background: #f8f8f8;
+            display: flex;
+            align-items: center;
+            padding: 15px;
+
+            .wish-total {
+                margin: 0 auto;
+                font-size: 16px;
+            }
+
+            .btn-link {
+                color: #717171;
+                font-size: 12px;
+                text-decoration: underline;
+                margin: 0 15px;
+
+                &:hover {
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+
+    &-props {
+        z-index: 100;
+        padding: 10px;
+        width: 320px;
+        right: 100%;
+        top: -10px;
+        margin-right: 10px;
+        transform: scale(0.6);
+        @extend %hide_item;
+        transform: scale(.9);
+
+        &:after {
+            top: 18px;
+        }
+
+        &:before {
+            top: 18px;
+        }
+
+        &__top {
+            padding: 0 10px 10px;
+            margin-bottom: 15px;
+            text-align: center;
+            font-weight: bold;
+            font-size: 16px;
+            border-bottom: 1px solid #e1e1e1;
+        }
+
+        &__body {
+            margin-bottom: 15px;
+        }
+
+        &__bot {
+            text-align: center;
+
+            .btn-primary {
+                border-radius: 3px;
+                width: 175px
+            }
+        }
+    }
+
+    &-remove {
+        position: absolute;
+        right: 10px;
+        top: 5px;
+        font-size: 20px;
+        color: #919090;
+        background: none;
+        border: none;
+        padding: 0;
+
+        &:hover {
+            color: $second-color;
         }
     }
 }

@@ -328,6 +328,21 @@ var Shop = function () {
 		});
 	}
 
+	var wishList = function () {
+		$('.wish').on('click', '.btn-wish', function (e) {
+			e.preventDefault();
+			var that = $(this);
+			that.closest('.grid-batons__props').toggleClass('grid-batons__props--opened');
+		});
+		$(document).mouseup(function (e) {
+			var container = $(".prop-popup");
+
+			if (!container.is(e.target) && container.has(e.target).length === 0) {
+				$(".grid-batons__props").removeClass('grid-batons__props--opened');
+			}
+		});
+	}
+
 	return {
 		init: function () {
 			inputCounter();
@@ -339,6 +354,7 @@ var Shop = function () {
 			productSingle();
 			brands();
 			cart();
+			wishList();
 		}
 	};
 }();
