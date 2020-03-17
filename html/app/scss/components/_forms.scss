@@ -32,7 +32,10 @@
 
 .autocomplete {
     position: relative;
-    padding-right: 25px !important;
+
+    .form-control {
+        padding-right: 25px !important;
+    }
 
     &-items {
         position: absolute;
@@ -128,7 +131,8 @@
             position: absolute;
             right: 5px;
             top: 8px;
-            font-size: 20px;
+            font-size: 18px;
+            color: #3e3e3e;
         }
     }
 

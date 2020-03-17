@@ -304,8 +304,47 @@
           <li><a href="#">Бренды</a></li>
         </ul>
       </div>
-      <div class="page-heading">Списки желаний</div>
-
+      <div class="heading">
+        <h2>Списки желаний</h2>
+        <div class="dropdown">
+          <button class="dropdown-toggle" type="button" id="routeto" data-toggle="dropdown" aria-haspopup="true"
+            aria-expanded="false">
+            По дате добавления
+            <i class="fa fa-angle-down"></i>
+          </button>
+          <div class="dropdown-menu" aria-labelledby="routeto">
+            <a class="dropdown-item" href="#">От дорогих к дешевым</a>
+            <a class="dropdown-item dropdown-active" href="#">По дате добавления</a>
+            <a class="dropdown-item" href="#">По популярности</a>
+            <a class="dropdown-item" href="#">По имени</a>
+          </div>
+        </div>
+      </div>
+      <div class="wish">
+        <div class="wish-filter">
+          <div class="wish-filter__list">
+            <span>Мой список желаний</span>
+            <div class="dropdown">
+              <button class="dropdown-toggle" type="button" id="routeto" data-toggle="dropdown" aria-haspopup="true"
+                aria-expanded="false">
+                <span>Все <strong>(4)</strong></span>
+                <i class="fa fa-angle-down"></i>
+              </button>
+              <div class="dropdown-menu" aria-labelledby="routeto">
+                <a class="dropdown-item dropdown-active" href="#">Все <strong>(4)</strong></a>
+                <a class="dropdown-item" href="#">Список 1</a>
+                <a class="dropdown-item" href="#">Список 2</a>
+                <a class="dropdown-item" href="#">Список 3</a>
+              </div>
+            </div>
+          </div>
+          <div class="wish-filter__buttons">
+            <a href="#" class="wish-link wish-link_ready">Готовые к заказу (2)</a>
+            <a href="#" class="wish-link wish-link_wait">Отложенные (4)</a>
+            <a href="#" class="wish-link wish-link_clear"><span>&times;</span> Очистить</a>
+          </div>
+        </div>
+      </div>
     </main>
 
     <div id="sidebar" class="sidebar sidebar-shop">
