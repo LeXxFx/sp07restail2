@@ -3,122 +3,100 @@
 <div class="container">
   <div class="inner">
     <main id="content" class="content content-inner" role="main">
-      <div class="breadcrumbs">
-        <ul>
-          <li><a href="#">Главная</a></li>
-          <li><a href="#">Бренды</a></li>
-        </ul>
-      </div>
-      <div class="page-heading">Сравнение товаров</div>
-      
-    </main>
-
-    <div id="sidebar" class="sidebar sidebar-shop">
-      <aside>
-        <div class="catalog-navi">
-          <ul>
-            <li class="has-child">
-              <a href="#">Статьи</a>
+      <div class="compare">
+        <div class="wrap-compare">
+          <div class="compare-side">
+            <div class="compare-side__top">
+              <h1 class="page-heading">Сравнение товаров</h1>
               <div class="dropdown">
-                <div class="category-col">
-                  <h2 class="category-col__title">
-                    <a href="#">Тяжелая атлетика</a>
-                  </h2>
-                  <ul>
-                    <li><a href="#">Тренажеры и тяжелая атлетика</a></li>
-                    <li><a href="#">Художественная гимнастика и танцы</a></li>
-                  </ul>
+                <button class="dropdown-toggle" type="button" id="routeto" data-toggle="dropdown" aria-haspopup="true"
+                  aria-expanded="false">
+                  Выберите категорию
+                  <i class="fa fa-angle-down"></i>
+                </button>
+                <div class="dropdown-menu" aria-labelledby="routeto">
+                  <a class="dropdown-item" href="#">Категория 1</a>
+                  <a class="dropdown-item dropdown-active" href="#">Категория 2</a>
+                  <a class="dropdown-item" href="#">Категория 3</a>
+                  <a class="dropdown-item" href="#">Категория 4</a>
                 </div>
               </div>
-            </li>
-            <li class="has-child">
-              <a href="#">Вопрос-ответ</a>
-              <div class="dropdown">
-                <div class="category-col">
-                  <h2 class="category-col__title">
-                    <a href="#">Тяжелая атлетика</a>
-                  </h2>
-                  <ul>
-                    <li><a href="#">Тренажеры и тяжелая атлетика</a></li>
-                    <li><a href="#">Художественная гимнастика и танцы</a></li>
-                  </ul>
+              <a class="compare-clear" href="#"><i class="fa fa-times"></i> Очистить список</a>
+            </div>
+            <div class="compare-filter">
+              <a href="#" class="active">Все параметры</a>
+              <a href="#">Отличия</a>
+            </div>
+            <div class="compare-values">
+              <div class="value val-0"><span>Состав</span></div>
+              <div class="value val-1">Кол-во</span> нитей, шт.</span></div>
+              <div class="value val-2"><span>Тип упаковки</span></div>
+              <div class="value val-3"><span>Кол-во в упаковке, шт.</span></div>
+              <div class="value val-4"><span>Габариты упаковки, см</span></div>
+              <div class="value val-5"><span>Вес упаковки, кг</span></div>
+              <div class="value val-6"><span>Тип нанесения</span></div>
+              <div class="value val-7"><span>Вес, гр.</span></div>
+              <div class="value val-8"><span>Сфера применения</span></div>
+            </div>
+          </div>
+          <div class="compare-main">
+            <div class="compare-list">
+              <div class="compare-item product-item">
+                <div class="compare-item__main">
+                  <a class="remove-compare" href="#" data-toggle="tooltip" data-placement="bottom"
+                    title="Убрать из списка"><i class="fa fa-times"></i></a>
+                  <div class="compare-item__code">Артикул: 00-00002508</div>
+                  <a class="compare-item__link" href="product.html">
+                    <div class="compare-item__image">
+                      <img src="images/demo/product_img1.jpg" alt="" />
+                    </div>
+                    <div class="compare-item__title">
+                      Велосипед TRINX Majestic M116 2019 26" 17"
+                    </div>
+                  </a>
+                  <div class="compare-item__reate product-item__rate">
+                    <div class="stars star-4"></div>
+                    <span>3 отзыва</span>
+                  </div>
+                  <div class="compare-item__price">
+                    <div class="prices">
+                      <del class="price-value-old">1690 руб.</del>
+                      <span class="price-value">1590 <span class="price-value__currency">руб./шт.</span></span>
+                    </div>
+                  </div>
+                  <div class="compare-item__buttons">
+                    <button class="btn btn-primary add-to-cart" title="Положить в корзину">
+                      В корзину
+                    </button>
+                  </div>
+                </div>
+                <div class="compare-values">
+                  <div class="value val-0"><span>50% хб, 50 ПЭ</span></div>
+                  <div class="value val-1"><span>5</span></div>
+                  <div class="value val-2"><span>полиэтиленовый мешок</span></div>
+                  <div class="value val-3"><span>250</span></div>
+                  <div class="value val-4"><span>80х80х40</span></div>
+                  <div class="value val-5"><span>4</span></div>
+                  <div class="value val-6"><span>ПВХ Точка</span></div>
+                  <div class="value val-7"><span>55</span></div>
+                  <div class="value val-8"><span>Автосервис, Строительство</span></div>
                 </div>
               </div>
-            </li>
-            <li class="has-child">
-              <a href="#">О компании</a>
-              <div class="dropdown">
-                <div class="category-col">
-                  <h2 class="category-col__title">
-                    <a href="#">Тяжелая атлетика</a>
-                  </h2>
-                  <ul>
-                    <li>
-                      <a href="#">Гантели разборные <span>(15)</span></a>
-                    </li>
-                    <li>
-                      <a href="#">Гири <span>(5)</span></a>
-                    </li>
-                    <li>
-                      <a href="#">Грифы для гантелей и штанг <span>(100)</span></a>
-                    </li>
-                    <li>
-                      <a href="#">Диски для гантелей и штанг <span>(18)</span></a>
-                    </li>
-                    <li>
-                      <a href="#">Перчатки для тяжелой атлетики и велоспорта
-                        <span>(19)</span></a>
-                    </li>
-                    <li>
-                      <a href="#">Пояса для поднятия тяжестей <span>(17)</span></a>
-                    </li>
-                    <li>
-                      <a href="#">Стойки для гантелей и штанг <span>(100)</span></a>
-                    </li>
-                    <li>
-                      <a href="#">Скамьи <span>(1000)</span></a>
-                    </li>
-                    <li>
-                      <a href="#">Аксессуары <span>(10)</span></a>
-                    </li>
-                  </ul>
-                </div>
-                <div class="category-col">
-                  <h2 class="category-col__title">
-                    <a href="#">Контакты</a>
-                  </h2>
-                  <ul>
-                    <li>
-                      <a href="#">Беговые дорожки <span>(105)</span></a>
-                    </li>
-                    <li>
-                      <a href="#">Велотренажеры <span>(165)</span></a>
-                    </li>
-                    <li class="has-child">
-                      <a href="#">Степперы, Эллипсоиды <span>(155)</span></a>
-                      <ul>
-                        <li>
-                          <a href="#">Степперы с эспандерами <span>(25)</span></a>
-                        </li>
-                        <li>
-                          <a href="#">Мини степперы <span>(15)</span></a>
-                        </li>
-                        <li>
-                          <a href="#">Профессиональные степперы <span>(20)</span></a>
-                        </li>
-                      </ul>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </li>
-            <li class="active"><a href="#">Бренды</a></li>
-          </ul>
+            </div>
+            <div class="compare-cursor"></div>
+          </div>
         </div>
-        @@include('../includes/widgets/subscription.html')
-        @@include('../includes/widgets/posts.html')
-      </aside>
-    </div>
+        <span class="waiting-icon">
+          <div class="loader">
+            <div class="loader-cube"></div>
+            <div class="loader-cube"></div>
+            <div class="loader-cube"></div>
+            <div class="loader-cube"></div>
+            <div class="loader-cube"></div>
+          </div>
+        </span>
+      </div>
+    </main>
   </div>
   @@include('../includes/product-viewed.html')
 </div>
