@@ -36,11 +36,9 @@
 
         .compare-values {
             .value {
-                padding: 5px 10px;
+                padding: 6px 10px;
                 font-size: 13px;
-                font-weight: bold;
                 line-height: 1.2;
-                cursor: pointer;
                 position: relative;
                 z-index: 2;
 
@@ -50,6 +48,34 @@
 
                 &.active {
                     background: #e3eef7;
+                }
+
+                &-color {
+                    img {
+                        display: inline-block;
+                        width: auto;
+                        height: 21px;
+                        margin-right: 5px;
+                    }
+                }
+
+                &-link {
+                    a {
+                        color: $text-color;
+                        text-decoration: underline;
+
+                        &:hover {
+                            text-decoration: none;
+                        }
+                    }
+                }
+
+                &__hint {
+                    margin-left: 6px;
+
+                    &:hover {
+                        color: $second-color;
+                    }
                 }
             }
         }
@@ -62,7 +88,7 @@
                 padding-bottom: 15px;
                 margin-bottom: 20px;
                 border-bottom: 1px solid #e1e1e1;
-                margin-bottom: 141px;
+                margin-bottom: 126px;
 
                 .page-heading {
                     font-weight: bold;
@@ -85,10 +111,11 @@
                 font-size: 14px;
                 display: block;
                 color: $text-color;
+                margin-left: 10px;
 
                 i {
                     color: $primary-color;
-                    margin-right: 12px;
+                    margin-right: 8px;
                 }
 
                 &:hover {
@@ -130,10 +157,27 @@
         }
 
         .compare-main {
-            background: #fff;
-            flex: 0 0 calc(100% - 230px);
+            flex: 0 0 calc(100% - 239px);
             position: relative;
             overflow: hidden;
+
+            .ps__rail-x {
+                z-index: 101;
+            }
+
+            &:after {
+                content: "";
+                position: absolute;
+                z-index: 100;
+                right: 0;
+                top: 0;
+                bottom: 0;
+                width: 30px;
+                margin-right: 1px;
+                background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.9));
+                transition: .2s;
+                display: none;
+            }
 
             .compare-cursor {
                 width: 100%;
@@ -154,23 +198,24 @@
             }
 
             .compare-list {
-                padding: 0 10px;
                 overflow: hidden;
                 overflow-x: auto;
                 display: flex;
                 position: relative;
+                border: 1px solid #e0e0e0;
+                padding-bottom: 10px;
 
                 .compare-item {
                     min-width: 220px;
                     flex: 0 0 220px;
                     position: relative;
-                    border: 1px solid #e0e0e0;
+                    border-right: 1px solid #e0e0e0;
                     margin-left: -1px;
 
                     &__main {
-                        height: 300px;
+                        height: 285px;
                         margin-bottom: 20px;
-                        padding: 10px 10px 0 10px;
+                        padding: 10px 5px 0 5px;
                     }
 
                     &__code {
@@ -201,6 +246,9 @@
                         color: $text-color;
                         margin-bottom: 10px;
                         text-align: center;
+                        position: relative;
+                        height: 140px;
+                        overflow: hidden;
 
                         &:hover {
                             color: $primary-color;
@@ -210,10 +258,13 @@
                     &__image {
                         height: 100px;
                         display: flex;
+                        justify-content: center;
+                        align-items: center;
                         margin-bottom: 10px;
 
                         img {
                             object-fit: contain;
+                            height: 100%;
                         }
                     }
 
@@ -222,8 +273,14 @@
                         font-size: 16px;
                         line-height: 1.2;
                         text-decoration: none;
-                        height: 40px;
-                        overflow: hidden;
+                        transition: .2s;
+                        background: rgba(255, 255, 255, 0.8);
+                        left: 0;
+                        right: 0;
+                        position: absolute;
+                        top: 100%;
+                        min-height: 40px;
+                        transform: translateY(-40px);
                     }
 
                     &__reate {
@@ -240,7 +297,7 @@
 
                         .prices {
                             display: flex;
-                            justify-content: space-between;
+                            justify-content: center;
                             align-items: flex-end;
                             font-size: 20px;
 
@@ -250,6 +307,7 @@
 
                             .price-value-old {
                                 font-size: 14px;
+                                margin-right: auto;
                             }
                         }
                     }
@@ -257,6 +315,27 @@
                     &__buttons {
                         .btn {
                             width: 100%;
+                            font-size: 14px;
+
+                            &-default {
+                                background: #fff;
+                                border-color: $second-color !important;
+                                color: $second-color;
+
+                                &:hover {
+                                    background: darken(#fff, 5%);
+                                }
+                            }
+
+                            &-wait {
+                                background: #fff;
+                                border-color: $primary-color;
+                                color: $primary-color;
+
+                                &:hover {
+                                    background: darken(#fff, 5%);
+                                }
+                            }
                         }
                     }
 
@@ -264,6 +343,10 @@
                         .value {
                             color: $text-color;
                         }
+                    }
+
+                    &:hover .compare-item__title {
+                        transform: translateY(-100%);
                     }
                 }
             }

@@ -351,7 +351,12 @@ var Shop = function () {
 
 					maxHeight = maxHeight > h ? maxHeight : h;
 
-					$('.val-' + i).height(maxHeight);
+
+					const sideCellHeight = $(".compare-side .value:eq(" + i + ")").height();
+					if (sideCellHeight > maxHeight)
+						maxHeight = sideCellHeight;
+
+					$('.val-' + (i + 1)).height(maxHeight);
 					$(".compare-side .value:eq(" + i + ")").height(maxHeight);
 				});
 			}).promise().done(function () {
@@ -372,7 +377,7 @@ var Shop = function () {
 			$('.compare-values .value').mouseenter(function () {
 				var that = $(this),
 					indx = that.index(),
-					$vals = $('.val-' + indx),
+					$vals = $('.val-' + (indx + 1)),
 					self = $vals[1],
 					h = self.offsetHeight;
 

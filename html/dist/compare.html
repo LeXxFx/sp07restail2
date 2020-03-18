@@ -122,13 +122,13 @@
                             </div>
                         </div>
                         <div class="header-menu">
-                            <a href="#" class="icon-link"><i class="appicon appicon-compare"></i> <span
+                            <a href="compare.html" class="icon-link"><i class="appicon appicon-compare"></i> <span
                                     class="icon-link__name">Сравнение</span>
                                 <span class="icon-link__counter">3</span></a>
-                            <a href="#" class="icon-link icon-link-fav"><i class="appicon appicon-heart"></i> <span
+                            <a href="selected.html" class="icon-link icon-link-fav"><i class="appicon appicon-heart"></i> <span
                                     class="icon-link__name">Избранное</span>
                                 <span class="icon-link__counter">300</span></a>
-                            <a href="#" class="icon-link icon-link-cart"><i class="appicon appicon-cart"></i> <span
+                            <a href="cart.html" class="icon-link icon-link-cart"><i class="appicon appicon-cart"></i> <span
                                     class="icon-link__name">Корзина</span>
                                 <span class="icon-link__counter">30</span></a>
                         </div>
@@ -298,186 +298,504 @@
 <div class="container">
   <div class="inner">
     <main id="content" class="content content-inner" role="main">
-      <div class="breadcrumbs">
-        <ul>
-          <li><a href="#">Главная</a></li>
-          <li><a href="#">Бренды</a></li>
-        </ul>
-      </div>
-      <div class="page-heading">Сравнение товаров</div>
-      
-    </main>
-
-    <div id="sidebar" class="sidebar sidebar-shop">
-      <aside>
-        <div class="catalog-navi">
-          <ul>
-            <li class="has-child">
-              <a href="#">Статьи</a>
+      <div class="compare">
+        <div class="wrap-compare">
+          <div class="compare-side">
+            <div class="compare-side__top">
+              <h1 class="page-heading">Сравнение товаров</h1>
               <div class="dropdown">
-                <div class="category-col">
-                  <h2 class="category-col__title">
-                    <a href="#">Тяжелая атлетика</a>
-                  </h2>
-                  <ul>
-                    <li><a href="#">Тренажеры и тяжелая атлетика</a></li>
-                    <li><a href="#">Художественная гимнастика и танцы</a></li>
-                  </ul>
+                <button class="dropdown-toggle" type="button" id="routeto" data-toggle="dropdown" aria-haspopup="true"
+                  aria-expanded="false">
+                  Выберите категорию
+                  <i class="fa fa-angle-down"></i>
+                </button>
+                <div class="dropdown-menu" aria-labelledby="routeto">
+                  <a class="dropdown-item" href="#">Категория 1</a>
+                  <a class="dropdown-item dropdown-active" href="#">Категория 2</a>
+                  <a class="dropdown-item" href="#">Категория 3</a>
+                  <a class="dropdown-item" href="#">Категория 4</a>
                 </div>
               </div>
-            </li>
-            <li class="has-child">
-              <a href="#">Вопрос-ответ</a>
-              <div class="dropdown">
-                <div class="category-col">
-                  <h2 class="category-col__title">
-                    <a href="#">Тяжелая атлетика</a>
-                  </h2>
-                  <ul>
-                    <li><a href="#">Тренажеры и тяжелая атлетика</a></li>
-                    <li><a href="#">Художественная гимнастика и танцы</a></li>
-                  </ul>
+              <a class="compare-clear" href="#"><i class="fa fa-times"></i> Очистить список</a>
+            </div>
+            <div class="compare-filter">
+              <a href="#" class="active">Все параметры</a>
+              <a href="#">Отличия</a>
+            </div>
+            <div class="compare-values">
+              <div class="value val-1"><span>Диаметр колес
+                  <a class="value__hint" data-toggle="tooltip" data-placement="bottom" title="D = 2R"><i
+                      class="far fa-question-circle"></i></a></span></div>
+              <div class="value val-2"><span>Класс</span></div>
+              <div class="value val-3"><span>Размер рамы</span></div>
+              <div class="value val-4"><span>Макс. вес пользователя, кг</span></div>
+              <div class="value val-5"><span>Цвет</span></div>
+              <div class="value val-6"><span>Тип тормозов</span></div>
+              <div class="value val-7"><span>Тип</span></div>
+              <div class="value val-8"><span>Количество скоростей</span></div>
+              <div class="value val-9"><span>Рама</span></div>
+              <div class="value val-10"><span>Каретка
+                  <a class="value__hint" data-toggle="tooltip" data-placement="bottom" title="Каретка"><i
+                      class="far fa-question-circle"></i></a>
+                </span></div>
+              <div class="value val-11"><span>Вилка</span></div>
+              <div class="value val-12"><span>Система шатунов</span></div>
+              <div class="value val-13"><span>Передний переключатель скоростей</span></div>
+              <div class="value val-14"><span>Задний переключатель скоростей</span></div>
+              <div class="value val-15"><span>Ручки переключения (манетки)</span></div>
+              <div class="value val-16"><span>Кассета</span></div>
+              <div class="value val-17"><span>Цепь</span></div>
+              <div class="value val-18"><span>Тормоза</span></div>
+              <div class="value val-19"><span>Обода</span></div>
+              <div class="value val-20"><span>Втулки</span></div>
+              <div class="value val-21"><span>Покрышки</span></div>
+              <div class="value val-22"><span>Руль</span></div>
+              <div class="value val-23"><span>Ручки руля</span></div>
+              <div class="value val-24"><span>Седло</span></div>
+              <div class="value val-25"><span>Педали</span></div>
+              <div class="value val-26"><span>Комплектация</span></div>
+              <div class="value val-27"><span>Год выпуска</span></div>
+              <div class="value val-28"><span>Таблица соответствия роста размеру рамы</span></div>
+              <div class="value val-29"><span>Вес</span></div>
+              <div class="value val-30"><span>Гарантийные условия</span></div>
+              <div class="value val-31"><span>Страна-производитель товара</span></div>
+              <div class="value val-32"><span>Габариты упаковки</span></div>
+              <div class="value val-33"><span>Гарантия</span></div>
+            </div>
+          </div>
+          <div class="compare-main">
+            <div class="compare-list">
+              <div class="compare-item product-item">
+                <div class="compare-item__main">
+                  <a class="remove-compare" href="#" data-toggle="tooltip" data-placement="bottom"
+                    title="Убрать из списка"><i class="fa fa-times"></i></a>
+                  <div class="compare-item__code">Артикул: 00-00002508</div>
+                  <a class="compare-item__link" href="product.html">
+                    <div class="compare-item__image">
+                      <img src="images/demo/product_img5-150x100.jpg" alt="" />
+                    </div>
+                    <div class="compare-item__title">
+                      Велосипед TRINX Majestic M116 2019 26" 17"
+                    </div>
+                  </a>
+                  <div class="compare-item__reate product-item__rate">
+                    <div class="stars star-4"></div>
+                    <span>3 отзыва</span>
+                  </div>
+                  <div class="compare-item__price">
+                    <div class="prices">
+                      <del class="price-value-old">1690 руб.</del>
+                      <span class="price-value">1590 <span class="price-value__currency">руб./шт.</span></span>
+                    </div>
+                  </div>
+                  <div class="compare-item__buttons">
+                    <button class="btn btn-default" title="Положить в корзину">
+                      В корзине
+                    </button>
+                  </div>
+                </div>
+                <div class="compare-values">
+                  <div class="value val-1"><span>26"</span></div>
+                  <div class="value val-2"><span>Горный</span></div>
+                  <div class="value val-3"><span>17"</span></div>
+                  <div class="value val-4"><span>120</span></div>
+                  <div class="value val-5 value-color"><span><img src="images/color_1.png"></span></div>
+                  <div class="value val-6"><span>Дисковые механические</span></div>
+                  <div class="value val-7"><span>Хардтейл</span></div>
+                  <div class="value val-8"><span>21</span></div>
+                  <div class="value val-9"><span>Гидроформованные трубы рамы с внутренней проводкой, алюминий 6061
+                    </span></div>
+                  <div class="value val-10"><span>Картридж Kenli 110 мм</span></div>
+                  <div class="value val-11"><span>Trinx Suspension Travel 100 мм </span></div>
+                  <div class="value val-12"><span>Trinx 24/34/42T*170L</span></div>
+                  <div class="value val-13"><span>Trinx FD-QD35</span></div>
+                  <div class="value val-14"><span>Shimano TZ500</span></div>
+                  <div class="value val-15"><span>Shimano ST-EF41</span></div>
+                  <div class="value val-16"><span>7S 14-28T</span></div>
+                  <div class="value val-17"><span>KMC 7S</span></div>
+                  <div class="value val-18"><span>Trinx Alloy Mechanical Disc</span></div>
+                  <div class="value val-19"><span>Trinx Alloy Double Wall</span></div>
+                  <div class="value val-20"><span>Sealed Bearing</span></div>
+                  <div class="value val-21"><span>Kenda 26"х1.95" 27 TPI</span></div>
+                  <div class="value val-22"><span>Сталь, диаметр 31.8 мм</span></div>
+                  <div class="value val-23"><span>Trinx, резиновые, черные</span></div>
+                  <div class="value val-24"><span>Trinx</span></div>
+                  <div class="value val-25"><span>Trinx</span></div>
+                  <div class="value val-26"><span>Велосипед, седло, педали, подножка, отражатели</span></div>
+                  <div class="value val-27"><span>2019</span></div>
+                  <div class="value val-28 value-link"><span><a href="#">Посмотреть</a></span></div>
+                  <div class="value val-29"><span>15.5 кг</span></div>
+                  <div class="value val-30 value-link"><span><a href="#">Посмотреть</a></span></div>
+                  <div class="value val-31"><span>Китай</span></div>
+                  <div class="value val-32"><span>136 х 18.5 х 75 см</span></div>
+                  <div class="value val-33 value-link"><span><a href="#">Посмотреть</a>
+                      <a class="value__hint" data-toggle="tooltip" data-placement="bottom" title="Гарантия на товар"><i
+                          class="far fa-question-circle"></i></a></span></div>
                 </div>
               </div>
-            </li>
-            <li class="has-child">
-              <a href="#">О компании</a>
-              <div class="dropdown">
-                <div class="category-col">
-                  <h2 class="category-col__title">
-                    <a href="#">Тяжелая атлетика</a>
-                  </h2>
-                  <ul>
-                    <li>
-                      <a href="#">Гантели разборные <span>(15)</span></a>
-                    </li>
-                    <li>
-                      <a href="#">Гири <span>(5)</span></a>
-                    </li>
-                    <li>
-                      <a href="#">Грифы для гантелей и штанг <span>(100)</span></a>
-                    </li>
-                    <li>
-                      <a href="#">Диски для гантелей и штанг <span>(18)</span></a>
-                    </li>
-                    <li>
-                      <a href="#">Перчатки для тяжелой атлетики и велоспорта
-                        <span>(19)</span></a>
-                    </li>
-                    <li>
-                      <a href="#">Пояса для поднятия тяжестей <span>(17)</span></a>
-                    </li>
-                    <li>
-                      <a href="#">Стойки для гантелей и штанг <span>(100)</span></a>
-                    </li>
-                    <li>
-                      <a href="#">Скамьи <span>(1000)</span></a>
-                    </li>
-                    <li>
-                      <a href="#">Аксессуары <span>(10)</span></a>
-                    </li>
-                  </ul>
+              <div class="compare-item product-item">
+                <div class="compare-item__main">
+                  <a class="remove-compare" href="#" data-toggle="tooltip" data-placement="bottom"
+                    title="Убрать из списка"><i class="fa fa-times"></i></a>
+                  <div class="compare-item__code">Артикул: 00-00002508</div>
+                  <a class="compare-item__link" href="product.html">
+                    <div class="compare-item__image">
+                      <img src="images/demo/product_img1.jpg" alt="" />
+                    </div>
+                    <div class="compare-item__title">
+                      Велосипед TRINX Majestic M116 2019 26" 17" TRINX Majestic M116 2019 26" 17"
+                    </div>
+                  </a>
+                  <div class="compare-item__reate product-item__rate">
+                    <div class="stars star-0"></div>
+                    <span>Нет отзывов</span>
+                  </div>
+                  <div class="compare-item__price">
+                    <div class="prices">
+                      <del class="price-value-old">1690 руб.</del>
+                      <span class="price-value">1590 <span class="price-value__currency">руб./шт.</span></span>
+                    </div>
+                  </div>
+                  <div class="compare-item__buttons">
+                    <button class="btn btn-primary add-to-cart" title="Положить в корзину">
+                      В корзину
+                    </button>
+                  </div>
                 </div>
-                <div class="category-col">
-                  <h2 class="category-col__title">
-                    <a href="#">Контакты</a>
-                  </h2>
-                  <ul>
-                    <li>
-                      <a href="#">Беговые дорожки <span>(105)</span></a>
-                    </li>
-                    <li>
-                      <a href="#">Велотренажеры <span>(165)</span></a>
-                    </li>
-                    <li class="has-child">
-                      <a href="#">Степперы, Эллипсоиды <span>(155)</span></a>
-                      <ul>
-                        <li>
-                          <a href="#">Степперы с эспандерами <span>(25)</span></a>
-                        </li>
-                        <li>
-                          <a href="#">Мини степперы <span>(15)</span></a>
-                        </li>
-                        <li>
-                          <a href="#">Профессиональные степперы <span>(20)</span></a>
-                        </li>
-                      </ul>
-                    </li>
-                  </ul>
+                <div class="compare-values">
+                  <div class="value val-1"><span>26"</span></div>
+                  <div class="value val-2"><span>Горный</span></div>
+                  <div class="value val-3"><span>17"</span></div>
+                  <div class="value val-4"><span>120</span></div>
+                  <div class="value val-5 value-color">
+                    <span>
+                      <img src="images/color_2.png">
+                      <img src="images/color_1.png">
+                    </span>
+                  </div>
+                  <div class="value val-6"><span>Дисковые механические</span></div>
+                  <div class="value val-7"><span>Хардтейл</span></div>
+                  <div class="value val-8"><span>21</span></div>
+                  <div class="value val-9"><span>Гидроформованные трубы рамы с внутренней проводкой, алюминий 6061
+                    </span></div>
+                  <div class="value val-10"><span>Картридж Kenli 110 мм</span></div>
+                  <div class="value val-11"><span>Trinx Suspension Travel 100 мм </span></div>
+                  <div class="value val-12"><span>Trinx 24/34/42T*170L</span></div>
+                  <div class="value val-13"><span>Trinx FD-QD35</span></div>
+                  <div class="value val-14"><span>Shimano TZ500</span></div>
+                  <div class="value val-15"><span>Shimano ST-EF41</span></div>
+                  <div class="value val-16"><span>7S 14-28T</span></div>
+                  <div class="value val-17"><span>KMC 7S</span></div>
+                  <div class="value val-18"><span>Trinx Alloy Mechanical Disc</span></div>
+                  <div class="value val-19"><span>Trinx Alloy Double Wall</span></div>
+                  <div class="value val-20"><span>Sealed Bearing</span></div>
+                  <div class="value val-21"><span>Kenda 26"х1.95" 27 TPI</span></div>
+                  <div class="value val-22"><span>Сталь, диаметр 31.8 мм</span></div>
+                  <div class="value val-23"><span>Trinx, резиновые, черные</span></div>
+                  <div class="value val-24"><span>Trinx</span></div>
+                  <div class="value val-25"><span>Trinx</span></div>
+                  <div class="value val-26"><span>Велосипед, седло, педали, подножка, отражатели</span></div>
+                  <div class="value val-27"><span>2019</span></div>
+                  <div class="value val-28 value-link"><span><a href="#">Посмотреть</a></span></div>
+                  <div class="value val-29"><span>15.5 кг</span></div>
+                  <div class="value val-30 value-link"><span><a href="#">Посмотреть</a></span></div>
+                  <div class="value val-31"><span>Китай</span></div>
+                  <div class="value val-32"><span>136 х 18.5 х 75 см</span></div>
+                  <div class="value val-33 value-link"><span><a href="#">Посмотреть</a>
+                      <a class="value__hint" data-toggle="tooltip" data-placement="bottom" title="Гарантия на товар"><i
+                          class="far fa-question-circle"></i></a></span></div>
                 </div>
               </div>
-            </li>
-            <li class="active"><a href="#">Бренды</a></li>
-          </ul>
+              <div class="compare-item product-item">
+                <div class="compare-item__main">
+                  <a class="remove-compare" href="#" data-toggle="tooltip" data-placement="bottom"
+                    title="Убрать из списка"><i class="fa fa-times"></i></a>
+                  <div class="compare-item__code">Артикул: 00-00002508</div>
+                  <a class="compare-item__link" href="product.html">
+                    <div class="compare-item__image">
+                      <img src="images/demo/product_img1.jpg" alt="" />
+                    </div>
+                    <div class="compare-item__title">
+                      Велосипед TRINX Majestic M116 2019 26" 17"
+                    </div>
+                  </a>
+                  <div class="compare-item__reate product-item__rate">
+                    <div class="stars star-4"></div>
+                    <span>22 отзыва</span>
+                  </div>
+                  <div class="compare-item__price">
+                    <div class="prices">
+                      <span class="price-value">150 300 <span class="price-value__currency">руб.</span></span>
+                    </div>
+                  </div>
+                  <div class="compare-item__buttons">
+                    <button class="btn btn-wait" title="Положить в корзину">
+                      Сообщить о поступлении
+                    </button>
+                  </div>
+                </div>
+                <div class="compare-values">
+                  <div class="value val-1"><span>26"</span></div>
+                  <div class="value val-2"><span>Горный</span></div>
+                  <div class="value val-3"><span>17"</span></div>
+                  <div class="value val-4"><span>120</span></div>
+                  <div class="value val-5 value-color"><span><img src="images/color_1.png"></span></div>
+                  <div class="value val-6"><span>Дисковые механические</span></div>
+                  <div class="value val-7"><span>Хардтейл</span></div>
+                  <div class="value val-8"><span>21</span></div>
+                  <div class="value val-9"><span>Гидроформованные трубы рамы с внутренней проводкой, алюминий 6061
+                    </span></div>
+                  <div class="value val-10"><span>Картридж Kenli 110 мм</span></div>
+                  <div class="value val-11"><span>Trinx Suspension Travel 100 мм </span></div>
+                  <div class="value val-12"><span>Trinx 24/34/42T*170L</span></div>
+                  <div class="value val-13"><span>Trinx FD-QD35</span></div>
+                  <div class="value val-14"><span>Shimano TZ500</span></div>
+                  <div class="value val-15"><span>Shimano ST-EF41</span></div>
+                  <div class="value val-16"><span>7S 14-28T</span></div>
+                  <div class="value val-17"><span>KMC 7S</span></div>
+                  <div class="value val-18"><span>Trinx Alloy Mechanical Disc</span></div>
+                  <div class="value val-19"><span>Trinx Alloy Double Wall</span></div>
+                  <div class="value val-20"><span>Sealed Bearing</span></div>
+                  <div class="value val-21"><span>Kenda 26"х1.95" 27 TPI</span></div>
+                  <div class="value val-22"><span>Сталь, диаметр 31.8 мм</span></div>
+                  <div class="value val-23"><span>Trinx, резиновые, черные</span></div>
+                  <div class="value val-24"><span>Trinx</span></div>
+                  <div class="value val-25"><span>Trinx</span></div>
+                  <div class="value val-26"><span>Велосипед, седло, педали, подножка, отражатели</span></div>
+                  <div class="value val-27"><span>2019</span></div>
+                  <div class="value val-28 value-link"><span><a href="#">Посмотреть</a></span></div>
+                  <div class="value val-29"><span>15.5 кг</span></div>
+                  <div class="value val-30 value-link"><span><a href="#">Посмотреть</a></span></div>
+                  <div class="value val-31"><span>Китай</span></div>
+                  <div class="value val-32"><span>136 х 18.5 х 75 см</span></div>
+                  <div class="value val-33 value-link"><span><a href="#">Посмотреть</a>
+                      <a class="value__hint" data-toggle="tooltip" data-placement="bottom" title="Гарантия на товар"><i
+                          class="far fa-question-circle"></i></a></span></div>
+                </div>
+              </div>
+              <div class="compare-item product-item">
+                <div class="compare-item__main">
+                  <a class="remove-compare" href="#" data-toggle="tooltip" data-placement="bottom"
+                    title="Убрать из списка"><i class="fa fa-times"></i></a>
+                  <div class="compare-item__code">Артикул: 00-00002508</div>
+                  <a class="compare-item__link" href="product.html">
+                    <div class="compare-item__image">
+                      <img src="images/demo/product_img5-150x100.jpg" alt="" />
+                    </div>
+                    <div class="compare-item__title">
+                      Велосипед TRINX Majestic M116 2019 26" 17"
+                    </div>
+                  </a>
+                  <div class="compare-item__reate product-item__rate">
+                    <div class="stars star-4"></div>
+                    <span>3 отзыва</span>
+                  </div>
+                  <div class="compare-item__price">
+                    <div class="prices">
+                      <del class="price-value-old">1690 руб.</del>
+                      <span class="price-value">1590 <span class="price-value__currency">руб./шт.</span></span>
+                    </div>
+                  </div>
+                  <div class="compare-item__buttons">
+                    <button class="btn btn-default" title="Положить в корзину">
+                      В корзине
+                    </button>
+                  </div>
+                </div>
+                <div class="compare-values">
+                  <div class="value val-1"><span>26"</span></div>
+                  <div class="value val-2"><span>Горный</span></div>
+                  <div class="value val-3"><span>17"</span></div>
+                  <div class="value val-4"><span>120</span></div>
+                  <div class="value val-5 value-color"><span><img src="images/color_1.png"></span></div>
+                  <div class="value val-6"><span>Дисковые механические</span></div>
+                  <div class="value val-7"><span>Хардтейл</span></div>
+                  <div class="value val-8"><span>21</span></div>
+                  <div class="value val-9"><span>Гидроформованные трубы рамы с внутренней проводкой, алюминий 6061
+                    </span></div>
+                  <div class="value val-10"><span>Картридж Kenli 110 мм</span></div>
+                  <div class="value val-11"><span>Trinx Suspension Travel 100 мм </span></div>
+                  <div class="value val-12"><span>Trinx 24/34/42T*170L</span></div>
+                  <div class="value val-13"><span>Trinx FD-QD35</span></div>
+                  <div class="value val-14"><span>Shimano TZ500</span></div>
+                  <div class="value val-15"><span>Shimano ST-EF41</span></div>
+                  <div class="value val-16"><span>7S 14-28T</span></div>
+                  <div class="value val-17"><span>KMC 7S</span></div>
+                  <div class="value val-18"><span>Trinx Alloy Mechanical Disc</span></div>
+                  <div class="value val-19"><span>Trinx Alloy Double Wall</span></div>
+                  <div class="value val-20"><span>Sealed Bearing</span></div>
+                  <div class="value val-21"><span>Kenda 26"х1.95" 27 TPI</span></div>
+                  <div class="value val-22"><span>Сталь, диаметр 31.8 мм</span></div>
+                  <div class="value val-23"><span>Trinx, резиновые, черные</span></div>
+                  <div class="value val-24"><span>Trinx</span></div>
+                  <div class="value val-25"><span>Trinx</span></div>
+                  <div class="value val-26"><span>Велосипед, седло, педали, подножка, отражатели</span></div>
+                  <div class="value val-27"><span>2019</span></div>
+                  <div class="value val-28 value-link"><span><a href="#">Посмотреть</a></span></div>
+                  <div class="value val-29"><span>15.5 кг</span></div>
+                  <div class="value val-30 value-link"><span><a href="#">Посмотреть</a></span></div>
+                  <div class="value val-31"><span>Китай</span></div>
+                  <div class="value val-32"><span>136 х 18.5 х 75 см</span></div>
+                  <div class="value val-33 value-link"><span><a href="#">Посмотреть</a>
+                      <a class="value__hint" data-toggle="tooltip" data-placement="bottom" title="Гарантия на товар"><i
+                          class="far fa-question-circle"></i></a></span></div>
+                </div>
+              </div>
+              <div class="compare-item product-item">
+                <div class="compare-item__main">
+                  <a class="remove-compare" href="#" data-toggle="tooltip" data-placement="bottom"
+                    title="Убрать из списка"><i class="fa fa-times"></i></a>
+                  <div class="compare-item__code">Артикул: 00-00002508</div>
+                  <a class="compare-item__link" href="product.html">
+                    <div class="compare-item__image">
+                      <img src="images/demo/product_img1.jpg" alt="" />
+                    </div>
+                    <div class="compare-item__title">
+                      Велосипед TRINX Majestic M116 2019 26" 17" TRINX Majestic M116 2019 26" 17"
+                    </div>
+                  </a>
+                  <div class="compare-item__reate product-item__rate">
+                    <div class="stars star-0"></div>
+                    <span>Нет отзывов</span>
+                  </div>
+                  <div class="compare-item__price">
+                    <div class="prices">
+                      <del class="price-value-old">1690 руб.</del>
+                      <span class="price-value">1590 <span class="price-value__currency">руб./шт.</span></span>
+                    </div>
+                  </div>
+                  <div class="compare-item__buttons">
+                    <button class="btn btn-primary add-to-cart" title="Положить в корзину">
+                      В корзину
+                    </button>
+                  </div>
+                </div>
+                <div class="compare-values">
+                  <div class="value val-1"><span>26"</span></div>
+                  <div class="value val-2"><span>Горный</span></div>
+                  <div class="value val-3"><span>17"</span></div>
+                  <div class="value val-4"><span>120</span></div>
+                  <div class="value val-5 value-color">
+                    <span>
+                      <img src="images/color_2.png">
+                      <img src="images/color_1.png">
+                    </span>
+                  </div>
+                  <div class="value val-6"><span>Дисковые механические</span></div>
+                  <div class="value val-7"><span>Хардтейл</span></div>
+                  <div class="value val-8"><span>21</span></div>
+                  <div class="value val-9"><span>Гидроформованные трубы рамы с внутренней проводкой, алюминий 6061
+                    </span></div>
+                  <div class="value val-10"><span>Картридж Kenli 110 мм</span></div>
+                  <div class="value val-11"><span>Trinx Suspension Travel 100 мм </span></div>
+                  <div class="value val-12"><span>Trinx 24/34/42T*170L</span></div>
+                  <div class="value val-13"><span>Trinx FD-QD35</span></div>
+                  <div class="value val-14"><span>Shimano TZ500</span></div>
+                  <div class="value val-15"><span>Shimano ST-EF41</span></div>
+                  <div class="value val-16"><span>7S 14-28T</span></div>
+                  <div class="value val-17"><span>KMC 7S</span></div>
+                  <div class="value val-18"><span>Trinx Alloy Mechanical Disc</span></div>
+                  <div class="value val-19"><span>Trinx Alloy Double Wall</span></div>
+                  <div class="value val-20"><span>Sealed Bearing</span></div>
+                  <div class="value val-21"><span>Kenda 26"х1.95" 27 TPI</span></div>
+                  <div class="value val-22"><span>Сталь, диаметр 31.8 мм</span></div>
+                  <div class="value val-23"><span>Trinx, резиновые, черные</span></div>
+                  <div class="value val-24"><span>Trinx</span></div>
+                  <div class="value val-25"><span>Trinx</span></div>
+                  <div class="value val-26"><span>Велосипед, седло, педали, подножка, отражатели</span></div>
+                  <div class="value val-27"><span>2019</span></div>
+                  <div class="value val-28 value-link"><span><a href="#">Посмотреть</a></span></div>
+                  <div class="value val-29"><span>15.5 кг</span></div>
+                  <div class="value val-30 value-link"><span><a href="#">Посмотреть</a></span></div>
+                  <div class="value val-31"><span>Китай</span></div>
+                  <div class="value val-32"><span>136 х 18.5 х 75 см</span></div>
+                  <div class="value val-33 value-link"><span><a href="#">Посмотреть</a>
+                      <a class="value__hint" data-toggle="tooltip" data-placement="bottom" title="Гарантия на товар"><i
+                          class="far fa-question-circle"></i></a></span></div>
+                </div>
+              </div>
+              <div class="compare-item product-item">
+                <div class="compare-item__main">
+                  <a class="remove-compare" href="#" data-toggle="tooltip" data-placement="bottom"
+                    title="Убрать из списка"><i class="fa fa-times"></i></a>
+                  <div class="compare-item__code">Артикул: 00-00002508</div>
+                  <a class="compare-item__link" href="product.html">
+                    <div class="compare-item__image">
+                      <img src="images/demo/product_img1.jpg" alt="" />
+                    </div>
+                    <div class="compare-item__title">
+                      Велосипед TRINX Majestic M116 2019 26" 17"
+                    </div>
+                  </a>
+                  <div class="compare-item__reate product-item__rate">
+                    <div class="stars star-4"></div>
+                    <span>22 отзыва</span>
+                  </div>
+                  <div class="compare-item__price">
+                    <div class="prices">
+                      <span class="price-value">150 300 <span class="price-value__currency">руб.</span></span>
+                    </div>
+                  </div>
+                  <div class="compare-item__buttons">
+                    <button class="btn btn-wait" title="Положить в корзину">
+                      Сообщить о поступлении
+                    </button>
+                  </div>
+                </div>
+                <div class="compare-values">
+                  <div class="value val-1"><span>26"</span></div>
+                  <div class="value val-2"><span>Горный</span></div>
+                  <div class="value val-3"><span>17"</span></div>
+                  <div class="value val-4"><span>120</span></div>
+                  <div class="value val-5 value-color"><span><img src="images/color_1.png"></span></div>
+                  <div class="value val-6"><span>Дисковые механические</span></div>
+                  <div class="value val-7"><span>Хардтейл</span></div>
+                  <div class="value val-8"><span>21</span></div>
+                  <div class="value val-9"><span>Гидроформованные трубы рамы с внутренней проводкой, алюминий 6061
+                    </span></div>
+                  <div class="value val-10"><span>Картридж Kenli 110 мм</span></div>
+                  <div class="value val-11"><span>Trinx Suspension Travel 100 мм </span></div>
+                  <div class="value val-12"><span>Trinx 24/34/42T*170L</span></div>
+                  <div class="value val-13"><span>Trinx FD-QD35</span></div>
+                  <div class="value val-14"><span>Shimano TZ500</span></div>
+                  <div class="value val-15"><span>Shimano ST-EF41</span></div>
+                  <div class="value val-16"><span>7S 14-28T</span></div>
+                  <div class="value val-17"><span>KMC 7S</span></div>
+                  <div class="value val-18"><span>Trinx Alloy Mechanical Disc</span></div>
+                  <div class="value val-19"><span>Trinx Alloy Double Wall</span></div>
+                  <div class="value val-20"><span>Sealed Bearing</span></div>
+                  <div class="value val-21"><span>Kenda 26"х1.95" 27 TPI</span></div>
+                  <div class="value val-22"><span>Сталь, диаметр 31.8 мм</span></div>
+                  <div class="value val-23"><span>Trinx, резиновые, черные</span></div>
+                  <div class="value val-24"><span>Trinx</span></div>
+                  <div class="value val-25"><span>Trinx</span></div>
+                  <div class="value val-26"><span>Велосипед, седло, педали, подножка, отражатели</span></div>
+                  <div class="value val-27"><span>2019</span></div>
+                  <div class="value val-28 value-link"><span><a href="#">Посмотреть</a></span></div>
+                  <div class="value val-29"><span>15.5 кг</span></div>
+                  <div class="value val-30 value-link"><span><a href="#">Посмотреть</a></span></div>
+                  <div class="value val-31"><span>Китай</span></div>
+                  <div class="value val-32"><span>136 х 18.5 х 75 см</span></div>
+                  <div class="value val-33 value-link"><span><a href="#">Посмотреть</a>
+                      <a class="value__hint" data-toggle="tooltip" data-placement="bottom" title="Гарантия на товар"><i
+                          class="far fa-question-circle"></i></a></span></div>
+                </div>
+              </div>
+            </div>
+            <div class="compare-cursor"></div>
+          </div>
         </div>
-        <div class="widget widget-subs">
-    <div class="widget-title">
-      Дополнительные бонусы и скидки за подписку
-    </div>
-    <form action="">
-      <p>
-        Получайте секретные промокоды, учавствуйте в закрытых распродажах
-        Sport07.ru
-      </p>
-      <div class="form-input">
-        <input type="text" class="form-control" placeholder="Ваш е-майл" />
-        <button type="submit"><i class="fas fa-arrow-right"></i></button>
+        <span class="waiting-icon">
+          <div class="loader">
+            <div class="loader-cube"></div>
+            <div class="loader-cube"></div>
+            <div class="loader-cube"></div>
+            <div class="loader-cube"></div>
+            <div class="loader-cube"></div>
+          </div>
+        </span>
       </div>
-    </form>
-  </div>
-        <div class="widget widget-posts">
-  <div class="widget-title">Новости</div>
-  <div class="posts">
-    <div class="post-item">
-      <div class="post-item__image">
-        <a href="#"><img src="images/demo/post_img1-60x60.jpg" alt="" /></a>
-      </div>
-      <div class="post-item__text">
-        <a class="post-title" href="#">Претенденты на победу в АПП</a>
-        <p>Эксперт Sky Sports и бывший тренер "Манчестер Юнайтед"</p>
-        <span>15.08.2019</span>
-      </div>
-    </div>
-    <div class="post-item">
-      <div class="post-item__image">
-        <a href="#"><img src="images/demo/post_img2-60x60.jpg" alt="" /></a>
-      </div>
-      <div class="post-item__text">
-        <a class="post-title" href="#">Сила внутри человека: Максим Веракса</a>
-        <p>
-          Украинский пловец Максим Веракса свои первые шаги в плавании
-        </p>
-        <span>15.08.2019</span>
-      </div>
-    </div>
-  </div>
-  <a href="#" class="posts__link-all">Все новости</a>
-</div>
-<div class="widget widget-posts">
-  <div class="widget-title">Интересные статьи</div>
-  <div class="posts">
-    <div class="post-item post-item--article">
-      <div class="post-item__image">
-        <a href="#"><img src="images/demo/post_img3-95x70.jpg" alt="" /></a>
-      </div>
-      <div class="post-item__text">
-        <a class="post-title" href="#">В чем польза гимнастического обруча для похудения</a>
-      </div>
-    </div>
-    <div class="post-item post-item--article">
-      <div class="post-item__image">
-        <a href="#"><img src="images/demo/post_img4-95x70.jpg" alt="" /></a>
-      </div>
-      <div class="post-item__text">
-        <a class="post-title" href="#">Подбираем фитбол (гимнастический мяч) по росту и
-          комплекции</a>
-      </div>
-    </div>
-  </div>
-  <a href="#" class="posts__link-all">Все статьи</a>
-</div>
-      </aside>
-    </div>
+    </main>
   </div>
   <section class="product-viewed product-carousel">
     <div class="section-title">Ранее Вы смотрели</div>
