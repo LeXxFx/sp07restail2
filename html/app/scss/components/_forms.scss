@@ -197,6 +197,19 @@
             border-color: darken(#dedede, 5%) !important;
         }
     }
+
+    &-green {
+        background: $primary-color;
+        color: #fff;
+        border: 1px solid $primary-color;
+
+        &:hover,
+        &:focus {
+            background: darken($primary-color, 10%);
+            border-color: darken($primary-color, 10%);
+            color: #fff;
+        }
+    }
 }
 
 .form-control {

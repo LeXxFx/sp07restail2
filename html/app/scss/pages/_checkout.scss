@@ -476,3 +476,36 @@
         }
     }
 }
+
+.ps_logo {
+    font-size: 16px;
+    text-align: center;
+    padding: 15px 0;
+
+    .pay_name {
+        font-size: 18px;
+    }
+
+    img {
+        margin: 10px 0;
+    }
+}
+
+.sale_order_full_table {
+    a {
+        font-size: 18px;
+        display: inline-block;
+        margin: 10px 0 10px 20px;
+        background: $primary-color;
+        color: #fff;
+        border: 1px solid $primary-color;
+        padding: 7px 20px;
+        border-radius: 6px;
+        transition: .3s;
+
+        &:hover {
+            background: darken($primary-color, 10%);
+            text-decoration: none;
+        }
+    }
+}

@@ -88,6 +88,10 @@ body {
     }
 }
 
+img {
+    max-width: 100%;
+}
+
 .container {
     width: 100%;
     max-width: $container-width + 30px;

@@ -154,7 +154,6 @@
 }
 
 .cabinet {
-    padding: 20px 0;
     margin: 0 0 30px 0;
 
     .page-nav {
@@ -162,21 +161,23 @@
         padding: 0;
         margin: 0 0 25px 0;
         display: flex;
+        justify-content: center;
         align-content: center;
 
         >li {
-            margin: 0 140px 0 0;
+            margin: 0;
 
             &:last-child {
                 margin: 0;
             }
 
             >a {
+                display: block;
                 color: #222222;
                 font-size: 22px;
                 font-weight: bold;
                 padding: 10px 30px;
-                height: 50px;
+                height: 58px;
                 background: transparent;
                 border: 1px solid transparent;
 

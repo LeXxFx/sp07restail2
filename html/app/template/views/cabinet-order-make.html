@@ -1,0 +1,57 @@
+﻿@@include('../includes/header.html', { "title": "Cabinet", "headerClass": "" })
+
+<div class="container">
+	<div class="inner">
+		<main id="content" class="content content-inner" role="main">
+			<div class="breadcrumbs">
+				<ul>
+					<li><a href="#">Главная</a></li>
+					<li><span>Личный кабинет</span></li>
+				</ul>
+			</div>
+			<div class="cabinet">
+				<table class="sale_order_full_table">
+					<tbody>
+						<tr>
+							<td>
+								<p>Уважаемый покупатель!</p>
+								Благодарим Вас за заказ в нашем интернет-магазине.<br> Ваш заказ <b>№13579</b> от
+								04.10.2018 13:45:05 успешно
+								создан. Номер вашей оплаты: <b>№13579/1</b> <br><br>
+								<p>Менеджер свяжется с Вами, ожидайте пожалуйста, звонок.<br>
+									График обработки заказов: с понедельника по пятницу с 8.00 до 19.00<br>
+									В выходные и праздничные дни заказы не обрабатываются. Все заказы переносятся на
+									следующий рабочий день.</p>
+								<p>Остались вопросы? Позвоните, пожалуйста, по бесплатному номеру 8-800-555-20-82</p>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<table class="sale_order_full_table">
+					<tbody>
+						<tr>
+							<td class="ps_logo">
+								<div class="pay_name">Оплата заказа</div>
+								<img src="//535591.ssl.1c-bitrix-cdn.ru/upload/sale/paysystem/logotip/b18/b181da508fb5c53aac2835004710e624.png?151916111068765"
+									border="0&quot;" style="width:100px" alt="" width="100" height="49">
+								<div class="paysystem_name">Онлайн оплата Картой</div>
+								<br>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<script>
+									window.open('/personal/order/payment/?ORDER_ID=13579&PAYMENT_ID=13579/1');
+								</script>
+								Если окно с платежной информацией не открылось автоматически, нажмите на ссылку <a
+									href="/personal/order/payment/?ORDER_ID=13579&amp;PAYMENT_ID=13579/1"
+									target="_blank">Оплатить заказ</a>. </td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</main>
+	</div>
+</div>
+
+@@include('../includes/footer.html')
