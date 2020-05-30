@@ -30,10 +30,18 @@
     display: grid;
     grid-template-columns: 1fr;
 
+    @include media-breakpoint('lt-md') {
+        display: block;
+    }
+
     &-row {
         display: grid;
         grid-template-columns: 4.5fr repeat(3, 1fr);
         grid-gap: 5px;
+
+        @include media-breakpoint('lt-md') {
+            display: block;
+        }
     }
 
     &-filter {
@@ -42,10 +50,24 @@
         background: #f9f9f9;
         border: 1px solid #eaebec;
 
+        @include media-breakpoint('lt-md') {
+
+            >div,
+            >span {
+                margin: 0 0 15px 0;
+                display: block;
+                text-align: center;
+            }
+        }
+
         &__sorting {
             &.dropdown {
                 max-width: 230px;
                 background: #fff;
+
+                @include media-breakpoint('lt-md') {
+                    max-width: 100%;
+                }
             }
         }
 
@@ -92,6 +114,11 @@
         >div {
             &:not(:first-of-type) {
                 padding-top: 50px;
+
+                @include media-breakpoint('lt-md') {
+                    padding-top: 0;
+                }
+
             }
         }
 
@@ -112,6 +139,10 @@
             display: grid;
             grid-template-columns: 130px 1fr;
             column-gap: 40px;
+
+            @include media-breakpoint('lt-md') {
+                display: block;
+            }
         }
 
         &__image {
@@ -119,6 +150,13 @@
             justify-content: center;
             overflow: hidden;
             position: relative;
+
+            @include media-breakpoint('lt-md') {
+                a {
+                    display: block;
+                    text-align: center;
+                }
+            }
 
             img {
                 max-width: 100%;
@@ -222,6 +260,15 @@
         }
 
         &__price {
+            @include media-breakpoint('lt-md') {
+                text-align: center;
+                margin: 10px 0;
+
+                .stock {
+                    justify-content: center;
+                }
+            }
+
             p {
                 font-size: 18px;
                 font-weight: bold;
@@ -230,6 +277,10 @@
         }
 
         &__amount {
+            @include media-breakpoint('lt-md') {
+                margin: 10px 0;
+            }
+
             .input-counter {
                 max-width: 120px;
                 margin: 0 auto;
@@ -250,6 +301,10 @@
         }
 
         &__sum {
+
+            @include media-breakpoint('lt-md') {
+                text-align: center;
+            }
 
             .sum-economy {
                 font-size: 12px;
@@ -330,6 +385,14 @@
         justify-content: flex-end;
         align-items: center;
 
+        @include media-breakpoint('lt-md') {
+            flex-direction: column;
+
+            a {
+                margin-bottom: 10px;
+            }
+        }
+
         .link-catalog {
             font-size: 16px;
             font-weight: bold;
@@ -351,6 +414,10 @@
             border: 1px solid $second-color;
             font-size: 16px;
             margin: 0 0 0 15px;
+
+            @include media-breakpoint('lt-md') {
+                margin-bottom: 15px;
+            }
 
             &-checkout {
                 color: $second-color;

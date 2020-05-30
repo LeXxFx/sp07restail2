@@ -158,10 +158,10 @@ var Main = function () {
 				mainHeader = $('#header'),
 				mainHeaderHeight = mainHeader.innerHeight();
 
-			if (scroll > 1) {
-				mainHeader.addClass("sticky");
+			if (scroll > mainHeaderHeight) {
+				$('.shop-panel').addClass('shop-panel--shown');
 			} else {
-				mainHeader.removeClass("sticky");
+				$('.shop-panel').removeClass('shop-panel--shown');
 			}
 
 			if (scroll > 500) {

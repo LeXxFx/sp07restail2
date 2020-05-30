@@ -86,9 +86,12 @@
 
             &__top {
                 padding-bottom: 15px;
-                margin-bottom: 20px;
                 border-bottom: 1px solid #e1e1e1;
                 margin-bottom: 126px;
+
+                @include media-breakpoint('lt-md') {
+                    margin-bottom: 20px;
+                }
 
                 .page-heading {
                     font-weight: bold;

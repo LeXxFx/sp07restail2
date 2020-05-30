@@ -3,6 +3,11 @@
     border-radius: 3px;
     margin-bottom: 30px;
 
+    @include media-breakpoint('lt-md') {
+        border: none;
+        margin: 0;
+    }
+
     &-filter {
         display: flex;
         justify-content: space-between;
@@ -10,9 +15,23 @@
         flex-wrap: wrap;
         padding: 15px 20px;
 
+        @include media-breakpoint('lt-md') {
+            padding: 15px;
+            display: block;
+            text-align: center;
+
+            >div {
+                margin-bottom: 15px;
+            }
+        }
+
         &__list {
             display: flex;
             align-items: center;
+
+            @include media-breakpoint('lt-md') {
+                display: block;
+            }
 
             >span,
             .dropdown {
@@ -28,6 +47,11 @@
                     right: -20px;
                     top: 50%;
                     margin-top: -13px;
+
+                    @include media-breakpoint('lt-md') {
+                        display: none;
+                    }
+
                 }
             }
 
@@ -38,6 +62,10 @@
 
             .dropdown {
                 width: 170px;
+
+                @include media-breakpoint('lt-md') {
+                    width: 100%;
+                }
 
                 .dropdown-toggle {
                     i {
@@ -103,12 +131,21 @@
         display: grid;
         grid-template-columns: 1fr;
 
+        @include media-breakpoint('lt-md') {
+            display: block;
+            border-top: 1px solid #e1e1e1;
+        }
+
         &__head,
         &__row {
             display: grid;
             grid-template-columns: 4fr 1.4fr 1fr 1fr .5fr;
             grid-gap: 5px;
             padding: 0;
+
+            @include media-breakpoint('lt-md') {
+                display: block;
+            }
 
             >div {
                 padding: 10px;
@@ -122,6 +159,10 @@
             color: #9f9f9f;
             font-size: 13px;
             text-align: center;
+
+            @include media-breakpoint('lt-md') {
+                display: none;
+            }
 
             .grid-price {
                 text-align: left;
@@ -190,6 +231,10 @@
             align-items: center;
             padding: 15px;
 
+            @include media-breakpoint('lt-md') {
+                flex-direction: column;
+            }
+
             .wish-total {
                 margin: 0 auto;
                 font-size: 16px;
@@ -200,6 +245,10 @@
                 font-size: 12px;
                 text-decoration: underline;
                 margin: 0 15px;
+
+                @include media-breakpoint('lt-md') {
+                    margin: 15px 0;
+                }
 
                 &:hover {
                     text-decoration: none;

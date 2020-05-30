@@ -1,4 +1,14 @@
 'use strict';
+
+var mzOptions = {
+	textHoverZoomHint: '',
+	textClickZoomHint: '',
+	textExpandHint: 'Увеличить',
+	textBtnClose: 'Закрыть',
+	textBtnPrev: 'Назад',
+	textBtnNext: 'Вперед'
+};
+
 var Shop = function () {
 	let isMobile = false;
 
@@ -153,6 +163,21 @@ var Shop = function () {
 			isVertical = false;
 
 		if (gallery.length > 0) {
+
+			gallery.on('init', function (event, slick) {
+				gallery.find('.slick-cloned .item > a').each(function () {
+					$(this).removeAttr('data-zoom-id');
+				})
+			});
+
+			gallery.on('afterChange', function (event, slick, currentSlide) {
+				let slide = slick.$slides.get(currentSlide),
+					item = $(slide).find('.item'),
+					zoom_size = $(item).data('zoom-size');
+
+				switchImage(item.find('a'), zoom_size);
+			});
+
 			gallery.slick({
 				slidesToShow: showSlide,
 				slidesToScroll: 1,
@@ -173,14 +198,6 @@ var Shop = function () {
 						}
 					}
 				]
-			});
-
-			gallery.on('afterChange', function (event, slick, currentSlide) {
-				var slide = slick.$slides.get(currentSlide),
-					item = $(slide).find('.item'),
-					zoom_size = $(item).data('zoom-size');
-
-				switchImage(item.find('a'), zoom_size);
 			});
 		};
 	};
@@ -223,13 +240,14 @@ var Shop = function () {
 		target.html('');
 
 		if (that.data('source') == 'image') {
-			target.html('<a class="MagicZoomPlus" rel="preload-selectors-small:false;preload-selectors-big:false;initialize-on:mouseover;smoothing-speed:70;fps:40;selectors-effect:false;show-title:false;loading-msg:Загрузка...;background-opacity:10;zoom-width:' + $zoom + ';zoom-height:' + $zoom + ';zoom-distance:5;hint-text:;selectors-class:current;buttons:hide;caption-source:span;" ' +
+			const zoomId = that.data('zoom-id');
+			target.html('<a id="' + zoomId + '" class="MagicZoom" rel="preload-selectors-small:false;preload-selectors-big:false;initialize-on:mouseover;smoothing-speed:70;fps:40;selectors-effect:false;show-title:false;loading-msg:Загрузка...;background-opacity:10;zoom-width:' + $zoom + ';zoom-height:' + $zoom + ';zoom-distance:5;hint-text:;selectors-class:current;buttons:hide;caption-source:span;" ' +
 				'href="' + newSrc + '"><img src="' + newSrc + '"/></a>').promise().done(function () {
 					target.removeClass('image-preview--loading');
 					target.find('img').fadeIn('fast');
 				});
 
-			// MagicZoomPlus.start('gallery');
+			MagicZoom.refresh(zoomId);
 		};
 	}
 

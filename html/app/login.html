@@ -11,6 +11,7 @@
     <title>Login | Sport07</title>
     <link rel="shortcut icon" href="images/favicon.png">
     <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="css/magiczoomplus.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -497,6 +498,13 @@
 <a id="scroll-top"><i class="fas fa-long-arrow-alt-up"></i>
     Наверх</a>
 
+<div class="shop-panel">
+    <a href="cart.html" class="link-cart"><i class="fas fa-shopping-cart"></i><span class="badge badge-success">1</span></a>
+    <a href="selected.html" class="link-cart"><i class="far fa-heart"></i></a>
+    <a href="compare.html" class="link-cart"><i class="far fa-chart-bar"></i></a>
+    <a href="cabinet.html" class="link-cart"><i class="far fa-user"></i></a>
+</div>
+
 <div class="modal fade modal-preview" id="preview" tabindex="-1" role="dialog" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
@@ -525,31 +533,31 @@
             </div>
             <div class="product-images">
               <div class="product-images__preview image-preview">
-                <a href="images/demo/product_img1-220x240.jpg">
+                <a href="images/demo/product_img1-220x240.jpg" class="MagicZoom" id="productPreviewGallery_1">
                   <img src="images/demo/product_img1-220x240.jpg" alt="" />
                 </a>
               </div>
               <div class="product-images__list image-list" data-direction="row">
                 <div class="item current" data-zoom-size="345">
-                  <a href="images/demo/product_img1-220x240.jpg" data-preview="images/demo/product_img1-220x240.jpg"
+                  <a data-zoom-id="productPreviewGallery_1" href="images/demo/product_img1-220x240.jpg" data-preview="images/demo/product_img1-220x240.jpg"
                     data-source="image">
                     <img src="images/demo/product_img1-220x240.jpg" alt="" />
                   </a>
                 </div>
                 <div class="item" data-zoom-size="345">
-                  <a href="images/demo/product_img2-190x190.jpg" data-preview="images/demo/product_img2-190x190.jpg"
+                  <a data-zoom-id="productPreviewGallery_1" href="images/demo/product_img2-190x190.jpg" data-preview="images/demo/product_img2-190x190.jpg"
                     data-source="image">
                     <img src="images/demo/product_img2-190x190.jpg" alt="" />
                   </a>
                 </div>
                 <div class="item" data-zoom-size="345">
-                  <a href="images/demo/product_img1-190x190.jpg" data-preview="images/demo/product_img1-190x190.jpg"
+                  <a data-zoom-id="productPreviewGallery_1" href="images/demo/product_img1-190x190.jpg" data-preview="images/demo/product_img1-190x190.jpg"
                     data-source="image">
                     <img src="images/demo/product_img1-190x190.jpg" alt="" />
                   </a>
                 </div>
                 <div class="item" data-zoom-size="345">
-                  <a href="images/demo/product_img2-190x190.jpg" data-preview="images/demo/product_img2-190x190.jpg"
+                  <a data-zoom-id="productPreviewGallery_1" href="images/demo/product_img2-190x190.jpg" data-preview="images/demo/product_img2-190x190.jpg"
                     data-source="image">
                     <img src="images/demo/product_img2-190x190.jpg" alt="" />
                   </a>
@@ -683,7 +691,7 @@
             <div class="modal-body">
                 <div class="quickbuy-form">
                     <div class="quickbuy-form__top">
-                        <div class="row align-items-center justify-content-md-between">
+                        <div class="row">
                             <div class="col-md-8">
                                 <a href="product.html">Велосумка на раму с тремя отделениями ВС13-11</a>
                             </div>
@@ -751,75 +759,44 @@
     </div>
 </div>
 
-
 <div class="modal fade modal-form modal-callback" id="callback" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
+            <div class="modal-header text-center">
+                Заказать обратный звонок
+                <p>Наш консультант вскоре свяжется с Вами.</p>
+                <button class="modal-close" data-dismiss="modal" aria-hidden="true" data-toggle="tooltip"
+                    title="Закрыть">
+                    &times;
+                </button>
+            </div>
             <div class="modal-body">
-                <div class="panel-sport">
-                    <div class="modal-header">
-                        Заказать обратный звонок
-                        <p>Наш консультант вскоре свяжется с Вами.</p>
+                <form action="#" class="form-callback form-horizontal">
+                    <div class="form-group">
+                        <span class="required">*</span> <label class="control-label">Имя</label>
+                        <input type="text" class="form-control" />
                     </div>
-                    <form action="#" class="form-callback form-horizontal">
-                        <div class="form-callback__top">
-                            Введите Ваши данные:
-                        </div>
-                        <div class="row">
-                            <div class="col-md-8">
-                                <div class="form-group">
-                                    <div class="col-sm-5">
-                                        <label class="control-label">Имя:</label>
-                                    </div>
-                                    <div class="col-sm-7">
-                                        <input type="text" class="form-control" />
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <div class="col-sm-5">
-                                        <label class="control-label">Ваш номер телефона:</label>
-                                        <span class="req">*</span>
-                                    </div>
-                                    <div class="col-sm-7">
-                                        <input type="tel" autocomplete="tel" class="form-control" />
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <div class="col-sm-5">
-                                        <label class="control-label">E-mail:</label>
-                                    </div>
-                                    <div class="col-sm-7">
-                                        <input type="email" class="form-control" />
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="form-bot">
-                                    <button class="btn" data-dismiss="modal" data-toggle="modal"
-                                        data-target="#alert_callback">Отправить</button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <div class="col-sm-12">
-                                <div class="checkbox">
-                                    <input id="rules" type="checkbox">
-                                    <label for="rules" class="txt">Я
-                                        <a href="#">ознакомлен (а)</a> и даю своё согласие на обработку персональных
-                                        данных.*</label>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="form-info">
-                            <span class="req">*</span> - Обязательно для заполнения.</div>
-                    </form>
-                    <button class="panel-sport__close" data-dismiss="modal" aria-hidden="true" data-toggle="tooltip"
-                        title="Закрыть">
-                        <span>
-                            <i class="fa fa-angle-left"></i>
-                        </span>
-                    </button>
-                </div>
+                    <div class="form-group">
+                        <span class="required">*</span> <label class="control-label">Ваш номер телефона</label>
+                        <input type="tel" autocomplete="tel" class="form-control" />
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label">E-mail</label>
+                        <input type="email" class="form-control" />
+                    </div>
+                    <div class="form-group text-center">
+                        <label for="rules1234" class="form-checkbox">
+                            <input type="checkbox" id="rules1234">
+                            <span>Нажимая на кнопку, я принимаю <a href="#">условия соглашения.</a></span>
+                        </label>
+                    </div>
+                    <div class="form-baton text-center">
+                        <button class="btn btn-primary">Отправить</button>
+                    </div>
+                    <div class="form-callback__bottom">
+                        <span class="required">*</span> - Обязательно для заполнения.
+                    </div>
+                </form>
             </div>
         </div>
     </div>
