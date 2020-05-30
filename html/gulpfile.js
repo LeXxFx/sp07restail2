@@ -33,6 +33,7 @@ var autoprefixerList = [
 /* пути к исходным файлам (src), к готовым файлам (build), а также к тем, за изменениями которых нужно наблюдать (watch) */
 var path = {
   nodeModules: "./node_modules/",
+  plugins: "./app/plugins/",
   app: "./app/",
   dist: "./dist/",
   clean: "./dist/*",
@@ -71,7 +72,8 @@ var configPath = {
     path.nodeModules + "perfect-scrollbar/dist/perfect-scrollbar.js",
     path.nodeModules + "moment/moment.js",
     path.nodeModules + "bootstrap-daterangepicker/daterangepicker.js",
-    path.nodeModules + "sticky-kit/dist/sticky-kit.js"
+    path.nodeModules + "sticky-kit/dist/sticky-kit.js",
+    path.plugins + "magiczoomplus/magiczoomplus.js"
   ],
   cssLibs: [
     path.nodeModules + "bootstrap/dist/css/bootstrap.css",
@@ -81,7 +83,8 @@ var configPath = {
     path.nodeModules + "noty/lib/noty.css",
     path.nodeModules + "noty/lib/themes/bootstrap-v4.css",
     path.nodeModules + "perfect-scrollbar/css/perfect-scrollbar.css",
-    path.nodeModules + "bootstrap-daterangepicker/daterangepicker.css"
+    path.nodeModules + "bootstrap-daterangepicker/daterangepicker.css",
+    path.plugins + "magiczoomplus/magiczoomplus.css"
   ],
   fontLibs: [path.nodeModules + "@fortawesome/fontawesome-free/webfonts/*"]
 };
@@ -93,7 +96,7 @@ function libsJs() {
     .src(configPath.jsLibs) // Берем все необходимые библиотеки
     .pipe(
       plumber({
-        errorHandler: function(err) {
+        errorHandler: function (err) {
           console.log(err.toString());
           this.emit('end');
         }
@@ -133,7 +136,7 @@ function scss() {
     .src(path.app + "scss/*.scss") // Берем источник
     .pipe(
       plumber({
-        errorHandler: function(err) {
+        errorHandler: function (err) {
           console.log(err.toString());
           this.emit('end');
         }
