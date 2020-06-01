@@ -231,11 +231,21 @@
                         margin: 0 15px;
                     }
 
+                    @include media-breakpoint('lt-md') {
+                        width: auto;
+                        margin-right: 0;
+                    }
+
+
                     &__title {
                         margin: 0 0 15px 0;
                         padding: 0;
                         line-height: 1.1;
                         font-size: 18px;
+
+                        @include media-breakpoint('lt-md') {
+                            font-size: 16px;
+                        }
 
                         a {
                             color: $text-color;
@@ -295,6 +305,16 @@
                                     right: 0;
                                     left: auto;
                                     top: 100%;
+                                }
+
+                                @include media-breakpoint('lt-md') {
+                                    position: static;
+                                    top: auto;
+                                    left: auto;
+                                    width: auto;
+                                    box-shadow: none;
+                                    margin: 0;
+                                    padding: 10px 0 10px 15px;
                                 }
                             }
 
