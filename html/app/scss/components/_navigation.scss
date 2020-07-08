@@ -233,6 +233,8 @@
                     @include media-breakpoint('lt-md') {
                         width: auto;
                         margin-right: 0;
+                        display: block;
+                        padding-right: 15px;
                     }
 
 

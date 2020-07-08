@@ -94,18 +94,19 @@
         z-index: 10;
 
         .header-logo {
-            flex: 0 0 240px;
+            flex: 0 0 220px;
 
             .logo {
                 display: flex;
                 align-items: center;
+                justify-content: center;
                 font-weight: bold;
                 color: #222;
                 text-decoration: none;
 
                 img {
+                    max-width: 220px;
                     flex: 0 0 auto;
-                    margin: 0 5px 0 0;
                 }
 
                 span {
@@ -575,8 +576,7 @@
 
                 .logo {
                     margin: 0 auto;
-                    justify-content: space-between;
-                    max-width: 230px;
+                    justify-content: center;
                 }
             }
 
