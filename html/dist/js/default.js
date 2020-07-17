@@ -103,6 +103,25 @@ var Main = function () {
 			}
 		});
 
+
+		$('.catalog-navi li.has-child').hover(function () {
+			let that = $(this),
+				$ddl = that.find('> .dropdown'),
+				elementTop = $ddl.offset().top,
+				elementBottom = elementTop + $ddl.outerHeight(),
+				viewportTop = $(window).scrollTop(),
+				viewportBottom = viewportTop + $(window).height(),
+				diff = elementBottom - viewportBottom;
+
+			if (diff > 0) {
+				$ddl.css({ 'margin-top': -(diff + 10) })
+			}
+		}, function () {
+			let that = $(this),
+				$ddl = that.find('> .dropdown');
+
+			$ddl.css({ 'margin-top': '' });
+		});
 	};
 
 	var searchBox = function () {

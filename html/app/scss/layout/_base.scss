@@ -121,16 +121,36 @@ img {
     padding: 0 $side-padding;
     min-height: calc(100vh - 160px - 390px);
 
+    @include media-breakpoint('lt-md') {
+        margin: 0 -15px;
+        flex-direction: column;
+    }
+
     .sidebar {
         order: 0;
         flex: 0 0 $sidebar-width;
         margin: 0 30px 40px 0;
+
+        @include media-breakpoint('lt-md') {
+            order: 1;
+            margin: 0;
+            flex: 0 0 auto;
+
+            &:not(.sidebar-shop) {
+                display: none;
+            }
+        }
+
     }
 
     .content {
         order: 1;
         flex: 1 1 auto;
         margin: 0 0 40px 0;
+
+        @include media-breakpoint('lt-md') {
+            order: 0;
+        }
 
         &-inner {
             padding: 15px 0;
@@ -225,23 +245,3 @@ img {
 button {
     outline: none !important;
 }
-
-@media screen and (max-width: $desktop) {}
-
-@media screen and (max-width: $tablet) {
-    .inner {
-        margin: 0 -15px;
-
-        .sidebar {
-            order: 1;
-            margin: 0;
-            display: none;
-        }
-
-        .content {
-            order: 0;
-        }
-    }
-}
-
-@media screen and (max-width: $mobile) {}

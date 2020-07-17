@@ -204,7 +204,6 @@
 
             >.dropdown {
                 display: none;
-                white-space: nowrap;
                 vertical-align: top;
                 box-shadow: 3px 3px 8px 0 rgba(81, 81, 81, 0.5);
                 border-radius: 2px;
@@ -222,7 +221,7 @@
 
                 .category-col {
                     display: inline-block;
-                    width: 280px;
+                    width: 240px;
                     margin: 0 20px;
                     vertical-align: top;
 
@@ -234,6 +233,8 @@
                     @include media-breakpoint('lt-md') {
                         width: auto;
                         margin-right: 0;
+                        display: block;
+                        padding-right: 15px;
                     }
 
 
@@ -258,8 +259,7 @@
                     }
 
                     ul {
-                        margin-bottom: 20px;
-                        padding-left: 10px;
+                        margin-bottom: 30px;
 
                         @include media-breakpoint('lt-lg') {
                             padding: 0;
@@ -347,7 +347,8 @@
             }
 
             >.dropdown {
-                display: block;
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
             }
         }
 
