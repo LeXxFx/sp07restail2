@@ -39,7 +39,7 @@
             }
         }
 
-        .dropdown {
+        >.dropdown {
             position: absolute;
             z-index: 5;
             top: 0;
@@ -423,6 +423,12 @@
                             transform: rotate(90deg) !important;
                         }
                     }
+
+                    .catalog-navi {
+                        >.dropdown {
+                            display: block;
+                        }
+                    }
                 }
             }
         }
@@ -467,6 +473,12 @@
                         top: auto;
                         left: auto;
                         border: none;
+                        padding-top: 15px;
+
+                        .category-col__title {
+                            margin: 0;
+                            padding: 0 0 15px 0;
+                        }
                     }
                 }
             }

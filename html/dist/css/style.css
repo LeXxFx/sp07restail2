@@ -7027,7 +7027,7 @@ readers do not read off random characters that represent icons */
       .menu > li > a {
         font-size: 13px;
         padding: 12px 15px; } }
-  .menu > li .dropdown {
+  .menu > li > .dropdown {
     position: absolute;
     z-index: 5;
     top: 0;
@@ -7044,7 +7044,7 @@ readers do not read off random characters that represent icons */
     -webkit-transform: translateY(10px);
             transform: translateY(10px);
     box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.2); }
-    .menu > li .dropdown > li > a {
+    .menu > li > .dropdown > li > a {
       display: block;
       padding: 12px 15px;
       text-decoration: none;
@@ -7052,9 +7052,9 @@ readers do not read off random characters that represent icons */
       border-bottom: 1px solid #eaebec;
       transition: background-color linear .1s; }
       @media screen and (max-width: 991px) {
-        .menu > li .dropdown > li > a {
+        .menu > li > .dropdown > li > a {
           color: #222222; } }
-      .menu > li .dropdown > li > a:hover {
+      .menu > li > .dropdown > li > a:hover {
         background: #e6e6e6; }
   .menu > li .catalog-navi {
     transition: all linear .1s;
@@ -7262,6 +7262,8 @@ readers do not read off random characters that represent icons */
       .menu > li.has-child.opened > a:after {
         -webkit-transform: rotate(90deg) !important;
                 transform: rotate(90deg) !important; }
+      .menu > li.has-child.opened .catalog-navi > .dropdown {
+        display: block; }
     .menu li .dropdown,
     .menu li .catalog-navi {
       display: none;
@@ -7287,7 +7289,11 @@ readers do not read off random characters that represent icons */
     position: relative;
     top: auto;
     left: auto;
-    border: none; } }
+    border: none;
+    padding-top: 15px; }
+    .catalog-navi > ul > li.has-child > .dropdown .category-col__title {
+      margin: 0;
+      padding: 0 0 15px 0; } }
 
 .heading {
   display: -ms-flexbox;
@@ -9994,6 +10000,9 @@ readers do not read off random characters that represent icons */
           display: none; }
         .filters .filter-slider .noUi-horizontal .noUi-handle.noUi-active {
           background: #f2f2f2; }
+        @media screen and (max-width: 991px) {
+          .filters .filter-slider .noUi-horizontal .noUi-handle {
+            left: 16px; } }
     .filters .filter-slider .noUi-connect {
       background: #458a2b;
       box-shadow: none;
@@ -10029,6 +10038,9 @@ readers do not read off random characters that represent icons */
       -ms-flex-align: center;
           align-items: center;
       box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.3); }
+      @media screen and (max-width: 991px) {
+        .filters .filter-hint {
+          left: 100px; } }
       .filters .filter-hint:before {
         content: "";
         position: absolute;

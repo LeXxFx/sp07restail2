@@ -468,6 +468,10 @@
                     &.noUi-active {
                         background: darken(#fff, 5%);
                     }
+
+                    @include media-breakpoint('lt-md') {
+                        left: 16px;
+                    }
                 }
             }
 
@@ -513,6 +517,10 @@
             display: flex;
             align-items: center;
             box-shadow: 0 2px 6px 0 rgba(0, 0, 0, .3);
+
+            @include media-breakpoint('lt-md') {
+                left: 100px;
+            }
 
             &:before {
                 content: "";
