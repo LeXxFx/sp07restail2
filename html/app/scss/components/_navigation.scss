@@ -88,7 +88,11 @@
             min-width: 220px;
 
             .dropdown {
-                width: auto !important;
+                width: auto;
+
+                .category-col ul li>ul {
+                    width: 320px;
+                }
             }
         }
 

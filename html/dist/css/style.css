@@ -7068,7 +7068,9 @@ readers do not read off random characters that represent icons */
     top: 100%;
     min-width: 220px; }
     .menu > li .catalog-navi .dropdown {
-      width: auto !important; }
+      width: auto; }
+      .menu > li .catalog-navi .dropdown .category-col ul li > ul {
+        width: 320px; }
   .menu > li:hover > a {
     background: #3b7725; }
     .menu > li:hover > a:after {
@@ -10683,9 +10685,6 @@ button {
           opacity: 1;
           -webkit-transform: none;
                   transform: none; }
-        .header .navi .catalog-menu .menu > li .dropdown {
-          width: 220px;
-          z-index: 999; }
     .header .navi .main-menu {
       -ms-flex: 1 0 auto;
           flex: 1 0 auto; }
