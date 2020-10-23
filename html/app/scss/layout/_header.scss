@@ -379,7 +379,10 @@
                         }
 
                         >.catalog-navi {
-                            display: none;
+
+                            @include media-breakpoint('gt-sm') {
+                                display: none;
+                            }
                         }
                     }
                 }
@@ -431,6 +434,10 @@
 
             .main-menu {
                 flex: 0 1 840px;
+            }
+
+            &:hover {
+                z-index: 1001;
             }
         }
 
@@ -520,7 +527,10 @@
                             }
 
                             >.catalog-navi {
-                                display: none;
+
+                                @include media-breakpoint('gt-sm') {
+                                    display: none;
+                                }
                             }
 
                             &:hover {
@@ -528,10 +538,6 @@
                                     >a {
                                         &:after {
                                             transform: rotate(90deg);
-
-                                            @include media-breakpoint('lt-md') {
-                                                transform: rotate(0);
-                                            }
                                         }
                                     }
                                 }
