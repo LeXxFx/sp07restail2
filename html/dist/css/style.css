@@ -7051,7 +7051,7 @@ readers do not read off random characters that represent icons */
       color: #458a2b;
       border-bottom: 1px solid #eaebec;
       transition: background-color linear .1s; }
-      @media screen and (max-width: 991px) {
+      @media screen and (max-width: 766px) {
         .menu > li > .dropdown > li > a {
           color: #222222; } }
       .menu > li > .dropdown > li > a:hover {
@@ -7158,7 +7158,7 @@ readers do not read off random characters that represent icons */
           .catalog-navi > ul > li.has-child > .dropdown .category-col {
             width: 220px;
             margin: 0 15px; } }
-        @media screen and (max-width: 991px) {
+        @media screen and (max-width: 766px) {
           .catalog-navi > ul > li.has-child > .dropdown .category-col {
             width: auto;
             margin-right: 0;
@@ -7169,7 +7169,7 @@ readers do not read off random characters that represent icons */
           padding: 0;
           line-height: 1.1;
           font-size: 18px; }
-          @media screen and (max-width: 991px) {
+          @media screen and (max-width: 766px) {
             .catalog-navi > ul > li.has-child > .dropdown .category-col__title {
               font-size: 16px; } }
           .catalog-navi > ul > li.has-child > .dropdown .category-col__title a {
@@ -7211,7 +7211,7 @@ readers do not read off random characters that represent icons */
                   right: 0;
                   left: auto;
                   top: 100%; } }
-              @media screen and (max-width: 991px) {
+              @media screen and (max-width: 766px) {
                 .catalog-navi > ul > li.has-child > .dropdown .category-col ul li > ul {
                   position: static;
                   top: auto;
@@ -7232,6 +7232,9 @@ readers do not read off random characters that represent icons */
     .catalog-navi > ul > li:hover > .dropdown {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr; }
+      @media screen and (max-width: 1199px) {
+        .catalog-navi > ul > li:hover > .dropdown {
+          grid-template-columns: 1fr 1fr; } }
     .catalog-navi > ul > li.active > a {
       background: #fff;
       color: #ef8808;
@@ -8728,16 +8731,17 @@ readers do not read off random characters that represent icons */
     -ms-flex-align: center;
         align-items: center;
     -ms-flex-pack: center;
-        justify-content: center; }
+        justify-content: center;
+    transition: .3s; }
     .product-images__list .item a img {
       object-fit: contain;
       transition: .3s;
       border: none; }
   .product-images__list .item:hover a {
-    border-color: #848383;
-    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.3); }
-  .product-images__list .item.current a {
     border-color: #458a2b; }
+  .product-images__list .item.current a {
+    border-color: #458a2b;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.3); }
     .product-images__list .item.current a img {
       border: none;
       padding: 0; }
@@ -9313,20 +9317,26 @@ readers do not read off random characters that represent icons */
   z-index: 10;
   top: 6px;
   right: 6px;
-  width: 20px;
+  width: 30px;
   -webkit-transform: translateX(5px);
-          transform: translateX(5px); }
+          transform: translateX(5px);
+  background: white;
+  border-radius: 0 0 3px 3px;
+  padding: 3px; }
   .product-item__tools > a {
     display: block;
-    padding: 4px 0px;
+    padding: 4px 4px;
     text-align: center;
-    height: 20px;
+    height: 24px;
     margin-bottom: 5px;
     border-radius: 2px;
     cursor: pointer;
     transition: .2s; }
     .product-item__tools > a:hover {
-      background: #9c9696; }
+      background: #ef8808;
+      color: #fff; }
+    .product-item__tools > a:last-of-type {
+      margin: 0; }
 
 .product-item__stickers {
   position: absolute;
@@ -10691,8 +10701,9 @@ button {
   .header.front-page-header .navi .catalog-menu .menu > li.has-child > a:after {
     -webkit-transform: rotate(90deg);
             transform: rotate(90deg); }
-  .header.front-page-header .navi .catalog-menu .menu > li > .catalog-navi {
-    display: none; }
+  @media screen and (min-width: 992px) {
+    .header.front-page-header .navi .catalog-menu .menu > li > .catalog-navi {
+      display: none; } }
 
 @media screen and (max-width: 1200px) {
   .header__main .search-input .form-input .form-control {
@@ -10713,6 +10724,8 @@ button {
     .header .navi .main-menu {
       -ms-flex: 0 1 840px;
           flex: 0 1 840px; }
+    .header .navi:hover {
+      z-index: 1001; }
     .header__top .header-region {
       display: none; }
     .header__top .header-contacts > span,
@@ -10757,16 +10770,15 @@ button {
         line-height: 1; }
     .header.front-page-header .navi .catalog-menu .menu > li.has-child > a:after {
       -webkit-transform: rotate(0);
-              transform: rotate(0); }
+              transform: rotate(0); } }
+  @media screen and (max-width: 992px) and (min-width: 992px) {
     .header.front-page-header .navi .catalog-menu .menu > li > .catalog-navi {
-      display: none; }
+      display: none; } }
+
+@media screen and (max-width: 992px) {
     .header.front-page-header .navi .catalog-menu .menu > li:hover.has-child > a:after {
       -webkit-transform: rotate(90deg);
               transform: rotate(90deg); } }
-    @media screen and (max-width: 992px) and (max-width: 991px) {
-      .header.front-page-header .navi .catalog-menu .menu > li:hover.has-child > a:after {
-        -webkit-transform: rotate(0);
-                transform: rotate(0); } }
 
 @media screen and (max-width: 767px) {
   .header__top .header-contacts {
@@ -12029,9 +12041,17 @@ button {
 
 .single-product__col-image {
   position: relative; }
+  .single-product__col-image .product-item__stickers {
+    top: 0;
+    left: 10px; }
+  .single-product__col-image .product-item__tools {
+    top: 0;
+    right: 10px; }
   .single-product__col-image .product-images__preview {
     min-height: 420px;
-    height: 420px; }
+    height: 420px;
+    margin-bottom: 5px;
+    padding: 0 10px; }
     .single-product__col-image .product-images__preview a {
       display: -ms-flexbox;
       display: flex;
@@ -12043,6 +12063,8 @@ button {
       .single-product__col-image .product-images__preview a img {
         object-fit: contain;
         max-height: 420px; }
+    .single-product__col-image .product-images__preview figure {
+      max-height: 100%; }
 
 .single-product__main {
   padding-right: 15px; }

@@ -176,22 +176,30 @@ $item-height: 470px;
         z-index: 10;
         top: 6px;
         right: 6px;
-        width: 20px;
+        width: 30px;
         transform: translateX(5px);
         @extend %hide_item;
+        background: rgba(255, 255, 255, 1);
+        border-radius: 0 0 3px 3px;
+        padding: 3px;
 
         >a {
             display: block;
-            padding: 4px 0px;
+            padding: 4px 4px;
             text-align: center;
-            height: 20px;
+            height: 24px;
             margin-bottom: 5px;
             border-radius: 2px;
             cursor: pointer;
             transition: .2s;
 
             &:hover {
-                background: #9c9696;
+                background: $second-color;
+                color: #fff;
+            }
+
+            &:last-of-type {
+                margin: 0;
             }
         }
     }

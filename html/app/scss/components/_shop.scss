@@ -217,6 +217,7 @@
                 height: 62px;
                 align-items: center;
                 justify-content: center;
+                transition: .3s;
 
                 img {
                     object-fit: contain;
@@ -227,14 +228,14 @@
 
             &:hover {
                 a {
-                    border-color: #848383;
-                    box-shadow: 0 0 5px 0 rgba(0, 0, 0, .3);
+                    border-color: $primary-color;
                 }
             }
 
             &.current {
                 a {
                     border-color: $primary-color;
+                    box-shadow: 0 0 5px 0 rgba(0, 0, 0, .3);
 
                     img {
                         border: none;

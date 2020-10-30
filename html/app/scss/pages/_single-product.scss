@@ -164,9 +164,21 @@
     &__col-image {
         position: relative;
 
+        .product-item__stickers {
+            top: 0;
+            left: 10px;
+        }
+
+        .product-item__tools {
+            top: 0;
+            right: 10px;
+        }
+
         .product-images__preview {
             min-height: 420px;
             height: 420px;
+            margin-bottom: 5px;
+            padding: 0 10px;
 
             a {
                 display: flex;
@@ -178,6 +190,10 @@
                     object-fit: contain;
                     max-height: 420px;
                 }
+            }
+
+            figure {
+                max-height: 100%;
             }
         }
     }
