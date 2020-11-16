@@ -41,6 +41,18 @@
         width: 100%;
         max-width: 430px;
         margin: 6% auto;
+
+        &.modal-sm {
+            max-width: 300px;
+        }
+
+        &.modal-lg {
+            max-width: 800px;
+        }
+
+        &.modal-xl {
+            max-width: 1140px;
+        }
     }
 
     &-content {

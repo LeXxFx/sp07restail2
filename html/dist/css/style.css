@@ -11105,6 +11105,12 @@ button {
   width: 100%;
   max-width: 430px;
   margin: 6% auto; }
+  .modal-dialog.modal-sm {
+    max-width: 300px; }
+  .modal-dialog.modal-lg {
+    max-width: 800px; }
+  .modal-dialog.modal-xl {
+    max-width: 1140px; }
 
 .modal-content {
   border-radius: 0;
