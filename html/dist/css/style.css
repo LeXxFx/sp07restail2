@@ -11171,6 +11171,10 @@ button {
   margin: 30px 0 20px 0;
   position: relative;
   overflow: hidden; }
+  .sl .sl-item a {
+	color: #000;
+	text-decoration: none;
+  }
   .sl .sl-item__inner {
     overflow: hidden;
     position: relative;

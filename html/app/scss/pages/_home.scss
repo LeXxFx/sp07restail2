@@ -4,6 +4,10 @@
     overflow: hidden;
 
     .sl-item {
+		a {
+			color: #000;
+			text-decoration: none;
+		}
         &__inner {
             overflow: hidden;
             position: relative;
